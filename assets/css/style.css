@@ -24,6 +24,7 @@
     padding: 100px 0 64px 0;
 }
 
+
 .three-bot {
     display: flex;
 }
@@ -105,3 +106,8 @@
 #menu-home-onepage-9 li a {
     color: black;
 }
+
+.banner-slider {
+    background: url(/assets/image/back-ground.jpg) no-repeat ;
+}
+

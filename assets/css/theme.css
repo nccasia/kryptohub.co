@@ -804,7 +804,8 @@ select {
       color: #f5b71f;
       background: #fff; }
   .btn.btn-radius {
-    border-radius: 30px; }
+    border-radius: 50%;
+  ; }
   .btn.btn-gradient {
     border: none !important;
     box-shadow: none !important;
@@ -20710,4 +20711,120 @@ body table.vcw.vcw-table {
 .yith-wcwl-share .share-button {
 	display: inline-block;
 	padding: 0 5px;
+}
+
+.right-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-title{
+  font-size: 35px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  word-spacing: 3px;
+
+}
+
+.text-title2{
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  word-spacing: 3px;
+
+}
+
+.text-des {
+  font-size: 16px;
+  color: white;
+}
+
+.banner-slider{
+  padding: 100px 0;
+}
+
+.row-one {
+  display: flex;
+  align-items: center;
+}
+
+.one-left-1{
+  padding-left: 70px;
+}
+
+.row-two {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.three-page{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.three-row{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.two-page {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+
+.three-bot{
+  display: flex;
+  justify-content: center;
+}
+
+.two-left-bot {
+  display: flex;
+}
+
+.three-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+}
+
+.three-top-1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.img-page-3 {
+  width: 100%;
+}
+
+.four-page{
+  background-image: url(/assets/image/back-ground.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+.four-top{
+  display: flex;
+  width: 60%;
+}
+
+.four-top-1{
+  text-align: center;
+}
+
+.four-page-1 {
+  
+}
+
+.seven-page{
+
+}
+
+.page-five{
 }
