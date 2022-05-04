@@ -6,53 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&ver=1566814312" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/theme.css" />
     <link rel="stylesheet" href="assets/css/custom-theme.css" />
-    <link rel="stylesheet" id="slick-css"
-      href="https://demo.arrowtheme.com/cryptcio/wp-content/themes/cryptcio/css/plugin/slick.min.css" type="text/css"
-      media="all" />
+
+    <style id="inline-css" type="text/css">
+      header.site-header,
+      .fixed-header header.site-header.is-sticky {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .header-v1,
+      .fixed-header .header-v1.is-sticky {
+        background-color: #ffffff;
+      }
+
+      @media (min-width: 992px) {
+        .fixed-header .header-v1:not(.is-sticky) .header-container .mega-menu>li.menu-item>a {
+          color: #ffffff;
+        }
+      }
+
+      .header-v1 .header-container .mega-menu>li.menu-item>a {
+        font-family: Poppins;
+        color: #282828;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+
+    </cryptcio-theme-inline-css>
   </head>
 
   <body class="home">
     <div id="page" class="fixed-header">
+      <!--start header-->
       <header id="masthead" class="site-header header-top header-v1 hide-top">
-        <script>
-          var navbar = document.getElementById("masthead");
-          window.onscroll = function () {
-            if (window.pageYOffset > 100) {
-              document.getElementById("menu-home-onepage-9x").id =
-                "menu-home-onepage-9";
-              navbar.style.background = "white";
-              document.getElementById("logo-fixed").src =
-                "assets/image/logo.png";
-              navbar.style.boxShadow = "0 0 1px 0 black";
-            } else {
-              navbar.style.background = "rgb(0 0 0 / 0%)";
-              document.getElementById("logo-fixed").src =
-                "assets/image/logo2.png";
-              document.getElementById("menu-home-onepage-9").id =
-                "menu-home-onepage-9x";
-              navbar.style.boxShadow = "";
-            }
-          };
-        </script>
         <div class="header-wrapper">
           <div class="header-middle">
             <div class="container-fluid header-boxed">
               <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                  <h1 style="margin-top: 23px" class="header-logo display-flex">
+                  <h2 class="header-logo display-flex">
                     <a href="#" rel="home">
-                      <img id="logo-fixed" class="logo-fixed" src="assets/image/logo2.png" alt="" />
+                      <img class="logo-default" src="assets/image/logo.png" alt="Cryptcio">
+                      <img class="logo-fixed" src="assets/image/logo-fix.png" alt="Cryptcio">
                     </a>
-                  </h1>
+                  </h2>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                   <div class="header-container text-right">
+                    <div class="open-menu-mobile hidden-lg hidden-md">
+                      <div class="display-flex">
+                        <i class="fa fa-bars"></i>
+                      </div>
+                    </div>
                     <div id="header-center" class="header-center">
                       <h2 class="logo-mobile hidden-lg hidden-md">
                         <a href="#" rel="home">
@@ -66,44 +82,25 @@
                       <nav id="site-navigation" class="main-navigation">
                         <div class="menu-home-onepage-9-container">
                           <ul id="menu-home-onepage-9x" class="mega-menu">
-                            <li id="menu-item-1508"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1508">
-                              <a href="#whatit">What’s CIO
-                                <span class="open-submenu"><i class="fa fa-angle-down"></i></span></a><span
-                                class="caret-submenu"><i class="fa fa-angle-down"></i></span>
-                              <ul class="sub-menu">
-                                <li id="menu-item-1509"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1509">
-                                  <a href="#technologies">Technologies</a>
-                                </li>
-                                <li id="menu-item-1510"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1510">
-                                  <a href="#how-it-works">How it Works</a>
-                                </li>
-                              </ul>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a href="#whatit">What’s CIO</a>
                             </li>
-                            <li id="menu-item-1511"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1511">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a href="#technologies">Technologies</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a href="#how-it-works">How it Works</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
                               <a class="text-header-black" href="#apps">Apps</a>
                             </li>
-                            <li id="menu-item-1512"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1512">
-                              <a class="text-header-black" href="#token-sale">Token Sale</a>
-                            </li>
-                            <li id="menu-item-1513"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1513">
-                              <a class="text-header-black" href="#roadmap">Roadmap</a>
-                            </li>
-                            <li id="menu-item-1514"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1514">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
                               <a class="text-header-black" href="#team">Team</a>
                             </li>
-                            <li id="menu-item-1515"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1515">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
                               <a class="text-header-black" href="#blog">Blog</a>
                             </li>
-                            <li id="menu-item-1516"
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1516">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
                               <a class="text-header-black" href="#contact">Contact</a>
                             </li>
                           </ul>
@@ -118,13 +115,15 @@
         </div>
         <!-- Menu -->
       </header>
+      <!--start header-->
 
-      <!-- End masthead -->
+      <!--start main-->
       <div id="main" class="wrapper wide">
         <div class="content-primary">
           <div id="primary" class="content-area">
+            <!--start silder-->
             <div class="banner-slider">
-              <div class="container-fluid">
+              <div class="container-fluid slider-boxed">
                 <div class="row row-one">
                   <div class="col-lg-6">
                     <div class="one-left-1">
@@ -150,52 +149,50 @@
                 </div>
               </div>
             </div>
-            <div class="two-page">
-              <div class="row row-two">
-                <div class="col-lg-6">
-                  <div class="title-two">
-                    <div class="small-title">CRYPTO</div>
-                    <div class="text-title2">WHAT IS CIO SYSTEM?</div>
-                  </div>
 
-                  <div class="wpb_wrapper">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Donec pulvinar, libero vel volutpat aliquam,
-                      neque eros rutrum enim, fermentum varius sapien elit
-                      id dui. Aenean eget lectus lacinia, laoreet nulla
-                      at, lobortis dui. Fusce feugiat metus eget accumsan
-                      aliquet. Vivamus lacus ligula, venenatis nec posuere
-                      quis, molestie quis velit.<br />
-                      Maecenas venenatis nulla nec tortor laoreet, vitae
-                      hendrerit purus sagittis. Morbi eget neque nunc.
-                    </p>
-                    <p>
-                      Vestibulum congue, nulla id vestibulum volutpat, dui
-                      augue hendrerit eros, nec fringilla sapien neque
-                      eget sapien.
-                    </p>
-                  </div>
-                  <div class="video-play">
-                    <div class="btn-video">
-                      <a class="iframe_fancybox youtube_play_btn btn btn-gradient btn-radius" title="watch video"
-                        data-fancybox="" href="https://www.youtube.com/embed/U9JIanRXsfU?autoplay=1"
-                        data-type="iframe"><i class="pe-7s-play"></i></a>
+            <!-- start block technologies-->
+            <section class="block-section block-what-it" id="whatit">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="box-text">
+                      <div class="head-box">
+                        <div class="head-title">CRYPTO</div>
+                        <div class="main-title">WHAT IS CIO SYSTEM?</div>
+                      </div>
+                      <p class="desc-title">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar, libero vel volutpat
+                        aliquam, neque eros rutrum enim, fermentum varius sapien elit id dui. Aenean eget lectus
+                        lacinia, laoreet nulla at, lobortis dui. Fusce feugiat metus eget accumsan aliquet. Vivamus
+                        lacus ligula, venenatis nec posuere quis, molestie quis velit.<br>
+                        Maecenas venenatis nulla nec tortor laoreet, vitae hendrerit purus sagittis. Morbi eget neque
+                        nunc.
+                      </p>
+                      <p>Vestibulum congue, nulla id vestibulum volutpat, dui augue hendrerit eros, nec fringilla sapien
+                        neque eget sapien.</p>
                     </div>
-                    <div class="title-video">
-                      <h5>Watch Video</h5>
-                      <p class="title">What and How it work</p>
+                    <div class="video-play">
+                      <div class="btn-video">
+                        <a class="iframe_fancybox youtube_play_btn btn btn-gradient btn-radius" title="watch video"
+                          data-fancybox href="https://www.youtube.com/embed/U9JIanRXsfU?autoplay=1" data-type="iframe">
+                          <i class="fa fa-play"></i>
+                        </a>
+                      </div>
+                      <div class="title-video">
+                        <h5>Watch Video</h5>
+                        <p class="title">What and How it work</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="right-content">
-                    <img src="assets/image/IMG1.png" />
+                  <div class="col-lg-6">
+                    <div class="right-content">
+                      <img src="assets/image/img-intro.png" class="img-responsive" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
+            <!--end block intro -->
 
             <!-- start block technologies-->
             <section class="block-section block-technologies" id="technologies">
@@ -417,7 +414,8 @@
                       <div class=" member-type">
                         <div class="item-member-content">
                           <div class="member-img">
-                            <a ><img src="assets/image/member-1.jpg" alt="img-member"></a>
+                            <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_01"
+                              href="javascript:;"><img src="assets/image/member-1.jpg" alt="img-member"></a>
                           </div>
                           <div class="member-info">
                             <div class="member-name">
@@ -438,6 +436,69 @@
                                 <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
                                       class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                               </ul>
+                            </div>
+                          </div>
+                          <div id="lightbox_01" class="member-type1 light-box animated-modal" style="display: none;">
+                            <div class="member-lightbox">
+                              <div class="member-img">
+                                <img src="https://demo.arrowtheme.com/cryptcio/wp-content/uploads/2018/01/member-1.jpg"
+                                  alt="img-member">
+                              </div>
+                              <div class="member-info">
+                                <div class="member-name ">
+                                  <h4> john langan</h4>
+                                </div>
+                                <div class="member-job">
+                                  <p>Consultant</p>
+                                </div>
+                                <div class="member-socials">
+                                  <ul class="social-list">
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                          class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                          class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                          class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                          class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  </ul>
+                                </div>
+                                <div class="desc">
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="progress-line">
+                                  <h4>Skill 1</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:85%">
+                                      <span>85%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 2</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:65%">
+                                      <span>65%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 3</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:75%">
+                                      <span>75%</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -447,11 +508,12 @@
                       <div class=" member-type">
                         <div class="item-member-content">
                           <div class="member-img">
-                            <a ><img src="assets/image/member-1.jpg" alt="img-member"></a>
+                            <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_02"
+                              href="javascript:;"><img src="assets/image/member-1.jpg" alt="img-member"></a>
                           </div>
                           <div class="member-info">
                             <div class="member-name">
-                              <h4> john langan</h4>
+                              <h4> john langan 2</h4>
                             </div>
                             <div class="member-job">
                               <p>Consultant</p>
@@ -468,6 +530,69 @@
                                 <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
                                       class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                               </ul>
+                            </div>
+                          </div>
+                          <div id="lightbox_02" class="member-type1 light-box animated-modal" style="display: none;">
+                            <div class="member-lightbox">
+                              <div class="member-img">
+                                <img src="https://demo.arrowtheme.com/cryptcio/wp-content/uploads/2018/01/member-1.jpg"
+                                  alt="img-member">
+                              </div>
+                              <div class="member-info">
+                                <div class="member-name ">
+                                  <h4> john langan 2</h4>
+                                </div>
+                                <div class="member-job">
+                                  <p>Consultant</p>
+                                </div>
+                                <div class="member-socials">
+                                  <ul class="social-list">
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                          class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                          class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                          class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                          class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  </ul>
+                                </div>
+                                <div class="desc">
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="progress-line">
+                                  <h4>Skill 1</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:85%">
+                                      <span>85%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 2</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:65%">
+                                      <span>65%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 3</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:75%">
+                                      <span>75%</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -477,11 +602,12 @@
                       <div class=" member-type">
                         <div class="item-member-content">
                           <div class="member-img">
-                            <a ><img src="assets/image/member-1.jpg" alt="img-member"></a>
+                            <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_03"
+                              href="javascript:;"><img src="assets/image/member-1.jpg" alt="img-member"></a>
                           </div>
                           <div class="member-info">
                             <div class="member-name">
-                              <h4> john langan</h4>
+                              <h4> john langan 3</h4>
                             </div>
                             <div class="member-job">
                               <p>Consultant</p>
@@ -498,6 +624,69 @@
                                 <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
                                       class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                               </ul>
+                            </div>
+                          </div>
+                          <div id="lightbox_03" class="member-type1 light-box animated-modal" style="display: none;">
+                            <div class="member-lightbox">
+                              <div class="member-img">
+                                <img src="https://demo.arrowtheme.com/cryptcio/wp-content/uploads/2018/01/member-1.jpg"
+                                  alt="img-member">
+                              </div>
+                              <div class="member-info">
+                                <div class="member-name ">
+                                  <h4> john langan 3</h4>
+                                </div>
+                                <div class="member-job">
+                                  <p>Consultant</p>
+                                </div>
+                                <div class="member-socials">
+                                  <ul class="social-list">
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                          class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                          class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                          class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                          class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  </ul>
+                                </div>
+                                <div class="desc">
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="progress-line">
+                                  <h4>Skill 1</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:85%">
+                                      <span>85%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 2</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:65%">
+                                      <span>65%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 3</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:75%">
+                                      <span>75%</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -507,11 +696,12 @@
                       <div class=" member-type">
                         <div class="item-member-content">
                           <div class="member-img">
-                            <a ><img src="assets/image/member-1.jpg" alt="img-member"></a>
+                            <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_04"
+                              href="javascript:;"><img src="assets/image/member-1.jpg" alt="img-member"></a>
                           </div>
                           <div class="member-info">
                             <div class="member-name">
-                              <h4> john langan</h4>
+                              <h4> john langan 4</h4>
                             </div>
                             <div class="member-job">
                               <p>Consultant</p>
@@ -528,6 +718,69 @@
                                 <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
                                       class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                               </ul>
+                            </div>
+                          </div>
+                          <div id="lightbox_04" class="member-type1 light-box animated-modal" style="display: none;">
+                            <div class="member-lightbox">
+                              <div class="member-img">
+                                <img src="https://demo.arrowtheme.com/cryptcio/wp-content/uploads/2018/01/member-1.jpg"
+                                  alt="img-member">
+                              </div>
+                              <div class="member-info">
+                                <div class="member-name ">
+                                  <h4> john langan 4</h4>
+                                </div>
+                                <div class="member-job">
+                                  <p>Consultant</p>
+                                </div>
+                                <div class="member-socials">
+                                  <ul class="social-list">
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                          class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                          class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                          class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                          class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  </ul>
+                                </div>
+                                <div class="desc">
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="progress-line">
+                                  <h4>Skill 1</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:85%">
+                                      <span>85%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 2</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:65%">
+                                      <span>65%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 3</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:75%">
+                                      <span>75%</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -539,6 +792,7 @@
             </section>
             <!--end start block team-->
 
+            <!--start block faq-->
             <section id="faq" class="block-faq">
               <div class="container">
                 <div class="box-text style-center">
@@ -554,110 +808,93 @@
                 </div>
                 <div class="row list-faq">
                   <div class="col-lg-6">
+                    <div class="item-faq">
+                      <h4>What is blockchain?</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <div class="item-faq">
+                      <h4>How does blockchain work?</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <div class="item-faq">
+                      <h4>What is blockchain?</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="right-faq">
                       <div class="item-faq">
                         <h4>What is blockchain?</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry’s standard dummy text ever since the 1500s.</p>
                       </div>
                       <div class="item-faq">
                         <h4>How does blockchain work?</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry’s standard dummy text ever since the 1500s.</p>
                       </div>
                       <div class="item-faq">
                         <h4>What is blockchain?</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry’s standard dummy text ever since the 1500s.</p>
                       </div>
-                  </div>
-                  <div class="col-lg-6">
-                      <div class="right-faq">
-                        <div class="item-faq">
-                          <h4>What is blockchain?</h4>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-                        </div>
-                        <div class="item-faq">
-                          <h4>How does blockchain work?</h4>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-                        </div>
-                        <div class="item-faq">
-                          <h4>What is blockchain?</h4>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-                        </div>
-                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </section>
-          </div><!--end primary-->
+          </div>
+          <!--end primary-->
         </div>
       </div>
       <!-- End main-->
-      <footer id="colophon" class="footer add_contact wide">
-        <div class="footer-v2">
-          <div id="contact" class="footer-contact">
+
+      <!-- Start footer -->
+      <footer class="footer-crypto">
+        <div>
+          <div class="block-contact-footer">
             <div class="container">
-              <div class="footer-form">
-                <aside id="text-6" class="widget widget_text">
-                  <div class="textwidget">
-                    <div role="form" class="wpcf7" id="wpcf7-f1536-o1" lang="en-US" dir="ltr">
-                      <div class="screen-reader-response">
-                        <p role="status" aria-live="polite" aria-atomic="true"></p>
-                        <ul></ul>
-                      </div>
-                      <form action="http://localhost/crypto/#wpcf7-f1536-o1" method="post" class="wpcf7-form init"
-                        novalidate="novalidate" data-status="init">
-                        <div style="display: none">
-                          <input type="hidden" name="_wpcf7" value="1536" />
-                          <input type="hidden" name="_wpcf7_version" value="5.5.6" />
-                          <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                          <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1536-o1" />
-                          <input type="hidden" name="_wpcf7_container_post" value="0" />
-                          <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                        </div>
-                        <div class="contact-form">
-                          <label>contact us<br />
-                            <span>request Services</span></label><br />
-                          <span class="wpcf7-form-control-wrap first-name"><input type="text" name="first-name" value=""
-                              size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required first-name"
-                              aria-required="true" aria-invalid="false" placeholder="First Name" /></span><br />
-                          <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value=""
-                              size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required last-name"
-                              aria-required="true" aria-invalid="false" placeholder="Last Name" /></span><br />
-                          <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
-                              value="" size="40"
-                              class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email"
-                              aria-required="true" aria-invalid="false" placeholder="Enter your Email" /></span><br />
-                          <span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value=""
-                              size="40"
-                              class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel phone"
-                              aria-required="true" aria-invalid="false" placeholder="Phone Number" /></span><br />
-                          <span class="wpcf7-form-control-wrap your-message">
-                            <textarea name="your-message" cols="40" rows="10"
-                              class="wpcf7-form-control wpcf7-textarea message" aria-invalid="false"
-                              placeholder="Message"></textarea>
-                          </span>
-                          <p></p>
-                          <p class="submit">
-                            <input type="submit" value="Submit"
-                              class="wpcf7-form-control has-spinner wpcf7-submit submit btn btn-primary" /><span
-                              class="wpcf7-spinner"></span>
-                          </p>
-                        </div>
-                        <div class="wpcf7-response-output" aria-hidden="true"></div>
-                      </form>
+              <div class="box-text style-center">
+                <div class="head-box text-center">
+                  <div class="head-title">CONTACT US</div>
+                  <div class="main-title">REQUEST SERVICES</div>
+                </div>
+              </div>
+              <div class="row form">
+                <div class="col-lg-8 col-sm-10 col-xs-11 ">
+                  <div class="form-top">
+                    <div class="head">
+                      <input type="text" placeholder="First Name">
+                      <input type="text" placeholder="Enter Your Email">
                     </div>
+                    <div class="body">
+                      <input type="text" placeholder="Last name">
+                      <input type="text" placeholder="Phone Number">
+                    </div>
+
                   </div>
-                </aside>
+                  <div class="form-bottom">
+                    <textarea placeholder="Message" name="" id="" cols="50" rows="4"></textarea>
+
+                  </div>
+                  <div class="submit">
+                    <button>Submit</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="footer-top">
+          <div class="block-top-footer">
             <div class="container">
               <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="footer-container row">
+                  <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                       <div class="footer-left-info">
-                        <img class="footer-logo"
-                          src="http://hn.arrowpress.net/cryptcio-sample/wp-content/uploads/2018/04/logo9.png" alt="" />
+                        <img class="footer-logo" src="assets/image/logo2.png" alt="" />
                         <div class="footer_info">
                           <p>
                             Lorem Ipsum has been the industry standard dummy
@@ -669,12 +906,10 @@
                         <div class="dib footer-social">
                           <ul>
                             <li>
-                              <a href="https://facebook.com/arrowpress"><i class="fa fa-facebook"
-                                  aria-hidden="true"></i></a>
+                              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             </li>
                             <li>
-                              <a href="https://twitter.com/arrowpress1"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
+                              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </li>
 
                             <li>
@@ -694,48 +929,44 @@
                       <div class="row">
                         <div class="footer-menu-list">
                           <div class="col-xs-12 col-sm-4 col-md-3">
-                            <aside id="nav_menu-4" class="widget widget_nav_menu">
-                              <h4 class="footer-title">Company</h4>
-                              <div class="menu-menu-blog-container">
-                                <ul id="menu-menu-blog" class="menu">
-                                  <li id="menu-item-1562"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1562">
-                                    <a href="http://localhost/crypto/about-us/">About</a>
-                                  </li>
-                                  <li id="menu-item-1561"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561">
-                                    <a href="http://localhost/crypto/contact-us/">Contact</a>
-                                  </li>
-                                  <li id="menu-item-1499"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1499">
-                                    <a href="#">Subscrible</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </aside>
+                            <div class="footer-title">
+                              COMPANY
+                            </div>
+                            <div class="box-content">
+                              <ul>
+                                <li>About Us</li>
+                                <li>Contact Us</li>
+                                <li>Latest Us</li>
+                                <li>Team Member</li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-xs-12 col-sm-4 col-md-3">
-                            <aside id="nav_menu-5" class="widget widget_nav_menu">
-                              <h4 class="footer-title">Quick Links</h4>
-                              <div class="menu-menu-blog-container">
-                                <ul id="menu-menu-blog-1" class="menu">
-                                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1562">
-                                    <a href="http://localhost/crypto/about-us/">About</a>
-                                  </li>
-                                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561">
-                                    <a href="http://localhost/crypto/contact-us/">Contact</a>
-                                  </li>
-                                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1499">
-                                    <a href="#">Subscrible</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </aside>
+                            <div class="footer-Title">
+                              QUICK LINKS
+                            </div>
+                            <div class="box-content">
+                              <ul>
+                                <li>My Account</li>
+                                <li>Orders Tracking</li>
+                                <li>FAQs</li>
+                              </ul>
+                            </div>
                           </div>
                           <div class="col-xs-12 col-sm-4 col-md-6">
-                            <aside id="mc4wp_form_widget-1" class="widget widget_mc4wp_form_widget">
-                              <h4 class="footer-title">Newsletter Subscribe</h4>
-                            </aside>
+                            <div class="footer-Title">
+                              NEWSLETTER SUBSCRIBE
+                            </div>
+                            <div class="box-content">
+                              <ul>
+                                <li>To Keep you updated, please subscribe to our newsletter</li>
+                                <li>
+                                  <div class="send-mail"><input type="text" placeholder="Enter Your email"> <button><i
+                                        class="fa fa-paper-plane" aria-hidden="true"></i></button></div>
+                                </li>
+
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -751,7 +982,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="bottom-footer">
                     <div class="row">
-                      <div class="col-md-6 col-sm-6 col-xs-12 copy-right">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="copyright-content">
                           <p>
                             Design by <a href="#">AHT Studio</a>. © 2017 All
@@ -788,8 +1019,14 @@
           </div>
         </div>
         <!-- End footer -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="assets/js/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/cryptcio_theme.js"></script>
       </footer>
       <!-- End colophon -->
+
+      <div class="overlay overlay-menu"></div>
     </div>
     <!-- End page-->
   </body>
