@@ -1,1601 +1,972 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css?family=Poppins:400,700&amp;display=swap&amp;ver=1651043975" />
-  <link rel="stylesheet" href="assets/css/theme.css" />
-  <link rel="stylesheet" id="slick-css"
-    href="https://demo.arrowtheme.com/cryptcio/wp-content/themes/cryptcio/css/plugin/slick.min.css" type="text/css"
-    media="all" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&ver=1566814312" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/custom-theme.css" />
 
-<body class="home">
-  <div id="page" class="fixed-header">
-    <header id="masthead" class="site-header header-top header-v1 hide-top">
-      <script>
-        var navbar = document.getElementById("masthead");
-        window.onscroll = function () {
-          if (window.pageYOffset > 100) {
-            document.getElementById("menu-home-onepage-9x").id =
-              "menu-home-onepage-9";
-            navbar.style.background = "white";
-            document.getElementById("logo-fixed").src =
-              "assets/image/logo.png";
-            navbar.style.boxShadow = "0 0 1px 0 black";
-          } else {
-            navbar.style.background = "rgb(0 0 0 / 0%)";
-            document.getElementById("logo-fixed").src =
-              "assets/image/logo2.png";
-            document.getElementById("menu-home-onepage-9").id =
-              "menu-home-onepage-9x";
-            navbar.style.boxShadow = "";
-          }
-        };
-      </script>
-      <div class="header-wrapper">
-        <div class="header-middle">
-          <div class="container-fluid header-boxed">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <h1 style="margin-top: 23px" class="header-logo display-flex">
-                  <a href="#" rel="home">
-                    <img id="logo-fixed" class="logo-fixed" src="assets/image/logo2.png" alt="" />
-                  </a>
-                </h1>
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <div class="header-container text-right">
-                  <div id="header-center" class="header-center">
-                    <h2 class="logo-mobile hidden-lg hidden-md">
-                      <a href="#" rel="home">
-                        <img src="assets/image/logo.png" alt="" />
-                      </a>
-                    </h2>
-                    <div class="close-menu-mobile hover-effect hidden-lg hidden-md">
-                      <i class="fa fa-close"></i>
-                      <i class="fa fa-close fa-hover"></i>
-                    </div>
-                    <nav id="site-navigation" class="main-navigation">
-                      <div class="menu-home-onepage-9-container">
-                        <ul id="menu-home-onepage-9x" class="mega-menu">
-                          <li id="menu-item-1508"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1508">
-                            <a href="#whatit">What’s CIO
-                              <span class="open-submenu"><i class="fa fa-angle-down"></i></span></a><span
-                              class="caret-submenu"><i class="fa fa-angle-down"></i></span>
-                            <ul class="sub-menu">
-                              <li id="menu-item-1509"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1509">
-                                <a href="#technologies">Technologies</a>
-                              </li>
-                              <li id="menu-item-1510"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1510">
-                                <a href="#how-it-works">How it Works</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li id="menu-item-1511"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1511">
-                            <a class="text-header-black" href="#apps">Apps</a>
-                          </li>
-                          <li id="menu-item-1512"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1512">
-                            <a class="text-header-black" href="#token-sale">Token Sale</a>
-                          </li>
-                          <li id="menu-item-1513"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1513">
-                            <a class="text-header-black" href="#roadmap">Roadmap</a>
-                          </li>
-                          <li id="menu-item-1514"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1514">
-                            <a class="text-header-black" href="#team">Team</a>
-                          </li>
-                          <li id="menu-item-1515"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1515">
-                            <a class="text-header-black" href="#blog">Blog</a>
-                          </li>
-                          <li id="menu-item-1516"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1516">
-                            <a class="text-header-black" href="#contact">Contact</a>
-                          </li>
-                        </ul>
+    <style id="inline-css" type="text/css">
+      header.site-header,
+      .fixed-header header.site-header.is-sticky {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .header-v1,
+      .fixed-header .header-v1.is-sticky {
+        background-color: #ffffff;
+      }
+
+      @media (min-width: 992px) {
+        .fixed-header .header-v1:not(.is-sticky) .header-container .mega-menu>li.menu-item>a {
+          color: #ffffff;
+        }
+      }
+
+      .header-v1 .header-container .mega-menu>li.menu-item>a {
+        font-family: Poppins;
+        color: #282828;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+
+    </cryptcio-theme-inline-css>
+  </head>
+
+  <body class="home">
+    <div id="page" class="fixed-header">
+      <!--start header-->
+      <header id="masthead" class="site-header header-top header-v1 hide-top">
+        <div class="header-wrapper">
+          <div class="header-middle">
+            <div class="container-fluid header-boxed">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                  <h2 class="header-logo display-flex">
+                    <a href="#" rel="home">
+                      <img class="logo-default" src="assets/image/logo.png" alt="Cryptcio">
+                      <img class="logo-fixed" src="assets/image/logo-fix.png" alt="Cryptcio">
+                    </a>
+                  </h2>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                  <div class="header-container text-right">
+                    <div class="open-menu-mobile hidden-lg hidden-md">
+                      <div class="display-flex">
+                        <i class="fa fa-bars"></i>
                       </div>
-                    </nav>
+                    </div>
+                    <div id="header-center" class="header-center">
+                      <h2 class="logo-mobile hidden-lg hidden-md">
+                        <a href="#" rel="home">
+                          <img src="assets/image/logo.png" alt="" />
+                        </a>
+                      </h2>
+                      <div class="close-menu-mobile hover-effect hidden-lg hidden-md">
+                        <i class="fa fa-close"></i>
+                        <i class="fa fa-close fa-hover"></i>
+                      </div>
+                      <nav id="site-navigation" class="main-navigation">
+                        <div class="menu-home-onepage-9-container">
+                          <ul id="menu-home-onepage-9x" class="mega-menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a href="#whatit">What’s CIO</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a href="#technologies">Technologies</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a href="#how-it-works">How it Works</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a class="text-header-black" href="#apps">Apps</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a class="text-header-black" href="#team">Team</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a class="text-header-black" href="#blog">Blog</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                              <a class="text-header-black" href="#contact">Contact</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Menu -->
-    </header>
+        <!-- Menu -->
+      </header>
+      <!--start header-->
 
-    <!-- End masthead -->
-    <div id="main" class="wrapper wide">
-      <div style="padding: 0px" class="container-fluid">
+      <!--start main-->
+      <div id="main" class="wrapper wide">
         <div class="content-primary">
           <div id="primary" class="content-area">
-            <article id="post-1449" class="post-1449 page type-page status-publish hentry">
-              <div class="entry-content">
-                <div class="banner-slider">
-                  <div class="container-fluid">
-                    <div class="row row-one">
-                      <div class="col-lg-6">
-                        <div class="one-left-1">
-                          <div class="text-title3">Cryptcio App</div>
-                          <div class="text-title">
-                            A powerful system <br />
-                            with blockchain technologies
+            <!--start silder-->
+            <div class="banner-slider">
+              <div class="container-fluid slider-boxed">
+                <div class="row row-one">
+                  <div class="col-lg-6">
+                    <div class="one-left-1">
+                      <div class="text-title3">Cryptcio App</div>
+                      <div class="text-title">
+                        A powerful system <br />
+                        with blockchain technologies
+                      </div>
+                      <div class="text-des">
+                        Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a
+                        type specimen book.
+                      </div>
+                      <button>View More</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="right-content">
+                      <img src="assets/image/E-Bank.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- start block technologies-->
+            <section class="block-section block-what-it" id="whatit">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="box-text">
+                      <div class="head-box">
+                        <div class="head-title">CRYPTO</div>
+                        <div class="main-title">WHAT IS CIO SYSTEM?</div>
+                      </div>
+                      <p class="desc-title">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar, libero vel volutpat
+                        aliquam, neque eros rutrum enim, fermentum varius sapien elit id dui. Aenean eget lectus
+                        lacinia, laoreet nulla at, lobortis dui. Fusce feugiat metus eget accumsan aliquet. Vivamus
+                        lacus ligula, venenatis nec posuere quis, molestie quis velit.<br>
+                        Maecenas venenatis nulla nec tortor laoreet, vitae hendrerit purus sagittis. Morbi eget neque
+                        nunc.
+                      </p>
+                      <p>Vestibulum congue, nulla id vestibulum volutpat, dui augue hendrerit eros, nec fringilla sapien
+                        neque eget sapien.</p>
+                    </div>
+                    <div class="video-play">
+                      <div class="btn-video">
+                        <a class="iframe_fancybox youtube_play_btn btn btn-gradient btn-radius" title="watch video"
+                          data-fancybox href="https://www.youtube.com/embed/U9JIanRXsfU?autoplay=1" data-type="iframe">
+                          <i class="fa fa-play"></i>
+                        </a>
+                      </div>
+                      <div class="title-video">
+                        <h5>Watch Video</h5>
+                        <p class="title">What and How it work</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="right-content">
+                      <img src="assets/image/img-intro.png" class="img-responsive" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--end block intro -->
+
+            <!-- start block technologies-->
+            <section class="block-section block-technologies" id="technologies">
+              <div class="container">
+                <div class="box-text style-center">
+                  <div class="head-box text-center">
+                    <div class="head-title">KEYS & IDENTITY</div>
+                    <div class="main-title">POWERFUL BLOCKCHAIN TECHNOLOGIES</div>
+                  </div>
+                  <p class="text-center desc-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar, libero vel volutpat
+                    aliquam, neque eros rutrum enim. fermentum varius sapien elit id dui. Aenean eget lectus
+                    lacinia, laoreet nulla at, lobortis dui.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="box-style style-right">
+                      <div class="title-head">
+                        <h2>Decentralized</h2>
+                      </div>
+                      <div class="description">
+                        Instead of passing through one central computer or verification control, the validation
+                        and verification of a transaction is done by the blockchain network.
+                      </div>
+                    </div>
+                    <div class="box-style style-right">
+                      <div class="title-head">
+                        <h2>Global System</h2>
+                      </div>
+                      <div class="description">
+                        Sed ut perspiciatis unde omnis accusantium doloremque dolorem ipsum quia dolor sit.
+                      </div>
+                    </div>
+                    <div class="box-style style-right">
+                      <div class="title-head">
+                        <h2>Decentralized</h2>
+                      </div>
+                      <div class="description">
+                        There is no way to change the blockchain once it has been recorded and shared, as those
+                        changes would be visible to everyone and immediately considered fraudulent.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="assets/image/3.png" class="img-responsive" />
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="box-style style-left">
+                      <div class="title-head">
+                        <h2>Decentralized</h2>
+                      </div>
+                      <div class="description">
+                        Instead of passing through one central computer or verification control, the validation
+                        and verification of a transaction is done by the blockchain network.
+                      </div>
+                    </div>
+                    <div class="box-style style-left">
+                      <div class="title-head">
+                        <h2>Global System</h2>
+                      </div>
+                      <div class="description">
+                        Sed ut perspiciatis unde omnis accusantium doloremque dolorem ipsum quia dolor sit.
+                      </div>
+                    </div>
+                    <div class="box-style style-left">
+                      <div class="title-head">
+                        <h2>Decentralized</h2>
+                      </div>
+                      <div class="description">
+                        There is no way to change the blockchain once it has been recorded and shared, as those
+                        changes would be visible to everyone and immediately considered fraudulent.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- end block technologies -->
+
+            <!--start block how it works-->
+            <section id="how-it-works" class="block-section block-how-it-works">
+              <div class="container">
+                <div class="box-text style-center">
+                  <div class="head-box text-center">
+                    <div class="head-title">HOW IT WORK</div>
+                    <div class="main-title">HOW DOES BLOCKCHAIN WORK</div>
+                    <p class="text-center desc-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar, libero vel volutpat
+                      aliquam, neque eros rutrum enim. fermentum varius sapien elit id dui. Aenean eget lectus
+                      lacinia, laoreet nulla at, lobortis dui.
+                    </p>
+                  </div>
+                </div>
+                <div class="img-center">
+                  <img src="assets/image/211.png" alt="" />
+                </div>
+                <div class="list-items">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="icon-box">
+                        <div class="icon-box-title">
+                          <h3>1</h3>
+                        </div>
+                        <div class="icon-box-desc">
+                          <p>A wants to send money to B</p>
+                        </div>
+                      </div>
+                      <div class="icon-box">
+                        <div class="icon-box-title">
+                          <h3>6</h3>
+                        </div>
+                        <div class="icon-box-desc">
+                          <p>The transaction is complete</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="icon-box">
+                        <div class="icon-box-title">
+                          <h3>2</h3>
+                        </div>
+                        <div class="icon-box-desc">
+                          <p>The transaction is<br>
+                            represented online as a block</p>
+                        </div>
+                      </div>
+                      <div class="icon-box">
+                        <div class="icon-box-title">
+                          <h3>5</h3>
+                        </div>
+                        <div class="icon-box-desc">
+                          <p>The block is added to the<br>
+                            existing blockchain in a<br>
+                            transparent and unaterable way</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="icon-box">
+                        <div class="icon-box-title">
+                          <h3>3</h3>
+                        </div>
+                        <div class="icon-box-desc">
+                          <p>The block is broadcasted to<br>
+                            every party in the network</p>
+                        </div>
+                      </div>
+                      <div class="icon-box">
+                        <div class="icon-box-title">
+                          <h3>6</h3>
+                        </div>
+                        <div class="icon-box-desc">
+                          <p>The network approves<br>
+                            the transaction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- end block how it works-->
+
+            <!--start block apps-->
+            <section id="apps" class="block-section block-apps">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img src="assets/image/phone.png" class="img-responsive" />
+                </div>
+                <div class="col-lg-4">
+                  <div class="box-text">
+                    <div class="head-box">
+                      <div class="head-title">APPS</div>
+                      <div class="main-title">THE CRYPTO CIO APP</div>
+                    </div>
+                    <p class="desc-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar, libero vel volutpat
+                      aliquam, neque eros rutrum enim, fermentum varius sapien elit id dui. Aenean eget lectus
+                      lacinia, laoreet nulla at, lobortis dui. Fusce feugiat metus eget accumsan aliquet. Vivamus
+                      lacus ligula, venenatis nec posuere quis, molestie quis velit.
+                    </p>
+                    <div class="list-items style3 ">
+                      <ul>
+                        <li>Maecenas venenatis nulla nec tortor laoreet, vitae hendrerit purus sagittis. Morbi
+                          eget neque nunc.</li>
+                        <li>Vestibulum congue, nulla id vestibulum volutpat, dui augue hendrerit eros, nec
+                          fringilla sapien neque eget sapien.</li>
+                        <li>Phasellus scelerisque, mauris porttitor ullamcorper venenatis, massa metus semper
+                          felis, sit amet suscipit quam lacus at felis.&gt;</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="get-app">
+                    <div class="btn-app"><a href="#" class="btn btn-gradient">Get the app</a></div>
+                    <div class="link-app"><a href="#"><i class="fa fa-apple"></i></a><a href="#"><i
+                          class="fa fa-android"></i></a><a href="#"><i class="fa fa-windows"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--end block apps-->
+
+            <!-- start block team -->
+            <section id="team" class="block-section block-team">
+              <div class="container">
+                <div class="box-text style-center">
+                  <div class="head-box text-center">
+                    <div class="head-title">WHO WE ARE</div>
+                    <div class="main-title">MEET OUR TEAM</div>
+                    <p class="text-center desc-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar, libero vel volutpat
+                      aliquam, neque eros rutrum enim. fermentum varius sapien elit id dui. Aenean eget lectus
+                      lacinia, laoreet nulla at, lobortis dui.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class=" member-type">
+                        <div class="item-member-content">
+                          <div class="member-img">
+                            <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_01"
+                              href="javascript:;"><img src="assets/image/member-1.jpg" alt="img-member"></a>
                           </div>
-                          <div class="text-des">
-                            Lorem Ipsum has been the industry's standard dummy
+                          <div class="member-info">
+                            <div class="member-name">
+                              <h4> john langan</h4>
+                            </div>
+                            <div class="member-job">
+                              <p>Consultant</p>
+                            </div>
+                            <div class="member-socials">
+                              <ul class="social-list">
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                      class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                      class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                      class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                      class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div id="lightbox_01" class="member-type1 light-box animated-modal" style="display: none;">
+                            <div class="member-lightbox">
+                              <div class="member-img">
+                                <img src="https://demo.arrowtheme.com/cryptcio/wp-content/uploads/2018/01/member-1.jpg"
+                                  alt="img-member">
+                              </div>
+                              <div class="member-info">
+                                <div class="member-name ">
+                                  <h4> john langan</h4>
+                                </div>
+                                <div class="member-job">
+                                  <p>Consultant</p>
+                                </div>
+                                <div class="member-socials">
+                                  <ul class="social-list">
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                          class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                          class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                          class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                          class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  </ul>
+                                </div>
+                                <div class="desc">
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="progress-line">
+                                  <h4>Skill 1</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:85%">
+                                      <span>85%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 2</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:65%">
+                                      <span>65%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 3</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:75%">
+                                      <span>75%</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class=" member-type">
+                        <div class="item-member-content">
+                          <div class="member-img">
+                            <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_02"
+                              href="javascript:;"><img src="assets/image/member-1.jpg" alt="img-member"></a>
+                          </div>
+                          <div class="member-info">
+                            <div class="member-name">
+                              <h4> john langan 2</h4>
+                            </div>
+                            <div class="member-job">
+                              <p>Consultant</p>
+                            </div>
+                            <div class="member-socials">
+                              <ul class="social-list">
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                      class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                      class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                      class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                      class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div id="lightbox_02" class="member-type1 light-box animated-modal" style="display: none;">
+                            <div class="member-lightbox">
+                              <div class="member-img">
+                                <img src="https://demo.arrowtheme.com/cryptcio/wp-content/uploads/2018/01/member-1.jpg"
+                                  alt="img-member">
+                              </div>
+                              <div class="member-info">
+                                <div class="member-name ">
+                                  <h4> john langan 2</h4>
+                                </div>
+                                <div class="member-job">
+                                  <p>Consultant</p>
+                                </div>
+                                <div class="member-socials">
+                                  <ul class="social-list">
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                          class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                          class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                          class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                          class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  </ul>
+                                </div>
+                                <div class="desc">
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="progress-line">
+                                  <h4>Skill 1</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:85%">
+                                      <span>85%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 2</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:65%">
+                                      <span>65%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 3</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:75%">
+                                      <span>75%</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class=" member-type">
+                        <div class="item-member-content">
+                          <div class="member-img">
+                            <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_03"
+                              href="javascript:;"><img src="assets/image/member-1.jpg" alt="img-member"></a>
+                          </div>
+                          <div class="member-info">
+                            <div class="member-name">
+                              <h4> john langan 3</h4>
+                            </div>
+                            <div class="member-job">
+                              <p>Consultant</p>
+                            </div>
+                            <div class="member-socials">
+                              <ul class="social-list">
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                      class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                      class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                      class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                      class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div id="lightbox_03" class="member-type1 light-box animated-modal" style="display: none;">
+                            <div class="member-lightbox">
+                              <div class="member-img">
+                                <img src="https://demo.arrowtheme.com/cryptcio/wp-content/uploads/2018/01/member-1.jpg"
+                                  alt="img-member">
+                              </div>
+                              <div class="member-info">
+                                <div class="member-name ">
+                                  <h4> john langan 3</h4>
+                                </div>
+                                <div class="member-job">
+                                  <p>Consultant</p>
+                                </div>
+                                <div class="member-socials">
+                                  <ul class="social-list">
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                          class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                          class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                          class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                          class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  </ul>
+                                </div>
+                                <div class="desc">
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="progress-line">
+                                  <h4>Skill 1</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:85%">
+                                      <span>85%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 2</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:65%">
+                                      <span>65%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 3</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:75%">
+                                      <span>75%</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class=" member-type">
+                        <div class="item-member-content">
+                          <div class="member-img">
+                            <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_04"
+                              href="javascript:;"><img src="assets/image/member-1.jpg" alt="img-member"></a>
+                          </div>
+                          <div class="member-info">
+                            <div class="member-name">
+                              <h4> john langan 4</h4>
+                            </div>
+                            <div class="member-job">
+                              <p>Consultant</p>
+                            </div>
+                            <div class="member-socials">
+                              <ul class="social-list">
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                      class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                      class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                      class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                      class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div id="lightbox_04" class="member-type1 light-box animated-modal" style="display: none;">
+                            <div class="member-lightbox">
+                              <div class="member-img">
+                                <img src="https://demo.arrowtheme.com/cryptcio/wp-content/uploads/2018/01/member-1.jpg"
+                                  alt="img-member">
+                              </div>
+                              <div class="member-info">
+                                <div class="member-name ">
+                                  <h4> john langan 4</h4>
+                                </div>
+                                <div class="member-job">
+                                  <p>Consultant</p>
+                                </div>
+                                <div class="member-socials">
+                                  <ul class="social-list">
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
+                                          class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_twitter"><i
+                                          class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_google"><i
+                                          class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+
+                                    <li><a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
+                                          class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                  </ul>
+                                </div>
+                                <div class="desc">
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="progress-line">
+                                  <h4>Skill 1</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:85%">
+                                      <span>85%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 2</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:65%">
+                                      <span>65%</span>
+                                    </div>
+                                  </div>
+
+                                  <h4>Skill 3</h4>
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
+                                      aria-valuemax="100" style="width:75%">
+                                      <span>75%</span>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--end start block team-->
+
+            <!--start block faq-->
+            <section id="faq" class="block-faq">
+              <div class="container">
+                <div class="box-text style-center">
+                  <div class="head-box text-center">
+                    <div class="head-title">FAQ</div>
+                    <div class="main-title">HOW CAN WE HELP YOU</div>
+                    <p class="text-center desc-title">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar, libero vel volutpat
+                      aliquam, neque eros rutrum enim. fermentum varius sapien elit id dui. Aenean eget lectus
+                      lacinia, laoreet nulla at, lobortis dui.
+                    </p>
+                  </div>
+                </div>
+                <div class="row list-faq">
+                  <div class="col-lg-6">
+                    <div class="item-faq">
+                      <h4>What is blockchain?</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <div class="item-faq">
+                      <h4>How does blockchain work?</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <div class="item-faq">
+                      <h4>What is blockchain?</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="right-faq">
+                      <div class="item-faq">
+                        <h4>What is blockchain?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry’s standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="item-faq">
+                        <h4>How does blockchain work?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry’s standard dummy text ever since the 1500s.</p>
+                      </div>
+                      <div class="item-faq">
+                        <h4>What is blockchain?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry’s standard dummy text ever since the 1500s.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!--end primary-->
+        </div>
+      </div>
+      <!-- End main-->
+
+      <!-- Start footer -->
+      <footer class="footer-crypto">
+        <div>
+          <div class="block-contact-footer">
+            <div class="container">
+              <div class="box-text style-center">
+                <div class="head-box text-center">
+                  <div class="head-title">CONTACT US</div>
+                  <div class="main-title">REQUEST SERVICES</div>
+                </div>
+              </div>
+              <div class="row form">
+                <div class="col-lg-8 col-sm-10 col-xs-11 ">
+                  <div class="form-top">
+                    <div class="head">
+                      <input type="text" placeholder="First Name">
+                      <input type="text" placeholder="Enter Your Email">
+                    </div>
+                    <div class="body">
+                      <input type="text" placeholder="Last name">
+                      <input type="text" placeholder="Phone Number">
+                    </div>
+
+                  </div>
+                  <div class="form-bottom">
+                    <textarea placeholder="Message" name="" id="" cols="50" rows="4"></textarea>
+
+                  </div>
+                  <div class="submit">
+                    <button>Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-top-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                      <div class="footer-left-info">
+                        <img class="footer-logo" src="assets/image/logo2.png" alt="" />
+                        <div class="footer_info">
+                          <p>
+                            Lorem Ipsum has been the industry standard dummy
                             text ever since the 1500s, when an unknown printer
                             took a galley of type and scrambled it to make a
                             type specimen book.
-                          </div>
-                          <button>View More</button>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="right-content">
-                          <img src="assets/image/E-Bank.png" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="two-page">
-                  <div class="row row-two">
-                    <div class="col-lg-6">
-                      <div class="title-two">
-                        <div class="small-title">CRYPTO</div>
-                        <div class="text-title2">WHAT IS CIO SYSTEM?</div>
-                      </div>
-
-                      <div class="wpb_wrapper">
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Donec pulvinar, libero vel volutpat aliquam,
-                          neque eros rutrum enim, fermentum varius sapien elit
-                          id dui. Aenean eget lectus lacinia, laoreet nulla
-                          at, lobortis dui. Fusce feugiat metus eget accumsan
-                          aliquet. Vivamus lacus ligula, venenatis nec posuere
-                          quis, molestie quis velit.<br />
-                          Maecenas venenatis nulla nec tortor laoreet, vitae
-                          hendrerit purus sagittis. Morbi eget neque nunc.
-                        </p>
-                        <p>
-                          Vestibulum congue, nulla id vestibulum volutpat, dui
-                          augue hendrerit eros, nec fringilla sapien neque
-                          eget sapien.
-                        </p>
-                      </div>
-                      <div class="video-play">
-                        <div class="btn-video">
-                          <a class="iframe_fancybox youtube_play_btn btn btn-gradient btn-radius" title="watch video"
-                            data-fancybox="" href="https://www.youtube.com/embed/U9JIanRXsfU?autoplay=1"
-                            data-type="iframe"><i class="pe-7s-play"></i></a>
-                        </div>
-                        <div class="title-video">
-                          <h5>Watch Video</h5>
-                          <p class="title">What and How it work</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                      <div class="right-content">
-                        <img src="assets/image/IMG1.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="three-page">
-                  <div class="three-row">
-                    <div
-                      class="arrowpress-heading heading-2 arrowpress_heading-2902299875 text-center left-pos title-three"
-                      data-animation-delay="500" data-animation="">
-                      <div class="small-title">
-                        <p style="letter-spacing: 0.4px">
-                          Keys &amp; Identity
-                        </p>
-                      </div>
-                      <h2 class="title-heading">
-                        Powerful blockchain technologies
-                      </h2>
-
-                      <div class="desc-title" style="padding-top: 38px">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Donec pulvinar, libero vel volutpat aliquam,
-                        neque eros rutrum enim. fermentum varius sapien elit
-                        id dui. Aenean eget lectus lacinia, laoreet nulla at,
-                        lobortis dui.
-                      </div>
-                    </div>
-
-                    <div class="row three-bot">
-                      <div class="wpb_wrapper col-md-4">
-                        <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInLeft"
-                          data-animation-delay="0.1" data-animation-duration="0.6" data-animation-iteration="1"
-                          style="opacity: 1" data-opacity_start_effect="">
-                          <div class="aio-icon-component custom-box color-1 style_1 animated fadeInLeft"
-                            style="opacity:1;-webkit-animation-delay:0.1s;-webkit-animation-duration:0.6s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.1s;-moz-animation-duration:0.6s;-moz-animation-iteration-count:1; animation-delay:0.1s;animation-duration:0.6s;animation-iteration-count:1;test">
-                            <div id="Info-box-wrap-1757" class="aio-icon-box right-icon" style="">
-                              <div class="aio-ibd-block">
-                                <div class="aio-icon-header">
-                                  <h2 class="aio-icon-title ult-responsive" style="font-weight: bold; color: #090909">
-                                    Decentralized
-                                  </h2>
-                                </div>
-                                <!-- header -->
-                                <div style="color: #090909">
-                                  Instead of passing through one central
-                                  computer or verification control, the
-                                  validation and verification of a transaction
-                                  is done by the blockchain network.
-                                  <p></p>
-                                  <p></p>
-                                </div>
-                                <!-- description -->
-                              </div>
-                              <!-- aio-ibd-block -->
-                            </div>
-                            <!-- aio-icon-box -->
-                          </div>
-                          <!-- aio-icon-component -->
-                        </div>
-                        <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInLeft"
-                          data-animation-delay="0.2" data-animation-duration="0.6" data-animation-iteration="1"
-                          style="opacity: 1" data-opacity_start_effect="">
-                          <div class="aio-icon-component custom-box color-2 style_1 animated fadeInLeft"
-                            style="opacity:1;-webkit-animation-delay:0.2s;-webkit-animation-duration:0.6s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.2s;-moz-animation-duration:0.6s;-moz-animation-iteration-count:1; animation-delay:0.2s;animation-duration:0.6s;animation-iteration-count:1;test">
-                            <div id="Info-box-wrap-4440" class="aio-icon-box right-icon" style="">
-                              <div class="aio-ibd-block">
-                                <div class="aio-icon-header">
-                                  <h2 class="aio-icon-title ult-responsive"
-                                    data-ultimate-target="#Info-box-wrap-4440 .aio-icon-title"
-                                    data-responsive-json-new='{"font-size":"desktop:20px;","line-height":""}'
-                                    style="font-weight: bold; color: #090909">
-                                    Global System
-                                  </h2>
-                                </div>
-                                <!-- header -->
-                                <div class="aio-icon-description ult-responsive"
-                                  data-ultimate-target="#Info-box-wrap-4440 .aio-icon-description"
-                                  data-responsive-json-new='{"font-size":"","line-height":""}' style="color: #090909">
-                                  Sed ut perspiciatis unde omnis accusantium
-                                  doloremque dolorem ipsum quia dolor sit.
-                                  <p></p>
-                                  <p></p>
-                                </div>
-                                <!-- description -->
-                              </div>
-                              <!-- aio-ibd-block -->
-                            </div>
-                            <!-- aio-icon-box -->
-                          </div>
-                          <!-- aio-icon-component -->
-                        </div>
-                        <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInLeft"
-                          data-animation-delay="0.3" data-animation-duration="0.6" data-animation-iteration="1"
-                          style="opacity: 1" data-opacity_start_effect="">
-                          <div class="aio-icon-component custom-box color-3 style_1 animated fadeInLeft"
-                            style="opacity:1;-webkit-animation-delay:0.3s;-webkit-animation-duration:0.6s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.3s;-moz-animation-duration:0.6s;-moz-animation-iteration-count:1; animation-delay:0.3s;animation-duration:0.6s;animation-iteration-count:1;test">
-                            <div id="Info-box-wrap-3529" class="aio-icon-box right-icon" style="">
-                              <div class="aio-ibd-block">
-                                <div class="aio-icon-header">
-                                  <h2 class="aio-icon-title ult-responsive"
-                                    data-ultimate-target="#Info-box-wrap-3529 .aio-icon-title"
-                                    data-responsive-json-new='{"font-size":"desktop:20px;","line-height":""}'
-                                    style="font-weight: bold; color: #090909">
-                                    Smart Contact
-                                  </h2>
-                                </div>
-                                <!-- header -->
-                                <div class="aio-icon-description ult-responsive"
-                                  data-ultimate-target="#Info-box-wrap-3529 .aio-icon-description"
-                                  data-responsive-json-new='{"font-size":"","line-height":""}' style="color: #090909">
-                                  Sed ut perspiciatis unde omnis accusantium
-                                  doloremque dolorem ipsum quia dolor sit.
-                                </div>
-                                <!-- description -->
-                              </div>
-                              <!-- aio-ibd-block -->
-                            </div>
-                            <!-- aio-icon-box -->
-                          </div>
-                          <!-- aio-icon-component -->
-                        </div>
-                      </div>
-
-                      <div class="wpb_column vc_column_container vc_col-sm-4 vc_hidden-xs col-md-4">
-                        <div class="vc_column-inner">
-                          <div class="wpb_wrapper">
-                            <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="zoomIn"
-                              data-animation-delay="0.2" data-animation-duration="0.6" data-animation-iteration="1"
-                              style="opacity: 1" data-opacity_start_effect="">
-                              <div class="wpb_single_image wpb_content_element vc_align_center animated zoomIn"
-                                style="opacity:1;-webkit-animation-delay:0.2s;-webkit-animation-duration:0.6s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.2s;-moz-animation-duration:0.6s;-moz-animation-iteration-count:1; animation-delay:0.2s;animation-duration:0.6s;animation-iteration-count:1;test">
-                                <figure class="wpb_wrapper vc_figure">
-                                  <div class="vc_single_image-wrapper vc_box_border_grey">
-                                    <img width="624" height="640" src="assets/image/3.png"
-                                      class="vc_single_image-img attachment-full" alt="" loading="lazy" />
-                                  </div>
-                                </figure>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="vc_column-inner col-md-4">
-                        <div class="wpb_wrapper">
-                          <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInRight"
-                            data-animation-delay="0.1" data-animation-duration="" data-animation-iteration="1"
-                            style="opacity: 1" data-opacity_start_effect="">
-                            <div class="aio-icon-component custom-box color-4 style_1 animated fadeInRight"
-                              style="opacity:1;-webkit-animation-delay:0.1s;-webkit-animation-duration:s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.1s;-moz-animation-duration:s;-moz-animation-iteration-count:1; animation-delay:0.1s;animation-duration:s;animation-iteration-count:1;test">
-                              <div id="Info-box-wrap-2802" class="aio-icon-box left-icon" style="">
-                                <div class="aio-ibd-block">
-                                  <div class="aio-icon-header">
-                                    <h2 class="aio-icon-title ult-responsive"
-                                      data-ultimate-target="#Info-box-wrap-2802 .aio-icon-title"
-                                      data-responsive-json-new='{"font-size":"desktop:20px;","line-height":""}' style="
-                                          font-weight: bold;
-                                          color: #090909;
-                                        ">
-                                      Most Secure
-                                    </h2>
-                                  </div>
-                                  <!-- header -->
-                                  <div class="aio-icon-description ult-responsive"
-                                    data-ultimate-target="#Info-box-wrap-2802 .aio-icon-description"
-                                    data-responsive-json-new='{"font-size":"","line-height":""}' style="color: #090909">
-                                    There is no way to change the blockchain
-                                    once it has been recorded and shared, as
-                                    those changes would be visible to everyone
-                                    and immediately considered fraudulent.
-                                  </div>
-                                  <!-- description -->
-                                </div>
-                                <!-- aio-ibd-block -->
-                              </div>
-                              <!-- aio-icon-box -->
-                            </div>
-                            <!-- aio-icon-component -->
-                          </div>
-                          <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInRight"
-                            data-animation-delay="0.2" data-animation-duration="" data-animation-iteration="1"
-                            style="opacity: 1" data-opacity_start_effect="">
-                            <div class="aio-icon-component custom-box color-5 style_1 animated fadeInRight"
-                              style="opacity:1;-webkit-animation-delay:0.2s;-webkit-animation-duration:s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.2s;-moz-animation-duration:s;-moz-animation-iteration-count:1; animation-delay:0.2s;animation-duration:s;animation-iteration-count:1;test">
-                              <div id="Info-box-wrap-3255" class="aio-icon-box left-icon" style="">
-                                <div class="aio-ibd-block">
-                                  <div class="aio-icon-header">
-                                    <h2 class="aio-icon-title ult-responsive"
-                                      data-ultimate-target="#Info-box-wrap-3255 .aio-icon-title"
-                                      data-responsive-json-new='{"font-size":"desktop:20px;","line-height":""}' style="
-                                          font-weight: bold;
-                                          color: #090909;
-                                        ">
-                                      Mobile App
-                                    </h2>
-                                  </div>
-                                  <!-- header -->
-                                  <div class="aio-icon-description ult-responsive"
-                                    data-ultimate-target="#Info-box-wrap-3255 .aio-icon-description"
-                                    data-responsive-json-new='{"font-size":"","line-height":""}' style="color: #090909">
-                                    Sed ut perspiciatis unde omnis accusantium
-                                    doloremque dolorem ipsum quia dolor sit.
-                                    <p></p>
-                                    <p></p>
-                                  </div>
-                                  <!-- description -->
-                                </div>
-                                <!-- aio-ibd-block -->
-                              </div>
-                              <!-- aio-icon-box -->
-                            </div>
-                            <!-- aio-icon-component -->
-                          </div>
-                          <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInRight"
-                            data-animation-delay="0.3" data-animation-duration="" data-animation-iteration="1"
-                            style="opacity: 1" data-opacity_start_effect="">
-                            <div class="aio-icon-component custom-box color-6 style_1 animated fadeInRight"
-                              style="opacity:1;-webkit-animation-delay:0.3s;-webkit-animation-duration:s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.3s;-moz-animation-duration:s;-moz-animation-iteration-count:1; animation-delay:0.3s;animation-duration:s;animation-iteration-count:1;test">
-                              <div id="Info-box-wrap-9029" class="aio-icon-box left-icon" style="">
-                                <div class="aio-ibd-block">
-                                  <div class="aio-icon-header">
-                                    <h2 class="aio-icon-title ult-responsive"
-                                      data-ultimate-target="#Info-box-wrap-9029 .aio-icon-title"
-                                      data-responsive-json-new='{"font-size":"desktop:20px;","line-height":""}' style="
-                                          font-weight: bold;
-                                          color: #090909;
-                                        ">
-                                      Smart Wallet
-                                    </h2>
-                                  </div>
-                                  <!-- header -->
-                                  <div class="aio-icon-description ult-responsive"
-                                    data-ultimate-target="#Info-box-wrap-9029 .aio-icon-description"
-                                    data-responsive-json-new='{"font-size":"","line-height":""}' style="color: #090909">
-                                    Sed ut perspiciatis unde omnis accusantium
-                                    doloremque dolorem ipsum quia dolor sit.
-                                  </div>
-                                  <!-- description -->
-                                </div>
-                                <!-- aio-ibd-block -->
-                              </div>
-                              <!-- aio-icon-box -->
-                            </div>
-                            <!-- aio-icon-component -->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Row Backgrounds -->
-
-                <div class="four-page">
-                  <div class="four-page-1">
-                    <div class="arrowpress-heading heading-2 arrowpress_heading-1326379865 text-center left-pos"
-                      data-animation-delay="500" data-animation="">
-                      <div class="small-title">
-                        <p style="letter-spacing: 0.4px">How it work</p>
-                      </div>
-                      <h2 class="title-heading" style="color: #ffffff">
-                        How does blockchain work
-                      </h2>
-
-                      <div class="desc-title" style="padding-top: 38px; color: #ffffff">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Donec pulvinar, libero vel volutpat aliquam,
-                        neque eros rutrum enim. fermentum varius sapien elit
-                        id dui. Aenean eget lectus lacinia, laoreet nulla at,
-                        lobortis dui.
-                      </div>
-                    </div>
-                    <div class="img-four-1">
-                      <div class="img-four">
-                        <img src="assets/image/211.png" alt="" />
-                      </div>
-                    </div>
-
-                    <ul style="display: flex; color: white">
-                      <li>
-                        <div>1</div>
-                        <div>A wants to send money to B</div>
-                      </li>
-                      <li>
-                        <div>1</div>
-                        <div>A wants to send money to B</div>
-                      </li>
-                      <li>
-                        <div>1</div>
-                        <div>A wants to send money to B</div>
-                      </li>
-                      <li>
-                        <div>1</div>
-                        <div>A wants to send money to B</div>
-                      </li>
-                      <li>
-                        <div>1</div>
-                        <div>A wants to send money to B</div>
-                      </li>
-                      <li>
-                        <div>1</div>
-                        <div>A wants to send money to B</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Row Backgrounds -->
-
-                <div class="page-five row">
-                  <div class="five-left col-lg-6">
-                    <img src="assets/image/Phone.png" alt="" />
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="five-right">
-                      <div class="arrowpress_container">
-                        <div style="padding-bottom: 41px"
-                          class="arrowpress-heading heading-1 arrowpress_heading-4210751190 text-left left-pos"
-                          data-animation-delay="500" data-animation="">
-                          <div style="padding-bottom: 12px" class="small-title">
-                            <p>Apps</p>
-                          </div>
-                          <h2 class="title-heading">The crypto CIO App</h2>
-                        </div>
-                      </div>
-
-                      <div class="wpb_text_column wpb_content_element">
-                        <div class="wpb_wrapper">
-                          <p class="about-text" style="padding-bottom: 14px">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Donec pulvinar, libero vel volutpat aliquam,
-                            neque eros rutrum enim, fermentum varius sapien
-                            elit id dui. Aenean eget lectus lacinia, laoreet
-                            nulla at, lobortis dui. Fusce feugiat metus eget
-                            accumsan aliquet. Vivamus lacus ligula, venenatis
-                            nec posuere quis, molestie quis velit.
                           </p>
-                          <div class="list-items style3">
-                            <ul>
-                              <li>
-                                Maecenas venenatis nulla nec tortor laoreet,
-                                vitae hendrerit purus sagittis. Morbi eget
-                                neque nunc.
-                              </li>
-                              <li>
-                                Vestibulum congue, nulla id vestibulum
-                                volutpat, dui augue hendrerit eros, nec
-                                fringilla sapien neque eget sapien.
-                              </li>
-                              <li>
-                                Phasellus scelerisque, mauris porttitor
-                                ullamcorper venenatis, massa metus semper
-                                felis, sit amet suscipit quam lacus at
-                                felis.&gt;
-                              </li>
-                            </ul>
-                          </div>
                         </div>
-                      </div>
-                    </div>
-
-                    <div class="wpb_text_column wpb_content_element">
-                      <div class="wpb_wrapper">
-                        <div class="get-app">
-                          <div class="btn-app">
-                            <a href="#" class="btn btn-gradient">Get the app</a>
-                          </div>
-                          <div class="link-app">
-                            <a href="#"><i class="fa fa-apple"></i></a><a href="#"><i class="fa fa-android"></i></a><a
-                              href="#"><i class="fa fa-windows"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div style="background-color: black" class="six-page">
-                  <div class="wpb_wrapper">
-                    <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInDown"
-                      data-animation-delay="0" data-animation-duration="0.6" data-animation-iteration="1"
-                      style="opacity: 1" data-opacity_start_effect="">
-                      <div class="arrowpress_container animated fadeInDown"
-                        style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:0.6s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:0.6s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:0.6s;animation-iteration-count:1;test">
-                        <div class="arrowpress-heading heading-2 arrowpress_heading-2211395850 text-center left-pos"
-                          data-animation-delay="500" data-animation="">
-                          <div class="small-title">
-                            <p style="letter-spacing: 0.4px">Tokens</p>
-                          </div>
-                          <h2 class="title-heading" style="color: #ffffff">
-                            The token sale is Live!
-                          </h2>
-
-                          <div class="desc-title" style="padding-top: 40px; color: #ffffff">
-                            ICO Crypto token will be released on the basis of
-                            Ethereum and Bitocin platform. It’s compatibility
-                            of the token with third-party services wallets,
-                            exchanges etc, and provides easy-to-use
-                            integration.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInDown"
-                      data-animation-delay="0.1" data-animation-duration="0.6" data-animation-iteration="1"
-                      style="opacity: 1" data-opacity_start_effect="">
-                      <div class="wpb_text_column wpb_content_element vc_custom_1523263119190 animated fadeInDown"
-                        style="opacity:1;-webkit-animation-delay:0.1s;-webkit-animation-duration:0.6s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.1s;-moz-animation-duration:0.6s;-moz-animation-iteration-count:1; animation-delay:0.1s;animation-duration:0.6s;animation-iteration-count:1;test">
-                        <div class="wpb_wrapper">
-                          <div class="progress-sale">
-                            <p class="amount">
-                              Amount raised in BTC and ETH:
-                              <strong>ETH 31,073</strong>
-                            </p>
-                            <div class="token-price clearfix">
-                              <p class="token-min">ETH 0</p>
-                              <p class="token-max">ETH 70,000</p>
-                            </div>
-                            <div class="progress">
-                              <div class="progress-bar bg-gradient" role="progressbar" aria-valuenow="60"
-                                aria-valuemin="0" aria-valuemax="100" style="width: 34%">
-                                ETH 31,073
-                              </div>
-                            </div>
-                            <div class="token-amount">
-                              <p class="amount">
-                                <strong>Current Price: </strong><span>1 ETH = 250 CIO</span>
-                                <span>1 BTC = 500 CIO</span>
-                              </p>
-                              <p class="amount">
-                                <strong>Price Increases to : </strong><span>1 ETH = 220 CIO</span>
-                                <span>1 BTC = 480 CIO in:</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ult-spacer spacer-626aaa9033272" data-id="626aaa9033272" data-height="29"
-                      data-height-mobile="29" data-height-tab="29" data-height-tab-portrait=""
-                      data-height-mobile-landscape="" style="clear: both; display: block"></div>
-                    <div
-                      class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_custom_1523331043164 vc_custom_1523331043164">
-                      <span class="vc_sep_holder vc_sep_holder_l"><span style="
-                              border-color: rgb(255, 255, 255);
-                              border-color: rgba(255, 255, 255, 0.2);
-                            " class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span
-                          style="
-                              border-color: rgb(255, 255, 255);
-                              border-color: rgba(255, 255, 255, 0.2);
-                            " class="vc_sep_line"></span></span>
-                    </div>
-                    <div class="ult-spacer spacer-626aaa903359c" data-id="626aaa903359c" data-height="24"
-                      data-height-mobile="24" data-height-tab="24" data-height-tab-portrait=""
-                      data-height-mobile-landscape="" style="clear: both; display: block"></div>
-                    <div class="ult-animation ult-animate-viewport ult-no-mobile" data-animate="fadeInDown"
-                      data-animation-delay="0.1" data-animation-duration="0.6" data-animation-iteration="1"
-                      style="opacity: 1" data-opacity_start_effect="">
-                      <div class="wpb_text_column wpb_content_element animated fadeInDown"
-                        style="opacity:1;-webkit-animation-delay:0.1s;-webkit-animation-duration:0.6s;-webkit-animation-iteration-count:1; -moz-animation-delay:0.1s;-moz-animation-duration:0.6s;-moz-animation-iteration-count:1; animation-delay:0.1s;animation-duration:0.6s;animation-iteration-count:1;test">
-                        <div class="wpb_wrapper">
-                          <div class="join-buy">
-                            <p>
-                              <a class="btn btn-gradient" href="#">Join &amp; buy token now</a>
-                            </p>
-                            <p class="accepted">BTC and ETH accepted</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="seven-page">
-                  <div class="wpb_wrapper">
-                    <div class="ult-spacer spacer-626a550c135ba" data-id="626a550c135ba" data-height="62"
-                      data-height-mobile="17" data-height-tab="37" data-height-tab-portrait="37"
-                      data-height-mobile-landscape="17" style="clear: both; display: block"></div>
-                    <div class="arrowpress-container container-fluid container-set-mwidth" data-max-width="1270"
-                      style="max-width: 1270px">
-                      <div class="arrowpress_container">
-                        <div class="arrowpress-heading heading-2 arrowpress_heading-1707897071 text-center left-pos"
-                          data-animation-delay="500" data-animation="">
-                          <div class="small-title">
-                            <p style="letter-spacing: 0.4px">Roadmap</p>
-                          </div>
-                          <h2 class="title-heading">The Timeline</h2>
-
-                          <div class="desc-title" style="padding-top: 39px">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Donec pulvinar, libero vel volutpat aliquam,
-                            neque eros rutrum enim. fermentum varius sapien
-                            elit id dui. Aenean eget lectus lacinia, laoreet
-                            nulla at, lobortis dui.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ult-spacer spacer-626a550c14201" data-id="626a550c14201" data-height="34"
-                        data-height-mobile="34" data-height-tab="34" data-height-tab-portrait=""
-                        data-height-mobile-landscape="" style="clear: both; display: block"></div>
-                      <div class="timeline-wrap-container custom_timeline timeline-2">
-                        <div class="timeline-wrapper clearfix" id="apr_event_list2286061583">
-                          <div class="timeline-content-day">
-                            <div class="timeline-line"></div>
-                            <div class="slider slick-initialized slick-slider">
-                              <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox" style="
-                                      opacity: 1;
-                                      width: 1183px;
-                                      transform: translate3d(0px, 0px, 0px);
-                                    ">
-                                  <div class="event_item-container active slick-slide slick-current slick-active"
-                                    tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 169px"
-                                    data-slick-index="0" aria-hidden="false">
-                                    <div class="item_event_item">
-                                      <div class="caption_event_item">
-                                        <div class="timeline-content-item">
-                                          <span class="time-dot"></span>
-                                          <div class="ev-date-out">
-                                            <p class="ev-date">May 1, 2017</p>
-                                            <p>Development Begins</p>
-                                          </div>
-                                          <div class="timeline-content-item-reveal">
-                                            <a href="#" tabindex="0">
-                                              <h6>Development Begins</h6>
-                                              <div class="ev-date">
-                                                May 1, 2017
-                                              </div>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="event_item-container active slick-slide slick-active" tabindex="-1"
-                                    role="option" aria-describedby="slick-slide01" style="width: 169px"
-                                    data-slick-index="1" aria-hidden="false">
-                                    <div class="item_event_item">
-                                      <div class="caption_event_item">
-                                        <div class="timeline-content-item">
-                                          <span class="time-dot"></span>
-                                          <div class="ev-date-out">
-                                            <p class="ev-date">Oct 1, 2017</p>
-                                            <p>Token Sale Announcement</p>
-                                          </div>
-                                          <div class="timeline-content-item-reveal">
-                                            <a href="#" tabindex="0">
-                                              <h6>Token Sale Announcement</h6>
-                                              <div class="ev-date">
-                                                Oct 1, 2017
-                                              </div>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="event_item-container slick-slide slick-active" tabindex="-1" role="option"
-                                    aria-describedby="slick-slide02" style="width: 169px" data-slick-index="2"
-                                    aria-hidden="false">
-                                    <div class="item_event_item">
-                                      <div class="caption_event_item">
-                                        <div class="timeline-content-item">
-                                          <span class="time-dot"></span>
-                                          <div class="ev-date-out">
-                                            <p class="ev-date">Nov 1, 2017</p>
-                                            <p>Crowdsale Starts</p>
-                                          </div>
-                                          <div class="timeline-content-item-reveal">
-                                            <a href="#" tabindex="0">
-                                              <h6>Crowdsale Starts</h6>
-                                              <div class="ev-date">
-                                                Nov 1, 2017
-                                              </div>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="event_item-container slick-slide slick-active" tabindex="-1" role="option"
-                                    aria-describedby="slick-slide03" style="width: 169px" data-slick-index="3"
-                                    aria-hidden="false">
-                                    <div class="item_event_item">
-                                      <div class="caption_event_item">
-                                        <div class="timeline-content-item">
-                                          <span class="time-dot"></span>
-                                          <div class="ev-date-out">
-                                            <p class="ev-date">
-                                              Nov 30, 2017
-                                            </p>
-                                            <p>Crowdsale Ends</p>
-                                          </div>
-                                          <div class="timeline-content-item-reveal">
-                                            <a href="#" tabindex="0">
-                                              <h6>Crowdsale Ends</h6>
-                                              <div class="ev-date">
-                                                Nov 30, 2017
-                                              </div>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="event_item-container slick-slide slick-active current-view" tabindex="-1"
-                                    role="option" aria-describedby="slick-slide04" style="width: 169px"
-                                    data-slick-index="4" aria-hidden="false">
-                                    <div class="item_event_item">
-                                      <div class="caption_event_item">
-                                        <div class="timeline-content-item">
-                                          <span class="time-dot"></span>
-                                          <div class="ev-date-out">
-                                            <p class="ev-date">Dec 1, 2017</p>
-                                            <p>Development and Marketing</p>
-                                          </div>
-                                          <div class="timeline-content-item-reveal">
-                                            <a href="#" tabindex="0">
-                                              <h6>
-                                                Development and Marketing
-                                              </h6>
-                                              <div class="ev-date">
-                                                Dec 1, 2017
-                                              </div>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="event_item-container slick-slide slick-active" tabindex="-1" role="option"
-                                    aria-describedby="slick-slide05" style="width: 169px" data-slick-index="5"
-                                    aria-hidden="false">
-                                    <div class="item_event_item">
-                                      <div class="caption_event_item">
-                                        <div class="timeline-content-item">
-                                          <span class="time-dot"></span>
-                                          <div class="ev-date-out">
-                                            <p class="ev-date">Q 1, 2018</p>
-                                            <p>Centralized Platform Lauch</p>
-                                          </div>
-                                          <div class="timeline-content-item-reveal">
-                                            <a href="#" tabindex="0">
-                                              <h6>
-                                                Centralized Platform Lauch
-                                              </h6>
-                                              <div class="ev-date">
-                                                Q 1, 2018
-                                              </div>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="event_item-container slick-slide slick-active" tabindex="-1" role="option"
-                                    aria-describedby="slick-slide06" style="width: 169px" data-slick-index="6"
-                                    aria-hidden="false">
-                                    <div class="item_event_item">
-                                      <div class="caption_event_item">
-                                        <div class="timeline-content-item">
-                                          <span class="time-dot"></span>
-                                          <div class="ev-date-out">
-                                            <p class="ev-date">Q4, 2018</p>
-                                            <p>
-                                              Decentralized Platform Lauch
-                                            </p>
-                                          </div>
-                                          <div class="timeline-content-item-reveal">
-                                            <a href="#" tabindex="0">
-                                              <h6>
-                                                Decentralized Platform Lauch
-                                              </h6>
-                                              <div class="ev-date">
-                                                Q4, 2018
-                                              </div>
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <script type="text/javascript">
-                          jQuery(document).ready(function ($) {
-                            $("#apr_event_list2286061583 .slider").on(
-                              "init",
-                              function (event, slick) { }
-                            );
-                            $("#apr_event_list2286061583 .slider").slick({
-                              nextArrow:
-                                '<button class="btn-prev"><i class="fa fa-angle-left"></i></button>',
-                              prevArrow:
-                                '<button class="btn-next"><i class="fa fa-angle-right"></i></button>',
-                              // infinite: false,
-                              arrows: true,
-                              speed: 300,
-                              infinite: false,
-                              // centerMode: true,
-                              centerPadding: "0px",
-                              slidesToShow: 7,
-                              slidesToScroll: 1,
-                              responsive: [
-                                {
-                                  breakpoint: 1200,
-                                  settings: {
-                                    slidesToShow: 5,
-                                    slidesToScroll: 1,
-                                  },
-                                },
-                                {
-                                  breakpoint: 768,
-                                  settings: {
-                                    slidesToShow: 2,
-                                    slidesToScroll: 1,
-                                  },
-                                },
-                                {
-                                  breakpoint: 481,
-                                  settings: {
-                                    slidesToShow: 1,
-                                    slidesToScroll: 1,
-                                  },
-                                },
-                              ],
-                            });
-
-                            $(".timeline-wrapper").each(function () {
-                              var $currentSlide = $(
-                                "#apr_event_list2286061583 .slider"
-                              ).slick("slickCurrentSlide");
-                              var $this = $(this);
-                              var $fillingLine = $this.find(".filling-line");
-                              var slide_width = 0,
-                                slide_width2 = 0;
-                              var disable = true,
-                                styles = {};
-                              var $left = "left";
-
-                              $(this)
-                                .find(".event_item-container.active")
-                                .addClass("current-view");
-                              $(this)
-                                .find(".event_item-container")
-                                .click(function () {
-                                  var t = $(this).attr("data-slick-index");
-
-                                  $this
-                                    .find(".event_item-container")
-                                    .each(function () {
-                                      if (
-                                        $(this).attr("data-slick-index") <= t
-                                      ) {
-                                        $(this).addClass("active");
-                                      } else {
-                                        $(this).removeClass("active");
-                                      }
-                                    });
-                                });
-                            });
-                            $(this)
-                              .find(".event_item-container.active")
-                              .trigger("click");
-                            $(
-                              ".timeline-wrapper .timeline-content-item > span"
-                            ).on("mouseenter mouseleave", function (e) {
-                              $(
-                                ".timeline-wrapper .event_item-container.current-view"
-                              ).removeClass("current-view");
-                              $(this)
-                                .parent()
-                                .parent()
-                                .parent()
-                                .parent()
-                                .addClass("current-view");
-                              // $(this).parent().parent().parent().parent().trigger('click');
-                            });
-                          });
-                        </script>
-                      </div>
-                    </div>
-                    <div class="ult-spacer spacer-626a550c16eee" data-id="626a550c16eee" data-height="31"
-                      data-height-mobile="31" data-height-tab="31" data-height-tab-portrait=""
-                      data-height-mobile-landscape="" style="clear: both; display: block"></div>
-                  </div>
-                </div>
-
-                <!-- Row Backgrounds -->
-
-                <div class="page-eight">
-                  <div class="arrowpress-heading heading-2 arrowpress_heading-2489231552 text-center left-pos"
-                    data-animation-delay="500" data-animation="">
-                    <div class="small-title">
-                      <p style="letter-spacing: 0.4px">who we are</p>
-                    </div>
-                    <h2 class="title-heading">meet our team</h2>
-
-                    <div class="desc-title" style="padding-top: 29px">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Donec pulvinar, libero vel volutpat aliquam, neque eros
-                      rutrum enim. fermentum varius sapien elit id dui. Aenean
-                      eget lectus lacinia, laoreet nulla at, lobortis dui.
-                    </div>
-                  </div>
-                  <div class="all-member">
-                    <div>
-                      <div>
-                        <img src="assets/image/member-1.jpg" alt="" />
-                      </div>
-                      <div class="member-info">
-                        <div class="member-name">
-                          <h4>john langan</h4>
-                        </div>
-                        <div class="member-job">
-                          <p>Consultant</p>
-                        </div>
-                        <div class="member-socials">
-                          <ul class="social-list">
+                        <div class="dib footer-social">
+                          <ul>
                             <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
-                                  class="fa fa-facebook" aria-hidden="true"></i></a>
+                              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             </li>
                             <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_twitter"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_google"><i
-                                  class="fa fa-google-plus" aria-hidden="true"></i></a>
+                              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </li>
 
                             <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
-                                  class="fa fa-linkedin" aria-hidden="true"></i></a>
+                              <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                             </li>
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <div>
-                      <div>
-                        <img src="assets/image/member-1.jpg" alt="" />
-                      </div>
-                      <div class="member-info">
-                        <div class="member-name">
-                          <h4>john langan</h4>
-                        </div>
-                        <div class="member-job">
-                          <p>Consultant</p>
-                        </div>
-                        <div class="member-socials">
-                          <ul class="social-list">
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
-                                  class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_twitter"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_google"><i
-                                  class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            </li>
-
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
-                                  class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <img src="assets/image/member-1.jpg" alt="" />
-                      </div>
-                      <div class="member-info">
-                        <div class="member-name">
-                          <h4>john langan</h4>
-                        </div>
-                        <div class="member-job">
-                          <p>Consultant</p>
-                        </div>
-                        <div class="member-socials">
-                          <ul class="social-list">
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
-                                  class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_twitter"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_google"><i
-                                  class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            </li>
-
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
-                                  class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <img src="assets/image/member-1.jpg" alt="" />
-                      </div>
-                      <div class="member-info">
-                        <div class="member-name">
-                          <h4>john langan</h4>
-                        </div>
-                        <div class="member-job">
-                          <p>Consultant</p>
-                        </div>
-                        <div class="member-socials">
-                          <ul class="social-list">
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
-                                  class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_twitter"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_google"><i
-                                  class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            </li>
-
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
-                                  class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <img src="assets/image/member-1.jpg" alt="" />
-                      </div>
-                      <div class="member-info">
-                        <div class="member-name">
-                          <h4>john langan</h4>
-                        </div>
-                        <div class="member-job">
-                          <p>Consultant</p>
-                        </div>
-                        <div class="member-socials">
-                          <ul class="social-list">
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
-                                  class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_twitter"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_google"><i
-                                  class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            </li>
-
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
-                                  class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <img src="assets/image/member-1.jpg" alt="" />
-                      </div>
-                      <div class="member-info">
-                        <div class="member-name">
-                          <h4>john langan</h4>
-                        </div>
-                        <div class="member-job">
-                          <p>Consultant</p>
-                        </div>
-                        <div class="member-socials">
-                          <ul class="social-list">
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
-                                  class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_twitter"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_google"><i
-                                  class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            </li>
-
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
-                                  class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <img src="assets/image/member-1.jpg" alt="" />
-                      </div>
-                      <div class="member-info">
-                        <div class="member-name">
-                          <h4>john langan</h4>
-                        </div>
-                        <div class="member-job">
-                          <p>Consultant</p>
-                        </div>
-                        <div class="member-socials">
-                          <ul class="social-list">
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
-                                  class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_twitter"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_google"><i
-                                  class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            </li>
-
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
-                                  class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <img src="assets/image/member-1.jpg" alt="" />
-                      </div>
-                      <div class="member-info">
-                        <div class="member-name">
-                          <h4>john langan</h4>
-                        </div>
-                        <div class="member-job">
-                          <p>Consultant</p>
-                        </div>
-                        <div class="member-socials">
-                          <ul class="social-list">
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_facebook"><i
-                                  class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_twitter"><i class="fa fa-twitter"
-                                  aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_google"><i
-                                  class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            </li>
-
-                            <li>
-                              <a href="#" title="" target="_self" class="soc_icon icon_linkedin"><i
-                                  class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Row Backgrounds -->
-                <div id="faq" class="vc_row wpb_row vc_row-fluid ult-vc-hide-row vc_row-has-fill page-nine"
-                  style="position: relative" data-rtl="false" data-row-effect-mobile-disable="true">
-                  <div class="upb_row_bg" data-upb_br_animation="" style="
-                        background: linear-gradient(
-                          45deg,
-                          rgb(61, 36, 145) 0%,
-                          rgb(154, 39, 148) 100%
-                        );
-                        min-width: 1280px;
-                        left: 0px;
-                        width: 1280px;
-                      " data-bg-override="0"></div>
-                  <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="vc_column-inner">
-                      <div class="wpb_wrapper">
-                        <div class="ult-spacer spacer-6269017ae6bc8" data-id="6269017ae6bc8" data-height="60"
-                          data-height-mobile="20" data-height-tab="" data-height-tab-portrait=""
-                          data-height-mobile-landscape="40" style="clear: both; display: block"></div>
-                        <div class="arrowpress-container container">
-                          <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                            <div class="wpb_column vc_column_container vc_col-sm-12">
-                              <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                  <div class="arrowpress_container">
-                                    <div
-                                      class="arrowpress-heading heading-2 arrowpress_heading-137561039 text-center left-pos"
-                                      data-animation-delay="500" data-animation="">
-                                      <div class="small-title">
-                                        <p style="letter-spacing: 0.4px">
-                                          FAQ
-                                        </p>
-                                      </div>
-                                      <h2 class="title-heading" style="color: #ffffff">
-                                        How can we help you
-                                      </h2>
-
-                                      <div class="desc-title" style="
-                                            padding-top: 40px;
-                                            color: #ffffff;
-                                          ">
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit. Donec
-                                        pulvinar, libero vel volutpat aliquam,
-                                        neque eros rutrum enim. fermentum
-                                        varius sapien elit id dui. Aenean eget
-                                        lectus lacinia, laoreet nulla at,
-                                        lobortis dui.
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                      <div class="row">
+                        <div class="footer-menu-list">
+                          <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="footer-title">
+                              COMPANY
+                            </div>
+                            <div class="box-content">
+                              <ul>
+                                <li>About Us</li>
+                                <li>Contact Us</li>
+                                <li>Latest Us</li>
+                                <li>Team Member</li>
+                              </ul>
                             </div>
                           </div>
-                          <div class="ult-spacer spacer-6269017ae7b7e" data-id="6269017ae7b7e" data-height="44"
-                            data-height-mobile="44" data-height-tab="44" data-height-tab-portrait=""
-                            data-height-mobile-landscape="" style="clear: both; display: block"></div>
-                          <div class="vc_row wpb_row vc_inner vc_row-fluid line-ver seven-content">
-                            <div class="wpb_column vc_column_container vc_col-sm-6">
-                              <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                  <div class="ult-spacer spacer-6269017ae81f5" data-id="6269017ae81f5" data-height="30"
-                                    data-height-mobile="0" data-height-tab="" data-height-tab-portrait=""
-                                    data-height-mobile-landscape="0" style="clear: both; display: block"></div>
-                                  <div
-                                    class="vc_toggle vc_toggle_text_only vc_toggle_color_default vc_toggle_size_md vc_toggle_active">
-                                    <div class="vc_toggle_title">
-                                      <h4>What is blockchain?</h4>
-                                      <i class="vc_toggle_icon"></i>
-                                    </div>
-                                    <div class="vc_toggle_content">
-                                      <p>
-                                        Lorem Ipsum is simply dummy text of
-                                        the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry’s
-                                        standard dummy text ever since the
-                                        1500s.<a href="#">
-                                          &gt;&gt; Read more</a>
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="vc_toggle vc_toggle_text_only vc_toggle_color_default vc_toggle_size_md vc_toggle_active">
-                                    <div class="vc_toggle_title">
-                                      <h4>How does blockchain work?</h4>
-                                      <i class="vc_toggle_icon"></i>
-                                    </div>
-                                    <div class="vc_toggle_content">
-                                      <p>
-                                        Lorem Ipsum is simply dummy text of
-                                        the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry’s
-                                        standard dummy text ever since the
-                                        1500s.<a href="#">
-                                          &gt;&gt; Read more</a>
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="vc_toggle vc_toggle_text_only vc_toggle_color_default vc_toggle_size_md vc_toggle_active">
-                                    <div class="vc_toggle_title">
-                                      <h4>What is blockchain?</h4>
-                                      <i class="vc_toggle_icon"></i>
-                                    </div>
-                                    <div class="vc_toggle_content">
-                                      <p>
-                                        Lorem Ipsum is simply dummy text of
-                                        the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry’s
-                                        standard dummy text ever since the
-                                        1500s.<a href="#">
-                                          &gt;&gt; Read more</a>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                          <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="footer-Title">
+                              QUICK LINKS
                             </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-6">
-                              <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                  <div class="ult-spacer spacer-6269017ae9b95" data-id="6269017ae9b95" data-height="80"
-                                    data-height-mobile="0" data-height-tab="" data-height-tab-portrait=""
-                                    data-height-mobile-landscape="0" style="clear: both; display: block"></div>
-                                  <div
-                                    class="vc_toggle vc_toggle_text_only vc_toggle_color_default vc_toggle_size_md vc_toggle_active">
-                                    <div class="vc_toggle_title">
-                                      <h4>What is blockchain technology?</h4>
-                                      <i class="vc_toggle_icon"></i>
-                                    </div>
-                                    <div class="vc_toggle_content">
-                                      <p>
-                                        Lorem Ipsum is simply dummy text of
-                                        the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry’s
-                                        standard dummy text ever since the
-                                        1500s.<a href="#">
-                                          &gt;&gt; Read more</a>
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="vc_toggle vc_toggle_text_only vc_toggle_color_default vc_toggle_size_md vc_toggle_active">
-                                    <div class="vc_toggle_title">
-                                      <h4>Why is blockchain important?</h4>
-                                      <i class="vc_toggle_icon"></i>
-                                    </div>
-                                    <div class="vc_toggle_content">
-                                      <p>
-                                        Lorem Ipsum is simply dummy text of
-                                        the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry’s
-                                        standard dummy text ever since the
-                                        1500s.<a href="#">
-                                          &gt;&gt; Read more</a>
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="vc_toggle vc_toggle_text_only vc_toggle_color_default vc_toggle_size_md vc_toggle_active">
-                                    <div class="vc_toggle_title">
-                                      <h4>What is blockchain technology?</h4>
-                                      <i class="vc_toggle_icon"></i>
-                                    </div>
-                                    <div class="vc_toggle_content">
-                                      <p>
-                                        Lorem Ipsum is simply dummy text of
-                                        the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry’s
-                                        standard dummy text ever since the
-                                        1500s.<a href="#">
-                                          &gt;&gt; Read more</a>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                            <div class="box-content">
+                              <ul>
+                                <li>My Account</li>
+                                <li>Orders Tracking</li>
+                                <li>FAQs</li>
+                              </ul>
                             </div>
                           </div>
-                        </div>
-                        <div class="ult-spacer spacer-6269017aea655" data-id="6269017aea655" data-height="65"
-                          data-height-mobile="30" data-height-tab="" data-height-tab-portrait=""
-                          data-height-mobile-landscape="" style="clear: both; display: block"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Row Backgrounds -->
-                <div id="blog" class="vc_row wpb_row vc_row-fluid page-ten">
-                  <div class="container">
-                    <div class="row">
-                      <div class="wpb_column vc_column_container vc_col-sm-12">
-                        <div class="vc_column-inner">
-                          <div class="wpb_wrapper">
-                            <div class="ult-spacer spacer-6269017aeade9" data-id="6269017aeade9" data-height="98"
-                              data-height-mobile="50" data-height-tab="70" data-height-tab-portrait="70"
-                              data-height-mobile-landscape="50" style="clear: both; display: block"></div>
-                            <div class="arrowpress_container">
-                              <div style="padding-bottom: 43px"
-                                class="arrowpress-heading heading-1 arrowpress_heading-795922203 text-center left-pos"
-                                data-animation-delay="500" data-animation="">
-                                <div style="padding-bottom: 12px" class="small-title">
-                                  <p>latest news</p>
-                                </div>
-                                <h2 class="title-heading">From Our Blog</h2>
-                              </div>
+                          <div class="col-xs-12 col-sm-4 col-md-6">
+                            <div class="footer-Title">
+                              NEWSLETTER SUBSCRIBE
                             </div>
-                            <div class="blog-container">
-                              <div class="row blog-grid-2 show-space">
-                                <div class="market col-lg-4 col-md-4 col-sm-4 col-xs-12 grid-item">
-                                  <div class="blog-content">
-                                    <div class="blog-item">
-                                      <div class="blog-img">
-                                        <a href="http://localhost/crypto/193-copy-6-copy-copy/"><img width="445"
-                                            height="299" src="assets/image/investment.jpg" alt="" /></a>
-                                      </div>
+                            <div class="box-content">
+                              <ul>
+                                <li>To Keep you updated, please subscribe to our newsletter</li>
+                                <li>
+                                  <div class="send-mail"><input type="text" placeholder="Enter Your email"> <button><i
+                                        class="fa fa-paper-plane" aria-hidden="true"></i></button></div>
+                                </li>
 
-                                      <div class="blog-post-info">
-                                        <div class="blog-post-title">
-                                          <div class="post-name">
-                                            <a href="http://localhost/crypto/193-copy-6-copy-copy/">Donec ornare velit
-                                              sit amet
-                                              dolor aliquam, sed dictum lorem
-                                              pulvinar.
-                                            </a>
-                                          </div>
-                                        </div>
-
-                                        <div class="blog-info">
-                                          <div class="info blog-date">
-                                            <p class="date">
-                                              <a href="http://localhost/crypto/193-copy-6-copy-copy/">
-                                                12 Jan 2018</a>
-                                            </p>
-                                          </div>
-                                          <div class="info author-name">
-                                            by
-                                            <a href="#">
-                                              <span>admin</span></a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="blockchain market col-lg-4 col-md-4 col-sm-4 col-xs-12 grid-item">
-                                  <div class="blog-content">
-                                    <div class="blog-item">
-                                      <div class="blog-img">
-                                        <a href="http://localhost/crypto/193-copy-6-copy-2/"><img width="445"
-                                            height="299" src="assets/image/shutterstock.jpg" alt="" /></a>
-                                      </div>
-
-                                      <div class="blog-post-info">
-                                        <div class="blog-post-title">
-                                          <div class="post-name">
-                                            <a href="http://localhost/crypto/193-copy-6-copy-2/">Mauris maximus odio sit
-                                              amet
-                                              venenatis dignissim
-                                            </a>
-                                          </div>
-                                        </div>
-
-                                        <div class="blog-info">
-                                          <div class="info blog-date">
-                                            <p class="date">
-                                              <a href="http://localhost/crypto/193-copy-6-copy-2/">
-                                                12 Jan 2018</a>
-                                            </p>
-                                          </div>
-                                          <div class="info author-name">
-                                            by
-                                            <a href="#">
-                                              <span>admin</span></a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="blockchain trading col-lg-4 col-md-4 col-sm-4 col-xs-12 grid-item">
-                                  <div class="blog-content">
-                                    <div class="blog-item">
-                                      <div class="blog-img">
-                                        <a href="http://localhost/crypto/193-copy-6-copy/"><img width="445" height="299"
-                                            src="assets/image/bg15.jpg" alt="" /></a>
-                                      </div>
-
-                                      <div class="blog-post-info">
-                                        <div class="blog-post-title">
-                                          <div class="post-name">
-                                            <a href="http://localhost/crypto/193-copy-6-copy/">Mauris maximus odio sit
-                                              amet
-                                              venenatis dignissim
-                                            </a>
-                                          </div>
-                                        </div>
-
-                                        <div class="blog-info">
-                                          <div class="info blog-date">
-                                            <p class="date">
-                                              <a href="http://localhost/crypto/193-copy-6-copy/">
-                                                12 Jan 2018</a>
-                                            </p>
-                                          </div>
-                                          <div class="info author-name">
-                                            by
-                                            <a href="#">
-                                              <span>admin</span></a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                              </ul>
                             </div>
-                            <div class="ult-spacer spacer-6269017af22d0" data-id="6269017af22d0" data-height="10"
-                              data-height-mobile="0" data-height-tab="" data-height-tab-portrait=""
-                              data-height-mobile-landscape="" style="clear: both; display: block"></div>
                           </div>
                         </div>
                       </div>
@@ -1603,217 +974,61 @@
                   </div>
                 </div>
               </div>
-              <!-- End entry-content -->
-            </article>
-            <!-- End post -->
+            </div>
           </div>
-          <!-- End primary -->
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="bottom-footer">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="copyright-content">
+                          <p>
+                            Design by <a href="#">AHT Studio</a>. © 2017 All
+                            Right Reserved
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12 f-right">
+                        <div class="payment">
+                          <ul>
+                            <li>
+                              <a href="#"><i class="fa fa-cc-visa"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-cc-mastercard"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-cc-discover"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-cc-amex"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa fa-cc-paypal"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <!-- End footer -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="assets/js/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/cryptcio_theme.js"></script>
+      </footer>
+      <!-- End colophon -->
+
+      <div class="overlay overlay-menu"></div>
     </div>
-    <!-- End main-->
-    <footer id="colophon" class="footer add_contact wide">
-      <div class="footer-v2">
-        <div id="contact" class="footer-contact">
-          <div class="container">
-            <div class="footer-form">
-              <aside id="text-6" class="widget widget_text">
-                <div class="textwidget">
-                  <div role="form" class="wpcf7" id="wpcf7-f1536-o1" lang="en-US" dir="ltr">
-                    <div class="screen-reader-response">
-                      <p role="status" aria-live="polite" aria-atomic="true"></p>
-                      <ul></ul>
-                    </div>
-                    <form action="http://localhost/crypto/#wpcf7-f1536-o1" method="post" class="wpcf7-form init"
-                      novalidate="novalidate" data-status="init">
-                      <div style="display: none">
-                        <input type="hidden" name="_wpcf7" value="1536" />
-                        <input type="hidden" name="_wpcf7_version" value="5.5.6" />
-                        <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1536-o1" />
-                        <input type="hidden" name="_wpcf7_container_post" value="0" />
-                        <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                      </div>
-                      <div class="contact-form">
-                        <label>contact us<br />
-                          <span>request Services</span></label><br />
-                        <span class="wpcf7-form-control-wrap first-name"><input type="text" name="first-name" value=""
-                            size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required first-name"
-                            aria-required="true" aria-invalid="false" placeholder="First Name" /></span><br />
-                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value=""
-                            size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required last-name"
-                            aria-required="true" aria-invalid="false" placeholder="Last Name" /></span><br />
-                        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email email"
-                            aria-required="true" aria-invalid="false" placeholder="Enter your Email" /></span><br />
-                        <span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel phone"
-                            aria-required="true" aria-invalid="false" placeholder="Phone Number" /></span><br />
-                        <span class="wpcf7-form-control-wrap your-message">
-                          <textarea name="your-message" cols="40" rows="10"
-                            class="wpcf7-form-control wpcf7-textarea message" aria-invalid="false"
-                            placeholder="Message"></textarea>
-                        </span>
-                        <p></p>
-                        <p class="submit">
-                          <input type="submit" value="Submit"
-                            class="wpcf7-form-control has-spinner wpcf7-submit submit btn btn-primary" /><span
-                            class="wpcf7-spinner"></span>
-                        </p>
-                      </div>
-                      <div class="wpcf7-response-output" aria-hidden="true"></div>
-                    </form>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </div>
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="footer-container row">
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="footer-left-info">
-                      <img class="footer-logo"
-                        src="http://hn.arrowpress.net/cryptcio-sample/wp-content/uploads/2018/04/logo9.png" alt="" />
-                      <div class="footer_info">
-                        <p>
-                          Lorem Ipsum has been the industry standard dummy
-                          text ever since the 1500s, when an unknown printer
-                          took a galley of type and scrambled it to make a
-                          type specimen book.
-                        </p>
-                      </div>
-                      <div class="dib footer-social">
-                        <ul>
-                          <li>
-                            <a href="https://facebook.com/arrowpress"><i class="fa fa-facebook"
-                                aria-hidden="true"></i></a>
-                          </li>
-                          <li>
-                            <a href="https://twitter.com/arrowpress1"><i class="fa fa-twitter"
-                                aria-hidden="true"></i></a>
-                          </li>
-
-                          <li>
-                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                          </li>
-                          <li>
-                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                          </li>
-                          <li>
-                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <div class="row">
-                      <div class="footer-menu-list">
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                          <aside id="nav_menu-4" class="widget widget_nav_menu">
-                            <h4 class="footer-title">Company</h4>
-                            <div class="menu-menu-blog-container">
-                              <ul id="menu-menu-blog" class="menu">
-                                <li id="menu-item-1562"
-                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1562">
-                                  <a href="http://localhost/crypto/about-us/">About</a>
-                                </li>
-                                <li id="menu-item-1561"
-                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561">
-                                  <a href="http://localhost/crypto/contact-us/">Contact</a>
-                                </li>
-                                <li id="menu-item-1499"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1499">
-                                  <a href="#">Subscrible</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </aside>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                          <aside id="nav_menu-5" class="widget widget_nav_menu">
-                            <h4 class="footer-title">Quick Links</h4>
-                            <div class="menu-menu-blog-container">
-                              <ul id="menu-menu-blog-1" class="menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1562">
-                                  <a href="http://localhost/crypto/about-us/">About</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561">
-                                  <a href="http://localhost/crypto/contact-us/">Contact</a>
-                                </li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1499">
-                                  <a href="#">Subscrible</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </aside>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-6">
-                          <aside id="mc4wp_form_widget-1" class="widget widget_mc4wp_form_widget">
-                            <h4 class="footer-title">Newsletter Subscribe</h4>
-                          </aside>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="bottom-footer">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 copy-right">
-                      <div class="copyright-content">
-                        <p>
-                          Design by <a href="#">AHT Studio</a>. © 2017 All
-                          Right Reserved
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 f-right">
-                      <div class="payment">
-                        <ul>
-                          <li>
-                            <a href="#"><i class="fa fa-cc-visa"></i></a>
-                          </li>
-                          <li>
-                            <a href="#"><i class="fa fa-cc-mastercard"></i></a>
-                          </li>
-                          <li>
-                            <a href="#"><i class="fa fa-cc-discover"></i></a>
-                          </li>
-                          <li>
-                            <a href="#"><i class="fa fa-cc-amex"></i></a>
-                          </li>
-                          <li>
-                            <a href="#"><i class="fa fa-cc-paypal"></i></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End footer -->
-    </footer>
-    <!-- End colophon -->
-  </div>
-  <!-- End page-->
-</body>
+    <!-- End page-->
+  </body>
 
 </html>
