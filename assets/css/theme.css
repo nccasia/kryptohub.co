@@ -1961,23 +1961,24 @@ span.wpcf7-not-valid-tip {
 }
 /** Default slick slider style */
 .slick-slider .slick-arrow {
-  background: rgba(0, 0, 0, 0.05);
-  border: 1px solid transparent;
-  border-radius: 50%;
-  color: #fff;
-  height: 35px;
+  background: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    height: 110px;
+    line-height: 33px;
+    width: 47px;
+  font-size: 50px;
   position: absolute;
   top: 50%;
   margin: 0 !important;
   text-align: center;
-  line-height: 33px;
   padding: 0;
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 35px;
   opacity: 1;
   z-index: 9;
 }
