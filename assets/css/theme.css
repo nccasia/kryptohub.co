@@ -27873,33 +27873,9 @@ body table.vcw.vcw-table th {
   margin-left: 50px;
 }
 
-
 .right-content {
   position: relative;
 
-}
-
-.row-one {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.two-des {
-  margin-bottom: 12px;
-}
-
-.row-two {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.box-content-left {
-  padding-left: 70px;
-}
-
-.box-content-text {
 }
 
 .two-page {
