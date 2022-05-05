@@ -15,11 +15,11 @@
 		});
 
 		$('.blog-grid-5').slick({
-			nextArrow: '<button class="btn-next"><i class="fa fa-angle-right"></i></button>',
-			prevArrow: '<button class="btn-prev"><i class="fa fa-angle-left"></i></button>',
-			dots: true,
+			dots: false,
 			rtl: false,
 			arrows: true,
+			nextArrow: '<button class="btn-next"><i class="fa fa-angle-right"></i></button>',
+			prevArrow: '<button class="btn-prev"><i class="fa fa-angle-left"></i></button>',
 			infinite: false,
 			autoplay: false,
 			autoplaySpeed: 2000,
@@ -60,6 +60,7 @@
 					target = target.length
 						? target
 						: $('[name=' + this.hash.slice(1) + ']')
+
 				if (target.length) {
 					$('html,body').animate(
 						{
@@ -68,8 +69,14 @@
 						500
 					)
 					return false
+					
 				}
 			}
+
+			
+			
+
+
 		})
 	}
 	// Sticky Menu
