@@ -1970,7 +1970,7 @@ span.wpcf7-not-valid-tip {
     width: 47px;
   font-size: 50px;
   position: absolute;
-  top: 50%;
+  top: 35%;
   margin: 0 !important;
   text-align: center;
   padding: 0;
@@ -28466,6 +28466,17 @@ body table.vcw.vcw-table th {
 .bottom-footer .payment i {
   color: rgba(255, 255, 255, 0.2);
 }
+
+.blog-post-info .blog-post-title {
+  padding: 23px 0;
+}
+
+.blog-post-info .blog-post-title .post-name a{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 
 @media screen and (max-width: 1199px) {
   
