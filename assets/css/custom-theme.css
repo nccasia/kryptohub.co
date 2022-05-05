@@ -29,7 +29,32 @@
   font-weight: 700;
   color: #282828;
   text-transform: uppercase;
+  margin-bottom: 48px;
 }
+
+@media only screen and (max-width: 640px) {
+
+  .box-text.style-center .desc-title {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+
+  .box-text .main-title {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    line-height: 36px;
+    font-weight: 700;  
+    text-transform: uppercase;
+    word-spacing: 3px;
+    padding-bottom: 20px;
+  }
+
+ 
+}
+
 .box-text p {
   line-height: 24px;
   margin-bottom: 24px;
@@ -52,6 +77,19 @@
   padding-left: 35px;
   float: left;
   text-align: left;
+}
+
+@media only screen and (max-width: 640px) {
+  .box-style.style-right {
+    padding-right: 0;
+    float: right;
+    text-align: right;
+  }
+  .box-style.style-left {
+    padding-left: 0;
+    float: left;
+    text-align: left;
+  }
 }
 .box-style.style-left .title-head h2::before {
   left: 0;
@@ -449,6 +487,32 @@
 .slider-boxed {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .head-style-left{
+    padding-top: 50px;
+  }
+
+  .img-block-keys{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .slider-boxed {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .slider-boxed {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* block-technologies */

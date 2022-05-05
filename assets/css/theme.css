@@ -27711,23 +27711,38 @@ body table.vcw.vcw-table th {
   height: auto;
 }
 
-.text-title {
-  font-size: 2vw;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-  word-spacing: 3px;
-}
-
-.text-title2 {
+.title-head-box {
   font-size: 35px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   font-weight: 700;
+  padding-bottom: 9px;
   word-spacing: 3px;
+  color: white;
 }
 
-.text-title3 {
-  font-size: 1.5vw;
+@media only screen and (max-width: 640px) {
+
+  .right-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .title-head-box {
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 9px;
+    word-spacing: 3px;
+    color: white;
+    padding: 15px 0 20px 0;
+  }
+}
+
+.text-title-box {
+  font-size: 20px;
   color: white;
   text-transform: uppercase;
   font-weight: 400;
@@ -27876,7 +27891,6 @@ body table.vcw.vcw-table th {
 
 .right-content {
   position: relative;
-
 }
 
 .row-one {
@@ -28239,6 +28253,7 @@ body table.vcw.vcw-table th {
 
 
 
+
 @media only screen and (max-width: 991px) {
   #menuHeader {
     display: none;
@@ -28378,6 +28393,14 @@ body table.vcw.vcw-table th {
 }
 
 @media screen and (max-width: 1199px) {
+
+  .right-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+
   .block-contact-footer .form .form-bottom textarea {
     display: flex;
     width: 100%;
@@ -28419,6 +28442,8 @@ body table.vcw.vcw-table th {
 }
 
 @media screen and (max-width: 640px) {
+
+ 
   .block-contact-footer .form .form-top input {
     display: flex;
     margin: 0 29px;
