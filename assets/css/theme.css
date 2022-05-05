@@ -27740,14 +27740,6 @@ body table.vcw.vcw-table th {
   color: white;
 }
 
-.banner-slider {
-  padding: 100px 15px;
-  background: url("../image/back-ground.jpg");
-  max-width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .button-box-one {
   background-image: linear-gradient(to right, #0693e3, rgb(74, 234, 220));
   width: 120px;
