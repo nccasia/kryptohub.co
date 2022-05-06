@@ -49,6 +49,7 @@
 		$(
 			'.main-navigation ul.mega-menu > li > a[href*="#"]:not([href="#"]), .site-header .mega-menu .sub-menu li a[href*="#"]:not([href="#"]), .widget_nav_menu .menu li a[href*="#"]:not([href="#"])'
 		).on('click', function () {
+			jQuery('html').removeClass('openmenu')
 			$(
 				'.main-navigation ul.mega-menu > li > a[href*="#"]:not([href="#"]), .site-header .mega-menu .sub-menu li a[href*="#"]:not([href="#"]), .widget_nav_menu .menu li a[href*="#"]:not([href="#"])'
 			).removeClass('active')
