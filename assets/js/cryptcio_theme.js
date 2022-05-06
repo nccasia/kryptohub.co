@@ -23,7 +23,7 @@
 				'<button class="btn-next"><i class="fa fa-angle-right"></i></button>',
 			prevArrow:
 				'<button class="btn-prev"><i class="fa fa-angle-left"></i></button>',
-			infinite: false,
+			infinite: true,
 			autoplay: false,
 			autoplaySpeed: 2000,
 			slidesToShow: 3,

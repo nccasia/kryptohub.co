@@ -5,11 +5,16 @@
 1.0 Block Technologies
 -------------------------------------------------------------------*/
 /* box-text element */
+.box-text.style-center {
+  margin-bottom: 48px;
+}
 .box-text.style-center .desc-title {
   width: 75%;
   margin: 0 auto;
   padding-top: 38px;
-  margin-bottom: 48px;
+}
+.box-text.style-center .main-title {
+  padding-bottom: 0;
 }
 .box-text .head-box {
   letter-spacing: 0.4px;
@@ -29,6 +34,7 @@
   font-weight: 700;
   color: #282828;
   text-transform: uppercase;
+  padding-bottom: 35px;
 }
 .box-text p {
   line-height: 24px;
@@ -55,6 +61,15 @@
 }
 .box-style.style-left .title-head h2::before {
   left: 0;
+}
+.box-style.style-center {
+  text-align: center;
+  margin-top: 40px;
+}
+.box-style.style-center .title-head h2::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .box-style .title-head {
   width: 100%;
@@ -493,6 +508,16 @@
   line-height: 30px;
 }
 
+/* block-what-it */
+.block-what-it .content-what-it {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* block-technologies */
 .block-technologies {
   background-color: #f5f5f5;
@@ -573,6 +598,7 @@
 .list-projects .slick-slider .slick-arrow.btn-next {
   right: 15px;
 }
-.list-projects .slick-slider .slick-arrow:hover, .list-projects .slick-slider .slick-arrow:focus {
+.list-projects .slick-slider .slick-arrow:hover,
+.list-projects .slick-slider .slick-arrow:focus {
   background-color: #000;
 }
