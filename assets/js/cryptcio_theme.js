@@ -20,9 +20,9 @@
 			rtl: false,
 			arrows: true,
 			nextArrow:
-				'<button class="btn-next"><i class="fa fa-angle-right"></i></button>',
+				'<button id="btn-next-project" class="btn-next"><i class="fa fa-angle-right"></i></button>',
 			prevArrow:
-				'<button class="btn-prev"><i class="fa fa-angle-left"></i></button>',
+				'<button id="btn-prev-project"class="btn-prev"><i class="fa fa-angle-left"></i></button>',
 			infinite: true,
 			autoplay: false,
 			autoplaySpeed: 2000,

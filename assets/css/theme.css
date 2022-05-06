@@ -2071,6 +2071,16 @@ span.wpcf7-not-valid-tip {
 }
 
 /** Default slick slider style */
+
+#btn-next-project{
+	top: 35%;
+
+}
+#btn-prev-project{
+	top: 35%;
+
+}
+
 .slick-slider .slick-arrow {
 	background: rgba(0, 0, 0, 0.1);
 	border: none;
