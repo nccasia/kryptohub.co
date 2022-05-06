@@ -1,5 +1,49 @@
 ;(function ($) {
 	'use strict'
+
+	// Blog Slick Slider
+	function cryptcioBlogSlickSlider() {
+		$('.blog-gallery-zones').slick({
+			dots: false,
+			arrows: true,
+			rtl: false,
+			nextArrow:
+				'<button class="btn-next"><i class="fa fa-angle-right"></i></button>',
+			prevArrow:
+				'<button class="btn-prev"><i class="fa fa-angle-left"></i></button>',
+			infinite: true,
+			autoplay: false,
+		})
+
+		$('.blog-grid-5').slick({
+			dots: false,
+			rtl: false,
+			arrows: true,
+			nextArrow:
+				'<button class="btn-next"><i class="fa fa-angle-right"></i></button>',
+			prevArrow:
+				'<button class="btn-prev"><i class="fa fa-angle-left"></i></button>',
+			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 991,
+					settings: {
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 481,
+					settings: {
+						slidesToShow: 1,
+					},
+				},
+			],
+		})
+	}
 	//One Page
 	function cryptcioOnePage() {
 		$(
@@ -18,6 +62,7 @@
 					target = target.length
 						? target
 						: $('[name=' + this.hash.slice(1) + ']')
+
 				if (target.length) {
 					$('html,body').animate(
 						{
@@ -164,5 +209,6 @@
 		cryptcioMenu()
 		cryptcioOnePage()
 		cryptcioFancyBox()
+		cryptcioBlogSlickSlider()
 	})
 })(jQuery)
