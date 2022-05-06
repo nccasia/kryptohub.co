@@ -581,3 +581,17 @@
 		}
 	}
 }
+
+/* block projects */
+.list-projects{
+	.slick-slider .slick-arrow.btn-prev{
+		left: 15px;
+	
+	}
+	.slick-slider .slick-arrow.btn-next{
+		right: 15px;
+	}
+	.slick-slider .slick-arrow:hover, .slick-slider .slick-arrow:focus{
+		background-color: #000;
+	}
+} 

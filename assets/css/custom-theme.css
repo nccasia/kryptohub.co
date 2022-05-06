@@ -565,3 +565,14 @@
           transform: translateX(-50%);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+/* block projects */
+.list-projects .slick-slider .slick-arrow.btn-prev {
+  left: 15px;
+}
+.list-projects .slick-slider .slick-arrow.btn-next {
+  right: 15px;
+}
+.list-projects .slick-slider .slick-arrow:hover, .list-projects .slick-slider .slick-arrow:focus {
+  background-color: #000;
+}
