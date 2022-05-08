@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/theme.css" />
     <link rel="stylesheet" href="assets/css/custom-theme.css" />
-
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
     <style id="inline-css" type="text/css">
       header.site-header,
       .fixed-header header.site-header.is-sticky {
@@ -41,6 +41,11 @@
         font-weight: 700;
         text-transform: uppercase;
       }
+    </style>
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
 
     </cryptcio-theme-inline-css>
@@ -124,7 +129,7 @@
                   <img class="img-bg-slider" src="assets/image/back-ground.jpg" />
                   <div class="container-fluid slider-boxed">
                     <div class="row item-slider">
-                      <div class="col-lg-5 right-content">
+                      <div class="col-lg-5 col-sm-5 right-content">
                         <div class="box-text-slider">
                           <div class="head-title">Cryptcio App</div>
                           <div class="main-title">
@@ -141,7 +146,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-7">
+                      <div class="col-lg-7 col-sm-7">
                         <img class="img-responsive" src="assets/image/E-Bank.png" />
                       </div>
                     </div>
@@ -186,7 +191,7 @@
           <section class="block-section block-what-it" id="whatit">
             <div class="container">
               <div class="row content-what-it">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                   <div class="box-text">
                     <div class="head-box">
                       <!-- <div class="head-title">CRYPTO</div> -->
@@ -216,7 +221,7 @@
                       </div>
                     </div> -->
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                   <div class="right-content">
                     <img src="assets/image/img-intro.png" class="img-responsive" />
                   </div>
@@ -542,7 +547,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
                   <div class=" member-type">
                     <div class="item-member-content">
                       <div class="member-img">
@@ -636,7 +641,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
                   <div class=" member-type">
                     <div class="item-member-content">
                       <div class="member-img">
@@ -730,7 +735,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
                   <div class=" member-type">
                     <div class="item-member-content">
                       <div class="member-img">
@@ -824,7 +829,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
                   <div class=" member-type">
                     <div class="item-member-content">
                       <div class="member-img">
@@ -958,7 +963,7 @@
 
                 </div>
                 <div class="submit">
-                  <button>Submit</button>
+                  <button class="button-hover">Submit</button>
                 </div>
               </div>
             </div>
@@ -1011,10 +1016,10 @@
                           </div>
                           <div class="box-content">
                             <ul>
-                              <li>About Us</li>
-                              <li>Contact Us</li>
-                              <li>Latest Us</li>
-                              <li>Team Member</li>
+                              <a href="#"><li>About Us</li></a>
+                              <a href="#"><li>Contact Us</li></a>
+                              <a href="#"><li>Latest Us</li></a>
+                              <a href="#"><li>Team Member</li></a>
                             </ul>
                           </div>
                         </div>
@@ -1024,9 +1029,9 @@
                           </div>
                           <div class="box-content">
                             <ul>
-                              <li>My Account</li>
-                              <li>Orders Tracking</li>
-                              <li>FAQs</li>
+                              <a href="#"><li>My Account</li></a>
+                              <a href="#"><li>Orders Tracking</li></a>
+                              <a href="#"><li>FAQs</li></a>
                             </ul>
                           </div>
                         </div>
@@ -1038,7 +1043,7 @@
                             <ul>
                               <li>To Keep you updated, please subscribe to our newsletter</li>
                               <li>
-                                <div class="send-mail"><input type="text" placeholder="Enter Your email"> <button><i
+                                <div class="send-mail"><input type="text" placeholder="Enter Your email"> <button class="button-hover"><i
                                       class="fa fa-paper-plane" aria-hidden="true"></i></button></div>
                               </li>
 
@@ -1053,6 +1058,29 @@
             </div>
           </div>
         </div>
+
+        <form action="https://gmail.us11.list-manage.com/subscribe/post?u=69cbb289faf856a1856cf6b97&amp;id=fc97ac26e0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+        <h2>Subscribe</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+      </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+        <div id="mce-responses" class="clear foot">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_69cbb289faf856a1856cf6b97_fc97ac26e0" tabindex="-1" value=""></div>
+              <div class="optionalParent">
+                  <div class="clear foot">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                      <p class="brandingLogo"><a href="http://eepurl.com/h1qBor" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                  </div>
+              </div>
+          </div>
+      </form>
         <div class="footer-bottom">
           <div class="container">
             <div class="row">
@@ -1100,6 +1128,7 @@
       <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
       <script type="text/javascript" src="assets/js/slick.min.js"></script>
       <script type="text/javascript" src="assets/js/cryptcio_theme.js"></script>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     </footer>
     <!-- End colophon -->
 

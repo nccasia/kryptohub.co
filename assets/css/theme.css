@@ -31013,3 +31013,33 @@ body table.vcw.vcw-table th {
 		margin-bottom: 22px;
 	}
 }
+ /* css */
+.footer-menu-list a li {
+	color: white;
+}
+.form-top input:focus {
+	background-color: rgb(255, 255, 255, 0.4);
+  }
+
+  .send-mail input:focus {
+	background-color: rgb(255, 255, 255, 0.4);
+  }
+
+  @media only screen and (max-width: 768px)  {
+	.block-what-it .content-what-it {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	  }
+  }
+
+  @media only screen and (min-width: 480px)  {
+	.img-gallery .item-slider {
+	display: flex;
+  }
