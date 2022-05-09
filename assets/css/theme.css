@@ -30664,11 +30664,13 @@ body table.vcw.vcw-table th {
 	color: #fff;
 }
 
-.block-contact-footer .form input {
+#mc_embed_signup input {
 	background: transparent;
+	border: none;
 	border-bottom: 1px solid white;
 	padding-left: 0px;
 	padding-right: 0px;
+	border-radius: 0;
 }
 
 .block-contact-footer .form ::-webkit-input-placeholder {
@@ -30726,6 +30728,40 @@ body table.vcw.vcw-table th {
 	margin-top: 20px;
 	font-weight: 700;
 	border: none;
+}
+
+#mc_embed_signup .button {
+	background-color: #45b7f4;
+	width: 163px;
+	height: 50px;
+	color: white;
+	margin-top: 20px;
+	font-weight: 700;
+	border: none;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: flex;
+    width: 100%;
+    text-indent: 0%;
+}
+
+
+#mc_embed_signup .button:hover{
+	background-image: linear-gradient(to right, #0693e3, rgb(74, 234, 2));
+	background-color: #45b7f4;
+	width: 163px;
+	height: 50px;
+	color: white;
+	margin-top: 20px;
+	font-weight: 700;
+	border: none;
+}
+
+
+#mc_embed_signup .foot {
+	display: flex;
+	justify-content: center;
 }
 
 .block-bottom-footer {
@@ -30874,6 +30910,7 @@ body table.vcw.vcw-table th {
 	font-weight: 700;
 	line-height: 30px;
 }
+
 
 @media screen and (max-width: 1199px) {
 	.right-content {
@@ -31033,6 +31070,7 @@ body table.vcw.vcw-table th {
 	background-color: rgb(255, 255, 255, 0.4);
 }
 
+
 @media only screen and (max-width: 768px) {
 	.block-what-it .content-what-it {
 		display: -webkit-box;
@@ -31173,4 +31211,9 @@ body table.vcw.vcw-table th {
 		box-sizing: border-box;
 		z-index: 2;
 	}
+}
+
+
+.form-top input {
+	margin-left: 0;
 }
