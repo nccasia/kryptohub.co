@@ -30,11 +30,11 @@
 .box-text .main-title {
   word-spacing: 3px;
   line-height: 36px;
-  font-size: 30px;
+  /* font-size: 30px; */
   font-weight: 700;
   color: #282828;
   text-transform: uppercase;
-  padding-bottom: 35px;
+  /* padding-bottom: 35px; */
 }
 .box-text p {
   line-height: 24px;

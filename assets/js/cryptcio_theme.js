@@ -15,6 +15,35 @@
 			autoplay: false,
 		})
 
+		// $('.blog-grid-5').slick({
+		// 	dots: false,
+		// 	rtl: false,
+		// 	arrows: true,
+		// 	nextArrow:
+		// 		'<button id="btn-next-project" class="btn-next"><i class="fa fa-angle-right"></i></button>',
+		// 	prevArrow:
+		// 		'<button id="btn-prev-project"class="btn-prev"><i class="fa fa-angle-left"></i></button>',
+		// 	infinite: true,
+		// 	autoplay: false,
+		// 	autoplaySpeed: 2000,
+		// 	slidesToShow: 3,
+		// 	slidesToScroll: 1,
+		// 	responsive: [
+		// 		{
+		// 			breakpoint: 991,
+		// 			settings: {
+		// 				slidesToShow: 2,
+		// 			},
+		// 		},
+		// 		{
+		// 			breakpoint: 481,
+		// 			settings: {
+		// 				slidesToShow: 1,
+		// 			},
+		// 		},
+		// 	],
+		// })
+
 		$('.blog-grid-5').slick({
 			dots: false,
 			rtl: false,
@@ -26,13 +55,13 @@
 			infinite: true,
 			autoplay: false,
 			autoplaySpeed: 2000,
-			slidesToShow: 3,
+			slidesToShow: 1,
 			slidesToScroll: 1,
 			responsive: [
 				{
 					breakpoint: 991,
 					settings: {
-						slidesToShow: 2,
+						slidesToShow: 1,
 					},
 				},
 				{
@@ -43,6 +72,7 @@
 				},
 			],
 		})
+
 	}
 	//One Page
 	function cryptcioOnePage() {
