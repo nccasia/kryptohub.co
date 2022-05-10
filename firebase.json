@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "firebase": "my-ember-cli-app",
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs16"
+  }
+}
