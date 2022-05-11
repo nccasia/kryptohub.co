@@ -31676,7 +31676,7 @@ body table.vcw.vcw-table th {
 	height: 80vh;
 	display: flex;
 	justify-content: center;
-	align-items: end;
+	align-items: center;
 }
 
 .slider-project .row-slider p {
@@ -31685,5 +31685,76 @@ body table.vcw.vcw-table th {
 	font-size: 18px;
 	color: #ba4efc;
 }
+
+
+#popup-img p {
+	display: none;
+}
+
+
+#popup-img a {
+	display: none;
+}
+
+#popup-img .title {
+	display: none;
+}
+
+#title-text-modal {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+
+#des-text-modal{
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0 50px;
+	text-align: left;
+	color: #fff;
+}
+
+#link-text-modal {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0 50px;
+	text-align: left;
+	color: #e08821;
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	#title-text-modal {
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+	
+	#des-text-modal{
+		font-size: 18px;
+		font-weight: 400;
+		margin: 0 15px;
+		text-align: left;
+		color: #fff;
+	}
+	
+	#link-text-modal {
+		font-size: 18px;
+		font-weight: 400;
+		margin: 0 15px;
+		text-align: left;
+		color: #e08821;
+	
+	}
+
+}
+
 
 /* end modal project */

@@ -1,9 +1,13 @@
 var modal = document.getElementById("myModal");
 var captionText = document.getElementById("caption");
 var bg = document.getElementById("background-image-modal");
+var parentImg = document.getElementById("popup-img")
 var idImg = document.getElementById("myImg");
 var classImg = document.getElementsByClassName("w3-button")
-
+var content = document.getElementById("content-text-modal")
+var titleModal = document.getElementById("title-text-modal")
+var linkModal = document.getElementById("link-text-modal")
+var desModal = document.getElementById("des-text-modal")
 
 
 var width =
@@ -28,6 +32,13 @@ if (height < width) {
     const elem = e.target;
     if (elem.id === "myImg") {
       modal.style.display = "block";
+      let parent = (elem.parentNode)
+      titleModal.innerHTML = parent.getElementsByClassName('title')[0].innerText
+      desModal.innerHTML = parent.getElementsByClassName('des')[0].innerText
+      linkModal.innerHTML = parent.getElementsByClassName('link')[0].innerText
+
+      console.log(elem, parent)
+      // titleModal.innerHTML = elem.h3;
     }
 
     if (elem.classList.contains("ATLAS")) {
@@ -105,6 +116,10 @@ if (height < width) {
     const elem = e.target;
     if (elem.id === "myImg") {
       modal.style.display = "block";
+      let parent = (elem.parentNode)
+      titleModal.innerHTML = parent.getElementsByClassName('title')[0].innerText
+      desModal.innerHTML = parent.getElementsByClassName('des')[0].innerText
+      linkModal.innerHTML = parent.getElementsByClassName('link')[0].innerText
     }
 
     if (elem.classList.contains("ATLAS")) {
