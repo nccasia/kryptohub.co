@@ -10,6 +10,14 @@ var linkModal = document.getElementById("link-text-modal")
 var desModal = document.getElementById("des-text-modal")
 
 
+var hoverPopup = document.getElementsByClassName("slider-item")
+
+  if (hoverPopup.onmouseover) {
+    console.log('test')
+  }
+
+  // console.log(hoverPopup)
+
 var width =
   window.innerWidth ||
   document.documentElement.clientWidth ||
@@ -19,6 +27,11 @@ var height =
   window.innerHeight ||
   document.documentElement.clientHeight ||
   document.body.clientHeight;
+
+  if (width == 768 && height == 1024 ) {
+    document.getElementById("textarea-mess").style.width = "500px"
+  }
+
 
 if (height < width) {
   if (width < 900) {

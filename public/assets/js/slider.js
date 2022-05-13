@@ -1,122 +1,89 @@
-let slideIndex = 1;
-show(slideIndex);
-
-function plusDivs(n) {
-  show((slideIndex += n));
+function currentDiv(index, id) {
+  showDivs(index, id);
 }
-
-function show(n) {
-  let i;
-  let x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
+function showDivs(index, id) {
+  var x = document.querySelectorAll(`#${id} .mySlides`);
+  var dots = document.querySelectorAll(`#${id} .dot`);
+  myIndex[id] = index
+  for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  x[slideIndex - 1].style.display = "block";
-}
-
-let slider2 = 1;
-showDivs2(slider2);
-function plusDivs2(n) {
-  showDivs2((slider2 += n));
-}
-function showDivs2(n) {
-  let i;
-  let x = document.getElementsByClassName("mySlides2");
-  if (n > x.length) {
-    slider2 = 1;
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  if (n < 1) {
-    slider2 = x.length;
+  x[index - 1].style.display = "block";
+  dots[index - 1].className += " w3-white";
+  clearTimeout(timeout[id])
+  timeout[id] = setTimeout(() => {
+    carousel(id)
+  }, 3000);
+}
+var timeout = {
+  game: 0,
+  investment: 0,
+  finance: 0,
+  insurance: 0,
+  education: 0,
+  entertainment: 0,
+};
+var myIndex = {
+  game: 1,
+  investment: 1,
+  finance: 1,
+  insurance: 1,
+  education: 1,
+  entertainment: 1,
+};
+carousel('game');
+carousel('investment');
+carousel('finance');
+carousel('insurance');
+carousel('education');
+carousel('entertainment');
+function carousel(id) {
+  var x = document.querySelectorAll(`#${id} .mySlides`);
+  var dots = document.querySelectorAll(`#${id} .dot`);
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  for (i = 0; i < x.length; i++) {
+  for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  x[slider2 - 1].style.display = "block";
+  myIndex[id]++;
+  if (myIndex[id] > x.length) {myIndex[id] = 1}    
+  x[myIndex[id]-1].style.display = "block";  
+  console.log(myIndex[id] - 1)
+  console.log(dots)
+  dots[myIndex[id] - 1].className += " w3-white";
+  timeout[id] = setTimeout(() => {
+    carousel(id)
+  }, 3000);
 }
 
-let slider3 = 1;
-show3(slider3);
-function plusDivs3(n) {
-  show3((slider3 += n));
-}
-function show3(n) {
-  let i;
-  let x = document.getElementsByClassName("mySlides3");
-  if (n > x.length) {
-    slider3 = 1;
-  }
-  if (n < 1) {
-    slider3 = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slider3 - 1].style.display = "block";
-}
+// var imgSlider = document.querySelectorAll('#slider-item');
 
-let slider4 = 1;
-show4(slider4);
-function plusDivs4(n) {
-  show4((slider4 += n));
-}
-function show4(n) {
-  let i;
-  let x = document.getElementsByClassName("mySlides4");
-  if (n > x.length) {
-    slider4 = 1;
-  }
-  if (n < 1) {
-    slider4 = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slider4 - 1].style.display = "block";
-}
+// imgSlider.map(item => item)
 
+// console.log(imgSlider)
 
-let slider5 = 1;
-show5(slider5);
-function plusDivs5(n) {
-  show5((slider5 += n));
-}
-function show5(n) {
-  let i;
-  let x = document.getElementsByClassName("mySlides5");
-  if (n > x.length) {
-    slider5 = 1;
-  }
-  if (n < 1) {
-    slider5 = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slider5 - 1].style.display = "block";
-}
+  
+// console.log(test)
 
-let slider6 = 1;
-show6(slider6);
-function plusDivs6(n) {
-  show6((slider6 += n));
-}
-function show6(n) {
-  let i;
-  let x = document.getElementsByClassName("mySlides6");
-  if (n > x.length) {
-    slider6 = 1;
-  }
-  if (n < 1) {
-    slider6 = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slider6 - 1].style.display = "block";
-}
+//   var i;
+// for( i = 0; i < imgSlider.length; i ++){
+//   console.log(imgSlider)
+// }
+
+// if (imgSlider.style.display == 'none') {
+//   console.log('test')
+// }
+// var idSlider = document.getElementById('slider-item');
+// var classSlider = document.getElementsByClassName('slider-item');
+// console.log(classSlider)
+// var divSlider = classSlider[0].querySelectorAll('div')
+// var test = divSlider[0].querySelectorAll('img')
+  // var i;
+  // for(i = 0; i < classSlider.length; i++) {
+  //   console.log(idSlider)
+  // console.log(classSlider.querySelectorAll('#myImg')) 
+  // }
