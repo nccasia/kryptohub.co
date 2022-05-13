@@ -31557,7 +31557,9 @@ body table.vcw.vcw-table th {
 }
 
 .w3-border {
-	border: 1px solid #ccc !important
+	background-color: #eee;
+
+	/* border: 1px solid #ccc !important */
 }
 
 .w3-transparent:hover {
@@ -31567,6 +31569,7 @@ body table.vcw.vcw-table th {
 .w3-hover-white:hover {
 	color:  #fff !important;
 	background-color: #000 !important;
+	
 }
 
 .w3-white {
@@ -31669,6 +31672,37 @@ body table.vcw.vcw-table th {
 	background-image: url('../image/img-bg-popup/themis.png');
 }
 
+.popup-img .title{
+	font-size: 45px;
+	text-align: center;
+	color: white;
+}
+
+.popup-img .des{
+	color: white;
+	font-size: 18px;
+}
+
+.popup-img .link{
+	color: #e08821;
+	font-size: 18px;
+
+
+}
+.popup-img {
+	display: none;
+	background-size: cover;
+	background-position: center;
+}
+.popup-img .content-popup {
+	height: 80vh;
+	width: 80vw;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .bg-topaz {
 	background-image: url('../image/img-bg-popup/topaz.png');
 }
@@ -31688,85 +31722,6 @@ body table.vcw.vcw-table th {
 .bg-Warena {
 	background-image: url('../image/img-bg-popup/Warena.png');
 }
-
-
-/* bg mobile  */
-
-.mbg-atlas {
-	background-image: url('../image/bg-popup/atlas.png');
-}
-
-.mchinetwork {
-	background-image: url('../image/bg-popup/chinetwork.png');
-}
-
-.mbg-EpicWar {
-	background-image: url('../image/bg-popup/EpicWar.png');
-}
-
-.mbg-Flow-Station {
-	background-image: url('../image/bg-popup/Flow-Station.png');
-}
-
-
-.mbg-Fortia {
-	background-image: url('../image/bg-popup/Fortia.png');
-}
-
-
-.mbg-JUCC {
-	background-image: url('../image/bg-popup/JUCC.png');
-}
-
-.mbg-Mavia {
-	background-image: url('../image/bg-popup/Mavia.png');
-}
-
-.mbg-MemePad {
-	background-image: url('../image/bg-popup/MemePad.png');
-}
-
-.mbg-midas {
-	background-image: url('../image/bg-popup/midas.png');
-}
-
-.mbg-nafter {
-	background-image: url('../image/bg-popup/nafter.png');
-}
-
-.mbg-stoplatform {
-	background-image: url('../image/bg-popup/stoplatform.png');
-}
-
-.mbg-Teo {
-	background-image: url('../image/bg-popup/Teo.png');
-}
-
-.mbg-themis {
-	background-image: url('../image/bg-popup/themis.png');
-}
-
-.mbg-topaz {
-	background-image: url('../image/bg-popup/topaz.png');
-}
-
-.mbg-Treelion {
-	background-image: url('../image/bg-popup/Treelion.png');
-}
-
-.mbg-TX8 {
-	background-image: url('../image/bg-popup/TX8.png');
-}
-
-.mbg-Undead_Block {
-	background-image: url('../image/bg-popup/Undead_Block.png');
-}
-
-.mbg-Warena {
-	background-image: url('../image/bg-popup/Warena.png');
-}
-
-/* end bg mobile  */
 
 /* Caption of Modal Image */
 
@@ -31858,18 +31813,7 @@ body table.vcw.vcw-table th {
 }
 
 
-#popup-img p {
-	display: none;
-}
 
-
-#popup-img a {
-	display: none;
-}
-
-#popup-img .title {
-	display: none;
-}
 
 #title-text-modal {
 	color: white;
@@ -31902,6 +31846,20 @@ body table.vcw.vcw-table th {
 
 
 @media only screen and (max-width: 640px) {
+
+
+	.fancybox-slide>* {
+		padding: 10px
+	}
+
+	.popup-img .content-popup {
+		height: 80vh;
+		width: 90vw;
+		text-align: justify;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
 	#mce-responses {
 		margin-left: 28px;
