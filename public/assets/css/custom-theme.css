@@ -769,6 +769,27 @@
 }
 @media only screen and (max-width: 640px) {
   /* block team */
+
+
+  .popup-img .title{
+		font-size: 30px;
+		text-align: center;
+		color: white;
+		font-weight: 700;
+	}
+	
+	.popup-img .des{
+		color: white;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	
+	.popup-img .link{
+		color: #e08821;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
   .member-lightbox .member-img {
     -webkit-box-flex: 0;
     width: 80%;

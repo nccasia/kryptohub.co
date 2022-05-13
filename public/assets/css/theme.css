@@ -31224,7 +31224,31 @@ body table.vcw.vcw-table th {
 	background-color: #d4edda;
 	border-color: #c3e6cb;
 	border-radius: 2px;
+	text-align: center;
+
 }
+
+#mce-error-response {
+	color: #7d1e00;
+	border: 1px solid transparent;
+	padding: 10px 10px;
+	background-color: #ff3333;
+	border-color: #c3e6cb;
+	border-radius: 2px;
+	text-align: center;
+
+}
+
+#want-mail {
+	color: #fff;
+	border: 1px solid transparent;
+	padding: 10px 10px;
+	background-color: #ff3333;
+	border-color: #c3e6cb;
+	border-radius: 2px;
+	text-align: center;
+}
+
 
 .box-text-slider .text-des,
 .box-text p {
@@ -31406,6 +31430,10 @@ body table.vcw.vcw-table th {
 
 
 @media only screen and (min-width: 768px) {
+
+	#want-mail, #mce-error-response ,#mce-success-response {
+		margin-left: 58px;
+	}
 
 	.slider-boxed .item-slider {
 		margin-top: 65px;
@@ -31622,7 +31650,7 @@ body table.vcw.vcw-table th {
 	background-image: url('../image/img-bg-popup/atlas.png');
 }
 
-.chinetwork {
+.bg-chinetwork {
 	background-image: url('../image/img-bg-popup/chinetwork.png');
 }
 
@@ -31955,4 +31983,10 @@ body table.vcw.vcw-table th {
 .slide-nav-bt.active {
 	background-color: #000;
 	border: solid 1px #fff;
+}
+
+#loadingGif {
+	width: 30px;
+	height: 30px;
+margin: 0 auto;
 }

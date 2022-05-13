@@ -52,12 +52,38 @@ function carousel(id) {
   myIndex[id]++;
   if (myIndex[id] > x.length) {myIndex[id] = 1}    
   x[myIndex[id]-1].style.display = "block";  
-  console.log(myIndex[id] - 1)
-  console.log(dots)
   dots[myIndex[id] - 1].className += " w3-white";
   timeout[id] = setTimeout(() => {
     carousel(id)
   }, 3000);
+}
+
+
+//loading co
+function showLoading() {
+
+ 
+
+document.getElementById('mce-responses').style.display = "none"
+
+var mailForm = document.getElementById('mce-EMAIL')
+if(mailForm.value.length == 0)
+{
+  console.log('dfdf');
+  document.getElementById('want-mail').style.display = 'block';
+}
+else {
+  document.getElementById('want-mail').style.display = 'none';
+
+  document.getElementById('loadingGif').style.display = "block"
+  
+  setTimeout(function() {
+    document.getElementById('loadingGif').style.display = "none"
+    document.getElementById('mce-responses').style.display = "block"
+  }, 2000)
+}
+
+
 }
 
 // var imgSlider = document.querySelectorAll('#slider-item');
