@@ -5654,7 +5654,7 @@ footer ul,
 }
 
 .footer-logo {
-	padding-top: 26px;
+	/* padding-top: 26px; */
 }
 
 .footer-title {
@@ -30888,7 +30888,7 @@ body table.vcw.vcw-table th {
 
 .flex-footer {
 	display: flex;
-	align-items: center;
+	align-items: start;
 	flex-wrap: wrap;
 }
 
@@ -31229,22 +31229,21 @@ body table.vcw.vcw-table th {
 }
 
 #mce-error-response {
-	color: #7d1e00;
 	border: 1px solid transparent;
 	padding: 10px 10px;
-	background-color: #ff3333;
-	border-color: #c3e6cb;
 	border-radius: 2px;
 	text-align: center;
-
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
 }
 
 #want-mail {
-	color: #fff;
+	color: #721c24;
 	border: 1px solid transparent;
 	padding: 10px 10px;
-	background-color: #ff3333;
-	border-color: #c3e6cb;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
 	border-radius: 2px;
 	text-align: center;
 }
@@ -31255,9 +31254,19 @@ body table.vcw.vcw-table th {
 	text-align: justify;
 }
 
-
+.footer-left-info p{
+padding-top: 30px;
+}
 
 @media only screen and (min-width: 1200px) {
+
+	.content-popup .des {
+		padding: 0 90px;
+	}
+
+	.content-popup .link {
+		padding: 0 90px;
+	}
 
 	.item-block-service {
 		margin: 0;
@@ -31431,7 +31440,9 @@ body table.vcw.vcw-table th {
 
 @media only screen and (min-width: 768px) {
 
-	#want-mail, #mce-error-response ,#mce-success-response {
+	#want-mail,
+	#mce-error-response,
+	#mce-success-response {
 		margin-left: 58px;
 	}
 
@@ -31567,7 +31578,7 @@ body table.vcw.vcw-table th {
 
 .w3-badge,
 .w3-tag {
-	background-color:  #fff;
+	background-color: #fff;
 	color: #000;
 	display: inline-block;
 	padding: 5px;
@@ -31577,7 +31588,9 @@ body table.vcw.vcw-table th {
 .w3-center {
 	display: flex;
 	justify-content: center;
-	gap: 5px;
+	gap: 10px;
+	padding-top: 15px;
+	cursor: pointer;
 }
 
 .w3-badge {
@@ -31595,14 +31608,14 @@ body table.vcw.vcw-table th {
 }
 
 .w3-hover-white:hover {
-	color:  #fff !important;
+	color: #fff !important;
 	background-color: #000 !important;
-	
+
 }
 
 .w3-white {
 	color: #fff !important;
-    background-color: #000 !important;
+	background-color: #000 !important;
 }
 
 
@@ -31692,6 +31705,10 @@ body table.vcw.vcw-table th {
 	background-image: url('../image/img-bg-popup/stoplatform.png');
 }
 
+.bg-sto {
+	background-image: url('../image/img-bg-popup/sto.png');
+}
+
 .bg-Teo {
 	background-image: url('../image/img-bg-popup/Teo.png');
 }
@@ -31700,28 +31717,30 @@ body table.vcw.vcw-table th {
 	background-image: url('../image/img-bg-popup/themis.png');
 }
 
-.popup-img .title{
+.popup-img .title {
 	font-size: 45px;
 	text-align: center;
 	color: white;
 }
 
-.popup-img .des{
+.popup-img .des {
 	color: white;
 	font-size: 18px;
 }
 
-.popup-img .link{
+.popup-img .link {
 	color: #e08821;
 	font-size: 18px;
 
 
 }
+
 .popup-img {
 	display: none;
 	background-size: cover;
 	background-position: center;
 }
+
 .popup-img .content-popup {
 	height: 80vh;
 	width: 80vw;
@@ -31872,9 +31891,27 @@ body table.vcw.vcw-table th {
 	padding-top: 12px
 }
 
+#tx8 .content-popup {
+	text-align: center;
+}
+
+#midas .content-popup {
+	text-align: center;
+
+}
 
 @media only screen and (max-width: 640px) {
 
+
+	
+#themis {
+	background-position: 14%;
+}
+
+#memepad {
+
+	background-position: -6%;
+}
 
 	.fancybox-slide>* {
 		padding: 10px
@@ -31988,5 +32025,5 @@ body table.vcw.vcw-table th {
 #loadingGif {
 	width: 30px;
 	height: 30px;
-margin: 0 auto;
+	margin: 0 auto;
 }
