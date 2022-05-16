@@ -771,6 +771,12 @@
   /* block team */
 
 
+  .member-type .social-list li {
+    display: inline-block;
+    padding: 0px;
+  }
+
+
   .popup-img .title{
 		font-size: 30px;
 		text-align: center;
