@@ -17450,6 +17450,18 @@ div#customer_login {
 }
 
 @media (max-width: 640px) {
+
+
+
+	.box-text-slider .text-des {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.box-text-slider .text-des, .box-text p {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
 	.product-list .product-content {
 		overflow: visible;
 		padding-bottom: 0;
@@ -31352,7 +31364,8 @@ body table.vcw.vcw-table th {
 
 	.box-text-slider .text-des,
 	.box-text p {
-		font-size: 21px;
+		font-size: 18px;
+		line-height: 36px;
 		font-weight: 400;
 		line-height: 40px;
 		text-align: left;
@@ -31451,7 +31464,9 @@ body table.vcw.vcw-table th {
 		font-size: 30px;
 		padding-bottom: 35px;
 	}
-
+	.box-text .main-title {
+		margin-bottom: 35px;
+	}
 }
 
 @media only screen and (max-width: 960px) {
@@ -31754,6 +31769,17 @@ body table.vcw.vcw-table th {
 	}
 }
 
+@media only screen and (min-width: 640px) and (max-width: 1200px) {
+	.box-text-slider .text-des {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.box-text-slider .text-des, .box-text p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
 @media only screen and (min-width: 640px) and (max-width: 767px) {
 	.slider-project .slider-col {
 		/* width: 50%; */
@@ -31777,6 +31803,12 @@ body table.vcw.vcw-table th {
 @media only screen and (min-width: 641px) and (max-width: 991px) {
 	.slider-item {
 		padding: 0 20px;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.box-end {
+		padding-top: 45px;
 	}
 }
 
