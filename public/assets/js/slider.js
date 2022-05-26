@@ -1,3 +1,22 @@
+// let slideIndex = [1,1,1,1,1,1]
+// let slideId = ["game", "investment"]
+
+// showSlides(1, 'game');
+// showSlides(1, 'investment');
+// function plusSlides(n, no) {
+//   showSlides(slideIndex[no] += n, no);
+// }
+// function showSlides(n, no) {
+//   let i;
+//   let getIdSlide = document.getElementsByClassName(slideId[no]);
+//   if (n > getIdSlide.length) {slideIndex[no] = 1}    
+//   if (n < 1) {slideIndex[no] = getIdSlide.length}
+//   for (i = 0; i < getIdSlide.length; i++) {
+//     getIdSlide[i].style.display = "none";  
+//   }
+//   getIdSlide[slideIndex[no]-1].style.display = "block";  
+// }
+
 function currentDiv(index, id) {
   showDivs(index, id);
 }
@@ -50,66 +69,28 @@ function carousel(id) {
     x[i].style.display = "none";
   }
   myIndex[id]++;
-  if (myIndex[id] > x.length) {myIndex[id] = 1}    
-  x[myIndex[id]-1].style.display = "block";  
+  if (myIndex[id] > x.length) {
+    myIndex[id] = 1;
+  }
+  x[myIndex[id] - 1].style.display = "block";
   dots[myIndex[id] - 1].className += " w3-white";
   timeout[id] = setTimeout(() => {
-    carousel(id)
+    carousel(id);
   }, 3000);
 }
 
-
 //loading co
 function showLoading() {
-
- 
-
-document.getElementById('mce-responses').style.display = "none"
-
-var mailForm = document.getElementById('mce-EMAIL')
-if(mailForm.value.length == 0)
-{
-  console.log('dfdf');
-  document.getElementById('want-mail').style.display = 'block';
+  document.getElementById("mce-responses").style.display = "none";
+  var mailForm = document.getElementById("mce-EMAIL");
+  if (mailForm.value.length == 0) {
+    document.getElementById("want-mail").style.display = "block";
+  } else {
+    document.getElementById("want-mail").style.display = "none";
+    document.getElementById("loadingGif").style.display = "block";
+    setTimeout(function () {
+      document.getElementById("loadingGif").style.display = "none";
+      document.getElementById("mce-responses").style.display = "block";
+    }, 2000);
+  }
 }
-else {
-  document.getElementById('want-mail').style.display = 'none';
-
-  document.getElementById('loadingGif').style.display = "block"
-  
-  setTimeout(function() {
-    document.getElementById('loadingGif').style.display = "none"
-    document.getElementById('mce-responses').style.display = "block"
-  }, 2000)
-}
-
-
-}
-
-// var imgSlider = document.querySelectorAll('#slider-item');
-
-// imgSlider.map(item => item)
-
-// console.log(imgSlider)
-
-  
-// console.log(test)
-
-//   var i;
-// for( i = 0; i < imgSlider.length; i ++){
-//   console.log(imgSlider)
-// }
-
-// if (imgSlider.style.display == 'none') {
-//   console.log('test')
-// }
-// var idSlider = document.getElementById('slider-item');
-// var classSlider = document.getElementsByClassName('slider-item');
-// console.log(classSlider)
-// var divSlider = classSlider[0].querySelectorAll('div')
-// var test = divSlider[0].querySelectorAll('img')
-  // var i;
-  // for(i = 0; i < classSlider.length; i++) {
-  //   console.log(idSlider)
-  // console.log(classSlider.querySelectorAll('#myImg')) 
-  // }
