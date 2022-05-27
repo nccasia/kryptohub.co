@@ -30969,28 +30969,17 @@ body table.vcw.vcw-table th {
 
 
 /* modal project */
-#myImg {
+.img-modal {
 
 	border-radius: 5px;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
-#myImg:hover {
+.img-modal:hover {
 	opacity: 0.7;
 }
 
-
-#myImg2 {
-
-	border-radius: 5px;
-	cursor: pointer;
-	transition: 0.3s;
-}
-
-#myImg2:hover {
-	opacity: 0.7;
-}
 
 /* The Modal (background) */
 .modal {
@@ -31193,10 +31182,6 @@ body table.vcw.vcw-table th {
 	background-position: center;
 }
 
-.content-popup {
-	/* display: flex;
-	  align-items: flex-end; */
-}
 
 .caption-popup {
 	color: red;
@@ -31266,7 +31251,7 @@ body table.vcw.vcw-table th {
 .popup-img .content-popup {
 	width: 80vw;
 	height: 80vh;
-	text-align: justify;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -31322,6 +31307,44 @@ body table.vcw.vcw-table th {
 	background-color: #000;
 	border: solid 1px #fff;
 }
+
+
+#popup-show-project .btn-prev {
+	background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    height: 110px;
+    line-height: 33px;
+    width: 47px;
+	position: absolute;
+	left: 0;
+	top: 45%;
+	font-size: 60px;
+}
+
+#popup-show-project .btn-prev:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#popup-show-project .btn-next:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#popup-show-project .btn-next {
+	background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    height: 110px;
+    line-height: 33px;
+    width: 47px;
+	position: absolute;
+	right: 0;
+	top: 45%;
+	font-size: 60px;
+}
+
 
 /* end block project  */
 
@@ -31832,6 +31855,34 @@ body table.vcw.vcw-table th {
 
 @media only screen and (max-width: 640px) {
 
+	#popup-show-project .btn-prev {
+		height: 70px;
+		line-height: 33px;
+		width: 30px;
+		font-size: 34px;
+	}
+	
+	
+	#popup-show-project .btn-next {
+		height: 70px;
+		line-height: 33px;
+		width: 30px;
+		font-size: 34px;
+	}
+
+
+	.popup-img .content-popup {
+		text-align: justify;
+		overflow-y: scroll;
+		scrollbar-width: none;
+		width: 100%;
+	}
+
+	.popup-img .content-popup::-webkit-scrollbar {
+		display: none;
+		scrollbar-width: none;
+	}
+
 	.block-contact-footer .form .form-top input {
 		display: flex;
 		margin: 0 29px;
@@ -31875,7 +31926,7 @@ body table.vcw.vcw-table th {
 		background-position: 14%;
 	}
 
-	#memepad {
+	#popup-show-project {
 
 		background-position: -6%;
 	}
@@ -31885,7 +31936,7 @@ body table.vcw.vcw-table th {
 	}
 
 	.popup-img {
-		height: 80vh;
+		height: 83vh;
 		width: 90vw;
 	}
 
@@ -32018,3 +32069,4 @@ body table.vcw.vcw-table th {
 		margin: 0;
 	}
 }
+
