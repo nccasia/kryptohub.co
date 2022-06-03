@@ -29980,7 +29980,7 @@ body table.vcw.vcw-table th {
 }
 
 .footer-v2 {
-	background-image: url(/assets/image/bg-footer.jpg);
+	background-image: url(/assets/image/smart-contract-developer.jpg);
 	background-size: cover;
 }
 
@@ -30445,7 +30445,7 @@ body table.vcw.vcw-table th {
 
 /* Start footer */
 .footer-crypto {
-	background-image: url('../image/bg-footer.jpg');
+	background-image: url('../image/smart-contract-developer.jpg');
 	background-size: cover;
 }
 
@@ -30733,6 +30733,21 @@ body table.vcw.vcw-table th {
 
 }
 
+
+@keyframes slideMe{
+	0%{
+		transform: translateX(-500px);
+
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+/* .animated-modal{
+	animation: slideMe 0.5s ease-in;
+} */
+
 #myModal,
 .animated-modal .title,
 .animated-modal .des,
@@ -30751,6 +30766,7 @@ body table.vcw.vcw-table th {
 	transition-duration: 0.4s;
 }
 
+
 #myModal,
 .fancybox-slide--current .animated-modal .title,
 .fancybox-slide--current .animated-modal .des,
@@ -30759,6 +30775,8 @@ body table.vcw.vcw-table th {
 .fancybox-slide--current .animated-modal .progress-line {
 	transform: translateY(0);
 	opacity: 1;
+	transform: translateX(0);
+
 }
 
 .fancybox-slide--current .animated-modal .title {
