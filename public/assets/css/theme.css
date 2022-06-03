@@ -31999,6 +31999,11 @@ body table.vcw.vcw-table th {
 		height: 75vh;
 	}
 
+	.img-gallery .img-bg-slider {
+		width: auto;
+		height: 75vh;
+	}
+
 	.block-top-footer {
 		color: #fff;
 		padding: 25px 0;
