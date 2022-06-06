@@ -74,8 +74,7 @@ $(document).ready(function () {
 
             var data = {};
             data.email = dataform[1].value;
-            console.log(dataform[1].value)
-            data.content  = dataform[0].value + "\n" + dataform[2].value + "\n" + dataform[3].value + "\n" + dataform[4].value;
+            data.content  = dataform[0].value + "\n" + dataform[2].value + "\n" + dataform[3].value + "\n" + dataform[4].value + "\nkryptohub.co";
             var json = JSON.stringify(data);
             xhr.send(json);
         }
