@@ -80,20 +80,20 @@ function carousel(id) {
 }
 
 //loading co
-function showLoading() {
-  document.getElementById("mce-responses").style.display = "none";
-  var mailForm = document.getElementById("mce-EMAIL");
-  if (mailForm.value.length == 0) {
-    document.getElementById("want-mail").style.display = "block";
-  } else {
-    document.getElementById("want-mail").style.display = "none";
-    document.getElementById("loadingGif").style.display = "block";
-    setTimeout(function () {
-      document.getElementById("loadingGif").style.display = "none";
-      document.getElementById("mce-responses").style.display = "block";
-    }, 2000);
-  }
-}
+// function showLoading() {
+//   document.getElementById("mce-responses").style.display = "none";
+//   var mailForm = document.getElementById("mce-EMAIL");
+//   if (mailForm.value.length == 0) {
+//     document.getElementById("want-mail").style.display = "block";
+//   } else {
+//     document.getElementById("want-mail").style.display = "none";
+//     document.getElementById("loadingGif").style.display = "block";
+//     setTimeout(function () {
+//       document.getElementById("loadingGif").style.display = "none";
+//       document.getElementById("mce-responses").style.display = "block";
+//     }, 2000);
+//   }
+// }
 
 
 // Slider
@@ -266,3 +266,25 @@ function nextRenderPopUpSlider(){
   if(sliderPopup.currentIndex === sliderPopup.content.length - 1) sliderPopup.currentIndex = -1;
   renderPopUpSlider(sliderPopup.currentIndex + 1);
 }
+
+//handle captcha
+function reCaptchaOnFocus() {
+  var head = document.getElementsByTagName('head')[0]
+  var script = document.createElement('script')
+  script.type = 'text/javascript';
+  script.src = 'https://www.google.com/recaptcha/api.js'
+  head.appendChild(script);
+
+  // remove focus to avoid js error:
+  document.getElementById('mce-FNAME').removeEventListener('focus', reCaptchaOnFocus)
+  document.getElementById('mce-LNAME').removeEventListener('focus', reCaptchaOnFocus)
+  document.getElementById('mce-PHONE').removeEventListener('focus', reCaptchaOnFocus)
+  document.getElementById('mce-EMAIL').removeEventListener('focus', reCaptchaOnFocus)
+  document.getElementById('textarea-mess').removeEventListener('focus', reCaptchaOnFocus)
+};
+// add initial event listener to the form inputs
+document.getElementById('mce-FNAME').addEventListener('focus', reCaptchaOnFocus, false);
+document.getElementById('mce-LNAME').addEventListener('focus', reCaptchaOnFocus, false);
+document.getElementById('mce-PHONE').addEventListener('focus', reCaptchaOnFocus, false);
+document.getElementById('mce-EMAIL').addEventListener('focus', reCaptchaOnFocus, false);
+document.getElementById('textarea-mess').addEventListener('focus', reCaptchaOnFocus, false);

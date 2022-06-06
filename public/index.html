@@ -634,10 +634,8 @@
   <footer class="footer-crypto">
     <div>
       <div id="mc_embed_signup">
-        <form name="myForm"
-          action="https://gmail.us11.list-manage.com/subscribe/post?u=69cbb289faf856a1856cf6b97&amp;id=fc97ac26e0"
-          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-          target="_blank" novalidate>
+        <form name="myForm" action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+          class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
             <div class="block-contact-footer block-section" id="contact">
               <div class="container">
@@ -688,8 +686,8 @@
                       </svg>
                     </div>
                     <div id="mce-responses" class="clear foot">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
+                      <div class="response" id="mce-error-response" style="display:none"> error </div>
+                      <div class="response form-sent" id="mce-success-response" style="display:none"> Email sent successfully                      </div>
                     </div>
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                         name="b_69cbb289faf856a1856cf6b97_fc97ac26e0" tabindex="-1" value=""></div>
@@ -818,38 +816,16 @@
       </div>
     </div>
     <!-- End footer -->
+    
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery331.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/cryptcio_theme.js"></script>
-    <script type='text/javascript' src='assets/js/mailchimp.min.js'></script>
-    <script type='text/javascript' src='assets/js/mailchimp.js'></script>
     <script type='text/javascript' src='assets/js/slider.js'></script>
-    <script>
+    <script src="assets/js/contact-form.js"> </script>
+    <script src="assets/js/jquery.validate.js"> </script>
 
-      // src="https://www.google.com/recaptcha/api.js" async defer
-
-      function reCaptchaOnFocus() {
-        var head = document.getElementsByTagName('head')[0]
-        var script = document.createElement('script')
-        script.type = 'text/javascript';
-        script.src = 'https://www.google.com/recaptcha/api.js'
-        head.appendChild(script);
-
-        // remove focus to avoid js error:
-        document.getElementById('mce-FNAME').removeEventListener('focus', reCaptchaOnFocus)
-        document.getElementById('mce-LNAME').removeEventListener('focus', reCaptchaOnFocus)
-        document.getElementById('mce-PHONE').removeEventListener('focus', reCaptchaOnFocus)
-        document.getElementById('mce-EMAIL').removeEventListener('focus', reCaptchaOnFocus)
-        document.getElementById('textarea-mess').removeEventListener('focus', reCaptchaOnFocus)
-      };
-      // add initial event listener to the form inputs
-      document.getElementById('mce-FNAME').addEventListener('focus', reCaptchaOnFocus, false);
-      document.getElementById('mce-LNAME').addEventListener('focus', reCaptchaOnFocus, false);
-      document.getElementById('mce-PHONE').addEventListener('focus', reCaptchaOnFocus, false);
-      document.getElementById('mce-EMAIL').addEventListener('focus', reCaptchaOnFocus, false);
-      document.getElementById('textarea-mess').addEventListener('focus', reCaptchaOnFocus, false);
-    </script>
   </footer>
   <!-- End colophon -->
 
