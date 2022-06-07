@@ -30222,10 +30222,6 @@ body table.vcw.vcw-table th {
 	font-size: 20px;
 }
 
-.heading-2 {
-	margin-bottom: 71px;
-}
-
 .page-eight {
 	background-color: rgb(245, 245, 245);
 	padding: 100px 150px;
@@ -30342,33 +30338,14 @@ body table.vcw.vcw-table th {
 	margin: 0 15% 48px 15%;
 }
 
-.main-block-three {
-	display: flex;
-	justify-content: space-between;
-}
 
-.main-block-three p {
-	margin: 10px 0 35px 0;
-}
 
 .three-center {
 	padding: 0 15px;
 	flex: 1 1;
 }
 
-.main-block-three .three-left-content {
-	padding-right: 35px;
-	text-align: right;
-	flex: 1 1;
-}
 
-.main-block-three .three-right-content {
-	padding-left: 35px;
-	text-align: left;
-	flex: 1 1;
-}
-
-.main-block-three .title {}
 
 .line-title {
 	width: 35px;
@@ -30399,12 +30376,6 @@ body table.vcw.vcw-table th {
 	background-color: #4fb3e5;
 }
 
-.main-block-three .title {
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 20px;
-	padding-bottom: 19px;
-}
 
 .block-intro .box-text-three {
 	text-align: center;
@@ -31562,11 +31533,6 @@ body table.vcw.vcw-table th {
 		padding: 50px 0;
 	}
 
-	.main-block-three {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.container-header .icon-menu-header {
 		display: flex;
 		align-items: center;
@@ -31752,11 +31718,6 @@ body table.vcw.vcw-table th {
 
 	.img-page-3 {
 		padding: 50px 0;
-	}
-
-	.main-block-three {
-		display: flex;
-		flex-direction: column;
 	}
 
 	.container-header .icon-menu-header {
