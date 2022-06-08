@@ -31339,6 +31339,11 @@ body table.vcw.vcw-table th {
 
 @media only screen and (min-width: 1200px) {
 
+	.img-gallery .img-bg-slider {
+		width: auto;
+		min-height: 100vh;
+	}
+
 	.content-popup .des {
 		padding: 0 90px;
 	}
