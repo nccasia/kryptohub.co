@@ -29541,6 +29541,11 @@ body table.vcw.vcw-table th {
 	}
 }
 
+
+	.block-top-footer .foot-address li,.block-top-footer .foot-address li .address-one{
+		align-items: baseline;
+	}
+
 @media (min-width: 992px) and (max-width: 1199px) {
 	.banner-type10.text-right .banner-img {
 		left: -30px;

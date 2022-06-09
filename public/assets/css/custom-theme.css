@@ -171,7 +171,7 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.member-type .member-img a::after {
+/* .member-type .member-img a::after {
   position: absolute;
   content: "+";
   top: 50%;
@@ -190,7 +190,7 @@
           transform: scale(0);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+} */
 .member-type .member-img img {
   width: 100%;
 }
