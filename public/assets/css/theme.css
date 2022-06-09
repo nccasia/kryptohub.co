@@ -29547,6 +29547,11 @@ body table.vcw.vcw-table th {
 	}
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+	.address-two {
+		width: 90%;
+	}
+
 	.banner-type10.text-right .banner-img {
 		left: -30px;
 	}
@@ -31339,10 +31344,13 @@ body table.vcw.vcw-table th {
 	font-size: 60px;
 }
 
-
 /* end block project  */
 
 @media only screen and (min-width: 1200px) {
+
+	.address-na{
+		width: 90%;
+	}
 
 	.img-gallery .img-bg-slider {
 		width: auto;
