@@ -184,7 +184,6 @@
 
 	.member-img {
 		position: relative;
-
 		a {
 			display: block;
 			color: #45b7f4;
@@ -201,27 +200,7 @@
 				opacity: 0;
 				transition: all 0.3s ease-in-out;
 			}
-
-			&::after {
-				position: absolute;
-				content: "+";
-				top: 50%;
-				width: 40px;
-				height: 40px;
-				text-align: center;
-				line-height: 40px;
-				left: 50%;
-				font-size: 120px;
-				font-weight: 300;
-				font-family: Raleway;
-				margin-top: -20px;
-				margin-left: -20px;
-				z-index: 2;
-				transform: scale(0);
-				transition: all 0.3s ease-in-out;
-			}
 		}
-
 		img {
 			width: 100%;
 		}
@@ -777,16 +756,11 @@
 	  font-weight: 400;
 	  line-height: 21px;
 	}
-  
-	.img-gallery .img-bg-slider {
-	  width: auto;
-	  height: 100vh;
-	}
-  
+
 	.img-gallery .item-slider {
 	  padding: 0 15px;
 	}
-  
+
 	.item-slider {
 	  display: -webkit-box;
 	  display: -ms-flexbox;
@@ -1107,6 +1081,15 @@
 	  padding: 25px 0;
 	}
   }
+
+	.ncc-footer{
+		color: #fff;
+		padding-bottom: 10px;
+		display: block;
+		i{
+			padding-right: 5px;
+		}
+	}
 
   @media only screen and (max-width: 480px) {
 
