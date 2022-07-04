@@ -170,6 +170,26 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.member-type .member-img a::after {
+  position: absolute;
+  content: "+";
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  left: 50%;
+  font-size: 120px;
+  font-weight: 300;
+  font-family: Raleway;
+  margin-top: -20px;
+  margin-left: -20px;
+  z-index: 2;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .member-type .member-img img {
   width: 100%;
 }
