@@ -798,7 +798,7 @@ p {
     font-size: 16px;
     line-height: 140%;
     /* text-align: center; */
-    color: #CCCCCC;
+    color: #333333;
 	text-align: start;
 }
 
@@ -2704,8 +2704,8 @@ footer ul,
 
 .close-menu,
 .close-menu-mobile {
-	border: 1px solid #f5b71f;
-	color: #f5b71f;
+	/* border: 1px solid #f5b71f; */
+	/* color: #f5b71f; */
 	cursor: pointer;
 	display: table;
 	font-size: 20px;
@@ -4690,9 +4690,7 @@ footer ul,
 
 	.logo-mobile+.close-menu-mobile {
 		right: 15px;
-		top: 19px;
-		height: 40px;
-		width: 40px;
+		top: 27px;
 	}
 
 	.logo-mobile img {
@@ -5050,8 +5048,8 @@ footer ul,
 	}
 
 	.logo-mobile+.close-menu-mobile {
-		height: 35px;
-		width: 35px;
+		/* height: 35px; */
+		/* width: 35px; */
 	}
 }
 
@@ -7079,16 +7077,12 @@ img.footer-logo {
 	.footer-v6 .footer-container .col-lg-6 {
 		width: 57%;
 	}
-	/* .member-type-project-top{
-		width: 252.5px;
-		height: 144px;
-		margin-bottom: 10px;
-	  }
-	  .member-type-project-bottom{
-		width: 161.67px;
-		height: 144px;
-		display: grid;
-	  } */
+	.member-type-project-bottom{
+		padding: 0px !important;
+	}
+	.member-type-project-bottom.project-item-game {
+		/* margin-top: 20px !important; */
+	}
 	  .img-gallery .item-slider {
 		/* padding: 0 15px; */
 		/* margin-top: 106.26px; */
@@ -9898,6 +9892,7 @@ body .baby.down .head .horn {
 }
 
 .fancybox-close-small {
+	display: none;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -16830,6 +16825,13 @@ div#customer_login {
 .apr_show_link .product-action.product-action-grid .list_add_to_cart {
 	padding: 0 5px 0 0;
 }
+
+.member-lightbox-mobile{
+	display: none;
+}
+.project-title.project-mobile{
+    display: none;
+  }
 
 @media (min-width: 1920px) {
 	.container-fluid .product-filter-isotope .product-content:hover .product-action .action_item_box {
@@ -25463,6 +25465,11 @@ body .vcw.vcw-converter>.vcw-input>.vcw-input-child:first-child {
 	margin-right: 0;
 }
 
+p.des-service {
+    color: #CCCCCC;
+    text-align: center;
+}
+
 .box-service-h3 {
 	position: absolute;
 	width: calc(100% - 38px);
@@ -30094,6 +30101,7 @@ body table.vcw.vcw-table th {
 	.cryptcio_wp_search {
 		padding: 30px 15px;
 	}
+
 }
 
 .product-action .action_item_box .action_item {
@@ -30419,16 +30427,36 @@ body table.vcw.vcw-table th {
 	text-align: left;
 }
 
-.member-name h4 {
+/* .member-name h4 {
 	font-size: 16px;
 	color: #45b7f4;
-}
+} */
 
 p.des-memmber {
     font-weight: 400;
     font-size: 17px;
     line-height: 140%;
     text-align: center;
+    color: #333333;
+}
+
+p.des {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #333333;
+}
+
+img.img-member {
+    width: 331.7px;
+    height: 393.12px;
+    border-radius: 24.5703px;
+}
+
+p.des-memmber-info {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
     color: #333333;
 }
 
@@ -30752,6 +30780,30 @@ p.des-memmber {
 	list-style-type: none;
 }
 
+p.title-address {
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+a.ncc-footer-phone {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+a.ncc-footer-mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.ncc-footer-mail-phone {
+    padding-top: 10px;
+}
+
 .footer-address li {
 	color: white;
 	font-size: 14px;
@@ -31000,7 +31052,7 @@ p.desc-title-home {
 }
 
 .footer-left-info p {
-	padding-top: 12px;
+	padding-top: 15px;
 }
 
 p.des-footer {
@@ -31568,7 +31620,7 @@ p.des-footer {
 }
 .des-project {
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 140%;
 	color: #FFFFFF;
     text-align: start;
@@ -31578,6 +31630,7 @@ p.des-footer {
 	font-size: 16px;
 	line-height: 140%;
 	text-align: start;
+	color: #FFFFFF;
 }
 .link-name {
 	font-weight: 600;
@@ -31586,6 +31639,7 @@ p.des-footer {
 	text-decoration-line: underline;
 	color: #ECB8FF;
 	text-align: start;
+	cursor: pointer;
 }
 
 
@@ -31687,7 +31741,7 @@ p.des-footer {
 	}
 }
 
-@media screen and (max-width: 1199px) {
+ @media screen and (max-width: 1199px) {
 
 	.block-contact-footer .form .form-bottom textarea {
 		display: flex;
