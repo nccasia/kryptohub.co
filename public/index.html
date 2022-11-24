@@ -140,7 +140,7 @@
                 <div class="header-container text-right">
                   <div class="open-menu-mobile hidden-lg hidden-md">
                     <div class="display-flex">
-                      <i class="fa fa-bars"></i>
+                      <img src ="../public/assets/image/menu_mobile.png" class="menu-mobile"/>
                     </div>
                   </div>
                   <div id="header-center" class="header-center">
@@ -150,8 +150,8 @@
                       </a>
                     </h2>
                     <div class="close-menu-mobile hover-effect hidden-lg hidden-md">
-                      <i class="fa fa-close"></i>
-                      <i class="fa fa-close fa-hover"></i>
+                      <img src ="../public/assets/image/close_logo.png" class="logo-close-mobile"/>
+                      <!-- <i class="fa fa-close fa-hover"></i> -->
                     </div>
                     <nav id="site-navigation" class="main-navigation">
                       <div class="menu-home-onepage-9-container">
@@ -319,7 +319,7 @@
                     <img src="assets/image/blockchain_consulting.png" />
                   </div>
                   <h4>Blockchain consulting</h4>
-                  <p>We can support you in identifying the potential of blockchain for your project and product
+                  <p class="des-service">We can support you in identifying the potential of blockchain for your project and product
                     based
                     on our professional experience and our research, analysis of blockchain platforms, tools, and
                     right
@@ -331,7 +331,7 @@
                     <img src="assets/image/maintaince.png" />
                   </div>
                   <h4>Maintenance</h4>
-                  <p>We monitor, maintain, and provide support for managing the blockchain system with 3rd party
+                  <p class="des-service">We monitor, maintain, and provide support for managing the blockchain system with 3rd party
                     upgrades and new releases.</p>
                 </div>
               </div>
@@ -342,7 +342,7 @@
                     <img src="assets/image/deployment.png" />
                   </div>
                   <h4>Deployment</h4>
-                  <p>Get access to the project in the right hand at the right stage. Our blockchain development
+                  <p class="des-service">Get access to the project in the right hand at the right stage. Our blockchain development
                     team
                     deploys the source code to the suitable environment for your specific purposes.</p>
                 </div>
@@ -352,7 +352,7 @@
                     <img src="assets/image/smart_contract.png" />
                   </div>
                   <h4>Smartcontract</h4>
-                  <p>We deliver smart contract development, a great tool to conduct secure, fast and reliable
+                  <p class="des-service">We deliver smart contract development, a great tool to conduct secure, fast and reliable
                     transactions without intermediaries.</p>
                 </div>
               </div>
@@ -362,7 +362,7 @@
                     <img src="assets/image/blockchain_development.png" />
                   </div>
                   <h4>Blockchain development</h4>
-                  <p>From idea to design and development, our dedicated team can offer the best service for your
+                  <p class="des-service">From idea to design and development, our dedicated team can offer the best service for your
                     projects. We implement an agile blockchain development methodology to build and deliver scalable
                     and efficient end results.</p>
                 </div>
@@ -372,7 +372,7 @@
                     <img src="assets/image/migration_and_upgrade.png" />
                   </div>
                   <h4>Migration and upgrade</h4>
-                  <p>We will help you in moving your existing system to blockchain. We will create a clear and
+                  <p class="des-service">We will help you in moving your existing system to blockchain. We will create a clear and
                     custom roadmap for your business, keeping all the business process but migrating & updating
                     the
                     more efficient and powerful features with blockchain.</p>
@@ -415,17 +415,50 @@
                     <div id="lightbox_02" class="member-type1 light-box animated-modal" style="display: none;">
                       <div class="member-lightbox">
                         <div class="member-img">
-                          <img src="assets/image/img-team/blockchain-developers-dai.jpg" alt="img-member">
+                          <img src="assets/image/img-team/blockchain-developers-dai.jpg" alt="img-member" class="img-member">
                         </div>
                         <div class="member-info">
                           <div class="member-name ">
                             <h4>Trinh Duc Dai</h4>
                           </div>
                           <div class="member-job">
-                            <p class="des-memmber">Founder</p>
+                            <p class="des-memmber-info">Founder</p>
+                          </div>
+                          <div class="col-sm-12 col-xs-12">
+                          <span class="hr_member"></span>
                           </div>
                           <div class="desc">
-                            <p>Graduating from Vietnam National University, majoring in Software Engineering, Dai became
+                            <p class="des">Graduating from Vietnam National University, majoring in Software Engineering, Dai became
+                              a dedicated developer. He is passionate about blockchain technology and cryptocurrencies
+                              right from the early steps of his career path. He has solid experience in Solidity and
+                              Smart Contract. With more than 8 years working in software development, especially
+                              enterprise systems running across multiple technologies, Dai realizes the hidden potential
+                              and the border of the traditional business model. It is the reason why he found Krybtohub
+                              to modernize and power the traditional model with blockchain technology and
+                              cryptocurrencies.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="member-lightbox-mobile">
+                        <div class="member-moblie">
+                          <div class="member-img-mobile">
+                            <img src="assets/image/img-team/blockchain-developers-dai.jpg" alt="img-member" class="img-member">
+                          </div>
+                          <div class="member-name">
+                            <h4>Trinh Duc Dai</h4>
+                            <div class="member-job">
+                              <p class="des-memmber-info">Founder</p>
+                            </div>
+                          </div>
+                       
+                      </div>
+                        
+                        <div class="member-info">
+                          <div class="col-sm-12 col-xs-12">
+                          <span class="hr_member"></span>
+                          </div>
+                          <div class="desc">
+                            <p class="des">Graduating from Vietnam National University, majoring in Software Engineering, Dai became
                               a dedicated developer. He is passionate about blockchain technology and cryptocurrencies
                               right from the early steps of his career path. He has solid experience in Solidity and
                               Smart Contract. With more than 8 years working in software development, especially
@@ -458,17 +491,47 @@
                     <div id="lightbox_01" class="member-type1 light-box animated-modal" style="display: none;">
                       <div class="member-lightbox">
                         <div class="member-img">
-                          <img src="assets/image/img-team/blockchain-developers-thien.jpg" alt="img-member">
+                          <img src="assets/image/img-team/blockchain-developers-thien.jpg" alt="img-member" class="img-member">
                         </div>
                         <div class="member-info">
                           <div class="member-name ">
                             <h4>Dang An Thien</h4>
                           </div>
                           <div class="member-job">
-                            <p class="des-memmber">Co-Founder</p>
+                            <p class="des-memmber-info">Co-Founder</p>
+                          </div>
+                          <span class="hr_member"></span>
+                          <div class="desc">
+                            <p class="des">Starting the career path as a management information system engineer, Thien also improved
+                              his knowledge and skills to become a software engineer. With a combination of deep
+                              knowledge in data analyzing, database monitoring, system managing and operating, and
+                              polished software development experience, Thien rapidly became a branch director of a
+                              software firm and IT outsourcing service company in Vietnam. Catching the wave of
+                              technology, he also has passion with blockchain technology, especially Defi and Defi
+                              related business. </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="member-lightbox-mobile">
+                        <div class="member-moblie">
+                          <div class="member-img-mobile">
+                            <img src="assets/image/img-team/blockchain-developers-thien.jpg" alt="img-member" class="img-member">
+                          </div>
+                          <div class="member-name">
+                            <h4>Dang An Thien</h4>
+                            <div class="member-job">
+                              <p class="des-memmber-info">Co-Founder</p>
+                            </div>
+                          </div>
+                       
+                      </div>
+                        
+                        <div class="member-info">
+                          <div class="col-sm-12 col-xs-12">
+                          <span class="hr_member"></span>
                           </div>
                           <div class="desc">
-                            <p>Starting the career path as a management information system engineer, Thien also improved
+                            <p class="des">Starting the career path as a management information system engineer, Thien also improved
                               his knowledge and skills to become a software engineer. With a combination of deep
                               knowledge in data analyzing, database monitoring, system managing and operating, and
                               polished software development experience, Thien rapidly became a branch director of a
@@ -487,7 +550,7 @@
                   <div class="item-member-content">
                     <div class="member-img">
                       <a data-fancybox="" data-animation-duration="700" data-src="#lightbox_03" href="javascript:;"><img
-                          src="assets/image/img-team/blockchain-developers-minh.jpg" alt="img-member"></a>
+                          src="assets/image/img-team/blockchain-developers-minh.jpg" alt="img-member" ></a>
                     </div>
                     <div class="member-info">
                       <div class="member-name">
@@ -500,17 +563,44 @@
                     <div id="lightbox_03" class="member-type1 light-box animated-modal" style="display: none;">
                       <div class="member-lightbox">
                         <div class="member-img">
-                          <img src="assets/image/img-team/blockchain-developers-minh.jpg" alt="img-member">
+                          <img src="assets/image/img-team/blockchain-developers-minh.jpg" alt="img-member" class="img-member">
                         </div>
                         <div class="member-info">
                           <div class="member-name ">
                             <h4>Luc Van Minh</h4>
                           </div>
                           <div class="member-job">
-                            <p class="des-memmber">Co-Founder</p>
+                            <p class="des-memmber-info">Co-Founder</p>
+                          </div>
+                          <span class="hr_member"></span>
+                          <div class="desc">
+                            <p class="des">Minh was inspired to be Co-founder of Kryptohub when he saw that the cryptocurrency space
+                              deals with struggles to officially become part of the financial system. Minh is also an
+                              alumni of the Software Technology Department, Vietnam National University. He has nearly
+                              10 years working in software development and a strong mix of skills in the areas of
+                              computer networking, cryptography, and algorithms and data structures. Especially, he gets
+                              professionalism in DEX, and DeFi Smart Contract security audit.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="member-lightbox-mobile">
+                        <div class="member-moblie">
+                          <div class="member-img-mobile">
+                            <img src="assets/image/img-team/blockchain-developers-minh.jpg" alt="img-member" class="img-member">
+                          </div>
+                          <div class="member-name">
+                            <h4>Luc Van Minh</h4>
+                            <div class="member-job">
+                              <p class="des-memmber-info">Co-Founder</p>
+                            </div>
+                          </div>
+                      </div>
+                        <div class="member-info">
+                          <div class="col-sm-12 col-xs-12">
+                          <span class="hr_member"></span>
                           </div>
                           <div class="desc">
-                            <p>Minh was inspired to be Co-founder of Kryptohub when he saw that the cryptocurrency space
+                            <p class="des">Minh was inspired to be Co-founder of Kryptohub when he saw that the cryptocurrency space
                               deals with struggles to officially become part of the financial system. Minh is also an
                               alumni of the Software Technology Department, Vietnam National University. He has nearly
                               10 years working in software development and a strong mix of skills in the areas of
@@ -541,17 +631,46 @@
                     <div id="lightbox_04" class="member-type1 light-box animated-modal" style="display: none;">
                       <div class="member-lightbox">
                         <div class="member-img">
-                          <img src="assets/image/img-team/blockchain-developers-tu.jpg" alt="img-member">
+                          <img src="assets/image/img-team/blockchain-developers-tu.jpg" alt="img-member" class="img-member">
                         </div>
                         <div class="member-info">
                           <div class="member-name ">
                             <h4>Ma Van Tu</h4>
                           </div>
                           <div class="member-job">
-                            <p class="des-memmber">Co-Founder</p>
+                            <p class="des-memmber-info">Co-Founder</p>
+                          </div>
+                          <span class="hr_member"></span>
+                          <div class="desc">
+                            <p class="des">Tu is also a talent Information Technology Bachelor from Vietnam National University.
+                              Although starting the journey as a .NET developer, Tu quickly realized that the client and
+                              the market need more than that. With the unlimited effort on improving capabilities and
+                              skills, Tu not only became a fullstack developer but also an expert in automation testing.
+                              During his 7-year career working in the field of blockchain technology and cryptocurrency,
+                              he has brought remarkable results to his clients' products with his intensive and
+                              extensive knowledge and experience in ERC20, solidity language, and network (BSC,
+                              AVALANCHE).</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="member-lightbox-mobile">
+                        <div class="member-moblie">
+                          <div class="member-img-mobile">
+                            <img src="assets/image/img-team/blockchain-developers-tu.jpg" alt="img-member" class="img-member">
+                          </div>
+                          <div class="member-name">
+                            <h4>Ma Van Tu</h4>
+                            <div class="member-job">
+                              <p class="des-memmber-info">Co-Founder</p>
+                            </div>
+                          </div>
+                      </div>
+                        <div class="member-info">
+                          <div class="col-sm-12 col-xs-12">
+                          <span class="hr_member"></span>
                           </div>
                           <div class="desc">
-                            <p>Tu is also a talent Information Technology Bachelor from Vietnam National University.
+                            <p class="des">Tu is also a talent Information Technology Bachelor from Vietnam National University.
                               Although starting the journey as a .NET developer, Tu quickly realized that the client and
                               the market need more than that. With the unlimited effort on improving capabilities and
                               skills, Tu not only became a fullstack developer but also an expert in automation testing.
@@ -581,7 +700,11 @@
             </div>
           </div>
           <!-- Game -->
+         
           <div class="row content-project">
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12 project-mobile-logo"> -->
+             
+              <!-- </div> -->
               <div class="col-lg-6 col-md-6 col-sm-12 project-mobile-logo">
                   <div class="project-title">
                     <img src="assets/image/Icon_Game.png" />
@@ -624,7 +747,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                       <div class="member-type-project-bottom project-item-game" data-index="4">
                           <div class="project-img">
-                            <img src="assets/image/img-project/blockchain-game-warena.png" alt="img-member">
+                            <img src="assets/image/img-project/blockchain-game-EpicWar.webp" alt="img-member">
                           </div>
                       </div>
                     </div>
@@ -634,6 +757,12 @@
 
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 project-mobile-bg">
+                <div class="project-title project-mobile">
+                  <img src="assets/image/Icon_Game.png" />
+                  <div class="project-name">
+                    <h4 class="title-project-name">Game</h4>
+                  </div>
+                </div>
                 <div class="right-content-project-list">
                   <div class="right-content-project right-content">
                       <div class="right-content-item">
@@ -641,25 +770,16 @@
                           <p class="title-project">Heroes of Mavia</p>
                           <p class="des-project">Mavia is a AAA MMO strategic multiplayer game allowing players to buy land, build a base and battle other players for RUBY. There exists three NFT types in the game — Land, Heroes and Statues, each of which can be bought and sold on the Mavia marketplace for MAVIA token, and the NFTs can only be upgraded by using the RUBY cryptocurrency.</p>
                           <p class="tech-project"><b>Technologies:</b> Unity, Smartfox, Java Spring boot, WebGL, Smart contract, AWS, Postgres</p>
-                          <p class="link-name">https://www.mavia.com/</p>
+                          <a href="https://www.mavia.com/" class="link-name">https://www.mavia.com/</a>
                         </div>
                         <img src="assets/image/img-bg-popup/nft-game-Mavia.webp" class="img-game" />
-                      </div>
-                      <div class="right-content-item">
-                        <div class="content-item-project">
-                          <p class="title-project">Warena</p>
-                          <p class="des-project">Warena is the first personalized and 'play to earn' NFT Metaverse game</p>
-                          <p class="tech-project"><b>Technologies:</b> NestJs, MongoDB, Unity, Smart contract, AWS</p>
-                          <p class="link-name">https://www.warena.io/#home</p>
-                        </div>
-                        <img src="assets/image/img-bg-popup/nft-game-Warena.webp" class="img-game" />
                       </div>
                       <div class="right-content-item">
                         <div class="content-item-project">
                           <p class="title-project">Undead Block</p>
                           <p class="des-project">Undead Blocks is the world's first multiplayer kill-to-earn zombie survival game on Binance Smart Chain.</p>
                           <p class="tech-project"><b>Technologies:</b> Photon, Unity, Smart contract, AWS</p>
-                          <p class="link-name">https://undeadblocks.com/</p>
+                          <a href="https://undeadblocks.com/" class="link-name">https://undeadblocks.com/</a>
                         </div>
                         <img src="assets/image/img-bg-popup/nft-game-Undead_Block.webp" class="img-game" />
                       </div>
@@ -669,15 +789,26 @@
                           <p class="des-project">Fortia is one of the first high quality strategy blockchain games that incorporate Create-to-Earn ecosystem to promote our gamers and artists community. Our proprietary technology allows direct music streaming from connected wallets</p>
                           <p class="tech-project"><b>Technologies:</b> Unity, Smartfox, Java Spring boot, WebGL, Smart contract, AWS, Postgres</p>
                           <p class="link-name">https://fortiagame.com/</p>
+                          <a href="https://fortiagame.com/" class="link-name">https://fortiagame.com/</a>
                         </div>
                         <img src="assets/image/img-bg-popup/nft-game-Fortia.webp" class="img-game" />
                       </div>
                       <div class="right-content-item">
                         <div class="content-item-project">
+                          <p class="title-project">Warena</p>
+                          <p class="des-project">Warena is the first personalized and 'play to earn' NFT Metaverse game</p>
+                          <p class="tech-project"><b>Technologies:</b> NestJs, MongoDB, Unity, Smart contract, AWS</p>
+                          <a href="https://emporia.warena.io/#home" class="link-name">https://emporia.warena.io/#home</a>
+                        </div>
+                        <img src="assets/image/img-bg-popup/nft-game-Warena.webp" class="img-game" />
+                      </div>
+                      
+                      <div class="right-content-item">
+                        <div class="content-item-project">
                           <p class="title-project">Epic War</p>
                           <p class="des-project">Epic War is a Cinematic Game built on blockchain with free-to-play-to-earn model. It offers players the thrill of first-person shooter action in a cutting-edge gaming environment. Scavenging settings, hundreds of mutant monsters, and a frantic in-game economy are among the game’s highlights.</p>
                           <p class="tech-project"><b>Technologies:</b> Unity, photon, smart contract</p>
-                          <p class="link-name">https://www.warena.io/#home</p>
+                          <a href="https://emporia.warena.io/#home" class="link-name">https://emporia.warena.io/#home</a>
                         </div>
                         <img src="assets/image/img-bg-popup/nft-game-EpicWar.webp" class="img-game" />
                         </div>
@@ -736,7 +867,7 @@
                         <p class="title-project">Memepad</p>
                         <p class="des-project">MemePad provides a completely new, systematized, and decentralized way of connecting token creators with community members to raise funds. It's a launchpad like no other, in that it combines and builds upon several elements inspired by other launchpads whilst also providing a unique edge in being tailored specifically to meme coins and microcaps that want to launch on BSC.</p>
                         <p class="tech-project"><b>Technologies:</b> Nodejs + Reactjs + smartcontract</p>
-                        <p class="link-name">https://memepad.co/overview</p>
+                        <a href="https://memepad.co/overview" class="link-name">https://memepad.co/overview</a>
                       </div>
                       <img src="assets/image/img-bg-popup/cryptocurrency-MemePad.webp" class="img-game" />
                     </div>
@@ -745,7 +876,8 @@
                         <p class="title-project">TX8</p>
                         <p class="des-project">Ecosystem to integrate with internal ERP</p>
                         <p class="tech-project"><b>Technologies:</b> SmartContract, ReactJS, GraphQL</p>
-                        <p class="link-name">https://tx8.vn/lottery</p>
+                        <a href="https://tx8.vn/lottery" class="link-name">https://tx8.vn/lottery</a>
+
                       </div>
                       <img src="assets/image/img-bg-popup/cryptocurrency-TX8.webp" class="img-game" />
                     </div>
@@ -757,7 +889,8 @@
                           Tracking product status details by scanning barcodes on mobile.
                           Build a small game in the main app, which enables users to plant, decorate and share trees on media and social networks.</p>
                         <p class="tech-project"><b>Technologies:</b> Blockchain - Ethereum Network; Backend - Spring Boot, Maven, Liquibase, Swagger; DB - Postgres; Client - Android and IOS Swift, Game - Cocos2dx</p>
-                        <p class="link-name">https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1" class="link-name">https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1</a>
+
                       </div>
                       <img src="assets/image/img-bg-popup/cryptocurrency-Treelion.webp" class="img-game" />
                     </div>
@@ -795,7 +928,11 @@
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
+<<<<<<< HEAD
                     <div class="member-type-project-top member-type-project-top-mobile project-item-finance" data-index="2">
+=======
+                    <div class="member-type-project-top project-item-finance" data-index="2">
+>>>>>>> 2827708d5e7019f2a95ce92be6942b589e22389c
                         <div class="project-img-top">
                             <img src="assets/image/img-project/tokenomic-development-Treelion-App.png" alt="img-member">
                         </div>
@@ -817,8 +954,7 @@
                       <div class="content-item-project">
                         <p class="title-project">TOPAZ</p>
                         <p class="des-project">A solution using Distributed Ledger Technology (DLT) to help financial institutions and surveyors digitize and streamline the processes of asset valuation, and also simplify the complexity of end-to-end workflows of the asset valuation and management industry</p>
-                        <p class="tech-project"><b>Technologies:</b> Blockchain and DLT, Corda platform</p>
-                        <!-- <p class="link-name">https://memepad.co/overview</p> -->
+                        <p class="tech-project"><b>Technologies:</b> Blockchain and DLT, Corda platform</p>                  
                       </div>
                       <img src="assets/image/img-bg-popup/fintech-outsourcing-topaz.webp" class="img-game" />
                     </div>
@@ -827,9 +963,16 @@
                         <p class="title-project">ATLAS</p>
                         <p class="des-project">Atlas Elite, a DLT-based trade finance platform, is a fully digitized platform to accelerate your trade business by connecting corporates and financiers and all trade parties in one single place where operations are automated, transaction processing time is reduced with documents are digital-signed and committed. The platform requires minimal manual interaction, thanks to smart contract guided mechanisms. The use of DLT provides an audit trail for traceability, enhances transparency to workflows, mitigates credit risks in financing transactions, and facilitates lower fees and barriers to trade</p>
                         <p class="tech-project"><b>Technologies:</b> Angular, Typescript, Java, Blockchain</p>
-                        <!-- <p class="link-name">https://tx8.vn/lottery</p> -->
                       </div>
                       <img src="assets/image/img-bg-popup/fintech-outsourcing-atlas.webp" class="img-game" />
+                    </div>
+                    <div class="right-content-item">
+                      <div class="content-item-project">
+                        <p class="title-project">Flow station</p>
+                        <p class="des-project">Flowstation is an application which has config to send funds (salary/payment) for an user or group of users on schedule automatically. The application is integrated with gnosis safe, ftx</p>
+                        <p class="link-name">https://crypto.com/</p>
+                      </div>
+                      <img src="assets/image/img-bg-popup/cryptocurrency-TX8.webp" class="img-game" />
                     </div>
                 </div>
             </div>
@@ -879,7 +1022,6 @@
                         <p class="title-project">MIDAS</p>
                         <p class="des-project">An Industry-wide DLT-based Motor Insurance Authentication Platform</p>
                         <p class="tech-project"><b>Technologies:</b> Java, Kotlin, Blockchain, Smart Contract</p>
-                        <!-- <p class="link-name">https://memepad.co/overview</p> -->
                       </div>
                       <img src="assets/image/img-bg-popup/blockchain-insurance-midas.webp" class="img-game" />
                     </div>
@@ -888,7 +1030,6 @@
                         <p class="title-project">STO</p>
                         <p class="des-project">The STO platform provides a tool to issuers to manage all the elements in the full Digital Security lifecycle. Especially, cover the issuance and compliance aspects for a Security Token Offering.</p>
                         <p class="tech-project"><b>Technologies:</b> Java, Kotlin, Blockchain, Smart Contract</p>
-                        <!-- <p class="link-name">https://tx8.vn/lottery</p> -->
                       </div>
                       <img src="assets/image/img-bg-popup/blockchain-insurance-sto.webp" class="img-game" />
                     </div>
@@ -941,7 +1082,6 @@
                         <p class="title-project">THEMIS</p>
                         <p class="des-project">A Certificate Management and Verification Blockchain System. If your organization issues certificates, transcripts or any documents, you may consider bringing them to Themis, which is a global Blockchain system and the system of truth for authentic documents.</p>
                         <p class="tech-project"><b>Technologies:</b> Blockchain, Spring Boost</p>
-                        <!-- <p class="link-name">https://memepad.co/overview</p> -->
                       </div>
                       <img src="assets/image/img-bg-popup/blockchain-education-back-themis.webp" class="img-game" />
                     </div>
@@ -950,7 +1090,6 @@
                         <p class="title-project">JUCC</p>
                         <p class="des-project">Application to manage certificates of universities, colleges and other education institutes. The system uses blockchain to manage and verify certificates. The application is used by employees, students and education institutes officiers.</p>
                         <p class="tech-project"><b>Technologies:</b> Spring boot, Kotlin, Blockchain, Docker, Kubernete (K8s), DB Postgres</p>
-                        <!-- <p class="link-name">https://tx8.vn/lottery</p> -->
                       </div>
                       <img src="assets/image/img-bg-popup/blockchain-education-back-JUCC.webp" class="img-game" />
                     </div>
@@ -1002,6 +1141,22 @@
                         </div>
                     </div>
                   </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
+                    <div class="member-type-project-top project-item-entertainment" data-index="2">
+                        <div class="project-img-top">
+                            <img
+                            src="assets/image/img-project/token-entertainment-EventX.webp" alt="img-member">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
+                    <div class="member-type-project-top project-item-entertainment" data-index="3">
+                        <div class="project-img-top">
+                            <img
+                            src="assets/image/img-project/token-entertainment-EventX.webp" alt="img-member">
+                        </div>
+                    </div>
+                  </div>
               </div>
 
             </div>
@@ -1019,7 +1174,7 @@
                         <p class="title-project">Nafter</p>
                         <p class="des-project">Nafter is the NFT social network and marketplace for creators & fans to buy, sell, mint & collect NFTs</p>
                         <p class="tech-project"><b>Technologies:</b> React redux, Javascript, AWS, Github, NodeJS, MongoDB, Blockchain</p>
-                        <p class="link-name">https://www.nafter.io/landing</p>
+                        <a href="https://www.nafter.io/landing" class="link-name">https://www.nafter.io/landing</a>
                       </div>
                       <img src="assets/image/img-bg-popup/token-entertainment-back-nafter.webp" class="img-game" />
                     </div>
@@ -1028,7 +1183,23 @@
                         <p class="title-project">EventX</p>
                         <p class="des-project">EventX provides tablet connected to wireless NFC readers for fast events. Pair the secure and sustainable NFC wearable with the EventX visitor app. Gain access to events & special access zones. Pay for drinks and food by swiping the NFC wearable along access control and PoS systems </p>
                         <p class="tech-project"><b>Technologies:</b> NodeJs, ReactNative, ReactJS, MongoDB, Kafka, Redis, Mangopay, Kubernestes, Blockchains use stellarNetwork</p>
-                        <p class="link-name">https://chinetwork.io/</p>
+                        <a href="https://chinetwork.io/" class="link-name">https://chinetwork.io/</a>
+                      </div>
+                      <img src="assets/image/img-bg-popup/token-entertainment-back-EventX.webp" class="img-game" />
+                    </div>
+                    <div class="right-content-item">
+                      <div class="content-item-project">
+                        <p class="title-project">Busker</p>
+                        <p class="des-project">Busker is a marketplace that facilitates the special relationship between musicians and their biggest fans. The product of choice sold on the platform is called the "MetaDisc". A MetaDisc is a special digital album that supports a rich media protocol that allows users to deliver any artful experience they can dream.</p>
+                        <p class="tech-project"><b>Technologies:</b> Connect MetaMask, Blockchain, IPFS, NextJS, NestJS, PostgreSQL</p>
+                      </div>
+                      <img src="assets/image/img-bg-popup/token-entertainment-back-EventX.webp" class="img-game" />
+                    </div>
+                    <div class="right-content-item">
+                      <div class="content-item-project">
+                        <p class="title-project">Nifter</p>
+                        <p class="des-project">Nifter is the NFT social network and marketplace for music creators and fans to buy, sell, mint, and collect NFTs. </p>
+                        <p class="tech-project"><b>Technologies:</b> React Redux, Javascript, AWS, Gihub,NodeJS, MongoDB</p>
                       </div>
                       <img src="assets/image/img-bg-popup/token-entertainment-back-EventX.webp" class="img-game" />
                     </div>
@@ -1037,81 +1208,6 @@
             </div>
           </div>
           <!-- end education -->
-
-          <!-- Others -->
-          <div class="row content-project">
-            <div class="col-lg-6 col-md-6 col-sm-12 project-mobile-logo">
-
-                <div class="project-title">
-                  <img src="assets/image/Investment.png" />
-                  <div class="project-name">
-                    <h4 class="title-project-name">Others</h4>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                    <div class="member-type-project-top project-item-others logo-active" data-index="0">
-                        <div class="project-img-top">
-                            <img src="assets/image/img-project/tokenomic-development-memepad.png" alt="img-member">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                    <div class="member-type-project-top project-item-others" data-index="1">
-                        <div class="project-img-top">
-                            <img
-                            src="assets/image/img-project/tokenomic-development-Tx8.png" alt="img-member">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                    <div class="member-type-project-top project-item-others" data-index="2">
-                        <div class="project-img-top">
-                            <img src="assets/image/img-project/tokenomic-development-Treelion-App.png" alt="img-member">
-                        </div>
-                    </div>
-                  </div>
-              </div>
-
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 project-mobile-bg">
-              <div class="right-content-project-list">
-                <div class="right-content-project-others right-content">
-                    <div class="right-content-item">
-                      <div class="content-item-project">
-                        <p class="title-project">TEO</p>
-                        <p class="des-project">The TEO Platform is a fully functional social network system equipped with a chat room, search tool, and deal, making job hunting, connection enhancement, and business a breeze..</p>
-                        <p class="tech-project"><b>Technologies:</b> Java, Blockchain, Angular</p>
-                        <!-- <p class="link-name">https://memepad.co/overview</p> -->
-                      </div>
-                      <img src="assets/image/img-bg-popup/cryptocurrency-MemePad.webp" class="img-game" />
-                    </div>
-                    <div class="right-content-item">
-                      <div class="content-item-project">
-                        <p class="title-project">Flow station</p>
-                        <p class="des-project">Flowstation is an application which has config to send funds (salary/payment) for an user or group of users on schedule automatically. The application is integrated with gnosis safe, ftx</p>
-                        <!-- <p class="tech-project"><b>Technologies:</b> SmartContract, ReactJS, GraphQL</p> -->
-                        <p class="link-name">https://crypto.com/</p>
-                      </div>
-                      <img src="assets/image/img-bg-popup/cryptocurrency-TX8.webp" class="img-game" />
-                    </div>
-                    <div class="right-content-item">
-                      <div class="content-item-project">
-                        <p class="title-project">Auto Exchange</p>
-                        <p class="des-project">Auto Exchange is a brand-new cryptocurrency exchange platform that
-                          brings all of the best features to help users make their transactions easier,
-                          faster and more convenient</p>
-                        <p class="tech-project"><b>Technologies:</b> Blockchain, Java, Angular, HTML, CSS, go-ethereum </p>
-                        <!-- <p class="link-name">https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US</p> -->
-                      </div>
-                      <img src="assets/image/img-bg-popup/cryptocurrency-Treelion.webp" class="img-game" />
-                    </div>
-                </div>
-            </div>
-            </div>
-          </div>
-          <!-- Others -->
         </div>
 
       </section>
@@ -1198,16 +1294,16 @@
                   <div class="footer-left-info">
                     <img class="footer-logo" src="assets/image/blockchain-development-hub.webp" alt="" />
                     <p class="des-footer">Activate the potential power with blockchain technologies and cryptocurrencies</p>
-                    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6" >
-                      <a class="ncc-footer" title="Hotline: 024 6687 4606" href="tel:024 6687 4606">
-                        <i class="fa fa-phone" aria-hidden="true"></i>024 6687 4606<br>
-                      </a>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-6" >
-                      <a class="ncc-footer" href="mailto:career@ncc.asia">
-                        <i class="fa fa-envelope-o"></i>info@kryptohub.co<br>
-                      </a>
-                    </div>
+                      <div class="ncc-footer" >
+                        <a class="ncc-footer-phone" title="Hotline: 024 6687 4606" href="tel:024 6687 4606">
+                          <i class="fa fa-phone" aria-hidden="true"></i> 024 6687 4606<br>
+                        </a>
+                        <div class="ncc-footer-mail-phone">
+                          <a class="ncc-footer-mail" href="mailto:career@ncc.asia">
+                            <i class="fa fa-envelope-o"></i> info@kryptohub.co<br>
+                          </a>
+                        </div>
+                      </div>
                   </div>
                 </div>
                 <span class="hr_footer">
@@ -1220,22 +1316,20 @@
                     <div class="footer-address">
                       <li>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                          <strong>HA NOI 1: </strong>5th Floor, A2 Ecolife Building, 58 To Huu St., Nam Tu Liem Dist.,
-                          Hanoi, Vietnam.
+                        <p class="title-address">
+                          <strong>HA NOI 1 </strong>| 5th Floor, A2 Ecolife Building, 58 To Huu St, Nam Tu Liem 
                         </p>
                       </li>
                       <li>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                          <strong>SAI GON 1: </strong>5th Floor, The Office, 340/15A Ung Van Khiem St., Binh Thanh
-                          Dist., HCMC, Vietnam.
+                        <p class="title-address">
+                          <strong>SAI GON 1 </strong>| 5th Floor, The Office, 340/15A Ung Van Khiem St, Binh Thanh
                         </p>
                       </li>
                       <li class="address-na">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                          <strong>VINH: </strong>4th Floor, 138 Ha Huy Tap St., Vinh City, Nghe An Province, Vietnam.
+                        <p class="title-address">
+                          <strong>VINH </strong>| 4th Floor, 138 Ha Huy Tap, Vinh, Nghe An 
                         </p>
                       </li>
                     </div>
@@ -1246,22 +1340,20 @@
                     <div class="footer-address">
                       <li>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                          <strong>HA NOI 2: </strong>7th Floor, 8 Pham Hung St., Cau Giay Dist., Hanoi, Vietnam.
+                        <p class="title-address">
+                          <strong>HA NOI 2 </strong>| 7th Floor, Vinfast My Dinh Building, 8 Pham Hung, Cau Giay
                         </p>
                       </li>
                       <li>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                          <strong>SAI GON 2: </strong>1th Floor, Phong Phu Tower, 93/10 Quang Trung, Kp1, Hiep Phu Ward,
-                          Thu Duc, HCMC, Vietnam.
+                        <p class="title-address">
+                          <strong>SAI GON 2 </strong>| 1th Floor, 93/10 Quang Trung, Hiep Phu, Thu Duc City
                         </p>
                       </li>                   
                       <li class="address-na">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                          <strong>QUY NHON: </strong>3th Floor, 307 Nguyen Thi Minh Khai St., Quy Nhon City, Binh Dinh
-                          Province, Vietnam.
+                        <p class="title-address">
+                          <strong>QUY NHON </strong>| 3rd Floor, Hibecco Building, 307 Nguyen Thi Minh Khai
                         </p>
                       </li>
                     </div>
@@ -1272,15 +1364,14 @@
                     <div class="footer-address">
                       <li>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                          <strong>HA NOI 3: </strong>5th Floor, Hong Ha Tower, 89 Thinh Liet, Hoang Mai.
+                        <p class="title-address">
+                          <strong>HA NOI 3 </strong>| 5th Floor, Hong Ha Tower, 89 Thinh Liet, Hoang Mai
                         </p>
                       </li>
                       <li class="address-na">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>
-                          <strong>DA NANG: </strong>4th Floor, Ricco Building, 363 Nguyen Huu Tho St., Cam Le Dist., Da
-                          Nang, Vietnam.
+                        <p class="title-address">
+                          <strong>DA NANG </strong>| 4th Floor, Ricco Building, 363 Nguyen Huu Tho, Cam Le
                         </p>
                       </li>
                     </div>
@@ -1358,7 +1449,7 @@
    console.log(width_item, "width_item");
 
    let content_width_items = 515;
-    if(width_item <= 360){
+    if(width_item <= 375){
       content_width_items = 300;
     }
    console.log(content_width_items, "content_width_items");

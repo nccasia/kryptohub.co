@@ -214,16 +214,15 @@ button.btn-view-more:active {
   align-items: center;
   padding: 12px 61px;
   gap: 10px;
-
   width: 252.5px;
   height: 144px;
-  /* background: #E2DCFF; */
   border: 2px solid #A192F3;
   border-radius: 12px;
   flex: none;
   order: 0;
   flex-grow: 1;
-  }
+  margin-bottom: 20px;
+}
 
 .member-type-project-bottom {
   box-sizing: border-box;
@@ -344,10 +343,14 @@ button.btn-view-more:active {
 }
 
 .member-name h4 {
-  font-weight: 700;
+  /* font-weight: 700;
   margin-bottom: 7px;
   letter-spacing: 0;
-  text-transform: uppercase;
+  text-transform: uppercase; */
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #6C5DB8;
 }
 
 .member-job {
@@ -382,9 +385,18 @@ button.btn-view-more:active {
 }
 
 .light-box {
-  display: none;
-  width: 976px;
-  padding: 50px;
+	flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px;
+    gap: 32px;
+    position: absolute;
+    width: 1272px;
+    height: 582.61px;
+    left: 300px;
+    top: 142px;
+    background: #FFFFFF;
+    border-radius: 16px;
 }
 
 .light-box .fancybox-close-small::after {
@@ -396,7 +408,7 @@ button.btn-view-more:active {
 }
 
 .fancybox-slide .light-box {
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .member-lightbox {
@@ -412,15 +424,19 @@ button.btn-view-more:active {
 }
 
 .member-lightbox .member-img {
-  -webkit-box-flex: 0;
-  width: 50%;
+  /* -webkit-box-flex: 0;
   float: left;
-  padding: 0 25px;
+  padding: 0 25px; */
+  display: flex;
+  flex-direction: column;
+  padding: 14.7422px;
+  gap: 19.66px;
+  width: 361.18px;
+  height: 422.61px;
+  background: linear-gradient(180deg, #ECB8FF -4.19%, #A192F3 53.64%, #8877E1 100%);
+  border-radius: 24.5703px;
 }
 
-.member-lightbox .member-img img {
-  border-radius: 4px;
-}
 
 .member-lightbox .member-info {
   -webkit-box-flex: 0;
@@ -437,8 +453,9 @@ button.btn-view-more:active {
 
 .member-lightbox .member-job p {
   margin-bottom: 0;
-  font-size: 16px;
   color: #282828;
+  font-size: 28px;
+  font-style: initial;
 }
 
 .member-lightbox .social-list {
@@ -446,7 +463,19 @@ button.btn-view-more:active {
 }
 
 .member-lightbox .desc {
-  padding-top: 29px;
+  padding-top: 15px;
+}
+
+span.hr_member {
+  width: 718.82px;
+  height: 2px;
+  background: linear-gradient(90deg, #A192F3 0%, #8877E1 100%);
+  margin-top: 17px;
+}
+
+p.des {
+  width: 718.82px;
+  height: 196px;
 }
 
 .bg-has-gradient .progress-line .progress-bar {
@@ -703,7 +732,7 @@ p.des-contact{
 }
 .right-content-project {
   display: flex;
-  width: 2140px;
+  width: 2575px;
   transform: translateX(0px);
 }
 .right-content-project-invest{
@@ -925,7 +954,7 @@ h4.title-project-name {
   width: 120px;
   height: 120px;
 }
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) {
   .member-type-project-top{
     width: 252.5px;
     height: 144px;
@@ -940,20 +969,23 @@ h4.title-project-name {
 		padding: 84px;
 		margin-top: 106.26px;
 	  }
-}
+} */
 @media only screen and (max-width: 1024px) {
-  .project-img-top {
+  /* .member-type-project-top{
+		padding: 0px !important;
+	} */
+  /* .project-img-top {
     width: 120px;
     height: 120px;
   }
   .project-img {
     width: 120px;
     height: 120px;
-  }
-  .member-type-project-top{
+  } */
+  /* .member-type-project-top{
     width: 203px;
     height: 144px;
-  }
+  } */
   .member-type-project-bottom{
     width: 100px;
     height: 144px;
@@ -1379,7 +1411,7 @@ h4.title-project-name {
 
 }
 
-@media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
   .img-game {
     width: 304px;
     height: 360px;
@@ -1403,9 +1435,98 @@ h4.title-project-name {
     height: 96px;
     display: grid;
   }
+} */
+
+@media only screen and (max-width: 375px) {
+  .project-name h4 {
+    line-height: 60px;
+  }
+  .project-title img {
+    height: 50px;
+    width: 50px;
+}
+  .project-title{
+    display: none;
+  }
+  .project-title.project-mobile{
+    display: block;
+    height: 60px;
+    display: flex;
+  }
+  span.hr_member {
+    width: 296px;
+  }
+  p.des {
+    width: 315px;
+    height: 240px;
+    font-size: 14px;
+  }
+  .member-type1 .member-name h4 {
+    line-height: 60px;
+    font-size: 20px;
+    padding-left: 20px;
+    height: 50px;
+  }
+  p.des-memmber-info {
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: #333333;
+    font-style: initial;
+    padding-top: 5px;
+}
+  .member-moblie{
+    display: flex;
+  }
+  .member-img-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(180deg, #ECB8FF -4.19%, #A192F3 53.64%, #8877E1 100%);
+    border-radius: 8px;
+}
+  .member-lightbox {
+    display: none !important;
+}
+  .member-lightbox-mobile {
+    display: block;
+  }
+.light-box {
+    padding: 80px;
+    left: -53px;
+    top: -110px;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 16px 24px;
+    gap: 12px;
+    position: relative;
+    height: 430px;
+    background: #FFFFFF;
+    border-radius: 16px;
 }
 
-@media only screen and (max-width: 360px) {
+img.img-member {
+  width: 92px;
+  height: 92px;
+  border-radius: 8px;
+}
+
+.member-lightbox .member-info {
+  width: 245px !important;
+}
+
+  img.logo-close-mobile {
+    width: 12px;
+    height: 12px;
+}
+  .logo-mobile img {
+    width: 167.3px;
+    height: 40px;
+}
   .project-mobile-logo{
     order: 2;
   }
@@ -1417,7 +1538,7 @@ h4.title-project-name {
     border-radius: 8.08629px;
 }
   .des-project {
-    font-size: 14px;
+    font-size: 13px;
   }
   .tech-project {
     font-size: 14px ;
@@ -1441,7 +1562,7 @@ h4.title-project-name {
     width: 900px;
   }
   .right-content-project-finance{
-    width: 600px;
+    width: 900px;
   }
   .right-content-project-insurance{
     width: 600px;
@@ -1450,7 +1571,7 @@ h4.title-project-name {
     width: 600px;
   }
   .right-content-project-entertainment{
-    width: 600px;
+    width: 1200px;
   }
   .right-content-project-others{
     width: 900px;
@@ -1468,7 +1589,6 @@ h4.title-project-name {
 	}
   .logo-mobile {
     padding: 15px;
-    text-align: right;
 }
 
   .main-title-home {
@@ -1499,6 +1619,7 @@ h4.title-project-name {
     left: 0;
     opacity: 1;
     visibility: visible;
+    width: 335px;
 }
 .header-center, .header-ver, .searchform_wrap {
   width: calc(100% - 230px);
@@ -1687,6 +1808,7 @@ h4.title-project-name {
   color: #fff;
   padding-bottom: 10px;
   display: block;
+  padding-top: 20px;
 }
 .ncc-footer i {
   padding-right: 5px;
