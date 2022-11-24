@@ -1630,13 +1630,53 @@ h4.title-project-name {
 
   }
   .member-type-project-top {
-    padding: 12px 47px;
-    width: 0px;
+    padding: 12px 45px;
+    width: 64px;
+    height: 104px;
+    margin-bottom: 8px;
   }
   .member-type-project-bottom {
-    padding: 12px 47px;
-      width: 0px;
+    padding: 12px 45px;
+    width: 0px;
+    width: 64px;
+    height: 104px;
   }
+  .project-img {
+    width: 64px;
+    height: 64px;
+  }
+
+  img.menu-mobile {
+    position: absolute;
+    width: 18px;
+    height: 12px;
+  }
+
+  .project-img-top {
+    width: 64px;
+    height: 64px;
+    margin-left: -30px;
+    margin-top: 7px;
+  }
+ .member-type-project-top {
+  display: none;
+ }
+
+ .member-type-project-top-mobile {
+  display: block;
+ }
+ .member-type-project-bottom-mobile{
+  display: block;
+  margin-bottom: 10px;
+ }
+ .project-img-mobile {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-left: -30px;
+  margin-top: 7px;
+}
+
 }
 
 

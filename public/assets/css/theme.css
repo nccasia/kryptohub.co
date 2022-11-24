@@ -34,7 +34,7 @@
 4.0 Responsive
 
 -------------------------------------------------------------------*/
-@font-face {
+/* @font-face {
 	font-family: 'FontAwesome';
 	src: url('../fonts/fontawesome-webfont.eot');
 	src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),
@@ -43,7 +43,7 @@
 		url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
+} */
 
 body {
 	font-size: 14px;
@@ -16830,6 +16830,19 @@ div#customer_login {
 .apr_show_link .product-action.product-action-grid .list_add_to_cart {
 	padding: 0 5px 0 0;
 }
+
+.member-lightbox-mobile{
+	display: none;
+}
+/* .project-title.project-mobile{
+    display: none;
+  } */
+.member-type-project-top-mobile .member-type-project-bottom-mobile .project-title.project-mobile{
+	display: none;
+}
+/* .member-type-project-bottom-mobile {
+	display: none;
+} */
 
 @media (min-width: 1920px) {
 	.container-fluid .product-filter-isotope .product-content:hover .product-action .action_item_box {
