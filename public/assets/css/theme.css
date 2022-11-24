@@ -16829,15 +16829,15 @@ div#customer_login {
 .member-lightbox-mobile{
 	display: none;
 }
-/* .project-title.project-mobile{
+.project-title.project-mobile{
     display: none;
-  } */
-.member-type-project-top-mobile .member-type-project-bottom-mobile .project-title.project-mobile{
+  }
+.member-type-project-top-mobile .member-type-project-bottom-mobile{
 	display: none;
 }
-/* .member-type-project-bottom-mobile {
+.member-type-project-bottom-mobile {
 	display: none;
-} */
+}
 
 @media (min-width: 1920px) {
 	.container-fluid .product-filter-isotope .product-content:hover .product-action .action_item_box {
