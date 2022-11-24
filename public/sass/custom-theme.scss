@@ -233,7 +233,7 @@
 		font-size: 16px;
 		font-weight: 700;
 		margin-bottom: 4px;
-		text-transform: uppercase;
+		text-transform: capitalize;
 	}
 
 	.member-job {
@@ -265,12 +265,12 @@
 	}
 }
 
-.member-name h4 {
-	font-weight: 700;
-	margin-bottom: 7px;
-	letter-spacing: 0;
-	text-transform: uppercase;
-}
+// .member-name h4 {
+// 	font-weight: 700;
+// 	margin-bottom: 7px;
+// 	letter-spacing: 0;
+// 	text-transform: capitalize;
+// }
 
 .member-job {
 	color: #ababab;
@@ -304,9 +304,21 @@
 }
 
 .light-box {
-	display: none;
-	width: 976px;
-	padding: 50px;
+	// display: none;
+	// width: 976px;
+	// padding: 50px;
+	flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px;
+    gap: 32px;
+    position: absolute;
+    width: 1272px;
+    height: 582.61px;
+    left: 84px;
+    top: 220.7px;
+    background: #FFFFFF;
+    border-radius: 16px;
 }
 
 .light-box .fancybox-close-small::after {
@@ -315,10 +327,6 @@
 	font-weight: 400;
 	background-color: transparent;
 	border: none;
-}
-
-.fancybox-slide .light-box {
-	padding: 50px;
 }
 
 .member-lightbox {
@@ -331,16 +339,6 @@
 	margin: 0 -25px;
 }
 
-.member-lightbox .member-img {
-	-webkit-box-flex: 0;
-	width: 50%;
-	float: left;
-	padding: 0 25px;
-}
-
-.member-lightbox .member-img img {
-	border-radius: 4px;
-}
 
 .member-lightbox .member-info {
 	-webkit-box-flex: 0;
@@ -355,19 +353,10 @@
 	margin-bottom: 2px;
 }
 
-.member-lightbox .member-job p {
-	margin-bottom: 0;
-	font-size: 16px;
-	color: #282828;
-}
-
 .member-lightbox .social-list {
 	margin: 0 -11px;
 }
 
-.member-lightbox .desc {
-	padding-top: 29px;
-}
 
 .bg-has-gradient .progress-line .progress-bar {
 	background: -moz-linear-gradient(0deg, #d5a853 0, #13264a 100%);
@@ -881,9 +870,9 @@
 	padding: 0;
   }
   
-  .fancybox-slide .light-box {
-	padding: 10px;
-  }
+//   .fancybox-slide .light-box {
+// 	padding: 10px;
+//   }
   
   .member-lightbox .member-info {
 	-webkit-box-flex: 0;
@@ -1102,6 +1091,7 @@
 		color: #fff;
 		padding-bottom: 10px;
 		display: block;
+		padding-top: 20px;
 		i{
 			padding-right: 5px;
 		}
