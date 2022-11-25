@@ -2060,19 +2060,6 @@ span.wpcf7-not-valid-tip {
 	}
 }
 
-@media (max-width: 1199px) {
-	.hidden_bg_tablet {
-		background: none !important;
-	}
-
-	.hidden_bg_tablet .upb_row_bg {
-		background: none !important;
-	}
-
-	.hidden_bg_tablet>.vc_column-inner {
-		background: none !important;
-	}
-}
 
 @media (max-width: 768px) and (max-width: 1199px) {
 	.hide_in_tablet {
@@ -30794,14 +30781,14 @@ p.title-address {
 
 a.ncc-footer-phone {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 140%;
     color: #FFFFFF;
 }
 
 a.ncc-footer-mail {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
     color: #FFFFFF;
 }
