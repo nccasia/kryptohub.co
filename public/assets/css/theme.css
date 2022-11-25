@@ -81,7 +81,10 @@ body #page {
 a {
 	color: #000;
 }
-
+label {
+    font-weight: 500;
+    font-size: 16px;
+}
 ins,
 del {
 	text-decoration: none;
@@ -2346,6 +2349,10 @@ div.wpcf7 .ajax-loader {
 	width: 100%;
 	top: 0;
 	z-index: 99;
+	height: 72px;
+}
+.row.header {
+    margin-top: -15px;
 }
 
 .fixed-header .site-header:not(.is-sticky) {
@@ -2418,7 +2425,7 @@ div.wpcf7 .ajax-loader {
 
 @media (min-width: 992px) {
 	.site-header.is-sticky .header-container .mega-menu>li.menu-item>a {
-		height: 80px;
+		/* height: 80px; */
 	}
 }
 
@@ -32358,6 +32365,11 @@ p.des-footer {
 	.item-team-bottom {
 		margin-bottom: 0;
 	}
+
+	.row.header {
+		margin-top: auto;
+	}
+	
 }
 
 @media only screen and (max-width: 450px) {

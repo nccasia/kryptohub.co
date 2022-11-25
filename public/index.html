@@ -127,7 +127,7 @@
       <div class="header-wrapper">
         <div class="header-middle">
           <div class="container-fluid header-boxed">
-            <div class="row">
+            <div class="row header">
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <h2 class="header-logo display-flex">
                   <a href="#" rel="home">
@@ -219,7 +219,10 @@
                   global economy 
                   built on blockchains
                 </div>
-                <button class="btn-view-more">Learn More</button>
+                <a href="#about">
+                  <button class="btn-view-more" id="about">Learn More</button>
+                </a>
+                
 
               </div>
             </div>
@@ -305,7 +308,7 @@
         <div class="container">
           <div class="box-text style-center">
             <div class="head-box text-center">
-              <div class="main-title">Our services </div>
+              <div class="main-title main-title-mobile">Our services </div>
               <!-- <p class="text-center desc-title"> -->
               </p>
             </div>
@@ -313,7 +316,7 @@
 
           <div class="container">
             <div class="row list-faq">
-              <div class="col-6 col-md-4 item-block-service">
+              <div class="col-6 col-md-4 col-sm-12 item-block-service">
                 <div class="item-faq">
                   <div class="img-service">
                     <img src="assets/image/blockchain_consulting.png" />
@@ -336,7 +339,7 @@
                 </div>
               </div>
 
-              <div class="col-6 col-md-4 item-block-service">
+              <div class="col-6 col-md-4 col-sm-12 item-block-service">
                 <div class="item-faq">
                   <div class="img-service">
                     <img src="assets/image/deployment.png" />
@@ -356,7 +359,7 @@
                     transactions without intermediaries.</p>
                 </div>
               </div>
-              <div class="col-6 col-md-4 item-block-service">
+              <div class="col-6 col-md-4 col-sm-12 item-block-service">
                 <div class="item-faq">
                   <div class="img-service">
                     <img src="assets/image/blockchain_development.png" />
@@ -437,9 +440,6 @@
                           </div>
                         </div>
                       </div>
-
-
-
                       <div class="member-lightbox-mobile">
                         <div class="member-moblie">
                           <div class="member-img-mobile">
@@ -888,11 +888,8 @@
                           Provide users ability to invest, donate on economy product using Ethereum tokens and Bitcoin, Apple Pay. Integration with Stripe payment gateway.
                           Tracking product status details by scanning barcodes on mobile.
                           Build a small game in the main app, which enables users to plant, decorate and share trees on media and social networks.</p>
-                        <p class="tech-project"><b>Technologies:</b> Blockchain - Ethereum Network; Backend - Spring Boot, Maven, Liquibase, Swagger; DB - Postgres; Client - Android and IOS Swift, Game - Cocos2dx</p>
-                        <div class="link-project">
-                        <a href="https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1" class="link-name">https://bit.ly/3i8uIc0</a>
-                        </div>
-
+                        <p class="tech-project"><b>Technologies:</b> Blockchain - Ethereum Network; Backend - Spring Boot, Maven, Liquibase, Swagger; DB - Postgres; Client - Android and IOS Swift, Game - Cocos2dx</p> 
+                        <a href="https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1" class="link-name">https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1</a>
                       </div>
                       <img src="assets/image/img-bg-popup/cryptocurrency-Treelion.webp" class="img-game" />
                     </div>
@@ -922,7 +919,7 @@
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                    <div class="member-type-project-top member-type-project-top-mobile project-item-finance" data-index="1">
+                    <div class="member-type-project-top member-type-project-top-mobile project-item-finance project-mobile-xs" data-index="1">
                         <div class="project-img-top">
                             <img
                             src="assets/image/img-project/fintech-development-ATLAS.png" alt="img-member">
@@ -1117,7 +1114,7 @@
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
-                    <div class="member-type-project-top member-type-project-top-mobile project-item-entertainment" data-index="1">
+                    <div class="member-type-project-top member-type-project-top-mobile project-item-entertainment project-mobile-xs" data-index="1">
                         <div class="project-img-top">
                             <img
                             src="assets/image/img-project/token-entertainment-EventX.webp" alt="img-member">
@@ -1206,40 +1203,40 @@
         </div>
       </div>
       <!-- <div class="row content-what-it"> -->
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="box-text-img">
             <img src="assets/image/contact_us.png" class="img-responsive" />
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
           <div class="right-content">
             <form method="post" target="_blank" novalidate class="form-contact">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="form-top">
                   <div class="head">
-                    <span>First name</span>
+                    <label>First name</label>
                     <input type="email" value="" placeholder="Fisrt name" name="first_name" class="required name"
                       id="mce-EMAIL">
                   </div>
                   <div class="body">
-                    <span>Email</span>
+                    <label>Email</label>
                     <input type="text" name="email" class="" placeholder="you@company.com" value="" id="mce-EMAIL">
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="form-top">
                   <div class="head">
-                    <span>Last name</span>
+                    <label>Last name</label>
                     <input type="text" value="" placeholder="Last name" name="last_name" class="required name" id="mce-LName">
                   </div>
                   <div class="body">
-                    <span>Phone number</span>
+                    <label>Phone number</label>
                     <input type="text" name="phone" class="" placeholder="+1 (555) 000-0000" value="" id="mce-PHONE">
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-bottom">
                   <div class="head">
                       <label>Message</label>
@@ -1247,7 +1244,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 col-md-6 col-sm-12">
+              <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="form-bottom">
                     <input class="button-contact" type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
@@ -1273,7 +1270,7 @@
           <div class="row ">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="row flex-footer">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 logo-footer content-footer">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 logo-footer content-footer">
                   <div class="footer-left-info">
                     <img class="footer-logo" src="assets/image/blockchain-development-hub.webp" alt="" />
                     <p class="des-footer">Activate the potential power with blockchain technologies and cryptocurrencies</p>
@@ -1291,10 +1288,9 @@
                 </div>
                 <span class="hr_footer">
                 <span class="col-lg-3 col-md-3 col-sm-12 col-xs-12 logo-footer content-footer">
-                  
-                  </span>
                 </span>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 content-footer">
+                </span>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 content-footer">
                   <div class="row">
                     <div class="footer-address">
                       <li>
@@ -1318,7 +1314,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 content-footer">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 content-footer">
                   <div class="row">
                     <div class="footer-address">
                       <li>
@@ -1342,7 +1338,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 content-footer">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 content-footer">
                   <div class="row">
                     <div class="footer-address">
                       <li>
@@ -1366,29 +1362,6 @@
         </div>
       </div>
 
-
-      <!-- <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="bottom-footer">
-                <div class="row footer-main">
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="copyright-content">
-                      <p>
-                        Designed by <a href="#">Krybtohub</a> © 2022 All
-                        Rights Reserved
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-sm-6 col-xs-12 f-right">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
     <!-- End footer -->
 
@@ -1432,12 +1405,25 @@
    console.log(width_item, "width_item");
 
    let content_width_items = 515;
-    if(width_item <= 480){
+
+   if(width_item <= 1024){
+      content_width_items = 497;
+    }
+    if(width_item <= 769){
+      content_width_items = 380;
+    }
+    // if(width_item <= 750){
+    //   content_width_items = 300;
+    // }
+   if(width_item <= 750){
       content_width_items = 330;
     }
-    if(width_item <= 375){
+   if(width_item <= 390){
       content_width_items = 300;
     }
+   
+   
+   
     
    console.log(content_width_items, "content_width_items");
 
