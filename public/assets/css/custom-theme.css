@@ -216,9 +216,11 @@ button.btn-view-more:active {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12px 61px;
+  /* padding: 12px 61px; */
+  padding: 12px 41px;
   gap: 10px;
-  width: 252.5px;
+  /* width: 252.5px; */
+  width: 211.5px;
   height: 144px;
   border: 2px solid #A192F3;
   border-radius: 12px;
@@ -235,8 +237,10 @@ button.btn-view-more:active {
   justify-content: center;
   align-items: center;
   padding: 12px 61px;
+  /* padding: 12px !important; */
   gap: 10px;
-  width: 161.80px;
+  /* width: 161.80px; */
+  width: 138.8px;
   height: 144px;
   background: #FFFFFF;
   border: 2px solid #A192F3;
@@ -947,6 +951,7 @@ h4.title-project-name {
     .light-box {
       left: 100px;
     }
+   
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1280px) {
@@ -1006,8 +1011,11 @@ h4.title-project-name {
 }
 }
 
-/* @media only screen and (max-width: 1024px) {
-  .member-type-project-top{
+@media only screen and (max-width: 1024px) {
+  img.img-member {
+    height: auto;
+  }
+  /* .member-type-project-top{
 		padding: 0px !important;
 	}
   .project-img-top {
@@ -1060,8 +1068,8 @@ h4.title-project-name {
   }
   .member-lightbox .member-info {
     margin-bottom: 80px;
-  }
-} */
+  } */
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .ncc-footer {
@@ -1137,14 +1145,16 @@ h4.title-project-name {
     padding: 70px;
   }
   img.img-member {
-    height: 410px;
+    /* height: 410px; */
+    height: auto;
   }
   .member-lightbox {
     margin: -40px -25px;
   }
   .member-lightbox .member-img {
     width: 300px;
-    height: 441px;
+    /* height: 441px; */
+    height: auto;
   }
   span.hr_member {
     width: 500px;
@@ -1164,16 +1174,28 @@ h4.title-project-name {
   }
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
-  .img-service {
-    width: 100px;
+  /* block header */
+  .fixed-header .logo-default {
+    left: -351px;
+    top: 10px;
+  }
+ 
+  .openmenu .header-center {
+    width: 399px;
   }
 
   .open-menu-mobile {
     width: 35px;
     margin-top: 10px;
   }
+  
+  /* block service */
+  .img-service {
+    width: 100px;
+  }
+
 
   /* block team */
   .team{
@@ -1199,10 +1221,9 @@ h4.title-project-name {
     font-size: 20px;
   }
   .light-box {
-    width: 660px;
+    width: 900px;
     padding: 50px;
-    top: 70px;
-    left: 40px;
+    left: 45px;
   }
   .member-lightbox-mobile {
 		display: none;
@@ -1231,66 +1252,80 @@ h4.title-project-name {
     width: 380px;
   }
   .member-type-project-top {
-    width: 150px;
-    height: 120px;
+    width: 316px !important;
+    height: 180px;
+  }
+
+  /* block project */
+  .project-title{
+    display: none;
+  }
+ 
+  .project-title.project-mobile{
+    display: flex;
+  }
+  .project-mobile-logo{
+    order: 2;
+  }
+  .project-mobile-bg{
+    order: 1;
   }
 
   .right-content-item {
-    width: 380px;
+    width: 700px;
   }
   .right-content-project {
-    width: 1900px;
+    width: 3500px;
   }
   .right-content-project-invest{
-    width: 1140px;
+    width: 2100px;
   }
   .right-content-project-finance{
-    width: 760px;
+    width: 1400px;
   }
   .right-content-project-insurance{
-    width: 760px;
+    width: 1400px;
   }
   .right-content-project-education{
-    width: 760px;
+    width: 1400px;
   }
   .right-content-project-entertainment{
-    width: 760px;
+    width: 1400px;
   }
   .right-content-project-list {
-    width: 380px;
-  }
-  .project-img-top {
-    width: 95px;
-    height: 95px;
-    margin-left: -65px;
-    margin-right: -65px;
-  }
-  .project-img {
-    width: 70px;
-    height: 70px;
-    margin-left: -65px;
-    margin-right: -65px;
-  }
-  .member-type-project-bottom {
-    width: 97px;
-    height: 94px;
+    width: 700px;
+    margin-bottom: 26px;
   }
   .content-item-project {
-    width: 390px;
+    width: 680px;
   }
+  .project-img-top {
+    width: 124px;
+    height: 124px;
+  }
+  .project-img {
+    width: 124px;
+    height: 124px;
+  }
+  .member-type-project-bottom {
+    width: 206px !important;
+    height: 180px;
+  }
+ 
   h4.title-project-name {
     font-size: 27px;
   }
   .content-project {
-    padding: 32px 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   /* block contact us */
   .form-contact {
-    width: 365px;
-  }
+    width: auto;
+}
   .button-contact {
-    width: 337px;
+    width: 661px;
   }
   
   .head {
@@ -1303,7 +1338,7 @@ h4.title-project-name {
   /* footer */
   .footer-crypto {
     padding: 60px 0px;
-    /* height: 850px !important; */
+    height: 515px !important;
     margin-top: 115px;
   }
   p.des-footer {
@@ -1311,6 +1346,9 @@ h4.title-project-name {
   }
   .ncc-footer {
     padding-top: 45px;
+  }
+  textarea {
+    width: 661px;
   }
   
 }
@@ -1454,28 +1492,36 @@ h4.title-project-name {
 
   /* end block team */
 }
+@media (max-width: 921px) {
+  p.des {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 912px){
+   /* footer */
+   .footer-crypto {
+    height: 820px !important;
+  }
+}
+
+@media (max-width: 873px) {
+  p.des {
+    font-size: 16px;
+  }
+}
 
 @media only screen and (max-width: 820px) {
   /* .footer-crypto {
     height: 650px !important;
   } */
+  p.des {
+    font-size: 15px;
+  }
 }
 
-@media (min-width: 600px) and (max-width: 768px) {
-  .member-type-project-top{
-    width: 316.5px;
-    height: 144px;
-  }
-  .member-type-project-bottom{
-    width: 197.80px;
-    height: 144px;
-    display: grid;
-  }
-  
-  .project-img-top {
-    width: 120px;
-    height: 120px;
-  }
+@media (max-width: 767px) {
+ 
 
   /* header-mobile */
   .row.header {
@@ -1491,9 +1537,12 @@ h4.title-project-name {
   .block-section-home {
     padding: 0px 0px;
   }
+  .openmenu .header-center {
+    width: 767px;
+  }
 
   /* team */
-
+ 
   .team{
     display: flex;
     overflow-x: scroll;
@@ -1523,7 +1572,7 @@ h4.title-project-name {
     overflow: inherit;
   }
   p.des-memmber-info {
-    margin-top: 40px;
+    margin-top: 30px;
     font-style: initial;
   }
   .member-name {
@@ -1532,6 +1581,7 @@ h4.title-project-name {
   }
   p.des {
     width: auto;
+    font-size: 18px;
   }
   span.hr_member {
     width: 580px;
@@ -1544,7 +1594,7 @@ h4.title-project-name {
 
   /* project */
 
-  .project-title{
+  /* .project-title{
     display: none;
   }
  
@@ -1561,37 +1611,189 @@ h4.title-project-name {
     margin-right: auto;
     margin-left: auto;
   }
-  /* .content-item-project {
-    padding: 36px 40px !important;
-    width: 330px;
-    height: 360px;
-  }
+ 
   .right-content-item {
-    width: 330px;
+    width: 620px;
   }
   .right-content-project {
-    width: 1650px;
+    width: 3100px;
   }
   .right-content-project-invest{
-    width: 990px;
+    width: 1860px;
   }
   .right-content-project-finance{
-    width: 660px;
+    width: 1240px;
   }
   .right-content-project-insurance{
-    width: 660px;
+    width: 1240px;
   }
   .right-content-project-education{
-    width: 660px;
+    width: 1240px;
   }
   .right-content-project-entertainment{
-    width: 660px;
+    width: 1240px;
   }
   .right-content-project-list {
-    width: 330px;
+    margin-bottom: 10px;
+    width: 620px;
+  }
+  .content-item-project {
+    width: 630px;
+  }
+  .content-project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-type-project-top-mobile {
+    width: 197px !important;
+    height: 140px;
+  }
+  .member-type-project-top {
+    padding: 12px 40px;
+  }
+  .member-type-project-bottom {
+    padding: 12px 40px;
+    width: 190px !important;
+    height: 140px;
+    display: grid;
+  }
+  
+  .project-img-top {
+    width: 110px;
+    height: 110px;
+  }
+  .project-img {
+    width: 110px;
+    height: 110px;
   } */
 
+  /* block project */
+  .project-title{
+    display: none;
+  }
+ 
+  .project-title.project-mobile{
+    display: flex;
+  }
+  .project-mobile-logo{
+    order: 2;
+  }
+  .project-mobile-bg{
+    order: 1;
+  }
 
+  .right-content-item {
+    width: 620px;
+  }
+  .right-content-project {
+    width: 3100px;
+  }
+  .right-content-project-invest{
+    width: 1860px;
+  }
+  .right-content-project-finance{
+    width: 1240px;
+  }
+  .right-content-project-insurance{
+    width: 1240px;
+  }
+  .right-content-project-education{
+    width: 1240px;
+  }
+  .right-content-project-entertainment{
+    width: 1240px;
+  }
+  .right-content-project-list {
+    margin-bottom: 10px;
+    width: 620px;
+  }
+  .project-img-top {
+    width: 110px;
+    height: 110;
+  }
+  .project-img {
+    width: 110;
+    height: 110;
+  }
+  .member-type-project-top-mobile {
+    width: 197px !important;
+    height: 140px;
+  }
+  .member-type-project-bottom {
+    width: 206px !important;
+    height: 140px;
+  }
+  .member-type-project-bottom.project-item-game.member-type-project-bottom-mobile {
+    width: 206px;
+    /* height: 140px; */
+  }
+  .col-xs-4 {
+    width: 32.333333%;
+  }
+ 
+  h4.title-project-name {
+    font-size: 27px;
+  }
+  .content-project {
+    display: flex;
+    flex-direction: column;
+    /* margin: 15px; */
+  }
+  .row.content-project {
+    /* margin: 15px; */
+}
+  .form-contact {
+    width: 700px;
+  }
+  textarea {
+    width: 700px;
+  }
+  .button-contact{
+    width: 675px;
+  }
+  .ncc-footer {
+    display: flex;
+    width: 700px;
+    gap: 20px;
+  }
+  a.ncc-footer-phone {
+    font-size: 17px;
+  }
+  a.ncc-footer-mail {
+    font-size: 17px;
+  }
+  .ncc-footer-mail-phone {
+    padding-top: 0px;
+  }
+
+  .footer-left-info {
+    width: 550px;
+  }
+  p.des-footer {
+    font-size: 18px;
+    width: auto;
+  }
+  p.title-address {
+    font-size: 18px;
+  }
+  .footer-crypto {
+    height: auto !important;
+  }
+
+}
+
+@media only screen and (max-width: 710px) {
+  .member-type-project-top-mobile {
+    width: 200px !important;
+  }
+  .member-type-project-bottom {
+    width: 200px !important;
+    height: 140px;
+  }
+  .col-xs-4 {
+    width: 33.333333%;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -1845,7 +2047,7 @@ h4.title-project-name {
 
 }
 
-@media only screen and (max-width: 541px) {
+@media only screen and (max-width: 630px) {
 
   /* block header */
   .header-middle .display-flex {
@@ -1856,19 +2058,9 @@ h4.title-project-name {
     width: 540px;
   }
   .fixed-header .logo-default {
-    left: -158px;
-    /* top: 12px; */
+    left: -205px;
+    height: 32px;
   }
-  img.menu-mobile {
-    /* top: 45px; */
-  }
-  /* .main-title-home {
-    font-size: 68px !important;
-  }
-  .desc-title-home {
-    font-size: 41px !important;
-    width: auto !important;
-  } */
 
   /* block team */
   span.hr_member {
@@ -1876,8 +2068,8 @@ h4.title-project-name {
   }
   .light-box {
     padding: 80px;
-    left: -1px;
-    top: -35px;
+    left: 2px;
+    /* top: 3px; */
     align-items: center;
     padding: 16px 16px 24px;
     gap: 12px;
@@ -1886,6 +2078,12 @@ h4.title-project-name {
     background: #FFFFFF;
     border-radius: 16px;
 }
+  .member-type .member-name h4 {
+    font-size: 21px;
+  }
+  .member-type .member-info {
+    padding: 0px !important;
+  }
   span.des-title-child {
     font-size: 16px;
   }
@@ -1943,6 +2141,7 @@ h4.title-project-name {
     color: #333333;
     font-style: initial;
     padding-top: 5px;
+    margin-top: 0px;
 }
   .member-moblie{
     display: flex;
@@ -1963,7 +2162,6 @@ h4.title-project-name {
   .member-lightbox-mobile {
     display: block;
   }
-
 
   img.img-member {
     width: 92px;
@@ -1994,44 +2192,965 @@ h4.title-project-name {
     border-radius: 8.08629px;
 }
   .des-project {
-    font-size: 12px;
+    font-size: 15px;
   }
   .tech-project {
-    font-size: 12px ;
+    font-size: 15px ;
   }
   .link-name {
-    font-size: 12px ;
+    font-size: 15px ;
   }
   .content-item-project {
     padding: 36px 40px !important;
-    width: 330px;
+    width: 570px;
     height: 360px;
   }
   .right-content-item {
-    width: 480px;
+    width: 570px;
   }
   .right-content-project {
-    width: 2400px;
+    width: 2850px;
   }
   .right-content-project-invest{
-    width: 1440px;
+    width: 1710px;
   }
   .right-content-project-finance{
-    width: 960px;
+    width: 1140px;
   }
   .right-content-project-insurance{
-    width: 960px;
+    width: 1140px;
   }
   .right-content-project-education{
-    width: 960px;
+    width: 1140px;
   }
   .right-content-project-entertainment{
-    width: 960px;
+    width: 1140px;
   }
   .right-content-project-list {
-    width: 480px;
+    width: 570px;
+  }
+  .block-what-it .content-what-it {
+    background: none;
+  }
+  .img-gallery .item-slider {
+		padding: 84px;
+		margin-top: 106.26px;
+	}
+  .logo-mobile {
+    padding: 15px;
+    padding: 11px;
+  }
+  .main-title-home {
+    font-size: 62px;
+  }
+  .desc-title-home {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    color: #333333;
+    width: auto;
+    height: 117px;
+  }
+  .left-content img {
+    width: 328px;
+    height: 328px;
+  }
+  button.btn-view-more:hover {
+    background: #A192F3;;
+  }
+  
+  button.btn-view-more:active {
+    background: #6C5DB8 !important;
+  }
+ 
+  .header-center, .header-ver, .searchform_wrap {
+    width: calc(100% - 230px);
+  }
+  .right-content-des {
+    display: none;
+  }
+  .right-content-mobile{
+    display: block;
+    position: relative;
+		display: flex;
+		justify-content: center;
+  }
+  .box-text {
+    padding-top: 37px;
+    padding-bottom: 15px;
+  }
+  .box-text .main-title {
+    text-align: start;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #333333;
+  }
+  .main-title.main-title-mobile {
+  text-align: center;
+  }
+  .box-text p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .item-faq {
+    align-items: flex-start;
+    padding: 16px;
+    /* height: 204px; */
+    height: auto;
+    background: linear-gradient(0deg, #181126 0%, #454C5C 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+  }
+  
+  .img-service {
+    border-radius: 50%;
+    background: linear-gradient(89.76deg, rgba(236, 184, 255, 0.08) 0.21%, rgba(122, 97, 255, 0.08) 99.79%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 10.6px;
+    margin-left: 22px !important;
+    margin: auto;
+  }
+  .item-faq h4 {
+    font-size: 23px;
   }
 
+  .row.list-faq {
+    margin-top: 15px;
+  }
+  .team{
+    display: flex;
+    overflow-x: scroll;
+  }
+  p.des-service {
+    font-size: 17px;
+    padding-top: 20px;
+  }
+  .member-type {
+    text-align: center;
+    border: 3px solid #8877E1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 12px 16px;
+    gap: 16px;
+    width: 242px;
+    height: 356px;
+    background: #FFFFFF;
+    border-radius: 16px;
+  }
+  
+  .member-type .member-info {
+    background: none;
+  }
+  .block-section {
+    padding: 25px 0;
+  }
+  .block-projects {
+    padding: 25px 15px;
+  }
+  .content-project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    /* width: 382px; */
+    width: auto;
+    background: #F5F2FF;
+    border-radius: 16px;
+    padding-bottom: 20px;
+  }
+  p.des-contact {
+    text-align: start;
+  }
+  .project-name h4 {
+    font-size: 28px;
+  }
+  .footer-crypto {
+    margin-top: 571px;
+    padding: 40px 16px;
+  }
+  .form-top {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  .form-bottom {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  .button-contact {
+    width: 328px;
+  }
+  .hr_footer{
+    display: block;
+    height: 2px;
+    background: #A192F3;
+  }
+  .col-xs-4 {
+    width: 32.333333%;
+}
+  .member-type-project-top {
+    padding: 18px 45px;
+    width: 185px !important;
+    height: 145px;
+    margin-bottom: 8px;
+  }
+  .member-type-project-bottom {
+    padding: 18px 45px;
+    width: 185px !important;
+    height: 145px;
+    display: block;
+  }
+  .project-img {
+    width: 105px;
+    height: 105px;
+    margin-left: -8px;
+  }
+  /* .project-img-top.project-img-mobile {
+    margin-left: -6px;
+  } */
+ 
+  .member-type-project-top.member-type-project-top-mobile.project-item-insurance.project-mobile-xs {
+    margin-left: 38px;
+  }
+  .member-type-project-top.member-type-project-top-mobile.project-item-education.project-mobile-xs {
+    margin-left: 38px;
+  }
+  .member-type-project-top.member-type-project-top-mobile.project-item-entertainment.project-mobile-xs {
+    margin-left: 38px;
+  }
+  .member-type-project-top.member-type-project-top-mobile.project-item-finance.project-mobile-xs {
+    margin-left: 38px;
+  }
+
+  img.menu-mobile {
+    position: absolute;
+    width: 18px;
+    height: 12px;
+  }
+
+  .project-img-top {
+    width: 105px;
+    height: 105px;
+    margin-left: -8px;
+  }
+  .member-type-project-top {
+    display: none;
+  }
+
+  .member-type-project-top-mobile {
+    width: 145px;
+    height: 145px;
+    display: block;
+  }
+  .member-type-project-bottom-mobile{
+    display: block;
+    margin-bottom: 10px;
+  }
+  .project-img-mobile {
+    display: block;
+    width: 105px;
+    height: 105px;
+    margin-left: -6px;
+    margin-top: auto;
+    }
+
+
+  /* contact us */
+
+  .form-contact {
+    width: 505px;
+  }
+  input {
+    width: 550px !important;
+  }
+  .head {
+    width: 550px;
+  }
+  .ncc-footer {
+    width: 400px;
+    padding-top: 40px;
+    display: flex !important;
+    gap: 20px;
+  }
+  img.footer-logo {
+    width: 191px;
+    height: 40px;
+  }
+  .hr_footer {
+    margin-top: 166px;
+  }
+  a.ncc-footer-mail {
+    font-size: 20px;
+  }
+  a.ncc-footer-phone {
+    font-size: 20px;
+  }
+
+  .ncc-footer-mail-phone {
+    padding-top: 0px;
+  }
+  .right-content {
+    padding-bottom: 62px;
+    display: flex;
+
+  }
+  p.des-footer {
+    font-size: 20px;
+    width: 520px;
+  }
+  p.title-address {
+    font-size: 20px;
+  }
+  /* .footer-crypto {
+    height: 830px !important;
+  } */
+}
+@media only screen and (max-width: 622px) {
+
+  .content-item-project {
+    padding: 36px 40px !important;
+    width: 560px !important;
+    height: 360px;
+  }
+  .right-content-item {
+    width: 560px !important;
+  }
+  .right-content-project {
+    width: 2800px;
+  }
+  .right-content-project-invest{
+    width: 1680px;
+  }
+  .right-content-project-finance{
+    width: 1120px;
+  }
+  .right-content-project-insurance{
+    width: 1120px;
+  }
+  .right-content-project-education{
+    width: 1120px;
+  }
+  .right-content-project-entertainment{
+    width: 1120px;
+  }
+  .right-content-project-list {
+    width: 560px !important;
+  }
+  
+}
+
+@media only screen and (max-width: 616px) {
+
+  .content-item-project {
+    padding: 36px 40px !important;
+    width: 555px !important;
+    height: 360px;
+  }
+  .right-content-item {
+    width: 555px !important;
+  }
+  .right-content-project {
+    width: 2775px;
+  }
+  .right-content-project-invest{
+    width: 1665px;
+  }
+  .right-content-project-finance{
+    width: 1110px;
+  }
+  .right-content-project-insurance{
+    width: 1110px;
+  }
+  .right-content-project-education{
+    width: 1110px;
+  }
+  .right-content-project-entertainment{
+    width: 1110px;
+  }
+  .right-content-project-list {
+    width: 555px !important;
+  }
+  .member-type-project-top {
+    width: 180px !important;
+  }
+  .member-type-project-bottom {
+    width: 180px !important;
+  }
+  
+}
+@media only screen and (max-width: 610px) {
+
+  .content-item-project {
+    padding: 36px 40px !important;
+    width: 550px !important;
+    height: 360px;
+  }
+  .right-content-item {
+    width: 550px !important;
+  }
+  .right-content-project {
+    width: 2750px;
+  }
+  .right-content-project-invest{
+    width: 1650px;
+  }
+  .right-content-project-finance{
+    width: 1100px;
+  }
+  .right-content-project-insurance{
+    width: 1100px;
+  }
+  .right-content-project-education{
+    width: 1100px;
+  }
+  .right-content-project-entertainment{
+    width: 1100px;
+  }
+  .right-content-project-list {
+    width: 550px !important;
+  }
+  .member-type-project-top {
+    width: 178px !important;
+  }
+  .member-type-project-bottom {
+    width: 178px !important;
+  }
+  
+}
+@media only screen and (max-width: 605px) {
+
+  .content-item-project {
+    padding: 36px 40px !important;
+    width: 545px !important;
+    height: 360px;
+  }
+  .right-content-item {
+    width: 545px !important;
+  }
+  .right-content-project {
+    width: 2725px;
+  }
+  .right-content-project-invest{
+    width: 1635px;
+  }
+  .right-content-project-finance{
+    width: 1090px;
+  }
+  .right-content-project-insurance{
+    width: 1090px;
+  }
+  .right-content-project-education{
+    width: 1090px;
+  }
+  .right-content-project-entertainment{
+    width: 1090px;
+  }
+  .right-content-project-list {
+    width: 545px !important;
+  }
+  .member-type-project-top {
+    width: 175px !important;
+  }
+  .member-type-project-bottom {
+    width: 175px !important;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+  .content-item-project {
+    padding: 36px 40px !important;
+    width: 540px !important;
+    height: 360px;
+  }
+  .right-content-item {
+    width: 540px !important;
+  }
+  .right-content-project {
+    width: 2700px;
+  }
+  .right-content-project-invest{
+    width: 1620px;
+  }
+  .right-content-project-finance{
+    width: 1080px;
+  }
+  .right-content-project-insurance{
+    width: 1080px;
+  }
+  .right-content-project-education{
+    width: 1080px;
+  }
+  .right-content-project-entertainment{
+    width: 1080px;
+  }
+  .right-content-project-list {
+    width: 540px !important;
+  }
+  .member-type-project-top {
+    width: 170px !important;
+  }
+  .member-type-project-bottom {
+    width: 170px !important;
+  }
+  .project-img-top {
+    margin-left: -12px;
+  }
+  .project-img-bottom {
+    margin-left: -12px;
+  }
+  .project-img {
+    margin-left: -12px;
+  }
+  .head {
+    width: 525px;
+  }
+  textarea {
+    width: 525px;
+  }
+  input {
+    width: 525px !important;
+  }
+  .button-contact {
+    width: 525px;
+  }
+  
+}
+@media only screen and (max-width: 595px) {
+
+  .content-item-project {
+    width: 530px !important;
+  }
+  .right-content-item {
+    width: 530px !important;
+  }
+  .right-content-project {
+    width: 2650px;
+  }
+  .right-content-project-invest{
+    width: 1590px;
+  }
+  .right-content-project-finance{
+    width: 1060px;
+  }
+  .right-content-project-insurance{
+    width: 1060px;
+  }
+  .right-content-project-education{
+    width: 1060px;
+  }
+  .right-content-project-entertainment{
+    width: 1060px;
+  }
+  .right-content-project-list {
+    width: 530px !important;
+  }
+  .member-type-project-top {
+    width: 165px !important;
+  }
+  .member-type-project-bottom {
+    width: 165px !important;
+  }
+  .project-img-top {
+    margin-left: -12px;
+  }
+  .project-img-bottom {
+    margin-left: -12px;
+  }
+  .project-img {
+    margin-left: -12px;
+  }
+  /* .head {
+    width: 525px;
+  }
+  textarea {
+    width: 525px;
+  }
+  input {
+    width: 525px !important;
+  }
+  .button-contact {
+    width: 525px;
+  } */
+  
+}
+@media only screen and (max-width: 585px) {
+
+  .content-item-project {
+    width: 520px !important;
+  }
+  .right-content-item {
+    width: 520px !important;
+  }
+  .right-content-project {
+    width: 2600px;
+  }
+  .right-content-project-invest{
+    width: 1560px;
+  }
+  .right-content-project-finance{
+    width: 1040px;
+  }
+  .right-content-project-insurance{
+    width: 1040px;
+  }
+  .right-content-project-education{
+    width: 1040px;
+  }
+  .right-content-project-entertainment{
+    width: 1040px;
+  }
+  .right-content-project-list {
+    width: 520px !important;
+  }
+  .member-type-project-top {
+    width: 165px !important;
+  }
+  .member-type-project-bottom {
+    width: 165px !important;
+  }
+  .project-img-top {
+    margin-left: -12px;
+  }
+  .project-img-bottom {
+    margin-left: -12px;
+  }
+  .project-img {
+    margin-left: -12px;
+  }
+  /* .head {
+    width: 525px;
+  }
+  textarea {
+    width: 525px;
+  }
+  input {
+    width: 525px !important;
+  }
+  .button-contact {
+    width: 525px;
+  } */
+  
+}
+@media only screen and (max-width: 575px) {
+
+  .content-item-project {
+    width: 510px !important;
+  }
+  .right-content-item {
+    width: 510px !important;
+  }
+  .right-content-project {
+    width: 2550px;
+  }
+  .right-content-project-invest{
+    width: 1530px;
+  }
+  .right-content-project-finance{
+    width: 1020px;
+  }
+  .right-content-project-insurance{
+    width: 1020px;
+  }
+  .right-content-project-education{
+    width: 1020px;
+  }
+  .right-content-project-entertainment{
+    width: 1020px;
+  }
+  .right-content-project-list {
+    width: 510px !important;
+  }
+  .member-type-project-top {
+    width: 155px !important;
+  }
+  .member-type-project-bottom {
+    width: 155px !important;
+  }
+  .project-img-top {
+    margin-left: -12px;
+  }
+  .project-img-bottom {
+    margin-left: -12px;
+  }
+  .project-img {
+    margin-left: -12px;
+  }
+  /* .head {
+    width: 525px;
+  }
+  textarea {
+    width: 525px;
+  }
+  input {
+    width: 525px !important;
+  }
+  .button-contact {
+    width: 525px;
+  } */
+  
+}
+
+@media only screen and (max-width: 565px) {
+
+  .content-item-project {
+    width: 500px !important;
+  }
+  .right-content-item {
+    width: 500px !important;
+  }
+  .right-content-project {
+    width: 2500px;
+  }
+  .right-content-project-invest{
+    width: 1500px;
+  }
+  .right-content-project-finance{
+    width: 1000px;
+  }
+  .right-content-project-insurance{
+    width: 1000px;
+  }
+  .right-content-project-education{
+    width: 1000px;
+  }
+  .right-content-project-entertainment{
+    width: 1000px;
+  }
+  .right-content-project-list {
+    width: 500px !important;
+  }
+  .member-type-project-top {
+    width: 155px !important;
+  }
+  .member-type-project-bottom {
+    width: 155px !important;
+  }
+  .project-img-top {
+    margin-left: -12px;
+  }
+  .project-img-bottom {
+    margin-left: -12px;
+  }
+  .project-img {
+    margin-left: -12px;
+  }
+  .head {
+    width: 510px;
+  }
+  textarea {
+    width: 510px;
+  }
+  input {
+    width: 510px !important;
+  }
+  .button-contact {
+    width: 510px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 555px) {
+
+  /* block header */
+  .header-middle .display-flex {
+    height: 74px;
+    /* margin-top: 12px; */
+  }
+  .openmenu .header-center {
+    width: 540px;
+  }
+  .fixed-header .logo-default {
+    left: -205px;
+    height: 32px;
+  }
+  img.menu-mobile {
+    /* top: 45px; */
+  }
+  /* .main-title-home {
+    font-size: 68px !important;
+  }
+  .desc-title-home {
+    font-size: 41px !important;
+    width: auto !important;
+  } */
+
+  /* block team */
+  span.hr_member {
+    width: 435px;
+  }
+  .light-box {
+    padding: 80px;
+    left: -22px;
+    top: -35px;
+    align-items: center;
+    padding: 16px 16px 24px;
+    gap: 12px;
+    position: relative;
+    height: 430px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+  .member-type .member-name h4 {
+    font-size: 21px;
+  }
+  .member-type .member-info {
+    padding: 0px !important;
+  }
+  span.des-title-child {
+    font-size: 16px;
+  }
+  p.desc-title {
+    font-size: 16px;
+    color: #333333;
+  }
+  .block-section-home {
+    padding: 10px 0px;
+    }
+  .open-menu-mobile.hidden-lg.hidden-md {
+    width: 18px;
+  }
+  .block-section-home {
+    padding: auto !important;
+  }
+  .hr_footer{
+    display: block;
+    height: 2px;
+    background: #A192F3;
+    margin-top: 155px;
+  }
+  .project-name h4 {
+    line-height: 60px;
+  }
+  .project-title img {
+    height: 50px;
+    width: 50px;
+  }
+  .project-title{
+    display: none;
+  }
+  .project-title.project-mobile{
+    display: block;
+    height: 60px;
+    display: flex;
+  }
+  
+  p.des {
+    width: auto;
+    height: auto;
+    font-size: 17px;
+  }
+  .member-type1 .member-name h4 {
+    line-height: 60px;
+    font-size: 20px;
+    padding-left: 20px;
+    height: 50px;
+  }
+  p.des-memmber-info {
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: #333333;
+    font-style: initial;
+    padding-top: 5px;
+    margin-top: 0px;
+}
+  .member-moblie{
+    display: flex;
+  }
+  .member-img-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(180deg, #ECB8FF -4.19%, #A192F3 53.64%, #8877E1 100%);
+    border-radius: 8px;
+}
+  .member-lightbox {
+    display: none !important;
+}
+  .member-lightbox-mobile {
+    display: block;
+  }
+
+  img.img-member {
+    width: 92px;
+    height: 92px;
+    border-radius: 8px;
+  }
+
+  .member-lightbox .member-info {
+    width: 245px !important;
+  }
+
+  img.logo-close-mobile {
+    width: 12px;
+    height: 12px;
+  }
+  .logo-mobile img {
+    width: 167.3px;
+    height: 40px;
+  }
+  .project-mobile-logo{
+    order: 2;
+  }
+  .project-mobile-bg{
+    order: 1;
+  }
+  .img-game {
+    height: 400px !important;
+    border-radius: 8.08629px;
+}
+  .des-project {
+    font-size: 15px;
+  }
+  .tech-project {
+    font-size: 15px ;
+  }
+  .link-name {
+    font-size: 15px ;
+  }
+  .content-item-project {
+    padding: 36px 40px !important;
+    width: 490px;
+    height: 360px;
+  }
+  .right-content-item {
+    width: 490px !important;
+  }
+  .right-content-project {
+    width: 2450px;
+  }
+  .right-content-project-invest{
+    width: 1470px;
+  }
+  .right-content-project-finance{
+    width: 980px;
+  }
+  .right-content-project-insurance{
+    width: 980px;
+  }
+  .right-content-project-education{
+    width: 980px;
+  }
+  .right-content-project-entertainment{
+    width: 980px;
+  }
+  .right-content-project-list {
+    width: 490px !important;
+  }
+  .content-item-project {
+    width: 490px;
+  }
   .block-what-it .content-what-it {
     background: none;
   }
@@ -2105,6 +3224,7 @@ h4.title-project-name {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 16px;
   }
+  
   .img-service {
     border-radius: 50%;
     background: linear-gradient(89.76deg, rgba(236, 184, 255, 0.08) 0.21%, rgba(122, 97, 255, 0.08) 99.79%);
@@ -2116,12 +3236,7 @@ h4.title-project-name {
     margin: auto;
   }
   .item-faq h4 {
-    margin-bottom: 38px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 40px;
-    color: #FFFFFF;
+    font-size: 23px;
   }
 
   .row.list-faq {
@@ -2131,11 +3246,9 @@ h4.title-project-name {
     display: flex;
     overflow-x: scroll;
   }
-  p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #CCCCCC;
+  p.des-service {
+    font-size: 17px;
+    padding-top: 20px;
   }
   .member-type {
     text-align: center;
@@ -2150,6 +3263,7 @@ h4.title-project-name {
     background: #FFFFFF;
     border-radius: 16px;
   }
+  
   .member-type .member-info {
     background: none;
   }
@@ -2169,6 +3283,7 @@ h4.title-project-name {
     width: auto;
     background: #F5F2FF;
     border-radius: 16px;
+    padding-bottom: 20px;
   }
   p.des-contact {
     text-align: start;
@@ -2196,15 +3311,18 @@ h4.title-project-name {
     height: 2px;
     background: #A192F3;
   }
+  .col-xs-4 {
+    width: 32%;
+  }
   .member-type-project-top {
     padding: 18px 45px;
-    width: 104px;
-    height: 104px;
+    width: 150px !important;
+    height: 145px;
     margin-bottom: 8px;
   }
   .member-type-project-bottom {
     padding: 18px 45px;
-    width: 145px;
+    width: 150px !important;
     height: 145px;
     display: block;
   }
@@ -2299,6 +3417,8 @@ h4.title-project-name {
   }
   .right-content {
     padding-bottom: 62px;
+    display: flex;
+
   }
   p.des-footer {
     font-size: 20px;
@@ -2310,6 +3430,317 @@ h4.title-project-name {
   /* .footer-crypto {
     height: 830px !important;
   } */
+}
+
+@media only screen and (max-width: 550px) {
+
+  .content-item-project {
+    width: 470px !important;
+  }
+  .right-content-item {
+    width: 470px !important;
+  }
+  .right-content-project {
+    width: 2350px;
+  }
+  .right-content-project-invest{
+    width: 1410px;
+  }
+  .right-content-project-finance{
+    width: 940px;
+  }
+  .right-content-project-insurance{
+    width: 940px;
+  }
+  .right-content-project-education{
+    width: 940px;
+  }
+  .right-content-project-entertainment{
+    width: 940px;
+  }
+  .right-content-project-list {
+    width: 470px !important;
+  }
+  .member-type-project-top {
+    width: 150px !important;
+  }
+  .member-type-project-bottom {
+    width: 150px !important;
+  }
+  .project-img-top {
+    margin-left: -25px;
+  }
+  .project-img-bottom {
+    margin-left: -25px;
+  }
+  .project-img {
+    margin-left: -25px;
+  }
+
+}
+
+@media only screen and (max-width: 530px) {
+
+  .content-item-project {
+    width: 450px !important;
+  }
+  .right-content-item {
+    width: 450px !important;
+  }
+  .right-content-project {
+    width: 2250px;
+  }
+  .right-content-project-invest{
+    width: 1350px;
+  }
+  .right-content-project-finance{
+    width: 900px;
+  }
+  .right-content-project-insurance{
+    width: 900px;
+  }
+  .right-content-project-education{
+    width: 900px;
+  }
+  .right-content-project-entertainment{
+    width: 900px;
+  }
+  .right-content-project-list {
+    width: 450px !important;
+  }
+  .member-type-project-top {
+    width: 150px !important;
+  }
+  .member-type-project-bottom {
+    width: 150px !important;
+  }
+  .project-img-top {
+    margin-left: -25px;
+  }
+  .project-img-bottom {
+    margin-left: -25px;
+  }
+  .project-img {
+    margin-left: -25px;
+  }
+
+}
+
+@media only screen and (max-width: 510px) {
+
+  .content-item-project {
+    width: 440px !important;
+  }
+  .right-content-item {
+    width: 440px !important;
+  }
+  .right-content-project {
+    width: 2200px;
+  }
+  .right-content-project-invest{
+    width: 1320px;
+  }
+  .right-content-project-finance{
+    width: 880px;
+  }
+  .right-content-project-insurance{
+    width: 880px;
+  }
+  .right-content-project-education{
+    width: 880px;
+  }
+  .right-content-project-entertainment{
+    width: 880px;
+  }
+  .right-content-project-list {
+    width: 440px !important;
+  }
+  .member-type-project-top {
+    width: 135px !important;
+  }
+  .member-type-project-bottom {
+    width: 135px !important;
+  }
+  .project-img-top {
+    margin-left: -32px;
+  }
+  .project-img-bottom {
+    margin-left: -32px;
+  }
+  .project-img {
+    margin-left: -32px;
+  }
+
+  .head {
+    width: 480px;
+  }
+  textarea {
+    width: 480px;
+  }
+  input {
+    width: 480px !important;
+  }
+  .button-contact {
+    width: 480px;
+  }
+  p.des-footer {
+    font-size: 18px;
+    width: 480px;
+  }
+
+}
+
+@media only screen and (max-width: 495px) {
+
+  .light-box {
+    left: -40px;
+  }
+  p.des {
+    font-size: 16px;
+  }
+  .content-item-project {
+    width: 430px !important;
+  }
+  .right-content-item {
+    width: 430px !important;
+  }
+  .right-content-project {
+    width: 2150px;
+  }
+  .right-content-project-invest{
+    width: 1290px;
+  }
+  .right-content-project-finance{
+    width: 860px;
+  }
+  .right-content-project-insurance{
+    width: 860px;
+  }
+  .right-content-project-education{
+    width: 860px;
+  }
+  .right-content-project-entertainment{
+    width: 860px;
+  }
+  .right-content-project-list {
+    width: 430px !important;
+  }
+  .member-type-project-top {
+    width: 130px !important;
+  }
+  .member-type-project-bottom {
+    width: 130px !important;
+  }
+  .project-img-top {
+    margin-left: -32px;
+  }
+  .project-img-bottom {
+    margin-left: -32px;
+  }
+  .project-img {
+    margin-left: -32px;
+  }
+
+  .form-contact {
+    width: 475px;
+  }
+  .head {
+    width: 450px;
+  }
+  textarea {
+    width: 450px;
+  }
+  input {
+    width: 450px !important;
+  }
+  .button-contact {
+    width: 450px;
+  }
+  p.des-footer {
+    font-size: 18px;
+    width: 460px;
+  }
+
+}
+@media only screen and (max-width: 485px) {
+
+  /* 
+  p.des {
+    font-size: 16px;
+  } */
+  .light-box {
+    left: -48px;
+  }
+  .fixed-header .logo-default {
+    left: -171px;
+    height: 30px;
+  }
+  .openmenu .header-center {
+    width: 483px;
+  }
+  .content-item-project {
+    width: 420px !important;
+  }
+  .right-content-item {
+    width: 420px !important;
+  }
+  .right-content-project {
+    width: 2100px;
+  }
+  .right-content-project-invest{
+    width: 1260px;
+  }
+  .right-content-project-finance{
+    width: 840px;
+  }
+  .right-content-project-insurance{
+    width: 840px;
+  }
+  .right-content-project-education{
+    width: 840px;
+  }
+  .right-content-project-entertainment{
+    width: 840px;
+  }
+  .right-content-project-list {
+    width: 420px !important;
+  }
+  .member-type-project-top {
+    width: 130px !important;
+  }
+  .member-type-project-bottom {
+    width: 130px !important;
+  }
+  .project-img-top {
+    margin-left: -32px;
+  }
+  .project-img-bottom {
+    margin-left: -32px;
+  }
+  .project-img {
+    margin-left: -32px;
+  }
+
+  .form-contact {
+    width: 475px;
+  }
+  .head {
+    width: 450px;
+  }
+  textarea {
+    width: 450px;
+  }
+  input {
+    width: 450px !important;
+  }
+  .button-contact {
+    width: 450px;
+  }
+  p.des-footer {
+    font-size: 18px;
+    width: 460px;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -2512,7 +3943,7 @@ h4.title-project-name {
     left: 0;
     opacity: 1;
     visibility: visible;
-    width: 353px;
+    width: 480px;
   }
   .header-center, .header-ver, .searchform_wrap {
     width: calc(100% - 230px);
@@ -2661,23 +4092,23 @@ h4.title-project-name {
   .project-img {
     width: 64px;
     height: 64px;
-    margin-left: -35px;
+    margin-left: -15px;
   }
   /* .project-img-top.project-img-mobile {
     margin-left: -6px;
   } */
  
   .member-type-project-top.member-type-project-top-mobile.project-item-insurance.project-mobile-xs {
-    margin-left: 18px;
+    margin-left: 28px;
   }
   .member-type-project-top.member-type-project-top-mobile.project-item-education.project-mobile-xs {
-    margin-left: 18px;
+    margin-left: 28px;
   }
   .member-type-project-top.member-type-project-top-mobile.project-item-entertainment.project-mobile-xs {
-    margin-left: 18px;
+    margin-left: 28px;
   }
   .member-type-project-top.member-type-project-top-mobile.project-item-finance.project-mobile-xs {
-    margin-left: 18px;
+    margin-left: 28px;
   }
 
   img.menu-mobile {
@@ -2689,9 +4120,10 @@ h4.title-project-name {
   .project-img-top {
     width: 64px;
     height: 64px;
-    margin-left: -33px;
+    margin-left: -15px;
     margin-top: 0px;
   }
+  
   .member-type-project-top {
     display: none;
   }
@@ -2709,7 +4141,7 @@ h4.title-project-name {
     display: block;
     width: 64px;
     height: 64px;
-    margin-left: -30px;
+    margin-left: -15px;
     margin-top: auto;
     }
 
@@ -2717,13 +4149,13 @@ h4.title-project-name {
   /* contact us */
 
   .form-contact {
-    width: 409px;
+    width: 450px;
   }
   input {
-    width: 340px !important;
+    width: 415px !important;
   }
   .head {
-    width: 340px;
+    width: 415px;
   }
   .ncc-footer {
     width: 400px;
@@ -2735,7 +4167,7 @@ h4.title-project-name {
     height: auto;
   }
   .hr_footer {
-    margin-top: 133px;
+    margin-top: 165px;
   }
  
   /* .footer-crypto {
@@ -2746,6 +4178,471 @@ h4.title-project-name {
   }
 }
 
+@media only screen and (max-width: 470px) {
+
+  .light-box {
+    left: -48px;
+  }
+  .fixed-header .logo-default {
+    left: -171px;
+    height: 30px;
+  }
+  .openmenu .header-center {
+    width: 483px;
+  }
+  .content-item-project {
+    width: 408px !important;
+  }
+  .right-content-item {
+    width: 408px !important;
+  }
+  .right-content-project {
+    width: 2040px;
+  }
+  .right-content-project-invest{
+    width: 1224px;
+  }
+  .right-content-project-finance{
+    width: 816px;
+  }
+  .right-content-project-insurance{
+    width: 816px;
+  }
+  .right-content-project-education{
+    width: 816px;
+  }
+  .right-content-project-entertainment{
+    width: 816px;
+  }
+  .right-content-project-list {
+    width: 408px !important;
+  }
+  .member-type-project-top {
+    width: 130px !important;
+    height: 110px;
+  }
+  .member-type-project-bottom {
+    width: 130px !important;
+    height: 110px;
+  }
+  .project-img-top {
+    margin-left: -24px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img-bottom {
+    margin-left: -24px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img {
+    margin-left: -24px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .form-contact {
+    width: 475px;
+  }
+  .head {
+    width: 435px;
+  }
+  textarea {
+    width: 435px;
+  }
+  input {
+    width: 435px !important;
+  }
+  .button-contact {
+    width: 435px;
+  }
+  p.des-footer {
+    font-size: 18px;
+    width: 440px;
+  }
+  p.title-address {
+    font-size: 18px;
+  }
+
+  a.ncc-footer-phone {
+    font-size: 18px;
+  }
+  a.ncc-footer-mail {
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+  .light-box {
+    left: -60px;
+  }
+  .fixed-header .logo-default {
+    left: -171px;
+    height: 30px;
+  }
+  .openmenu .header-center {
+    width: 483px;
+  }
+  .content-item-project {
+    width: 400px !important;
+  }
+  .right-content-item {
+    width: 400px !important;
+  }
+  .right-content-project {
+    width: 2000px;
+  }
+  .right-content-project-invest{
+    width: 1200px;
+  }
+  .right-content-project-finance{
+    width: 800px;
+  }
+  .right-content-project-insurance{
+    width: 800px;
+  }
+  .right-content-project-education{
+    width: 800px;
+  }
+  .right-content-project-entertainment{
+    width: 800px;
+  }
+  .right-content-project-list {
+    width: 400px !important;
+  }
+  .member-type-project-top {
+    width: 120px !important;
+    height: 110px;
+  }
+  .member-type-project-bottom {
+    width: 120px !important;
+    height: 110px;
+  }
+  .project-img-top {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img-bottom {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .form-contact {
+    width: 475px;
+  }
+  .head {
+    width: 435px;
+  }
+  textarea {
+    width: 435px;
+  }
+  input {
+    width: 435px !important;
+  }
+  .button-contact {
+    width: 435px;
+  }
+  p.des-footer {
+    font-size: 17px;
+    width: 435px;
+  }
+  p.title-address {
+    font-size: 17px;
+  }
+
+  a.ncc-footer-phone {
+    font-size: 17px;
+  }
+  a.ncc-footer-mail {
+    font-size: 17px;
+  }
+
+}
+@media only screen and (max-width: 450px) {
+
+  .light-box {
+    left: -60px;
+  }
+  .fixed-header .logo-default {
+    left: -171px;
+    height: 30px;
+  }
+  .openmenu .header-center {
+    width: 460px;
+  }
+  .content-item-project {
+    width: 390px !important;
+  }
+  .right-content-item {
+    width: 390px !important;
+  }
+  .right-content-project {
+    width: 1950px;
+  }
+  .right-content-project-invest{
+    width: 1170px;
+  }
+  .right-content-project-finance{
+    width: 780px;
+  }
+  .right-content-project-insurance{
+    width: 780x;
+  }
+  .right-content-project-education{
+    width: 780px;
+  }
+  .right-content-project-entertainment{
+    width: 780px;
+  }
+  .right-content-project-list {
+    width: 390px !important;
+  }
+  .member-type-project-top {
+    width: 120px !important;
+    height: 110px;
+  }
+  .member-type-project-bottom {
+    width: 120px !important;
+    height: 110px;
+  }
+  .project-img-top {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img-bottom {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .head {
+    width: 422px;
+  }
+  textarea {
+    width: 422px;
+  }
+  input {
+    width: 422px !important;
+  }
+  .button-contact {
+    width: 422px;
+  }
+  p.des-footer {
+    font-size: 17px;
+    width: 422px;
+  }
+  p.title-address {
+    font-size: 17px;
+  }
+
+  a.ncc-footer-phone {
+    font-size: 17px;
+  }
+  a.ncc-footer-mail {
+    font-size: 17px;
+  }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+  .light-box {
+    left: -60px;
+  }
+  .fixed-header .logo-default {
+    left: -72px;
+    height: 30px;
+  }
+  .openmenu .header-center {
+    width: 445px;
+  }
+  .content-item-project {
+    width: 380px !important;
+  }
+  .right-content-item {
+    width: 380px !important;
+  }
+  .right-content-project {
+    width: 1900px;
+  }
+  .right-content-project-invest{
+    width: 1140px;
+  }
+  .right-content-project-finance{
+    width: 760px;
+  }
+  .right-content-project-insurance{
+    width: 760x;
+  }
+  .right-content-project-education{
+    width: 760px;
+  }
+  .right-content-project-entertainment{
+    width: 760px;
+  }
+  .right-content-project-list {
+    width: 380px !important;
+  }
+  .member-type-project-top {
+    width: 120px !important;
+    height: 110px;
+  }
+  .member-type-project-bottom {
+    width: 120px !important;
+    height: 110px;
+  }
+  .project-img-top {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img-bottom {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img {
+    margin-left: -30px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .head {
+    width: 422px;
+  }
+  textarea {
+    width: 422px;
+  }
+  input {
+    width: 422px !important;
+  }
+  .button-contact {
+    width: 422px;
+  }
+  p.des-footer {
+    font-size: 17px;
+    width: 411px;
+  }
+  p.title-address {
+    font-size: 17px;
+  }
+
+  a.ncc-footer-phone {
+    font-size: 17px;
+  }
+  a.ncc-footer-mail {
+    font-size: 17px;
+  }
+
+}
+@media only screen and (max-width: 435px) {
+
+  .light-box {
+    left: -73px;
+  }
+ 
+  .openmenu .header-center {
+    width: 445px;
+  }
+  .fixed-header .logo-default {
+    left: -147px;
+    height: 32px;
+  }
+  .content-item-project {
+    width: 370px !important;
+  }
+  .right-content-item {
+    width: 370px !important;
+  }
+  .right-content-project {
+    width: 1850px;
+  }
+  .right-content-project-invest{
+    width: 1110px;
+  }
+  .right-content-project-finance{
+    width: 740px;
+  }
+  .right-content-project-insurance{
+    width: 740px;
+  }
+  .right-content-project-education{
+    width: 740px;
+  }
+  .right-content-project-entertainment{
+    width: 740px;
+  }
+  .right-content-project-list {
+    width: 370px !important;
+  }
+  .member-type-project-top {
+    width: 110px !important;
+    height: 110px;
+  }
+  .member-type-project-bottom {
+    width: 110px !important;
+    height: 110px;
+  }
+  .project-img-top {
+    margin-left: -34px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img-bottom {
+    margin-left: -34px;
+    width: 85px;
+    height: 85px;
+  }
+  .project-img {
+    margin-left: -34px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .head {
+    width: 418px;
+  }
+  textarea {
+    width: 418px;
+  }
+  input {
+    width: 418px !important;
+  }
+  .button-contact {
+    width: 418px;
+  }
+  p.des-footer {
+    font-size: 17px;
+    width: 411px;
+  }
+  p.title-address {
+    font-size: 17px;
+  }
+
+  a.ncc-footer-phone {
+    font-size: 17px;
+  }
+  a.ncc-footer-mail {
+    font-size: 17px;
+  }
+
+}
+
 @media only screen and (max-width: 426px) {
   /* block header */
   .fixed-header .logo-default {
@@ -2754,10 +4651,13 @@ h4.title-project-name {
   .openmenu .header-center {
     width: 430px;
   }
+  .light-box {
+    left: -78px;
+  }
   /* block project */
 
   .right-content-item {
-    width: 366px;
+    width: 366px !important;
   }
   .right-content-project {
     width: 1830px;
@@ -2778,10 +4678,10 @@ h4.title-project-name {
     width: 732px;
   }
   .right-content-project-list {
-    width: 366px;
+    width: 366px !important;
   }
   .member-type-project-top-mobile {
-    width: 100px;
+    width: 100px !important;
     height: 100px;
   }
   .member-type-project-top {
@@ -2789,7 +4689,7 @@ h4.title-project-name {
   }
   .member-type-project-bottom {
     padding: 12px 55px;
-    width: 100px;
+    width: 100px !important;
     height: 100px;
   }
   .project-img-top {
@@ -2823,6 +4723,21 @@ h4.title-project-name {
   .member-type-project-top.member-type-project-top-mobile.project-item-finance.project-mobile-xs {
     margin-left: 24px;
   }
+  .form-contact {
+    width: 455px;
+  }
+  .head {
+    width: 395x;
+  }
+  textarea {
+    width: 395px;
+  }
+  input {
+    width: 395px !important;
+  }
+  .button-contact {
+    width: 395px;
+  }
 }
 
 @media only screen and (max-width: 416px) {
@@ -2835,6 +4750,9 @@ h4.title-project-name {
     width: 414px;
   }
   /* block project */
+  .content-item-project {
+    width: 355px !important;
+  }
   .right-content-item {
     width: 355px;
   }
@@ -2857,7 +4775,15 @@ h4.title-project-name {
     width: 710px;
   }
   .right-content-project-list {
-    width: 355px;
+    width: 355px !important;
+  }
+  .member-type .member-info {
+    padding: 0px !important;
+  }
+  
+  .light-box {
+    left: -82px;
+    top: -193px;
   }
 
   .member-type-project-top-mobile {
@@ -2887,10 +4813,14 @@ h4.title-project-name {
     height: 64px;
     margin-left: -32px;
   }
+  .member-type-project-bottom.project-item-game.member-type-project-bottom-mobile {
+    height: 96px;
+  }
 
   /* block footer */
   .right-content {
     padding-bottom: 55px;
+    display: flex;
   }
   /* .footer-crypto {
     height: 850px !important;
@@ -2905,6 +4835,22 @@ h4.title-project-name {
   .hr_footer {
     margin-top: 160px;
   }
+  input {
+    width: 378px !important;
+  }
+  .head {
+    width: 378px;
+  }
+  a.ncc-footer-mail {
+    font-size: 18px;
+  }
+  a.ncc-footer-phone {
+    font-size: 18px;
+  }
+  p.title-address {
+    font-size: 18px;
+  }
+
 
 }
 
@@ -2920,6 +4866,9 @@ h4.title-project-name {
     top: -105px
   }
    /* block project */
+   .content-item-project {
+    width: 330px !important;
+  }
   .right-content-item {
     width: 330px;
   }
@@ -2942,7 +4891,7 @@ h4.title-project-name {
     width: 660px;
   }
   .right-content-project-list {
-    width: 330px;
+    width: 330px !important;
   }
   .member-type-project-top {
     padding: 12px 50px;
@@ -3015,9 +4964,18 @@ h4.title-project-name {
   .item-faq h4 {
     font-size: 17px;
   }
+  /* .member-type .member-info {
+    padding: auto !important;
+  } */
+  .member-type .member-info {
+    padding: 0px !important;
+  }
   /* block project   */
+  .content-item-project {
+    width: 315px !important;
+  }
   .right-content-item {
-    width: 315px;
+    width: 315px !important;
   }
   .right-content-project {
     width: 1575px;
@@ -3038,7 +4996,7 @@ h4.title-project-name {
     width: 630px;
   }
   .right-content-project-list {
-    width: 315px;
+    width: 315px !important;
   }
   .member-type-project-top {
     padding: 12px 45px;
@@ -3054,6 +5012,9 @@ h4.title-project-name {
   }
   .project-img-top {
     margin-left: -30px;
+  }
+  .member-type-project-bottom.project-item-game.member-type-project-bottom-mobile {
+    height: 94px;
   }
 
   /* block contact */
@@ -3239,11 +5200,11 @@ h4.title-project-name {
   }
   .content-item-project {
     padding: 36px 40px !important;
-    width: 300px;
+    width: 300px !important;
     height: 360px;
   }
   .right-content-item {
-    width: 300px;
+    width: 300px !important; 
   }
   .right-content-project {
     width: 1500px;
@@ -3264,7 +5225,7 @@ h4.title-project-name {
     width: 600px;
   }
   .right-content-project-list {
-    width: 300px;
+    width: 300px !important;
   }
 
   .member-type-project-top.member-type-project-top-mobile.project-item-insurance.project-mobile-xs {
@@ -3526,7 +5487,7 @@ h4.title-project-name {
 
 @media only screen and (max-width: 356px) {
   .right-content-item {
-    width: 295px;
+    width: 295px !important;
   }
   .right-content-project {
     width: 1475px;
@@ -3547,13 +5508,13 @@ h4.title-project-name {
     width: 590px;
   }
   .right-content-project-list {
-    width: 295px;
+    width: 295px !important;
   }
 }
 
 @media only screen and (max-width: 351px) {
   .right-content-item {
-    width: 288px;
+    width: 288px !important;
   }
   .right-content-project {
     width: 1440px;
@@ -3574,13 +5535,13 @@ h4.title-project-name {
     width: 576px;
   }
   .right-content-project-list {
-    width: 288px;
+    width: 288px !important;
   }
 }
 
 @media only screen and (max-width: 343px) {
   .right-content-item {
-    width: 280px;
+    width: 280px !important;
   }
   .right-content-project {
     width: 1400px;
@@ -3601,13 +5562,16 @@ h4.title-project-name {
     width: 560px;
   }
   .right-content-project-list {
-    width: 280px;
+    width: 280px !important;
   }
 }
 
 @media only screen and (max-width: 335px) {
+  .light-box {
+    left: -48px;
+  }
   .right-content-item {
-    width: 275px;
+    width: 275px !important;
   }
   .right-content-project {
     width: 1375px;
@@ -3628,13 +5592,40 @@ h4.title-project-name {
     width: 550px;
   }
   .right-content-project-list {
-    width: 275px;
+    width: 275px !important;
   }
+  .member-type-project-top {
+    padding: 12px 40px;
+    width: 90px !important;
+    height: 90px;
+  }
+  .member-type-project-bottom {
+    padding: 12px 40px;
+    width: 90px !important;
+    height: 90px;
+  }
+  .member-type-project-bottom.project-item-game.member-type-project-bottom-mobile {
+    height: 90px;
+  }
+  
+  input {
+    width: 292px !important;
+  }
+  .head {
+    width: 292px;
+  }
+  textarea {
+    width: 292px;
+  }
+  .button-contact {
+    width: 292px;
+  }
+
 }
 
 @media only screen and (max-width: 330px) {
   .right-content-item {
-    width: 270px;
+    width: 270px !important;
   }
   .right-content-project {
     width: 1350px;
@@ -3655,13 +5646,13 @@ h4.title-project-name {
     width: 540px;
   }
   .right-content-project-list {
-    width: 270px;
+    width: 270px !important;
   }
 }
 
 @media only screen and (max-width: 326px) {
   .right-content-item {
-    width: 265px;
+    width: 265px !important;
   }
   .right-content-project {
     width: 1325px;
@@ -3682,7 +5673,7 @@ h4.title-project-name {
     width: 530px;
   }
   .right-content-project-list {
-    width: 265px;
+    width: 265px !important;
   }
 }
 
@@ -4001,7 +5992,7 @@ h4.title-project-name {
   }
 
   .member-type-project-top-mobile {
-    width: 65px;
+    width: 65px !important;
     height: 65px;
     padding: 4px 16px;
   }
@@ -4011,11 +6002,11 @@ h4.title-project-name {
     margin-left: -7px;
   }
   .member-type-project-bottom.project-item-game.member-type-project-bottom-mobile {
-    width: 65px;
+    width: 65px !important;
     height: 65px;
   }
   .member-type-project-bottom {
-    width: 65px;
+    width: 65px !important;
     height: 65px;
     padding: 0px 13px;
   }
