@@ -621,6 +621,9 @@ p.des {
   color: white;
   border: 1px solid #282828;
 }
+.item-faq.item-faq-jp {
+  height: 465px;
+}
 .item-faq h4 {
   /* font-size: 16px;
   font-weight: 700;
@@ -1499,6 +1502,9 @@ h4.title-project-name {
    .footer-crypto {
     height: 820px !important;
   }
+  .item-faq.item-faq-jp {
+    height: auto;
+}
 }
 
 @media (max-width: 873px) {
@@ -1513,6 +1519,9 @@ h4.title-project-name {
   } */
   p.des {
     font-size: 15px;
+  }
+  .item-faq.item-faq-jp {
+    height: auto;
   }
 }
 
@@ -1539,6 +1548,9 @@ h4.title-project-name {
 
   /* team */
  
+  .item-faq.item-faq-jp {
+    height: auto;
+  }
   .team{
     display: flex;
     overflow-x: scroll;
@@ -1790,6 +1802,9 @@ h4.title-project-name {
   .col-xs-4 {
     width: 33.333333%;
   }
+  .item-faq.item-faq-jp {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -1798,6 +1813,9 @@ h4.title-project-name {
   }
   .img-game {
     margin-top: 10px;
+  }
+  .item-faq.item-faq-jp {
+    height: auto;
   }
 
   /* .member-type-project-bottom{
@@ -2059,6 +2077,9 @@ h4.title-project-name {
   .fixed-header .logo-default {
     left: -205px;
     height: 32px;
+  }
+  .item-faq.item-faq-jp {
+    height: auto;
   }
 
   /* block team */
@@ -4748,6 +4769,9 @@ h4.title-project-name {
   .openmenu .header-center {
     width: 414px;
   }
+  .item-faq.item-faq-jp {
+    height: auto;
+  }
   /* block project */
   .content-item-project {
     width: 355px !important;
@@ -4965,6 +4989,9 @@ h4.title-project-name {
   }
   .item-faq h4 {
     font-size: 17px;
+  }
+  .item-faq.item-faq-jp {
+    height: auto;
   }
   /* .member-type .member-info {
     padding: auto !important;
