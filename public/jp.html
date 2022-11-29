@@ -217,7 +217,7 @@
                 <div class="head-box">
                   <div class="main-title-home">KRYPTOHUB</div>
                 </div>
-                <div class="desc-title-home">
+                <div class="desc-title-home desc-title-home-jp">
                   ブロックチェーン上に構築されたグローバル経済へのゲートウェイを作りましょう
                 </div>
                 <a href="#about">
@@ -1425,216 +1425,237 @@
     const logoOthers = document.querySelectorAll('.project-item-others');
 
 
-    let width_item = document.body.offsetWidth;
-    console.log(width_item, "width_item");
+    function responsiveProjectGame() {
 
-    let content_width_items = 515;
+      let width_item = document.body.offsetWidth;
+      console.log(width_item, "width_item");
 
-
-    if (width_item <= 1024) {
-      content_width_items = 497;
-    }
-    if (width_item <= 992) {
-      content_width_items = 700;
-    }
-    if (width_item <= 760) {
-      content_width_items = 620;
-    }
-    if (width_item <= 630) {
-      content_width_items = 570;
-    }
-    if (width_item <= 622) {
-      content_width_items = 560;
-    }
-    if (width_item <= 622) {
-      content_width_items = 555;
-    }
-    if (width_item <= 610) {
-      content_width_items = 550;
-    }
-    if (width_item <= 605) {
-      content_width_items = 545;
-    }
-    if (width_item <= 600) {
-      content_width_items = 540;
-    }
-    if (width_item <= 595) {
-      content_width_items = 530;
-    }
-    if (width_item <= 585) {
-      content_width_items = 520;
-    }
-    if (width_item <= 575) {
-      content_width_items = 510;
-    }
-    if (width_item <= 565) {
-      content_width_items = 500;
-    }
-    if (width_item <= 555) {
-      content_width_items = 490;
-    }
-    if (width_item <= 550) {
-      content_width_items = 470;
-    }
-    if (width_item <= 530) {
-      content_width_items = 450;
-    }
-    if (width_item <= 510) {
-      content_width_items = 440;
-    }
-    if (width_item <= 495) {
-      content_width_items = 430;
-    }
-    if (width_item <= 485) {
-      content_width_items = 420;
-    }
-    if (width_item <= 470) {
-      content_width_items = 408;
-    }
-    if (width_item <= 460) {
-      content_width_items = 400;
-    }
-    if (width_item <= 450) {
-      content_width_items = 390;
-    }
-    if (width_item <= 440) {
-      content_width_items = 380;
-    }
-    if (width_item <= 437) {
-      content_width_items = 370;
-    }
-    if (width_item <= 425) {
-      content_width_items = 366;
-    }
-    if (width_item <= 416) {
-      content_width_items = 355;
-    }
-    if (width_item <= 390) {
-      content_width_items = 330;
-    }
-    if (width_item <= 375) {
-      content_width_items = 315;
-    }
-    if (width_item <= 360) {
-      content_width_items = 300;
-    }
-    if (width_item <= 356) {
-      content_width_items = 295;
-    }
-    if (width_item <= 350) {
-      content_width_items = 288;
-    }
-    if (width_item <= 343) {
-      content_width_items = 280;
-    }
-    if (width_item <= 335) {
-      content_width_items = 275;
-    }
-    if (width_item <= 323) {
-      content_width_items = 262;
-    }
-    if (width_item <= 318) {
-      content_width_items = 257;
-    }
-    if (width_item <= 313) {
-      content_width_items = 252;
-    }
-    if (width_item <= 308) {
-      content_width_items = 248;
-    }
-    if (width_item <= 299) {
-      content_width_items = 240;
-    }
-    if (width_item <= 289) {
-      content_width_items = 234;
-    }
-    if (width_item <= 287) {
-      content_width_items = 228;
-    }
-    if (width_item <= 283) {
-      content_width_items = 224;
-    }
-    if (width_item <= 280) {
-      content_width_items = 222;
-    }
-    if (width_item <= 276) {
-      content_width_items = 220;
-    }
+      let content_width_items = 515;
 
 
-    console.log(content_width_items, "content_width_items");
 
-    for (let i = 0; i < logo.length; i++) {
-      logo[i].addEventListener('click', function () {
-        for (let j = 0; j < logo.length; j++) {
-          logo[j].classList.remove('logo-active');
+      if (width_item <= 1024) {
+        content_width_items = 497;
+      }
+      if (width_item <= 992) {
+        content_width_items = 700;
+      }
+      if (width_item <= 760) {
+        content_width_items = 620;
+      }
+      if (width_item <= 630) {
+        content_width_items = 570;
+      }
+      if (width_item <= 622) {
+        content_width_items = 560;
+      }
+      if (width_item <= 622) {
+        content_width_items = 555;
+      }
+      if (width_item <= 610) {
+        content_width_items = 550;
+      }
+      if (width_item <= 605) {
+        content_width_items = 545;
+      }
+      if (width_item <= 600) {
+        content_width_items = 540;
+      }
+      if (width_item <= 595) {
+        content_width_items = 530;
+      }
+      if (width_item <= 585) {
+        content_width_items = 520;
+      }
+      if (width_item <= 575) {
+        content_width_items = 510;
+      }
+      if (width_item <= 565) {
+        content_width_items = 500;
+      }
+      if (width_item <= 555) {
+        content_width_items = 490;
+      }
+      if (width_item <= 550) {
+        content_width_items = 470;
+      }
+      if (width_item <= 530) {
+        content_width_items = 450;
+      }
+      if (width_item <= 510) {
+        content_width_items = 440;
+      }
+      if (width_item <= 495) {
+        content_width_items = 430;
+      }
+      if (width_item <= 485) {
+        content_width_items = 420;
+      }
+      if (width_item <= 470) {
+        content_width_items = 408;
+      }
+      if (width_item <= 460) {
+        content_width_items = 400;
+      }
+      if (width_item <= 450) {
+        content_width_items = 390;
+      }
+      if (width_item <= 440) {
+        content_width_items = 380;
+      }
+      if (width_item <= 437) {
+        content_width_items = 370;
+      }
+      if (width_item <= 425) {
+        content_width_items = 366;
+      }
+      if (width_item <= 416) {
+        content_width_items = 355;
+      }
+      if (width_item <= 390) {
+        content_width_items = 330;
+      }
+      if (width_item <= 375) {
+        content_width_items = 315;
+      }
+      if (width_item <= 360) {
+        content_width_items = 300;
+      }
+      if (width_item <= 356) {
+        content_width_items = 295;
+      }
+      if (width_item <= 350) {
+        content_width_items = 288;
+      }
+      if (width_item <= 343) {
+        content_width_items = 280;
+      }
+      if (width_item <= 335) {
+        content_width_items = 275;
+      }
+      if (width_item <= 323) {
+        content_width_items = 262;
+      }
+      if (width_item <= 318) {
+        content_width_items = 257;
+      }
+      if (width_item <= 313) {
+        content_width_items = 252;
+      }
+      if (width_item <= 308) {
+        content_width_items = 248;
+      }
+      if (width_item <= 299) {
+        content_width_items = 240;
+      }
+      if (width_item <= 289) {
+        content_width_items = 234;
+      }
+      if (width_item <= 287) {
+        content_width_items = 228;
+      }
+      if (width_item <= 283) {
+        content_width_items = 224;
+      }
+      if (width_item <= 280) {
+        content_width_items = 222;
+      }
+      if (width_item <= 276) {
+        content_width_items = 220;
+      }
+
+      console.log(content_width_items, "content_width_items");
+      for (let i = 0; i < logo.length; i++) {
+        logo[i].addEventListener('click', function () {
+          for (let j = 0; j < logo.length; j++) {
+            logo[j].classList.remove('logo-active');
+          }
+          this.classList.add('logo-active');
+          slideContent.style.transform = "translateX(" + -content_width_items * logo[i].getAttribute("data-index") + "px)";
+        })
+
+
+        if (logo[i].classList.contains('logo-active')) {
+          slideContent.style.transform = "translateX(" + -content_width_items * logo[i].getAttribute("data-index") + "px)";
         }
-        this.classList.add('logo-active');
-        slideContent.style.transform = "translateX(" + -content_width_items * logo[i].getAttribute("data-index") + "px)";
+      }
 
-      })
-    }
 
-    for (let i = 0; i < logoInvestment.length; i++) {
-      logoInvestment[i].addEventListener('click', function () {
-        for (let j = 0; j < logoInvestment.length; j++) {
-          logoInvestment[j].classList.remove('logo-active');
+      for (let i = 0; i < logoInvestment.length; i++) {
+        logoInvestment[i].addEventListener('click', function () {
+          for (let j = 0; j < logoInvestment.length; j++) {
+            logoInvestment[j].classList.remove('logo-active');
+          }
+          this.classList.add('logo-active');
+          slideContentInvestment.style.transform = "translateX(" + -content_width_items * logoInvestment[i].getAttribute("data-index") + "px)";
+        })
+
+        if (logoInvestment[i].classList.contains('logo-active')) {
+          slideContentInvestment.style.transform = "translateX(" + -content_width_items * logo[i].getAttribute("data-index") + "px)";
         }
-        this.classList.add('logo-active');
-        slideContentInvestment.style.transform = "translateX(" + -content_width_items * logoInvestment[i].getAttribute("data-index") + "px)";
-      })
-    }
+      }
 
-    for (let i = 0; i < logoFinan.length; i++) {
-      logoFinan[i].addEventListener('click', function () {
-        for (let j = 0; j < logoFinan.length; j++) {
-          logoFinan[j].classList.remove('logo-active');
+      for (let i = 0; i < logoFinan.length; i++) {
+        logoFinan[i].addEventListener('click', function () {
+          for (let j = 0; j < logoFinan.length; j++) {
+            logoFinan[j].classList.remove('logo-active');
+          }
+          this.classList.add('logo-active');
+          slideContentFin.style.transform = "translateX(" + -content_width_items * logoFinan[i].getAttribute("data-index") + "px)";
+        })
+
+        if (logoFinan[i].classList.contains('logo-active')) {
+          slideContentFin.style.transform = "translateX(" + -content_width_items * logo[i].getAttribute("data-index") + "px)";
         }
-        this.classList.add('logo-active');
-        slideContentFin.style.transform = "translateX(" + -content_width_items * logoFinan[i].getAttribute("data-index") + "px)";
-      })
 
-    }
+      }
 
-    for (let i = 0; i < logoInsu.length; i++) {
-      logoInsu[i].addEventListener('click', function () {
-        for (let j = 0; j < logoInsu.length; j++) {
-          logoInsu[j].classList.remove('logo-active');
+      for (let i = 0; i < logoInsu.length; i++) {
+        logoInsu[i].addEventListener('click', function () {
+          for (let j = 0; j < logoInsu.length; j++) {
+            logoInsu[j].classList.remove('logo-active');
+          }
+          this.classList.add('logo-active');
+          slideContentInsurance.style.transform = "translateX(" + -content_width_items * logoInsu[i].getAttribute("data-index") + "px)";
+        })
+
+        if (logoInsu[i].classList.contains('logo-active')) {
+          slideContentInsurance.style.transform = "translateX(" + -content_width_items * logo[i].getAttribute("data-index") + "px)";
         }
-        this.classList.add('logo-active');
-        slideContentInsurance.style.transform = "translateX(" + -content_width_items * logoInsu[i].getAttribute("data-index") + "px)";
-      })
+      }
+
+      for (let i = 0; i < logoEdu.length; i++) {
+        logoEdu[i].addEventListener('click', function () {
+          for (let j = 0; j < logoEdu.length; j++) {
+            logoEdu[j].classList.remove('logo-active');
+          }
+          this.classList.add('logo-active');
+          slideContentEduce.style.transform = "translateX(" + -content_width_items * logoEdu[i].getAttribute("data-index") + "px)";
+        })
+
+        if (logoEdu[i].classList.contains('logo-active')) {
+          slideContentEduce.style.transform = "translateX(" + -content_width_items * logo[i].getAttribute("data-index") + "px)";
+        }
+      }
+
+      for (let i = 0; i < logoEn.length; i++) {
+        logoEn[i].addEventListener('click', function () {
+          for (let j = 0; j < logoEn.length; j++) {
+            logoEn[j].classList.remove('logo-active');
+          }
+          this.classList.add('logo-active');
+          slideContentEn.style.transform = "translateX(" + -content_width_items * logoEn[i].getAttribute("data-index") + "px)";
+        })
+
+        if (logoEn[i].classList.contains('logo-active')) {
+          slideContentEn.style.transform = "translateX(" + -content_width_items * logo[i].getAttribute("data-index") + "px)";
+        }
+      }
+
     }
 
-    for (let i = 0; i < logoEdu.length; i++) {
-      logoEdu[i].addEventListener('click', function () {
-        for (let j = 0; j < logoEdu.length; j++) {
-          logoEdu[j].classList.remove('logo-active');
-        }
-        this.classList.add('logo-active');
-        slideContentEduce.style.transform = "translateX(" + -content_width_items * logoEdu[i].getAttribute("data-index") + "px)";
-      })
-    }
-
-    for (let i = 0; i < logoEn.length; i++) {
-      logoEn[i].addEventListener('click', function () {
-        for (let j = 0; j < logoEn.length; j++) {
-          logoEn[j].classList.remove('logo-active');
-        }
-        this.classList.add('logo-active');
-        slideContentEn.style.transform = "translateX(" + -content_width_items * logoEn[i].getAttribute("data-index") + "px)";
-      })
-    }
-
-    for (let i = 0; i < logoOthers.length; i++) {
-      logoOthers[i].addEventListener('click', function () {
-        for (let j = 0; j < logoOthers.length; j++) {
-          logoOthers[j].classList.remove('logo-active');
-        }
-        this.classList.add('logo-active');
-        slideContentOther.style.transform = "translateX(" + -content_width_items * logoOthers[i].getAttribute("data-index") + "px)";
-      })
-    }
+    responsiveProjectGame();
+    window.addEventListener('resize', responsiveProjectGame)
 
 
 
