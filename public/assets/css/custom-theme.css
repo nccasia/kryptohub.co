@@ -738,7 +738,7 @@ p.des-contact{
   transform: translateX(0px);
 }
 .right-content-project-invest{
-  width: 2575px;
+  width: 1545px;
   display: flex;
   transform: translateX(0px);
 }
@@ -768,10 +768,6 @@ p.des-contact{
   transform: translateX(0px);
 }
 
-.right-content-item {
-  width: 515px;
-  height: 428px;
-}
 
 .logo-active {
   background: #E2DCFF;
@@ -1797,6 +1793,9 @@ h4.title-project-name {
 }
 
 @media only screen and (max-width: 640px) {
+  .member-lightbox {
+    display: none;
+  }
   .img-game {
     margin-top: 10px;
   }
@@ -2047,7 +2046,7 @@ h4.title-project-name {
 
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 640px) {
 
   /* block header */
   .header-middle .display-flex {
@@ -2068,7 +2067,7 @@ h4.title-project-name {
   }
   .light-box {
     padding: 80px;
-    left: 2px;
+    left: -10px;
     /* top: 3px; */
     align-items: center;
     padding: 16px 16px 24px;
@@ -2970,16 +2969,6 @@ h4.title-project-name {
     left: -205px;
     height: 32px;
   }
-  img.menu-mobile {
-    /* top: 45px; */
-  }
-  /* .main-title-home {
-    font-size: 68px !important;
-  }
-  .desc-title-home {
-    font-size: 41px !important;
-    width: auto !important;
-  } */
 
   /* block team */
   span.hr_member {
@@ -2987,7 +2976,7 @@ h4.title-project-name {
   }
   .light-box {
     padding: 80px;
-    left: -22px;
+    left: -21px;
     top: -35px;
     align-items: center;
     padding: 16px 16px 24px;
@@ -3480,6 +3469,12 @@ h4.title-project-name {
 }
 
 @media only screen and (max-width: 530px) {
+  .light-box {
+    left: -20px;
+  }
+  span.hr_member {
+    width: 396px;
+  }
 
   .content-item-project {
     width: 450px !important;
@@ -3528,6 +3523,12 @@ h4.title-project-name {
 
 @media only screen and (max-width: 510px) {
 
+  .light-box {
+    left: -40px;
+  }
+  p.des {
+    font-size: 16px;
+  }
   .content-item-project {
     width: 440px !important;
   }
@@ -3785,11 +3786,9 @@ h4.title-project-name {
     width: 296px;
   }
   p.des {
-    /* width: 323px;
-    height: 240px; */
     width: auto;
     height: auto;
-    font-size: 14px;
+    font-size: 16px;
   }
   .member-type1 .member-name h4 {
     line-height: 60px;
@@ -3827,7 +3826,7 @@ h4.title-project-name {
   }
   .light-box {
       padding: 80px;
-      left: -9px;
+      /* left: -9px; */
       top: -35px;
       flex-direction: column;
       align-items: center;
@@ -4369,6 +4368,9 @@ h4.title-project-name {
 }
 @media only screen and (max-width: 450px) {
 
+  p.des {
+    font-size: 15px;
+  }
   .light-box {
     left: -60px;
   }
@@ -4461,9 +4463,6 @@ h4.title-project-name {
 
 @media only screen and (max-width: 440px) {
 
-  .light-box {
-    left: -60px;
-  }
   .fixed-header .logo-default {
     left: -72px;
     height: 30px;
@@ -4652,7 +4651,7 @@ h4.title-project-name {
     width: 430px;
   }
   .light-box {
-    left: -78px;
+    left: -71px;
   }
   /* block project */
 
@@ -4744,7 +4743,7 @@ h4.title-project-name {
 
   /* block header */
   .fixed-header .logo-default {
-    left: -105px;
+    left: -142px;
   }
   .openmenu .header-center {
     width: 414px;
@@ -4955,11 +4954,14 @@ h4.title-project-name {
     width: 380px;
   }
   .fixed-header .logo-default {
-    left: -85px;
+    left: -125px;
   }
   /* block team */
   .light-box {
     left: -27px;
+  }
+  p.des {
+    font-size: 14px;
   }
   .item-faq h4 {
     font-size: 17px;
@@ -5054,6 +5056,9 @@ h4.title-project-name {
   .openmenu .header-center {
     width: 360px;
   }
+  .fixed-header .logo-default {
+    left: -115px;
+  }
   
   .main-title.main-title-mobile {
     text-align: center !important;
@@ -5125,7 +5130,11 @@ h4.title-project-name {
   .member-lightbox-mobile {
     display: block;
   }
-.light-box {
+  .member-name {
+    padding-left: -6px !important;
+    padding-top: -6px !important;
+  }
+  .light-box {
     padding: 80px;
     left: -34px;
     top: -65px;
@@ -5157,9 +5166,7 @@ h4.title-project-name {
     width: 167.3px;
     height: 40px;
   }
-  /* .block-projects {
-    margin: 0px 15px;
-  } */
+  
   .project-img-top.project-img-mobile {
     margin-left: -30px;
     margin-top: 2px;
@@ -5921,7 +5928,7 @@ h4.title-project-name {
   
   /* block header */
   .fixed-header .logo-default {
-    left: -54px;
+    left: -77px;
   }
   .openmenu .header-center {
     width: 282px;

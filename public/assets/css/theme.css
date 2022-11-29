@@ -806,6 +806,7 @@ p {
 }
 
 img {
+	/* width: 100%; */
 	max-width: 100%;
 	height: auto;
 }
@@ -31140,7 +31141,8 @@ p.des-footer {
     line-height: 140%;
     color: #FFFFFF;
     text-align: start;
-	width: 294px;
+	/* width: 294px; */
+	width: 270px;
 	height: 40px;
 
 }
