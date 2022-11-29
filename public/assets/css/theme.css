@@ -16886,7 +16886,7 @@ div#customer_login {
 	.header-v1 .header-container .mega-menu>li.menu-item>a {
 		font-family: 'Clash Grotesk';
 		font-style: normal;
-		font-weight: 500;
+		/* font-weight: 500; */
 		font-size: 16px;
 		line-height: 20px;
 		text-transform: capitalize;
