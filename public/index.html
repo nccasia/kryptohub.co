@@ -326,7 +326,7 @@
 
           <div class="container">
             <div class="row list-faq">
-              <div class="col-6 col-md-4 col-sm-12 item-block-service">
+              <!-- <div class="col-6 col-md-4 col-sm-12 item-block-service">
                 <div class="item-faq">
                   <div class="img-service">
                     <img src="assets/image/blockchain_consulting.png" />
@@ -396,6 +396,91 @@
                     the
                     more efficient and powerful features with blockchain.</p>
                 </div>
+              </div> -->
+
+              <div class="col-12 col-md-12 col-sm-12 item-block-service">
+                <div class="col-lg-4 col-md-4 col-xs-4 item-team">
+                  <div class="item-faq">
+                    <div class="img-service">
+                      <img src="assets/image/blockchain_consulting.png" />
+                    </div>
+                    <h4>Blockchain consulting</h4>
+                    <p class="des-service">We can support you in identifying the potential of blockchain for your
+                      project
+                      and product
+                      based
+                      on our professional experience and our research, analysis of blockchain platforms, tools, and
+                      right
+                      features prioritization.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-4 item-team">
+                  <div class="item-faq">
+                    <div class="img-service">
+                      <img src="assets/image/deployment.png" />
+                    </div>
+                    <h4>Deployment</h4>
+                    <p class="des-service">Get access to the project in the right hand at the right stage. Our
+                      blockchain
+                      development
+                      team
+                      deploys the source code to the suitable environment for your specific purposes.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-4 item-team">
+                  <div class="item-faq">
+                    <div class="img-service">
+                      <img src="assets/image/blockchain_development.png" />
+                    </div>
+                    <h4>Blockchain development</h4>
+                    <p class="des-service">From idea to design and development, our dedicated team can offer the best
+                      service for your
+                      projects. We implement an agile blockchain development methodology to build and deliver scalable
+                      and efficient end results.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-sm-12 item-block-service">
+                <div class="col-lg-4 col-md-4 col-xs-4 item-team">
+                  <div class="item-faq">
+                    <div class="img-service">
+                      <img src="assets/image/maintaince.png" />
+                    </div>
+                    <h4>Maintenance</h4>
+                    <p class="des-service">We monitor, maintain, and provide support for managing the blockchain system
+                      with 3rd party
+                      upgrades and new releases.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-4 item-team">
+                  <div class="item-faq">
+                    <div class="img-service">
+                      <img src="assets/image/smart_contract.png" />
+                    </div>
+                    <h4>Smartcontract</h4>
+                    <p class="des-service">We deliver smart contract development, a great tool to conduct secure, fast
+                      and
+                      reliable
+                      transactions without intermediaries.</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-4 item-team">
+                  <div class="item-faq">
+                    <div class="img-service">
+                      <img src="assets/image/migration_and_upgrade.png" />
+                    </div>
+                    <h4>Migration and upgrade</h4>
+                    <p class="des-service">We will help you in moving your existing system to blockchain. We will create
+                      a
+                      clear and
+                      custom roadmap for your business, keeping all the business process but migrating & updating
+                      the
+                      more efficient and powerful features with blockchain.</p>
+                  </div>
+                </div>
+
+
               </div>
 
             </div>
@@ -1495,9 +1580,17 @@
     function responsiveProjectGame() {
 
       let width_item = document.body.offsetWidth;
+      console.log(width_item, "width_item");
 
-      let content_width_items = 515;
+      let content_width_items = 649;
 
+
+      if (width_item <= 1440) {
+        content_width_items = 615;
+      }
+      if (width_item <= 1280) {
+        content_width_items = 551;
+      }
       if (width_item <= 1024) {
         content_width_items = 497;
       }
@@ -1719,7 +1812,7 @@
     }
 
     responsiveProjectGame();
-    window.addEventListener('resize', responsiveProjectGame)
+    window.addEventListener('resize', responsiveProjectGame);
 
   </script>
   <!-- End page-->
