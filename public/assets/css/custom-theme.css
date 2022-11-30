@@ -4030,6 +4030,7 @@ h4.title-project-name {
 
   .content-project {
     width: 505px;
+    margin-left: -15px;
   }
 
   .des-project {
@@ -4755,6 +4756,7 @@ h4.title-project-name {
     background: #F5F2FF;
     border-radius: 16px;
     padding-bottom: 15px;
+    margin-left: -15px;
   }
 
   p.des-contact {
