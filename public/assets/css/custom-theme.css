@@ -1019,6 +1019,11 @@ h4.title-project-name {
   padding-right: 5px;
 }
 
+img.logo-default.img-menu {
+  max-width: none;
+  height: auto;
+}
+
 @media only screen and (max-width: 1440px) {
   .col-lg-4.col-md-4.item-team {
     width: 29.5%;
