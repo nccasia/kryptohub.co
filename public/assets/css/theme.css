@@ -2391,7 +2391,8 @@ div.wpcf7 .ajax-loader {
 }
 
 img.menu-mobile {
-	right: 12px;
+	/* right: 12px; */
+	left: 92%;
 }
 
 .fixed-header .logo-fixed {
@@ -4434,7 +4435,7 @@ footer ul,
 	}
 
 	.header-middle .display-flex {
-		height: 80px;
+		/* height: 80px; */
 	}
 
 	.header-container .main-navigation .menu-bottom {
@@ -4526,8 +4527,9 @@ footer ul,
 	}
 
 	.header-logo {
-		left: 50%;
-		top: -5px;
+		/* left: 50%; */
+		left: 15%;
+		/* top: -5px; */
 		margin: 0;
 		position: absolute;
 		z-index: 9;
@@ -29375,6 +29377,7 @@ body table.vcw.vcw-table th {
 		padding: 60px 0 100px;
 	}
 }
+
 
 @media (min-width: 1700px) {
 	.our-mission {
