@@ -1109,9 +1109,9 @@ img.logo-default.img-menu {
     width: 615px !important;
   }
 
-  .item-faq {
+  /* .item-faq {
     height: 460px;
-  }
+  } */
 
 }
 
@@ -1119,6 +1119,10 @@ img.logo-default.img-menu {
   .container {
     padding: 0px 16px;
     width: 1025px !important;
+  }
+
+  .item-faq {
+    height: auto;
   }
 }
 
@@ -1836,7 +1840,6 @@ img.logo-default.img-menu {
   .item-faq {
     padding: 24px;
     margin-bottom: 35px;
-    height: 525px;
   }
 
   .content-project {
@@ -2214,6 +2217,11 @@ img.logo-default.img-menu {
     display: none;
   }
 
+  .member-type .member-name h4 {
+    font-size: 18px;
+  }
+
+
   .img-service {
     width: 30px;
     height: 30px;
@@ -2499,12 +2507,9 @@ img.logo-default.img-menu {
     border-radius: 16px;
   }
 
-  .member-type .member-name h4 {
-    font-size: 21px;
-  }
 
   .member-type .member-info {
-    padding: 0px !important;
+    /* padding: 0px !important; */
   }
 
   span.des-title-child {
@@ -3629,12 +3634,9 @@ img.logo-default.img-menu {
     border-radius: 16px;
   }
 
-  .member-type .member-name h4 {
-    font-size: 21px;
-  }
 
   .member-type .member-info {
-    padding: 0px !important;
+    /* padding: 0px !important; */
   }
 
   span.des-title-child {
@@ -3896,8 +3898,7 @@ img.logo-default.img-menu {
   .item-faq {
     align-items: flex-start;
     padding: 16px;
-    height: 604px;
-    /* height: auto; */
+    height: auto;
     background: linear-gradient(0deg, #181126 0%, #454C5C 100%);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 16px;
@@ -5923,7 +5924,7 @@ img.logo-default.img-menu {
   }
 
   .member-type .member-info {
-    padding: 0px !important;
+    /* padding: 0px !important; */
   }
 
   .light-box {
@@ -6214,7 +6215,7 @@ img.logo-default.img-menu {
 
 
   .member-type .member-info {
-    padding: 0px !important;
+    /* padding: 0px !important; */
   }
 
   /* block project   */
@@ -6333,6 +6334,10 @@ img.logo-default.img-menu {
   /* block header */
   .openmenu .header-center {
     width: 360px;
+  }
+
+  .member-type .member-name h4 {
+    font-size: 18px;
   }
 
   .row.content-project {
