@@ -6944,6 +6944,10 @@ img.logo-default.img-menu {
     width: 304px;
   }
 
+  .button-contact {
+    width: 295px !important;
+  }
+
   .light-box {
     left: -48px;
   }
@@ -7377,6 +7381,10 @@ img.logo-default.img-menu {
 }
 
 @media only screen and (max-width: 309px) {
+  .desc-title-home.desc-title-home-jp {
+    width: 286px;
+  }
+
   .row.content-project {
     width: 277px;
   }
