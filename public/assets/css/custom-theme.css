@@ -655,7 +655,7 @@ p.des {
   /* background-color: #fff; */
   padding: 24px;
   margin-bottom: 35px;
-  height: 478px;
+  height: 440px;
   border-radius: 16px;
   text-align: center;
   background: linear-gradient(#454C5C 20%, #181126 100%, #FFFFFF33 20%);
@@ -1025,9 +1025,9 @@ img.logo-default.img-menu {
 }
 
 @media only screen and (max-width: 1440px) {
-  p.des-service.des-service-jp {
+  /* p.des-service.des-service-jp {
     font-size: 14px;
-  }
+  } */
 
   .col-lg-4.col-md-4.item-team {
     width: 29.5%;
@@ -1239,9 +1239,9 @@ img.logo-default.img-menu {
 }
 
 @media only screen and (max-width: 1024px) {
-  p.des-service.des-service-jp {
+  /* p.des-service.des-service-jp {
     font-size: 13px;
-  }
+  } */
 
   .col-lg-4.col-md-4.item-team {
     width: 32.3%;
@@ -1786,9 +1786,9 @@ img.logo-default.img-menu {
 }
 
 @media (max-width: 912px) {
-  p.des-service.des-service-jp {
+  /* p.des-service.des-service-jp {
     font-size: 12px;
-  }
+  } */
 
   p.des-service {
     font-size: 16px;
@@ -1861,7 +1861,7 @@ img.logo-default.img-menu {
   }
 
   p.des-service.des-service-jp {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   p.des-service {
@@ -2112,8 +2112,9 @@ img.logo-default.img-menu {
     font-size: 14px;
   }
 
+
   p.des-service.des-service-jp {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .col-lg-4.col-md-4.item-team {
@@ -2981,8 +2982,8 @@ img.logo-default.img-menu {
   }
 
   img.footer-logo {
-    width: 191px;
-    height: 40px;
+    /* width: 191px; */
+    height: auto;
   }
 
   .hr_footer {
@@ -4101,8 +4102,8 @@ img.logo-default.img-menu {
   }
 
   img.footer-logo {
-    width: 191px;
-    height: 40px;
+    /* width: 191px; */
+    height: auto;
   }
 
   .hr_footer {

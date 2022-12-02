@@ -5710,8 +5710,8 @@ footer ul,
 }
 
 img.footer-logo {
-	width: 175px;
-	height: 40px;
+	/* width: 175px; */
+	height: auto;
 }
 
 .footer-title {
