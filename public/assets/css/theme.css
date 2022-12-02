@@ -25579,7 +25579,10 @@ body .vcw.vcw-converter>.vcw-input>.vcw-input-child:first-child {
 p.des-service {
 	color: #CCCCCC;
 	text-align: center;
+	font-size: 16px;
 }
+
+
 
 .box-service-h3 {
 	position: absolute;

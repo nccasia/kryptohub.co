@@ -655,7 +655,7 @@ p.des {
   /* background-color: #fff; */
   padding: 24px;
   margin-bottom: 35px;
-  height: 440px;
+  height: 478px;
   border-radius: 16px;
   text-align: center;
   background: linear-gradient(#454C5C 20%, #181126 100%, #FFFFFF33 20%);
@@ -1025,6 +1025,10 @@ img.logo-default.img-menu {
 }
 
 @media only screen and (max-width: 1440px) {
+  p.des-service.des-service-jp {
+    font-size: 14px;
+  }
+
   .col-lg-4.col-md-4.item-team {
     width: 29.5%;
   }
@@ -1154,7 +1158,7 @@ img.logo-default.img-menu {
     font-size: 18px;
   }
 
-  .content-item-project {
+  /* .content-item-project {
     width: 550px !important;
   }
 
@@ -1188,7 +1192,7 @@ img.logo-default.img-menu {
 
   .right-content-project-list {
     width: 550px !important;
-  }
+  } */
 
   .box-style.style-right .title-head h2::before {
     left: 0;
@@ -1235,6 +1239,10 @@ img.logo-default.img-menu {
 }
 
 @media only screen and (max-width: 1024px) {
+  p.des-service.des-service-jp {
+    font-size: 13px;
+  }
+
   .col-lg-4.col-md-4.item-team {
     width: 32.3%;
   }
@@ -3730,7 +3738,7 @@ img.logo-default.img-menu {
   }
 
   .content-item-project {
-    padding: 36px 40px !important;
+    padding: 30px 16px !important;
     width: 490px;
     height: 360px;
   }
@@ -4709,7 +4717,7 @@ img.logo-default.img-menu {
   }
 
   .content-item-project {
-    padding: 36px 40px !important;
+    padding: 30px 16px !important;
     width: 330px;
     height: 360px;
   }
@@ -5870,12 +5878,6 @@ img.logo-default.img-menu {
     margin-left: -32px;
   }
 
-  /* 
-  .project-img-top.project-img-mobile {
-    margin-left: 0px;
-    margin-top: 0px;
-  } */
-
   .project-img-mobile {
     width: 64px;
     height: 64px;
@@ -5937,15 +5939,15 @@ img.logo-default.img-menu {
 
 
   .des-project {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .tech-project {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .link-name {
-    font-size: 12px;
+    font-size: 13px;
   }
 
 }
@@ -5974,6 +5976,7 @@ img.logo-default.img-menu {
   /* block project */
   .content-item-project {
     width: 330px !important;
+    padding: 30px 16px !important;
   }
 
   .right-content-item {
@@ -6111,9 +6114,6 @@ img.logo-default.img-menu {
     width: 380px;
   }
 
-  .fixed-header .logo-default {
-    /* left: -125px; */
-  }
 
   /* block team */
   .light-box {
@@ -6130,10 +6130,6 @@ img.logo-default.img-menu {
     margin-left: 58px;
     margin-bottom: 0px;
   }
-
-  /* .item-faq.item-faq-jp {
-    height: auto;
-  } */
 
 
   .member-type .member-info {
@@ -6202,16 +6198,16 @@ img.logo-default.img-menu {
   }
 
   .des-project {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .tech-project {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   a.link-name {
     width: 100px;
-    font-size: 11px;
+    font-size: 12px;
   }
 
   /* block contact */
@@ -6532,7 +6528,7 @@ img.logo-default.img-menu {
   /* block project */
 
   .content-item-project {
-    padding: 36px 25px !important;
+    padding: 30px 16px !important;
     width: 300px !important;
     height: 360px;
   }
@@ -7069,7 +7065,7 @@ img.logo-default.img-menu {
   }
 
   .content-item-project {
-    padding: 36px 29px !important;
+    padding: 36px 16px !important;
     width: 262px;
   }
 
