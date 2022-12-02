@@ -1158,7 +1158,7 @@ img.logo-default.img-menu {
     font-size: 18px;
   }
 
-  /* .content-item-project {
+  .content-item-project {
     width: 550px !important;
   }
 
@@ -1192,7 +1192,7 @@ img.logo-default.img-menu {
 
   .right-content-project-list {
     width: 550px !important;
-  } */
+  }
 
   .box-style.style-right .title-head h2::before {
     left: 0;
