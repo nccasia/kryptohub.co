@@ -1046,8 +1046,12 @@ img.logo-default.img-menu {
 }
 
 @media only screen and (max-width: 1440px) {
-  /* p.des-service.des-service-jp {
-    font-size: 14px;
+  .project-mobile-logo.project-desktop {
+    margin-top: 0px;
+  }
+
+  /* .col-lg-4.col-md-12.col-xs-12.item-team {
+    width: 30.333333%;
   } */
 
   .col-lg-4.col-md-4.item-team {
