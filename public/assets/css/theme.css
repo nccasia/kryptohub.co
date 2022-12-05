@@ -771,8 +771,8 @@ h6 {
 	color: #282828;
 	margin: 0;
 	line-height: 100%;
-	font-weight: 400;
-	font-family: Poppins;
+	font-weight: 500;
+	font-family: 'Clash Grotesk';
 }
 
 h1 {
@@ -2386,8 +2386,8 @@ div.wpcf7 .ajax-loader {
 	opacity: 0;
 	position: absolute;
 	left: 0;
-	width: 160px;
-	height: 40px;
+	/* width: 160px; */
+	/* height: 40px; */
 }
 
 img.menu-mobile {
@@ -5705,20 +5705,21 @@ footer ul,
 	text-align: right;
 }
 
-.footer-logo {
-	/* padding-top: 26px; */
+img.footer-logo {
+	width: 144px;
+	height: 48px;
 }
 
-img.footer-logo {
-	/* width: 175px; */
-	height: auto;
+img.footer-logo-en {
+	width: 175px;
+	height: 40px;
 }
 
 .footer-title {
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family: 'Poppins', cursive;
+	font-family: 'Clash Grotesk';
 	padding-bottom: 43px;
 	padding-top: 40px;
 }
@@ -6535,7 +6536,7 @@ img.footer-logo {
 .footer-v6 .mc4wp-form-fields .title-2 {
 	margin-top: 19px;
 	display: block;
-	font-family: Montserrat;
+	font-family: 'Clash Grotesk';
 }
 
 .footer-v6 .footer-social {
@@ -6589,7 +6590,7 @@ img.footer-logo {
 	height: 60px;
 	font-size: 19px;
 	font-weight: 700;
-	font-family: Montserrat;
+	font-family: 'Clash Grotesk';
 }
 
 .footer-v6 .mc4wp-form-fields .form-mail input[type='email'] {
@@ -6601,7 +6602,7 @@ img.footer-logo {
 	background: none;
 	border-bottom: 1px solid #000;
 	font-weight: 300;
-	font-family: Montserrat;
+	font-family: 'Clash Grotesk';
 }
 
 .footer-v6 .mc4wp-form-fields .form-mail input[type='email']:active,
@@ -9722,7 +9723,7 @@ body .baby.down .head .horn {
 	width: 70px;
 	line-height: 44px;
 	font-size: 13px;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Clash Grotesk';
 	text-align: center;
 	color: #ddd;
 	background-color: rgba(30, 30, 30, 0.7);
@@ -9996,7 +9997,7 @@ body .baby.down .head .horn {
 	padding: 30px 0;
 	border-top: 1px solid rgba(255, 255, 255, 0.4);
 	font-size: 14px;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Clash Grotesk';
 	color: #fff;
 	line-height: 20px;
 	-webkit-text-size-adjust: none;
@@ -10676,7 +10677,7 @@ input[type='checkbox'] {
 	color: #222;
 	font-weight: 700;
 	font-size: 18px;
-	font-family: Poppins;
+	font-family: 'Clash Grotesk';
 	padding: 17px 15px;
 	border-bottom: 3px solid #f5b71f;
 }
@@ -11178,7 +11179,7 @@ input[type='checkbox'] {
 }
 
 .cart_item .quantity {
-	font-family: Open Sans;
+	font-family: 'Clash Grotesk';
 	height: 50px;
 	width: 113px;
 	margin-right: 8px;
@@ -12380,7 +12381,7 @@ table.compare-list.compare-list-custom .add-to-cart td a:hover {
 	font-size: 20px;
 	font-weight: 700;
 	overflow: hidden;
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	margin-bottom: 30px;
 	position: relative;
 	text-transform: uppercase;
@@ -13398,7 +13399,7 @@ aside.widget:hover .widget-title-border span.before_title:after {
 }
 
 .box-text-sidebar h4 {
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	text-transform: uppercase;
 	color: #f5b71f;
 	font-size: 12px;
@@ -13967,7 +13968,7 @@ aside.widget:hover .widget-title-border span.before_title:after {
 	font-weight: 700;
 	text-align: center;
 	border-radius: 0;
-	font-family: 'Open Sans';
+	font-family: 'Clash Grotesk';
 }
 
 .list_add_to_cart a:hover,
@@ -15259,7 +15260,7 @@ div.pp_woocommerce div.ppt {
 }
 
 .arrowpress-products.style-2.product_grid .product-content h3 {
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	padding: 0 0 7px;
 }
 
@@ -15290,7 +15291,7 @@ div.pp_woocommerce div.ppt {
 
 .arrowpress-products.style-2.product_grid .product-content .price .amount,
 .arrowpress-products.style-2.product_grid .product-content .price .amount span {
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	font-size: 15px;
 	font-weight: 700;
 	opacity: 1;
@@ -15511,7 +15512,7 @@ div.pp_woocommerce div.ppt {
 .arrowpress-products.no-spacing .title-border {
 	border-bottom: medium none;
 	display: inline-block;
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	font-size: 30px;
 	font-weight: 700;
 	margin: 0 0 17px;
@@ -15667,7 +15668,7 @@ div.pp_woocommerce div.ppt {
 }
 
 .product_list.style-1.no-spacing .product-content .product-desc h3 {
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	text-transform: uppercase;
 	padding-top: 16px;
 }
@@ -15965,7 +15966,7 @@ div.pp_woocommerce div.ppt {
 
 .product_order .summary form .quantity input.qty.text {
 	color: #afafaf;
-	font-family: Poppins;
+	font-family: 'Clash Grotesk';
 	font-size: 14px;
 	font-weight: 500;
 	height: 63px;
@@ -16336,7 +16337,7 @@ li.search_result_info {
 	left: -1px;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'Open Sans';
+	font-family: 'Clash Grotesk';
 }
 
 .product-image .label-product.onsale,
@@ -20448,7 +20449,7 @@ iframe {
 	display: block;
 	position: relative;
 	color: #282828;
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	font-size: 18px;
 	font-weight: 600;
 	margin-top: -6px;
@@ -20637,7 +20638,7 @@ iframe {
 	margin-bottom: 0;
 	min-height: 195px;
 	color: #333;
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 }
 
 .blog-slogan span {
@@ -20918,7 +20919,7 @@ iframe {
 	font-weight: 600;
 	position: relative;
 	line-height: 28px;
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	padding-left: 15px;
 }
 
@@ -21130,7 +21131,7 @@ iframe {
 }
 
 .sticky-post-2 .post-name a {
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	font-size: 40px;
 	font-weight: 600;
 	letter-spacing: 0;
@@ -21248,7 +21249,7 @@ iframe {
 }
 
 .blog-cat-content .blog-cate .count-post>p {
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 0.05em;
@@ -22041,7 +22042,7 @@ label.error {
 .post-single.single-2 .comment-reply-title,
 .post-single.single-2 .post-comments .widget-title,
 .post-single.single-2 #comments .widget-title {
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 }
 
 .post-single.single-2 .post-name>h3 {
@@ -22478,7 +22479,7 @@ label.error {
 	cursor: pointer;
 	display: block;
 	font-size: 13px;
-	font-family: Lato;
+	font-family: 'Clash Grotesk';
 	height: 36px;
 	line-height: 36px;
 	width: 36px;
@@ -22670,7 +22671,7 @@ label.error {
 
 .blog-grid-2 .post-name a {
 	color: #282828;
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	font-weight: 700;
 	font-size: 20px;
 	display: block;
@@ -22715,7 +22716,7 @@ label.error {
 }
 
 .blog-grid-3 .post-name a {
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 	color: #2b4f92;
 	font-weight: 700;
 	font-size: 20px;
@@ -25665,7 +25666,7 @@ p.des-service {
 	line-height: 24px !important;
 	padding: 19px 20px 17px !important;
 	text-align: center !important;
-	font-family: Poppins !important;
+	font-family: 'Clash Grotesk' !important;
 }
 
 .tb-coin-custom .vcw.vcw-table th.vcw-price,
@@ -25682,7 +25683,7 @@ p.des-service {
 	text-align: center !important;
 	padding: 20px 20px 19px !important;
 	border-bottom: 1px solid #ebebeb !important;
-	font-family: Poppins !important;
+	font-family: 'Clash Grotesk' !important;
 	font-weight: 400 !important;
 	font-size: 14px !important;
 	color: #000 !important;
@@ -25709,7 +25710,7 @@ p.des-service {
 
 .box-coinmarket .vcw.vcw-full-card {
 	border-radius: 0 !important;
-	font-family: Poppins !important;
+	font-family: 'Clash Grotesk' !important;
 	padding: 25px 20px 23px !important;
 	margin: 0 !important;
 	width: 100% !important;
@@ -25717,32 +25718,32 @@ p.des-service {
 
 .box-coinmarket .vcw.vcw-full-card>.vcw-symbol {
 	font-size: 24px !important;
-	font-family: Poppins !important;
+	font-family: 'Clash Grotesk' !important;
 	line-height: 28px !important;
 }
 
 .box-coinmarket .vcw.vcw-full-card>.vcw-name {
 	font-size: 13px !important;
 	font-weight: 400 !important;
-	font-family: Poppins !important;
+	font-family: 'Clash Grotesk' !important;
 	margin-bottom: 6px !important;
 }
 
 .box-coinmarket .vcw.vcw-full-card>.vcw-changes {
 	font-size: 12px !important;
 	font-weight: 400 !important;
-	font-family: Poppins !important;
+	font-family: 'Clash Grotesk' !important;
 }
 
 .box-coinmarket .vcw.vcw-full-card>.vcw-changes>.vcw-change>.vcw-value,
 .box-coinmarket .vcw.vcw-full-card>.vcw-changes>.vcw-change>.vcw-title {
 	font-size: 12px !important;
 	font-weight: 400 !important;
-	font-family: Poppins !important;
+	font-family: 'Clash Grotesk' !important;
 }
 
 .box-coinmarket .vcw.vcw-full-card>.vcw-changes>.vcw-change>.vcw-value>.vcw-number {
-	font-family: Poppins !important;
+	font-family: 'Clash Grotesk' !important;
 	font-size: 12px !important;
 }
 
@@ -26915,7 +26916,7 @@ body #ct-ultimate-gdpr-cookie-change-settings {
 
 .service_type1 .service-title h4 {
 	font-size: 20px;
-	font-family: 'Poppins';
+	font-family: 'Clash Grotesk';
 }
 
 .service_type1 .service-box:hover .service-img {
@@ -27065,7 +27066,7 @@ html {
 	line-height: normal;
 	letter-spacing: 1.5px;
 	color: #fff;
-	font-family: 'Open Sans';
+	font-family: 'Clash Grotesk';
 }
 
 @media (min-width: 1401px) {
@@ -27354,7 +27355,7 @@ html {
 	margin-top: 20px !important;
 	font-weight: 300 !important;
 	text-align: center;
-	font-family: 'Open Sans';
+	font-family: 'Clash Grotesk';
 }
 
 .coming-soon-container .ult_countdown .ult_countdown-amount {
@@ -27371,7 +27372,7 @@ html {
 		margin-top: 20px !important;
 		font-weight: 300 !important;
 		text-align: center;
-		font-family: 'Open Sans';
+		font-family: 'Clash Grotesk';
 	}
 
 	.coming-soon-container .ult_countdown .ult_countdown-amount {
@@ -28342,7 +28343,7 @@ html {
 .cryptonatorwidget select {
 	background-color: #fff;
 	height: 50px !important;
-	font-family: 'Poppins' !important;
+	font-family: 'Clash Grotesk' !important;
 	padding: 5px 17px;
 }
 
@@ -28443,7 +28444,7 @@ body table.vcw.vcw-small-table th,
 body table.vcw.vcw-table td,
 body table.vcw.vcw-table th {
 	padding: 7px 0 !important;
-	font-family: 'Poppins' !important;
+	font-family: 'Clash Grotesk' !important;
 	font-size: 12px !important;
 	font-weight: 400 !important;
 	color: #fff !important;
@@ -29125,7 +29126,7 @@ body table.vcw.vcw-table th {
 .ult-carousel-wrapper .ult-item-wrap .vcw-price-label .vcw-symbol,
 .ult-carousel-wrapper .ult-item-wrap .vcw-price-label .vcw-number {
 	background: none !important;
-	font-family: 'Open Sans' !important;
+	font-family: 'Clash Grotesk' !important;
 	font-size: 11px;
 	font-weight: 600;
 }
@@ -31520,13 +31521,16 @@ p.des-footer {
 	/* width: 560px; */
 	width: 648px;
 	height: 48px;
-	background: linear-gradient(90deg, #A192F3 0%, #8877E1 100%);
+	background: #8877E1;
 	border-radius: 8px;
 	color: white;
 }
 
 .button-contact:hover {
 	background: #A192F3;
+	outline: none;
+	border: none;
+	box-shadow: none;
 }
 
 .button-contact:active {
