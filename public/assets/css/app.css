@@ -463,14 +463,6 @@ span.hr_member {
 }
 
 .member-lightbox-mobile {
-    /* display: flex;
-    flex-direction: column;
-    padding: 16px 16px 24px;
-    gap: 12px;
-    background: #FFFFFF;
-    border-radius: 16px;
-    width: 100%;
-    margin: 0px 10px; */
     display: none;
 }
 
@@ -518,7 +510,6 @@ span.hr_member {
     padding: 12px 0px;
     margin: 10px 0px;
     gap: 10px;
-    /* max-height: 144px; */
     background: white;
     border: 2px solid #A192F3;
     border-radius: 12px;
@@ -579,68 +570,86 @@ span.hr_member {
     word-break: break-all;
 }
 
+
 .bg-Mavia {
     background-image: url('../image/img-bg-popup/nft-game-Mavia.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-Undead_Block {
     background-image: url('../image/img-bg-popup/nft-game-Undead_Block.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-Fortia {
     background-image: url('../image/img-bg-popup/nft-game-Fortia.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-Warena {
     background-image: url('../image/img-bg-popup/nft-game-Warena.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-EpicWar {
     background-image: url('../image/img-bg-popup/nft-game-EpicWar.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-MemePad {
     background-image: url('../image/img-bg-popup/cryptocurrency-MemePad.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-TX8 {
     background-image: url('../image/img-bg-popup/cryptocurrency-TX8.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-Treelion {
     background-image: url('../image/img-bg-popup/cryptocurrency-Treelion.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-topaz {
     background-image: url('../image/img-bg-popup/fintech-outsourcing-topaz.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-atlas {
     background-image: url('../image/img-bg-popup/fintech-outsourcing-atlas.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-midas {
     background-image: url('../image/img-bg-popup/blockchain-insurance-midas.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-sto {
     background-image: url('../image/img-bg-popup/blockchain-insurance-sto.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-themis {
     background-image: url('../image/img-bg-popup/blockchain-education-back-themis.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 .bg-JUCC {
     background-image: url('../image/img-bg-popup/blockchain-education-back-JUCC.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-nafter {
     background-image: url('../image/img-bg-popup/token-entertainment-back-nafter.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-EventX {
     background-image: url('../image/img-bg-popup/token-entertainment-back-EventX.webp');
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .img-project {
@@ -1219,6 +1228,7 @@ label.form-label {
 
     .project-image {
         padding-left: 0px;
+        padding-right: 0px;
 
     }
 
