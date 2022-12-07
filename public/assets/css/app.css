@@ -1021,6 +1021,11 @@ label.form-label {
         height: 100%;
     }
 
+    .member-img-mobile>img {
+        width: 100%;
+        height: 100%;
+    }
+
     .member-job {
         text-align: start;
     }
