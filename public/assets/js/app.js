@@ -234,7 +234,8 @@ function ourTeamModalControlJP() {
     const modalNameNoteJP = modal.querySelector('.name-note');
     const modalLabelJP = modal.querySelector('.des-memmber-info-jp');
     const modalLabelJPMobile = modal.querySelector('.des-memmber-info-jp-mobile');
-    const modalAvatar = modal.querySelector('.member-img-mobile img');
+    const modalAvatar = modal.querySelector('.member-img-jp img');
+    const modalAvatarJPMobile = modal.querySelector('.member-img-mobile-jp img');
     const modalDescription = modal.querySelector('.des');
     const modalDescriptionMobile = modal.querySelector('.desJPMobile');
 
@@ -248,6 +249,7 @@ function ourTeamModalControlJP() {
             modalNameJPMobile.textContent = members[index].name;
             modalNameNoteJP.textContent = members[index].nameNote;
             modalAvatar.src = members[index].avatar;
+            modalAvatarJPMobile.src = members[index].avatar;
             modalLabelJP.textContent = members[index].label;
             modalLabelJPMobile.textContent = members[index].label;
             modalDescription.textContent = members[index].description;
