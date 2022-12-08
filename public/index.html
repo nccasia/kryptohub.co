@@ -8,11 +8,38 @@
     <title>
         KCRYPTOHUB | Blockchain Development Outsourcing Service Provider
     </title>
+    <meta name="keywords"
+        content="blockchain development company, NFT marketplace development, blockchain outsourcing service, blockchain developer, blockchain game development, crypto wallet development, NFT game development, NFT game studio" />
+    <meta name="description"
+        content="Kryptohub provides full cycle of blockchain development outsourcing service. We specialize in Dapps, Smartcontract, Defi and Gamefi development. With intensive knowledge and polished experience in  the most modern blockchain technologies such as BSC, Solana, Polygon, etc, we will help to accelerate a gateway to the power of blockchain and cryptocurrency">
+    <meta name="geo.country" content="VN">
+    <meta name="author" content="NCC Vietnam">
+    <meta name="geo.region" content="VN">
+    <meta name="geo.placename" content="Hanoi" />
+    <meta name="copyright" content="Copyright (c) 2022 by NCC Vietnam">
+    <meta property="og:title" content="KRYPTOHUB | Blockchain Development Outsourcing Service Provider">
+    <meta property="og:image" content="https://kryptohub.co/assets/image/meta.jpg">
+    <!-- <meta property="og:image:width" content="340" />
+  <meta property="og:image:height" content="80" /> -->
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:url" content="https://kryptohub.co/assets/image/meta.jpg">
+    <meta property="og:image:secure_url" content="https://kryptohub.co/assets/image/meta.jpg">
+    <meta property="og:description"
+        content="Kryptohub provides full cycle of blockchain development outsourcing service. We specialize in Dapps, Smartcontract, Defi and Gamefi development. With intensive knowledge and polished experience in  the most modern blockchain technologies such as BSC, Solana, Polygon, etc, we will help to accelerate a gateway to the power of blockchain and cryptocurrency">
+    <meta name="twitter:description"
+        content="Kryptohub provides full cycle of blockchain development outsourcing service. We specialize in Dapps, Smartcontract, Defi and Gamefi development. With intensive knowledge and polished experience in  the most modern blockchain technologies such as BSC, Solana, Polygon, etc, we will help to accelerate a gateway to the power of blockchain and cryptocurrency">
+    <meta name="twitter:title" content="KRYPTOHUB | Blockchain Development Outsourcing Service Provider">
+    <meta name="twitter:image" content="https://kryptohub.co/assets/image/meta.jpg">
+    <meta property="og:site_name" content="Kryptohub">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kryptohub.co">
+    <meta name="twitter:url" content="https://kryptohub.co">
     <link rel="icon" type="image/x-icon" href="./assets/image/FAVICON.svg" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css" />
     <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css" />
 
     <!--Start of Tawk.to Script-->
     <script defer type="text/javascript">
@@ -875,29 +902,29 @@
                         <div class="col-md-6">
                             <div class="head">
                                 <label for="First name" class="form-label">First name</label>
-                                <input type="text" class="form-control input-value" id="First name" name="FirstName"
+                                <input type="text" class="form-control input-value" id="firstName" name="firstName"
                                     placeholder="First name" />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="head">
                                 <label for="LastName" class="form-label">Last name</label>
-                                <input type="text" class="form-control input-value" id="LastName" name="LastName"
+                                <input type="text" class="form-control input-value" id="lastName" name="lastName"
                                     placeholder="Last name" />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="head">
                                 <label for="Email" class="form-label">Email</label>
-                                <input type="email" class="form-control input-value" id="Email" name="senderEmail"
-                                    placeholder="you@company.com" required />
+                                <input type="email" class="form-control input-value" id="email" name="email"
+                                    placeholder="you@company.com" />
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="head">
                                 <label for="Phone number" class="form-label">Phone number</label>
-                                <input type="text" class="form-control input-value" id="Phone number" name="phone"
+                                <input type="text" class="form-control input-value" id="phone" name="phone"
                                     placeholder="+1 (555) 000-0000" />
                             </div>
                         </div>
@@ -905,15 +932,17 @@
                         <div class="col-lg-12">
                             <div class="head">
                                 <label for="Message" class="form-label">Message</label>
-                                <textarea name="senderMessage" cols="50" rows="5" class="form-control message"
-                                    required></textarea>
+                                <textarea name="content" id="content" cols="50" rows="5"
+                                    class="form-control message"></textarea>
                             </div>
                         </div>
-                        <div class="col-lg-12 button-contact-us">
-                            <button type="submit" class="btn btn-contact">Sign in</button>
-                        </div>
+                        <button type="submit" class="btn button-contact-us">Submit</button>
+                        <button type="button" class="btn button-contact-us loading d-none"><i class="fa fa-spinner"
+                                aria-hidden="true"></i></button>
+
                         <span class="error" id="nameError"></span>
                         <span class="success" id="nameSuccess"></span>
+                        <span class="error" id="nameMiss"></span>
                     </form>
                 </div>
             </div>
@@ -1054,12 +1083,30 @@
             document.getElementById(elemId).innerHTML = message;
         }
 
+
         const formEl = document.querySelector(".form");
         formEl.addEventListener('submit', event => {
             event.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const content = document.getElementById('content').value;
 
-            const formData = new FormData(formEl);
-            const data = Object.fromEntries(formData);
+            if (firstName === '' || lastName === '' || email === '' || phone === '' || content === '') {
+                document.getElementById("nameMiss").innerHTML = "Please fill all input";
+                return;
+            }
+
+            Array.from(formEl.elements).forEach(formElement => formElement.disabled = true);
+            const data = {
+                email: document.getElementById('email').value,
+                content: document.getElementById('content').value,
+            }
+            const btnSubmit = formEl.querySelector('button[type="submit"]');
+            const btnLoading = formEl.querySelector('button[type="button"]');
+            btnSubmit.classList.add('d-none');
+            btnLoading.classList.remove('d-none');
 
             fetch('https://email.ncc.asia/ncc-site-api-sendmail', {
                 method: 'POST',
@@ -1067,11 +1114,25 @@
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
-            }).then(res => res.json())
-                .then(data => printMess("nameSuccess", "Thank you, your submission has been received."))
-                .catch(error => printMess("nameError", "Oops, something went wrong. Please try again later."))
+            }).then(res => {
+                if (!res.ok) {
+                    return res.text().then(text => { throw new Error(text) })
+                }
+                else {
+                    printMess('nameSuccess', 'Thank you, your submission has been received.')
+                    document.getElementById("nameMiss").remove();
+                }
+            }).catch(err => {
+                printMess('nameError', 'Oops, something went wrong. Please try again later.')
+            }).finally(() => {
+                formEl.reset();
+                Array.from(formEl.elements).forEach(formElement => formElement.disabled = false);
+                btnSubmit.classList.remove('d-none');
+                btnLoading.classList.add('d-none');
+            })
 
         })
+
     </script>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
