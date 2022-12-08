@@ -1,1003 +1,1202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      DEFISOFT | Blockchain Development Outsourcing Service Provider
+    </title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DEFISOFT | Blockchain Development Outsourcing Service Provider</title>
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
-  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
-  <link rel="stylesheet" href="./assets/css/app.css">
+    <!--Start of Tawk.to Script-->
+    <script defer type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.defer = true;
+        s1.src = "https://embed.tawk.to/57d60ec73bec6867d943252a/1b251h2qm";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+      Tawk_API.onChatStarted = function () {
+        $.post("notify.php");
+      };
+    </script>
+    <!--End of Tawk.to Script-->
+  </head>
 
-  <!--Start of Tawk.to Script-->
-  <script defer type="text/javascript">
-    var Tawk_API = Tawk_API || {},
-      Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"),
-        s0 = document.getElementsByTagName("script")[0];
-      s1.defer = true;
-      s1.src = 'https://embed.tawk.to/57d60ec73bec6867d943252a/1b251h2qm';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-    Tawk_API.onChatStarted = function () {
-      $.post("notify.php");
-    };
-  </script>
-  <!--End of Tawk.to Script-->
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="container d-flex justify-content-between align-items-center h-100">
-      <div class="logo">
-        <a href="#">
-          <img src="./assets/image/logo_defisoft.svg" alt="">
-        </a>
-      </div>
-      <nav class="nav-bar">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#about" class="nav-link">会社概要</a></li>
-          <li class="nav-item"><a href="#mission" class="nav-link">ミッション＆ビジョン</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">サービス</a></li>
-          <li class="nav-item"><a href="#team" class="nav-link">チーム</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">実績</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">お問い合わせ</a></li>
-        </ul>
-        <div class="menu-mobile openbtn">
-          <img class="w-100" src="./assets/image/menu_mobile.png" alt="">
+  <body>
+    <header class="header">
+      <div
+        class="container d-flex justify-content-between align-items-center h-100"
+      >
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/image/logo_defisoft.svg" alt="" />
+          </a>
         </div>
-      </nav>
-    </div>
-  </header>
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">会社概要</a>
+            </li>
+            <li class="nav-item">
+              <a href="#mission" class="nav-link">ミッション＆ビジョン</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">サービス</a>
+            </li>
+            <li class="nav-item">
+              <a href="#team" class="nav-link">チーム</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">実績</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">お問い合わせ</a>
+            </li>
+          </ul>
+          <div class="menu-mobile openbtn">
+            <img class="w-100" src="./assets/image/menu_mobile.png" alt="" />
+          </div>
+        </nav>
+      </div>
+    </header>
 
-  <div class="home">
-    <div class="container">
-      <div class="row align-items-center flex-reverse">
-        <div class="col-md-6 col-sm-12 padding-16-cus">
-          <div class="home-content">
-            <div class="title-home">
-              <h2 class="hero-title">
-                DEFISOFT
-              </h2>
-              <p class="hero-description">
-                ブロックチェーン上に構築されたグローバル経済へのゲートウェイを作りましょう
-              </p>
+    <div class="home">
+      <div class="container">
+        <div class="row align-items-center flex-reverse">
+          <div class="col-md-6 col-sm-12 padding-16-cus">
+            <div class="home-content">
+              <div class="title-home">
+                <h2 class="hero-title">DEFISOFT</h2>
+                <p class="hero-description">
+                  ブロックチェーン上に構築されたグローバル経済へのゲートウェイを作りましょう
+                </p>
+              </div>
+              <a href="#about">
+                <button class="btn-view-more" id="about">もっと見る</button>
+              </a>
             </div>
-            <a href="#about">
-              <button class="btn-view-more" id="about">もっと見る</button>
-            </a>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12 padding-16-cus">
-          <div class="home-image">
-            <img class="w-100" src="./assets/image/blockchain_technology.png" alt="">
+          <div class="col-md-6 col-sm-12 padding-16-cus">
+            <div class="home-image">
+              <img
+                class="w-100"
+                src="./assets/image/blockchain_technology.png"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="about-us" id="about">
-    <div class="container padding-16-cus">
-      <div class="row align-items-center">
-        <div class="col-md-6 col-sm-12">
-          <img class="w-100" src="./assets/image/about_us.png" alt="">
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <h3 class="title">
-            弊社について
-          </h3>
-          <p class="description">
-            <span class="name-bold">Defisoft</span> はアウトソーシング会社であり、ブロックチェーンに特化したソフトウェア開発を実施しています。
-            アウトソーシングは、アプリの開発、システム最適化の業務を請け負います。お客様の価値創出や構造改革を効率的なコストパファーマンスでご支援しています。
-            また、ブロックチェーンの専門的な知識と経験豊富なスタッフを揃えた私たち <span
-              class="name-bold">Defisoft</span>は、金融、ゲーム、教育、支払い、エンターテイメント、保険など、グローバルビジネス分野で従来のモデルを変革した新しいサービスを創造します。
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="our-vision" id="mission">
-    <div class="container padding-16-cus">
-      <div class="row align-items-center flex-row-reverse">
-        <div class="col-md-6 col-sm-12">
-          <img class="w-100" src="./assets/image/our_mission_vission.png" alt="">
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <h3 class="title">
-            ミッション＆ビジョン
-          </h3>
-          <p class="description">
-            暗号通貨には、経済について、全く新しい価値観を生み出しました。 トークン、クレジット、およびその他の多くの通貨により、効率的な方法で価値を移動できるようになりました。
-            しかし、暗号通貨はまだ社会から信頼を得てはいません。 私たち <span class="name-bold">Defisoft</span>
-            は、暗号通貨の脆弱性を防いだソフトウェアを生み出し、社会が暗号通貨の可能性とその力を最大限に発揮できるようになることを目指します。
-          </p>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="our-services" id="services">
-    <div class="container padding-16-cus">
-      <h2 class="heading text-white text-center">
-        Our Services
-      </h2>
-      <div class="row">
-        <div class="col-md-4 col-sm-12">
-          <div class="service-card service-card-jp">
-            <div class="service-flex">
-              <div class="service-img">
-                <img class="w-100" src="./assets/image/blockchain_consulting.png" alt="">
-              </div>
-              <h4 class="card-title card-title-jp">
-                ブロックチェーンコンサルティング
-              </h4>
-            </div>
-            <p class="card-description">
-              専門的な経験・知識を基にした、ツールや機能の調査、分析を通し、プロジェクトにおけるブロックチェーン活用の可能性を見出すことをサポートいたします。
-            </p>
+    <div class="about-us" id="about">
+      <div class="container padding-16-cus">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-sm-12">
+            <img class="w-100" src="./assets/image/about_us.png" alt="" />
           </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="service-card service-card-jp">
-            <div class="service-flex">
-              <div class="service-img">
-                <img class="w-100" src="./assets/image/deployment.png" alt="">
-              </div>
-              <h4 class="card-title card-title-jp">
-                デプロイ・ソフトウェア公開
-              </h4>
-            </div>
-            <p class="card-description">
-              安全なデプロイには、適切なメンバーによる、セキュアなアプローチが必要です。 当社のブロックチェーン開発チームは、目的に沿った最適な環境を選定し、ソース
-              コードの自動デプロイフロー構築を支援します。
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="service-card service-card-jp">
-            <div class="service-flex">
-              <div class="service-img">
-                <img class="w-100" src="./assets/image/blockchain_development.png" alt="">
-              </div>
-              <h4 class="card-title card-title-jp">
-                ブロックチェーン開発
-              </h4>
-            </div>
-            <p class="card-description">
-              アイデアベースのものから設計・開発に至るまで、専任チームがお客様のプロジェクトに最適なソリューションを提供いたします。アジャイルによるブロックチェーン開発で、拡張性が高く、より高質なソフトウェアをお渡しします。
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="service-card service-card-jp">
-            <div class="service-flex">
-              <div class="service-img">
-                <img class="w-100" src="./assets/image/maintaince.png" alt="">
-              </div>
-              <h4 class="card-title card-title-jp">
-                保守
-              </h4>
-            </div>
-            <p class="card-description">
-              サードパーティのアップグレードや新規リリースに伴う、ブロックチェーンシステムの監視、保守、管理サポートを行います。
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="service-card service-card-jp">
-            <div class="service-flex">
-              <div class="service-img">
-                <img class="w-100" src="./assets/image/smart_contract.png" alt="">
-              </div>
-              <h4 class="card-title card-title-jp">
-                スマートコントラクト
-              </h4>
-            </div>
-            <p class="card-description">
-              私たちは、スマートコントラクトの開発を提供します 。安全で迅速かつ、信頼性の高い取引を自動化する仕組みを提供します。
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="service-card service-card-jp">
-            <div class="service-flex">
-              <div class="service-img">
-                <img class="w-100" src="./assets/image/migration_and_upgrade.png" alt="">
-              </div>
-              <h4 class="card-title card-title-jp">
-                マイグレーションとアップグレード
-              </h4>
-            </div>
-            <p class="card-description">
-              既存のシステムをブロックチェーンに移行するお手伝いをします。すべてのビジネスプロセスを維持しながら、より効率的で強力な機能をブロックチェーンに移行・更新し、お客様のビジネスのための明確なロードマップを作成します。
+          <div class="col-md-6 col-sm-12">
+            <h3 class="title">弊社について</h3>
+            <p class="description">
+              <span class="name-bold">Defisoft</span>
+              はアウトソーシング会社であり、ブロックチェーンに特化したソフトウェア開発を実施しています。
+              アウトソーシングは、アプリの開発、システム最適化の業務を請け負います。お客様の価値創出や構造改革を効率的なコストパファーマンスでご支援しています。
+              また、ブロックチェーンの専門的な知識と経験豊富なスタッフを揃えた私たち
+              <span class="name-bold">Defisoft</span
+              >は、金融、ゲーム、教育、支払い、エンターテイメント、保険など、グローバルビジネス分野で従来のモデルを変革した新しいサービスを創造します。
             </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="our-team" id="team">
-    <div class="container padding-16-cus">
-      <h2 class="heading text-center">
-        Our Team
-      </h2>
-      <div class="row item-scroll slider responsive">
-        <div class="col-md-3 col-sm-12">
-          <div class="team-card">
-            <div class="item-member-content" data-bs-toggle="modal" data-bs-target="#lightbox_01">
-              <img class="w-100 img-member" src="assets/image/img-team/blockchain-developers-dai.jpg" alt="">
-              <h4 class="team-card-title">
-                Dai Trinh Duc
-              </h4>
-              <span class="name-note">(ダイ チン ドゥック)</span>
-              <p class="team-card-label">
-                創業者
+    <div class="our-vision" id="mission">
+      <div class="container padding-16-cus">
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-md-6 col-sm-12">
+            <img
+              class="w-100"
+              src="./assets/image/our_mission_vission.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3 class="title">ミッション＆ビジョン</h3>
+            <p class="description">
+              暗号通貨には、経済について、全く新しい価値観を生み出しました。
+              トークン、クレジット、およびその他の多くの通貨により、効率的な方法で価値を移動できるようになりました。
+              しかし、暗号通貨はまだ社会から信頼を得てはいません。 私たち
+              <span class="name-bold">Defisoft</span>
+              は、暗号通貨の脆弱性を防いだソフトウェアを生み出し、社会が暗号通貨の可能性とその力を最大限に発揮できるようになることを目指します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-services" id="services">
+      <div class="container padding-16-cus">
+        <h2 class="heading text-white text-center">Our Services</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="service-card service-card-jp">
+              <div class="service-flex">
+                <div class="service-img">
+                  <img
+                    class="w-100"
+                    src="./assets/image/blockchain_consulting.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title card-title-jp">
+                  ブロックチェーンコンサルティング
+                </h4>
+              </div>
+              <p class="card-description">
+                専門的な経験・知識を基にした、ツールや機能の調査、分析を通し、プロジェクトにおけるブロックチェーン活用の可能性を見出すことをサポートいたします。
               </p>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="team-card">
-            <div class="item-member-content">
-              <div class="item-member-content" data-bs-toggle="modal" data-bs-target="#lightbox_02">
-                <img class="w-100 img-member" src="assets/image/img-team/blockchain-developers-thien.jpg"
-                  alt="img-member">
-                <h4 class="team-card-title">
-                  Dang An Thien
+          <div class="col-md-4 col-sm-12">
+            <div class="service-card service-card-jp">
+              <div class="service-flex">
+                <div class="service-img">
+                  <img
+                    class="w-100"
+                    src="./assets/image/deployment.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title card-title-jp">
+                  デプロイ・ソフトウェア公開
                 </h4>
-                <span class="name-note">(テイエン ダン アン)</span>
-                <p class="team-card-label">
-                  共同創業者
-                </p>
               </div>
+              <p class="card-description">
+                安全なデプロイには、適切なメンバーによる、セキュアなアプローチが必要です。
+                当社のブロックチェーン開発チームは、目的に沿った最適な環境を選定し、ソース
+                コードの自動デプロイフロー構築を支援します。
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="service-card service-card-jp">
+              <div class="service-flex">
+                <div class="service-img">
+                  <img
+                    class="w-100"
+                    src="./assets/image/blockchain_development.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title card-title-jp">ブロックチェーン開発</h4>
+              </div>
+              <p class="card-description">
+                アイデアベースのものから設計・開発に至るまで、専任チームがお客様のプロジェクトに最適なソリューションを提供いたします。アジャイルによるブロックチェーン開発で、拡張性が高く、より高質なソフトウェアをお渡しします。
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="service-card service-card-jp">
+              <div class="service-flex">
+                <div class="service-img">
+                  <img
+                    class="w-100"
+                    src="./assets/image/maintaince.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title card-title-jp">保守</h4>
+              </div>
+              <p class="card-description">
+                サードパーティのアップグレードや新規リリースに伴う、ブロックチェーンシステムの監視、保守、管理サポートを行います。
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="service-card service-card-jp">
+              <div class="service-flex">
+                <div class="service-img">
+                  <img
+                    class="w-100"
+                    src="./assets/image/smart_contract.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title card-title-jp">スマートコントラクト</h4>
+              </div>
+              <p class="card-description">
+                私たちは、スマートコントラクトの開発を提供します
+                。安全で迅速かつ、信頼性の高い取引を自動化する仕組みを提供します。
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="service-card service-card-jp">
+              <div class="service-flex">
+                <div class="service-img">
+                  <img
+                    class="w-100"
+                    src="./assets/image/migration_and_upgrade.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title card-title-jp">
+                  マイグレーションとアップグレード
+                </h4>
+              </div>
+              <p class="card-description">
+                既存のシステムをブロックチェーンに移行するお手伝いをします。すべてのビジネスプロセスを維持しながら、より効率的で強力な機能をブロックチェーンに移行・更新し、お客様のビジネスのための明確なロードマップを作成します。
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="team-card">
-            <div class="item-member-content">
-              <div class="item-member-content" data-bs-toggle="modal" data-bs-target="#lightbox_03">
-                <img class="w-100 img-member" src="assets/image/img-team/blockchain-developers-minh.jpg"
-                  alt="img-member">
-                <h4 class="team-card-title">
-                  Luc Van Minh
-                </h4>
-                <span class="name-note">(ミン ルック ヴァン)</span>
-                <p class="team-card-label">
-                  共同創業者
-                </p>
+      </div>
+    </div>
+
+    <div class="our-team" id="team">
+      <div class="container padding-16-cus">
+        <h2 class="heading text-center">Our Team</h2>
+        <div class="row item-scroll slider responsive">
+          <div class="col-md-3 col-sm-12">
+            <div class="team-card">
+              <div
+                class="item-member-content"
+                data-bs-toggle="modal"
+                data-bs-target="#lightbox_01"
+              >
+                <img
+                  class="w-100 img-member"
+                  src="assets/image/img-team/blockchain-developers-dai.jpg"
+                  alt=""
+                />
+                <h4 class="team-card-title">Dai Trinh Duc</h4>
+                <span class="name-note">(ダイ チン ドゥック)</span>
+                <p class="team-card-label">創業者</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="team-card">
-            <div class="item-member-content">
-              <div class="item-member-content" data-bs-toggle="modal" data-bs-target="#lightbox_04">
-                <img class="w-100 img-member" src="assets/image/img-team/blockchain-developers-tu.jpg" alt="img-member">
-                <h4 class="team-card-title">
-                  Ma Van Tu
-                </h4>
-                <span class="name-note">(トゥ マ ヴァン)</span>
-                <p class="team-card-label">
-                  共同創業者
-                </p>
+          <div class="col-md-3 col-sm-12">
+            <div class="team-card">
+              <div class="item-member-content">
+                <div
+                  class="item-member-content"
+                  data-bs-toggle="modal"
+                  data-bs-target="#lightbox_02"
+                >
+                  <img
+                    class="w-100 img-member"
+                    src="assets/image/img-team/blockchain-developers-thien.jpg"
+                    alt="img-member"
+                  />
+                  <h4 class="team-card-title">Dang An Thien</h4>
+                  <span class="name-note">(テイエン ダン アン)</span>
+                  <p class="team-card-label">共同創業者</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="team-card">
+              <div class="item-member-content">
+                <div
+                  class="item-member-content"
+                  data-bs-toggle="modal"
+                  data-bs-target="#lightbox_03"
+                >
+                  <img
+                    class="w-100 img-member"
+                    src="assets/image/img-team/blockchain-developers-minh.jpg"
+                    alt="img-member"
+                  />
+                  <h4 class="team-card-title">Luc Van Minh</h4>
+                  <span class="name-note">(ミン ルック ヴァン)</span>
+                  <p class="team-card-label">共同創業者</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="team-card">
+              <div class="item-member-content">
+                <div
+                  class="item-member-content"
+                  data-bs-toggle="modal"
+                  data-bs-target="#lightbox_04"
+                >
+                  <img
+                    class="w-100 img-member"
+                    src="assets/image/img-team/blockchain-developers-tu.jpg"
+                    alt="img-member"
+                  />
+                  <h4 class="team-card-title">Ma Van Tu</h4>
+                  <span class="name-note">(トゥ マ ヴァン)</span>
+                  <p class="team-card-label">共同創業者</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="our-project" id="projects">
-    <div class="container padding-16-cus">
-      <h2 class="heading">
-        開発実績
-      </h2>
-      <!-- game -->
-      <div class="row block-project">
-        <div class="col-md-6 col-sm-12 project-logo">
-          <div class="row">
-            <div class="col-12 title-project-item">
+    <div class="our-project" id="projects">
+      <div class="container padding-16-cus">
+        <h2 class="heading">開発実績</h2>
+        <!-- game -->
+        <div class="row block-project">
+          <div class="col-md-6 col-sm-12 project-logo">
+            <div class="row">
+              <div class="col-12 title-project-item">
+                <div class="project-icon">
+                  <img class="w-100" src="assets/image/Icon_Game.png" alt="" />
+                </div>
+                <div class="name-title-project">ゲーム</div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div class="project-item project-item-active" target="1">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/blockchain-game-mavia.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div class="project-item" target="2">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/blockchain-game-undead_block.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 col-4">
+                <div class="project-item" target="3">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/blockchain-game-Fortia.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 col-4">
+                <div class="project-item" target="4">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/blockchain-game-warena.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 col-4">
+                <div class="project-item" target="5">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/blockchain-game-EpicWar.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 project-image">
+            <div class="col-12 title-project-item-mobile">
               <div class="project-icon">
-                <img class="w-100" src="assets/image/Icon_Game.png" alt="">
+                <img class="w-100" src="assets/image/Icon_Game.png" alt="" />
               </div>
-              <div class="name-title-project">
-                ゲーム
-              </div>
+              <div class="name-title-project">ゲーム</div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-game-logo project-item-active" target="1">
-                <div class="project-item ">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/blockchain-game-mavia.png" alt="">
-                  </div>
+            <div id="game1" class="project-item-game" style="display: block">
+              <div class="right-content-project bg-Mavia">
+                <div class="content-item-project">
+                  <p class="title-project">Heroes of Mavia</p>
+                  <p class="des-project">
+                    Maviaは、プレイヤーが土地を購入し、基地を建設し、他のプレイヤーと戦ってRUBYを得る、AAA
+                    MMO戦略的マルチプレイヤーゲームです。ゲーム内には土地、ヒーロー、銅像の3種類のNFTが存在し、それぞれMAVIAマーケットプレイス内でMAVIAトークンにより売買することができます。NFTsは暗号通貨RUBYを使用する場合にのみアップグレードできます。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Unity、Smartfox、Java Spring boot、WebGL、Smart
+                    contract、AWS、Postgres
+                  </p>
+                  <a href="https://www.mavia.com/" class="link-name"
+                    >https://www.mavia.com/</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-game-logo" target="2">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/blockchain-game-undead_block.png" alt="">
-                  </div>
+            <div id="game2" class="project-item-game">
+              <div class="right-content-project bg-Undead_Block">
+                <div class="content-item-project">
+                  <p class="title-project">Undead Blocks</p>
+                  <p class="des-project">
+                    Undead Blocks はBinance Smart
+                    Chainの世界初のマルチプレイヤー 「Kill-To-Earn」 ゾンビ
+                    サバイバル ゲームです。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Photon、Unity、Smart contract、AWS
+                  </p>
+                  <a href="https://undeadblocks.com/" class="link-name"
+                    >https://undeadblocks.com/</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-game-logo" target="3">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/blockchain-game-Fortia.png" alt="">
-                  </div>
+            <div id="game3" class="project-item-game">
+              <div class="right-content-project bg-Fortia">
+                <div class="content-item-project">
+                  <p class="title-project">Fortia</p>
+                  <p class="des-project">
+                    Fortiaは、ゲーマーとアーティストのコミュニティを促進するために、Create-to-Earnエコシステムを取り入れた、最初の本格的戦略ブロックチェーンゲームの1つです。当社独自の技術により、接続されたウォレットから直接音楽をストリーミングすることができます。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Unity、Smartfox、Java Spring boot、WebGL、Smart
+                    contract、AWS、Postgres
+                  </p>
+                  <a href="https://fortiagame.com/" class="link-name"
+                    >https://fortiagame.com/</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-game-logo" target="4">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/blockchain-game-warena.png" alt="">
-                  </div>
+            <div id="game4" class="project-item-game">
+              <div class="right-content-project bg-Warena">
+                <div class="content-item-project">
+                  <p class="title-project">Warena</p>
+                  <p class="des-project">
+                    Warenaは初のパーソナライズ型「Play-to-Earn」NFT メタバース
+                    ゲームです。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> NestJs、MongoDB、Unity、Smart contract、AWS
+                  </p>
+                  <a href="https://emporia.warena.io/#home" class="link-name"
+                    >https://emporia.warena.io/#home</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-game-logo" target="5">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/blockchain-game-EpicWar.webp" alt="">
-                  </div>
+            <div id="game5" class="project-item-game">
+              <div class="right-content-project bg-EpicWar">
+                <div class="content-item-project text-white">
+                  <p class="title-project">Epic War</p>
+                  <p class="des-project">
+                    Epic
+                    Warは、ブロックチェーン上に構築された、プレイ・トゥ・アーンの無料シネマティック・ゲームです。最先端のゲーム環境で、FPSをプレイヤーに提供します。アイテム拾いの設定、何百ものミュータントモンスター、そしてゲーム内に構築されたカオスな経済が、このゲームの特徴です。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Unity、photon、smart contract
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 project-image">
-          <div class="col-12 title-project-item-mobile">
-            <div class="project-icon">
-              <img class="w-100" src="assets/image/Icon_Game.png" alt="">
-            </div>
-            <div class="name-title-project">
-              ゲーム
-            </div>
-          </div>
-          <div id="div1" class="project-item-game" style="display: block">
-            <div class="right-content-project bg-Mavia">
-              <div class="content-item-project">
-                <p class="title-project">Heroes of Mavia</p>
-                <p class="des-project">Maviaは、プレイヤーが土地を購入し、基地を建設し、他のプレイヤーと戦ってRUBYを得る、AAA
-                  MMO戦略的マルチプレイヤーゲームです。ゲーム内には土地、ヒーロー、銅像の3種類のNFTが存在し、それぞれMAVIAマーケットプレイス内でMAVIAトークンにより売買することができます。NFTsは暗号通貨RUBYを使用する場合にのみアップグレードできます。
-                </p>
-                <p class="tech-project"><b>技術:</b> Unity、Smartfox、Java Spring boot、WebGL、Smart
-                  contract、AWS、Postgres</p>
-                <a href="https://www.mavia.com/" class="link-name">https://www.mavia.com/</a>
-              </div>
-            </div>
-          </div>
-          <div id="div2" class="project-item-game">
-            <div class="right-content-project bg-Undead_Block">
-              <div class="content-item-project">
-                <p class="title-project">Undead Blocks</p>
-                <p class="des-project">Undead Blocks はBinance Smart Chainの世界初のマルチプレイヤー 「Kill-To-Earn」
-                  ゾンビ サバイバル ゲームです。</p>
-                <p class="tech-project"><b>技術:</b> Photon、Unity、Smart contract、AWS</p>
-                <a href="https://undeadblocks.com/" class="link-name">https://undeadblocks.com/</a>
-              </div>
-            </div>
-          </div>
-          <div id="div3" class="project-item-game">
-            <div class="right-content-project bg-Fortia">
-              <div class="content-item-project">
-                <p class="title-project">Fortia</p>
-                <p class="des-project">
-                  Fortiaは、ゲーマーとアーティストのコミュニティを促進するために、Create-to-Earnエコシステムを取り入れた、最初の本格的戦略ブロックチェーンゲームの1つです。当社独自の技術により、接続されたウォレットから直接音楽をストリーミングすることができます。
-                </p>
-                <p class="tech-project"><b>技術:</b> Unity、Smartfox、Java Spring boot、WebGL、Smart
-                  contract、AWS、Postgres</p>
-                <a href="https://fortiagame.com/" class="link-name">https://fortiagame.com/</a>
-              </div>
-            </div>
+        <!-- end game -->
 
-          </div>
-          <div id="div4" class="project-item-game">
-            <div class="right-content-project bg-Warena">
-              <div class="content-item-project">
-                <p class="title-project">Warena</p>
-                <p class="des-project">Warenaは初のパーソナライズ型「Play-to-Earn」NFT メタバース ゲームです。</p>
-                <p class="tech-project"><b>技術:</b> NestJs、MongoDB、Unity、Smart contract、AWS
-                </p>
-                <a href="https://emporia.warena.io/#home" class="link-name">https://emporia.warena.io/#home</a>
+        <!-- investment -->
+        <div class="row block-project">
+          <div class="col-md-6 col-sm-12 project-logo">
+            <div class="row">
+              <div class="col-12 title-project-item">
+                <div class="project-icon">
+                  <img class="w-100" src="assets/image/Investment.png" alt="" />
+                </div>
+                <div class="name-title-project">投資</div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div
+                  class="project-item-investment-logo project-item-investment-active"
+                  target="1"
+                >
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/tokenomic-development-memepad.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div class="project-item-investment-logo" target="2">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/tokenomic-development-Tx8.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div class="project-item-investment-logo" target="3">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/tokenomic-development-Treelion-App.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div id="div5" class="project-item-game">
-            <div class="right-content-project bg-EpicWar">
-              <div class="content-item-project text-white">
-                <p class="title-project">Epic War</p>
-                <p class="des-project">Epic
-                  Warは、ブロックチェーン上に構築された、プレイ・トゥ・アーンの無料シネマティック・ゲームです。最先端のゲーム環境で、FPSをプレイヤーに提供します。アイテム拾いの設定、何百ものミュータントモンスター、そしてゲーム内に構築されたカオスな経済が、このゲームの特徴です。
-                </p>
-                <p class="tech-project"><b>技術:</b> Unity、photon、smart contract</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end game -->
-
-
-      <!-- investment -->
-      <div class="row block-project">
-        <div class="col-md-6 col-sm-12 project-logo">
-          <div class="row">
-            <div class="col-12 title-project-item">
+          <div class="col-md-6 col-sm-12 project-image">
+            <div class="col-12 title-project-item-mobile">
               <div class="project-icon">
-                <img class="w-100" src="assets/image/Investment.png" alt="">
+                <img class="w-100" src="assets/image/Investment.png" alt="" />
               </div>
-              <div class="name-title-project">
-                投資
-              </div>
+              <div class="name-title-project">投資</div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-investment-logo" target="6">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/tokenomic-development-memepad.png" alt="">
-                  </div>
+            <div
+              id="investment1"
+              class="project-item-investment"
+              style="display: block"
+            >
+              <div class="right-content-project bg-MemePad">
+                <div class="content-item-project">
+                  <p class="title-project">Memepad</p>
+                  <p class="des-project">
+                    Memepad
+                    は、トークン作成者とコミュニティメンバーを繋ぎ、システム化された、分散型の、全く新しい資金調達方法を提供します。他のローンチパッドの要素は組み合わせつつ、独自の強みとして、BSCでのローンチを希望するミームコインやスタートアップに特化した機能を持つ、唯一のローンチパッドです。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Nodejs + Reactjs + smartcontract
+                  </p>
+                  <a href="https://memepad.co/overview" class="link-name"
+                    >https://memepad.co/overview</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-investment-logo" target="7">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/tokenomic-development-Tx8.png" alt="">
-                  </div>
+            <div id="investment2" class="project-item-investment">
+              <div class="right-content-project bg-TX8">
+                <div class="content-item-project">
+                  <p class="title-project">TX8</p>
+                  <p class="des-project">内部ERPと統合するエコシステム</p>
+                  <p class="tech-project">
+                    <b>技術:</b> SmartContract、ReactJS、GraphQL
+                  </p>
+                  <a href="https://tx8.vn/lottery" class="link-name"
+                    >https://tx8.vn/lottery</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-investment-logo" target="8">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/tokenomic-development-Treelion-App.png" alt="">
-                  </div>
+            <div id="investment3" class="project-item-investment">
+              <div class="right-content-project bg-Treelion">
+                <div class="content-item-project">
+                  <p class="title-project">Treelion</p>
+                  <p class="des-project">
+                    イーサリアムネットワークをベースにし、モバイルアプリ上で展開する、グリーンデジタルエコノミーです。
+                    イーサリアムトークン、ビットコイン、アップルペイを利用したアプリケーションに対し、簡単に投資・寄付の機能を追加できます。
+                    モバイルでバーコードをスキャンすることにより、商品ステータスの詳細を追跡。
+                    ユーザーが木を植え、飾るミニゲームがあり、SNSで共有ができます。
+                    メイン
+                    アプリで小さなゲームを作成して、ユーザーが木を植えたり、飾り付けたり、メディアやソーシャル
+                    ネットワークで共有したりできるようにします。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Blockchain - Ethereum Network、Backend - Spring
+                    Boot、Maven、Liquibase、Swagger、DB – Postgres、Client -
+                    Android and IOS Swift、Game - Cocos2dx
+                  </p>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1"
+                    class="link-name"
+                    >https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 project-image">
-          <div class="col-12 title-project-item-mobile">
-            <div class="project-icon">
-              <img class="w-100" src="assets/image/Investment.png" alt="">
-            </div>
-            <div class="name-title-project">
-              投資
-            </div>
-          </div>
-          <div id="div6" class="project-item-investment" style="display: block">
-            <div class="right-content-project bg-MemePad">
-              <div class="content-item-project">
-                <p class="title-project">Memepad</p>
-                <p class="des-project">Memepad
-                  は、トークン作成者とコミュニティメンバーを繋ぎ、システム化された、分散型の、全く新しい資金調達方法を提供します。他のローンチパッドの要素は組み合わせつつ、独自の強みとして、BSCでのローンチを希望するミームコインやスタートアップに特化した機能を持つ、唯一のローンチパッドです。
-                </p>
-                <p class="tech-project"><b>技術:</b> Nodejs + Reactjs + smartcontract</p>
-                <a href="https://memepad.co/overview" class="link-name">https://memepad.co/overview</a>
+        <!-- end investment -->
+
+        <!-- finance -->
+        <div class="row block-project">
+          <div class="col-md-6 col-sm-12 project-logo">
+            <div class="row two-icon">
+              <div class="col-12 title-project-item">
+                <div class="project-icon">
+                  <img class="w-100" src="assets/image/finance.png" alt="" />
+                </div>
+                <div class="name-title-project">財政</div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div
+                  class="project-item-finance-logo project-item-finance-active"
+                  target="1"
+                >
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/fintech-development-Topaz.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div class="project-item-finance-logo" target="2">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/fintech-development-ATLAS.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div id="div7" class="project-item-investment">
-            <div class="right-content-project bg-TX8">
-              <div class="content-item-project">
-                <p class="title-project">TX8</p>
-                <p class="des-project">内部ERPと統合するエコシステム</p>
-                <p class="tech-project"><b>技術:</b> SmartContract、ReactJS、GraphQL</p>
-                <a href="https://tx8.vn/lottery" class="link-name">https://tx8.vn/lottery</a>
-
-              </div>
-            </div>
-          </div>
-          <div id="div8" class="project-item-investment">
-            <div class="right-content-project bg-Treelion">
-              <div class="content-item-project">
-                <p class="title-project">Treelion</p>
-                <p class="des-project">イーサリアムネットワークをベースにし、モバイルアプリ上で展開する、グリーンデジタルエコノミーです。
-                  イーサリアムトークン、ビットコイン、アップルペイを利用したアプリケーションに対し、簡単に投資・寄付の機能を追加できます。
-                  モバイルでバーコードをスキャンすることにより、商品ステータスの詳細を追跡。
-                  ユーザーが木を植え、飾るミニゲームがあり、SNSで共有ができます。
-                  メイン アプリで小さなゲームを作成して、ユーザーが木を植えたり、飾り付けたり、メディアやソーシャル ネットワークで共有したりできるようにします。
-                </p>
-                <p class="tech-project"><b>技術:</b> Blockchain - Ethereum Network、Backend - Spring
-                  Boot、Maven、Liquibase、Swagger、DB – Postgres、Client - Android and IOS Swift、Game -
-                  Cocos2dx</p>
-                <a href="https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1"
-                  class="link-name">https://play.google.com/store/apps/details?id=com.treelion.trnwallet&hl=en&gl=US&pli=1</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- end investment -->
-
-      <!-- finance -->
-      <div class="row block-project">
-        <div class="col-md-6 col-sm-12 project-logo">
-          <div class="row two-icon">
-            <div class="col-12 title-project-item">
+          <div class="col-md-6 col-sm-12 project-image">
+            <div class="col-12 title-project-item-mobile">
               <div class="project-icon">
-                <img class="w-100" src="assets/image/finance.png" alt="">
+                <img class="w-100" src="assets/image/finance.png" alt="" />
               </div>
-              <div class="name-title-project">
-                財政
-              </div>
+              <div class="name-title-project">財政</div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-finance-logo" target="9">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/fintech-development-Topaz.png" alt="">
-                  </div>
+            <div
+              id="finance1"
+              class="project-item-finance"
+              style="display: block"
+            >
+              <div class="right-content-project bg-topaz">
+                <div class="content-item-project">
+                  <p class="title-project">TOPAZ</p>
+                  <p class="des-project">
+                    分散型台帳技術（DLT）を活用し、金融機関による資産評価のプロセスをデジタル化・効率化します。他にも、資産評価・管理業界の複雑なワークフローを簡素化するソリューションを提供します。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Blockchain and DLT、Corda platform
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-finance-logo" target="10">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/fintech-development-ATLAS.png" alt="">
-                  </div>
+            <div id="finance2" class="project-item-finance">
+              <div class="right-content-project bg-atlas">
+                <div class="content-item-project">
+                  <p class="title-project">ATLAS</p>
+                  <p class="des-project">
+                    Atlas
+                    Eliteは、DLTベースの貿易金融プラットフォームです。企業や金融機関、すべての貿易関係者が、業務の自動化、取引処理時間の短縮、文書の電子署名とコミットメントを行うことで、貿易ビジネスをデジタル上で効率化します。
+                    スマートコントラクトのメカニズムにより、手動での作業を最小限に抑えます。DLTの利用により、トレーサビリティのための監査証跡を提供し、業務フローの透明性を高めることで、融資取引における信用リスクの軽減・手数料や取引障壁の低減に繋げます。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Angular、Typescript、Java、Blockchain
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 project-image">
-          <div class="col-12 title-project-item-mobile">
-            <div class="project-icon">
-              <img class="w-100" src="assets/image/finance.png" alt="">
-            </div>
-            <div class="name-title-project">
-              財政
-            </div>
-          </div>
-          <div id="div9" class="project-item-finance" style="display: block">
-            <div class="right-content-project bg-topaz">
-              <div class="content-item-project">
-                <p class="title-project">TOPAZ</p>
-                <p class="des-project">
-                  分散型台帳技術（DLT）を活用し、金融機関による資産評価のプロセスをデジタル化・効率化します。他にも、資産評価・管理業界の複雑なワークフローを簡素化するソリューションを提供します。
-                </p>
-                <p class="tech-project"><b>技術:</b> Blockchain and DLT、Corda platform</p>
+        <!-- end finance -->
+
+        <!-- Insurance -->
+        <div class="row block-project">
+          <div class="col-md-6 col-sm-12 project-logo">
+            <div class="row two-icon">
+              <div class="col-12 title-project-item">
+                <div class="project-icon">
+                  <img class="w-100" src="assets/image/Insurance.png" alt="" />
+                </div>
+                <div class="name-title-project">保険</div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div
+                  class="project-item-insurance-logo project-item-insurance-active"
+                  target="1"
+                >
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/smartcontract-insurance-Midas.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div class="project-item-insurance-logo" target="2">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/smartcontract-insurance-STO.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div id="div10" class="project-item-finance">
-            <div class="right-content-project bg-atlas">
-              <div class="content-item-project">
-                <p class="title-project">ATLAS</p>
-                <p class="des-project">Atlas
-                  Eliteは、DLTベースの貿易金融プラットフォームです。企業や金融機関、すべての貿易関係者が、業務の自動化、取引処理時間の短縮、文書の電子署名とコミットメントを行うことで、貿易ビジネスをデジタル上で効率化します。
-
-                  スマートコントラクトのメカニズムにより、手動での作業を最小限に抑えます。DLTの利用により、トレーサビリティのための監査証跡を提供し、業務フローの透明性を高めることで、融資取引における信用リスクの軽減・手数料や取引障壁の低減に繋げます。
-                </p>
-                <p class="tech-project"><b>技術:</b> Angular、Typescript、Java、Blockchain</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end finance -->
-
-      <!-- Insurance -->
-      <div class="row block-project">
-        <div class="col-md-6 col-sm-12 project-logo">
-          <div class="row two-icon">
-            <div class="col-12 title-project-item">
+          <div class="col-md-6 col-sm-12 project-image">
+            <div class="col-12 title-project-item-mobile">
               <div class="project-icon">
-                <img class="w-100" src="assets/image/Insurance.png" alt="">
+                <img class="w-100" src="assets/image/finance.png" alt="" />
               </div>
-              <div class="name-title-project">
-                保険
-              </div>
+              <div class="name-title-project">保険</div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-insurance-logo" target="11">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/smartcontract-insurance-Midas.webp" alt="">
-                  </div>
+            <div
+              id="insurance1"
+              class="project-item-insurance"
+              style="display: block"
+            >
+              <div class="right-content-project bg-midas">
+                <div class="content-item-project">
+                  <p class="title-project">MIDAS</p>
+                  <p class="des-project">
+                    DLT ベースの自動車保険認証プラットフォームです。
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-insurance-logo" target="12">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/smartcontract-insurance-STO.png" alt="">
-                  </div>
+            <div id="insurance2" class="project-item-insurance">
+              <div class="right-content-project bg-sto">
+                <div class="content-item-project">
+                  <p class="title-project">STO</p>
+                  <p class="des-project">
+                    STOプラットフォームは、デジタル・セキュリティにおけるすべての要素を管理するためのツールを発行者に提供します。特に、セキュリティトークンオファリングの発行及びコンプライアンスのサポートをします。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Java、Kotlin、Blockchain、Smart Contract
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 project-image">
-          <div class="col-12 title-project-item-mobile">
-            <div class="project-icon">
-              <img class="w-100" src="assets/image/finance.png" alt="">
-            </div>
-            <div class="name-title-project">
-              保険
-            </div>
-          </div>
-          <div id="div11" class="project-item-insurance" style="display: block">
-            <div class="right-content-project bg-midas">
-              <div class="content-item-project">
-                <p class="title-project">MIDAS</p>
-                <p class="des-project">DLT ベースの自動車保険認証プラットフォームです。</p>
-              </div>
-            </div>
-          </div>
-          <div id="div12" class="project-item-insurance">
-            <div class="right-content-project bg-sto">
-              <div class="content-item-project">
-                <p class="title-project">STO</p>
-                <p class="des-project">
-                  STOプラットフォームは、デジタル・セキュリティにおけるすべての要素を管理するためのツールを発行者に提供します。特に、セキュリティトークンオファリングの発行及びコンプライアンスのサポートをします。
-                </p>
-                <p class="tech-project"><b>技術:</b> Java、Kotlin、Blockchain、Smart Contract
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end Insurance -->
+        <!-- end Insurance -->
 
-      <!-- Education -->
-      <div class="row block-project">
-        <div class="col-md-6 col-sm-12 project-logo">
-          <div class="row two-icon">
-            <div class="col-12 title-project-item">
+        <!-- Education -->
+        <div class="row block-project">
+          <div class="col-md-6 col-sm-12 project-logo">
+            <div class="row two-icon">
+              <div class="col-12 title-project-item">
+                <div class="project-icon">
+                  <img class="w-100" src="assets/image/Education.png" alt="" />
+                </div>
+                <div class="name-title-project">教育</div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div
+                  class="project-item-education-logo project-item-education-active"
+                  target="1"
+                >
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/blockchain-education-THEMIS.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div class="project-item-education-logo" target="2">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/blockchain-education-Jucc.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 project-image">
+            <div class="col-12 title-project-item-mobile">
               <div class="project-icon">
-                <img class="w-100" src="assets/image/Education.png" alt="">
+                <img class="w-100" src="assets/image/Education.png" alt="" />
               </div>
-              <div class="name-title-project">
-                教育
-              </div>
+              <div class="name-title-project">教育</div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-education-logo" target="13">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/blockchain-education-THEMIS.webp" alt="">
-                  </div>
+            <div
+              id="education1"
+              class="project-item-education"
+              style="display: block"
+            >
+              <div class="right-content-project bg-themis">
+                <div class="content-item-project">
+                  <p class="title-project">THEMIS</p>
+                  <p class="des-project">
+                    証明書管理・検証ブロックチェーンシステム。証明書、成績証明書、または何らかの文書を発行する場合、グローバルなブロックチェーンシステムである、Themisが、真正な文章であることを証明します。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Blockchain、Spring Boost
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-education-logo" target="14">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/blockchain-education-Jucc.png" alt="">
-                  </div>
+            <div id="education2" class="project-item-education">
+              <div class="right-content-project bg-JUCC">
+                <div class="content-item-project">
+                  <p class="title-project">JUCC</p>
+                  <p class="des-project">
+                    大学や専門学校などの教育機関の証明書を管理するアプリケーション。ブロックチェーンを用いて証明書を管理・検証するシステムです。社員や学生、教育機関の役員などが利用するアプリケーションです。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> Spring
+                    boot、Kotlin、Blockchain、Docker、Kubernete (K8s)、DB
+                    Postgres
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 project-image">
-          <div class="col-12 title-project-item-mobile">
-            <div class="project-icon">
-              <img class="w-100" src="assets/image/Education.png" alt="">
-            </div>
-            <div class="name-title-project">
-              教育
-            </div>
-          </div>
-          <div id="div13" class="project-item-education" style="display: block">
-            <div class="right-content-project bg-themis">
-              <div class="content-item-project">
-                <p class="title-project">THEMIS</p>
-                <p class="des-project">
-                  証明書管理・検証ブロックチェーンシステム。証明書、成績証明書、または何らかの文書を発行する場合、グローバルなブロックチェーンシステムである、Themisが、真正な文章であることを証明します。
-                </p>
-                <p class="tech-project"><b>技術:</b> Blockchain、Spring Boost</p>
-              </div>
-            </div>
-          </div>
-          <div id="div14" class="project-item-education">
-            <div class="right-content-project bg-JUCC">
-              <div class="content-item-project">
-                <p class="title-project">JUCC</p>
-                <p class="des-project">
-                  大学や専門学校などの教育機関の証明書を管理するアプリケーション。ブロックチェーンを用いて証明書を管理・検証するシステムです。社員や学生、教育機関の役員などが利用するアプリケーションです。
-                </p>
-                <p class="tech-project"><b>技術:</b> Spring boot、Kotlin、Blockchain、Docker、Kubernete
-                  (K8s)、DB Postgres</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end Education -->
+        <!-- end Education -->
 
-      <!-- Entertainment -->
-      <div class="row block-project">
-        <div class="col-md-6 col-sm-12 project-logo">
-          <div class="row two-icon">
-            <div class="col-12 title-project-item">
+        <!-- Entertainment -->
+        <div class="row block-project">
+          <div class="col-md-6 col-sm-12 project-logo">
+            <div class="row two-icon">
+              <div class="col-12 title-project-item">
+                <div class="project-icon">
+                  <img
+                    class="w-100"
+                    src="assets/image/Entertainment.png"
+                    alt=""
+                  />
+                </div>
+                <div class="name-title-project">娯楽</div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div
+                  class="project-item-entertaiment-logo project-item-entertainment-active"
+                  target="1"
+                >
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/token-entertainment-Nafter.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 col-xs-4 col-4">
+                <div class="project-item-entertaiment-logo" target="2">
+                  <div class="img-project">
+                    <img
+                      class="w-100"
+                      src="assets/image/img-project/token-entertainment-EventX.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 project-image">
+            <div class="col-12 title-project-item-mobile">
               <div class="project-icon">
-                <img class="w-100" src="assets/image/Entertainment.png" alt="">
+                <img
+                  class="w-100"
+                  src="assets/image/Entertainment.png"
+                  alt=""
+                />
               </div>
-              <div class="name-title-project">
-                娯楽
-              </div>
+              <div class="name-title-project">Entertainment</div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-entertainment-logo" target="15">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/token-entertainment-Nafter.webp" alt="">
-                  </div>
+            <div
+              id="entertainment1"
+              class="project-item-entertainment"
+              style="display: block"
+            >
+              <div class="right-content-project bg-nafter">
+                <div class="content-item-project">
+                  <p class="title-project">Nafter</p>
+                  <p class="des-project">
+                    Nafterはクリエイターとファンが NFT
+                    を購入、販売、鋳造、収集するための NFT
+                    特化型SNSおよびマーケットプレイスです。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b> React redux, Javascript, AWS, Github, NodeJS,
+                    MongoDB, Blockchain
+                  </p>
+                  <a href="https://www.nafter.io/landing" class="link-name"
+                    >https://www.nafter.io/landing</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-4 col-xs-4 col-4">
-              <div class="project-item-entertainment-logo" target="16">
-                <div class="project-item">
-                  <div class="img-project">
-                    <img class="w-100" src="assets/image/img-project/token-entertainment-EventX.webp" alt="">
-                  </div>
+            <div id="entertainment2" class="project-item-entertainment">
+              <div class="right-content-project bg-EventX">
+                <div class="content-item-project">
+                  <p class="title-project">EventX</p>
+                  <p class="des-project">
+                    EventXは、ワイヤレスNFCリーダーに接続されたタブレットを提供します。
+                    NFCウェアラブルデバイスをEventXアプリとペアリングすることで、イベントや許可証のいるエリアへの入場チケットにすることができます。また、POSシステムにNFCウェアラブルをスワイプすることで、飲み物や食べ物の代金を支払うことができます。
+                  </p>
+                  <p class="tech-project">
+                    <b>技術:</b>
+                    NodeJs、ReactNative、ReactJS、MongoDB、Kafka、Redis、Mangopay、Kubernestes、Blockchains
+                    use stellarNetwork
+                  </p>
+                  <a href="https://chinetwork.io/" class="link-name"
+                    >https://chinetwork.io/</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 project-image">
-          <div class="col-12 title-project-item-mobile">
-            <div class="project-icon">
-              <img class="w-100" src="assets/image/Entertainment.png" alt="">
-            </div>
-            <div class="name-title-project">
-              Entertainment
-            </div>
-          </div>
-          <div id="div15" class="project-item-entertainment" style="display: block">
-            <div class="right-content-project bg-nafter">
-              <div class="content-item-project">
-                <p class="title-project">Nafter</p>
-                <p class="des-project">Nafterはクリエイターとファンが NFT を購入、販売、鋳造、収集するための NFT
-                  特化型SNSおよびマーケットプレイスです。</p>
-                <p class="tech-project"><b>技術:</b> React redux, Javascript, AWS, Github,
-                  NodeJS,
-                  MongoDB, Blockchain</p>
-                <a href="https://www.nafter.io/landing" class="link-name">https://www.nafter.io/landing</a>
-              </div>
-            </div>
-          </div>
-          <div id="div16" class="project-item-entertainment">
-            <div class="right-content-project bg-EventX">
-              <div class="content-item-project">
-                <p class="title-project">EventX</p>
-                <p class="des-project">EventXは、ワイヤレスNFCリーダーに接続されたタブレットを提供します。
-                  NFCウェアラブルデバイスをEventXアプリとペアリングすることで、イベントや許可証のいるエリアへの入場チケットにすることができます。また、POSシステムにNFCウェアラブルをスワイプすることで、飲み物や食べ物の代金を支払うことができます。
-                </p>
-                <p class="tech-project"><b>技術:</b>
-                  NodeJs、ReactNative、ReactJS、MongoDB、Kafka、Redis、Mangopay、Kubernestes、Blockchains use
-                  stellarNetwork</p>
-                <a href="https://chinetwork.io/" class="link-name">https://chinetwork.io/</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- end Entertainment -->
       </div>
-      <!-- end Entertainment -->
     </div>
-  </div>
 
-  <div class="contact-us" id="contact">
-    <div class="container padding-16-cus">
-      <div class="title-contact-us">
-        <h2 class="heading text-center">
-          お問い合わせ
-        </h2>
-        <div class="support-text">お気軽にご連絡ください！</div>
-      </div>
-      <div class="row align-items-center block-section">
-        <div class="col-md-6 col-sm-12 col-xs-12">
-          <div class="image-contact-us">
-            <img class="w-100" src="assets/image/contact_us.png" alt="">
-          </div>
-
+    <div class="contact-us" id="contact">
+      <div class="container padding-16-cus">
+        <div class="title-contact-us">
+          <h2 class="heading text-center">お問い合わせ</h2>
+          <div class="support-text">お気軽にご連絡ください！</div>
         </div>
-        <div class="col-md-6 col-sm-12 form-about-us">
-          <form class="row g-3">
-            <div class="row input-field">
+        <div class="row align-items-center block-section">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="image-contact-us">
+              <img class="w-100" src="assets/image/contact_us.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 form-about-us">
+            <form class="row g-3">
               <div class="col-md-12">
                 <div class="head">
                   <label for="First name" class="form-label">お名前</label>
-                  <input type="text" class="form-control input-value" id="First name" placeholder="お名前">
+                  <input
+                    type="text"
+                    class="form-control input-value"
+                    id="First name"
+                    placeholder="お名前"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="row input-field">
               <div class="col-md-6">
                 <div class="head">
                   <label for="Email" class="form-label">メール</label>
-                  <input type="text" class="form-control input-value" id="Email" placeholder="you@company.com">
+                  <input
+                    type="text"
+                    class="form-control input-value"
+                    id="Email"
+                    placeholder="you@company.com"
+                  />
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="head">
                   <label for="Phone number" class="form-label">電話番号</label>
-                  <input type="text" class="form-control input-value" id="Phone number" placeholder="+1 (555) 000-0000">
+                  <input
+                    type="text"
+                    class="form-control input-value"
+                    id="Phone number"
+                    placeholder="+1 (555) 000-0000"
+                  />
                 </div>
               </div>
+              <div class="col-lg-12">
+                <div class="head">
+                  <label for="Message" class="form-label"
+                    >お問い合わせ内容</label
+                  >
+                  <textarea
+                    id="Message"
+                    name="Message"
+                    rows="4"
+                    cols="50"
+                    class="message"
+                  >
+                  </textarea>
+                </div>
+              </div>
+              <div class="col-lg-12 button-contact-us">
+                <button type="submit" class="btn btn-contact">送信</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-logo">
+              <img
+                class="footer-logo"
+                src="./assets/image/logo_defisoft.png"
+                alt=""
+              />
             </div>
-
-
-            <div class="col-lg-12">
-              <div class="head">
-                <label for="Message" class="form-label">お問い合わせ内容</label>
-                <textarea id="Message" name="Message" rows="4" cols="50" class="message">
-                            </textarea>
+            <p class="footer-description">
+              ブロックチェーン技術と暗号通貨の潜在力を活性化しましょう
+            </p>
+            <div class="footer-flex">
+              <div class="footer-contact">
+                <img class="icon-phone" src="assets/image/phone.png" alt="" />
+                <span class="name-phone">024 6687 4606</span>
+              </div>
+              <div class="footer-contact">
+                <img class="icon-email" src="assets/image/email.png" alt="" />
+                <span class="name-email">info@ncc.asia</span>
               </div>
             </div>
-            <div class="col-lg-12 button-contact-us">
-              <button type="submit" class="btn btn-contact">送信</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-12">
-          <div class="footer-logo">
-            <img class="footer-logo" src="./assets/image/logo_defisoft.png" alt="">
           </div>
-          <p class="footer-description">
-            ブロックチェーン技術と暗号通貨の潜在力を活性化しましょう
-          </p>
-          <div class="footer-flex">
-            <div class="footer-contact">
-              <img class="icon-phone" src="assets/image/phone.png" alt="" />
-              <span class="name-phone">024 6687 4606</span>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-address">
+              <img class="icon-adrress" src="assets/image/address.png" alt="" />
+              <span class="name-address">
+                <b>HA NOI 1 オフィス </b>| 5th Floor、A2 Ecolife Building、58 To
+                Huu St、Nam Tu Liem、Hanoi、Vietnam
+              </span>
             </div>
-            <div class="footer-contact">
-              <img class="icon-email" src="assets/image/email.png" alt="" />
-              <span class="name-email">info@ncc.asia</span>
+            <div class="footer-address">
+              <img class="icon-adrress" src="assets/image/address.png" alt="" />
+              <span class="name-address">
+                <b>SAI GON 1 オフィス</b>| 5th Floor、The Office、340/15A Ung
+                Van Khiem St.、Binh Thanh Dist.、HCMC、Vietnam
+              </span>
+            </div>
+            <div class="footer-address">
+              <img class="icon-adrress" src="assets/image/address.png" alt="" />
+              <span class="name-address">
+                <b>VINH オフィス </b>| 4th Floor、138 Ha Huy Tap St.、Vinh
+                City、Nghe An Province、Vietnam
+              </span>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="footer-address">
-            <img class="icon-adrress" src="assets/image/address.png" alt="" />
-            <span class="name-address">
-              <b>HA NOI 1 オフィス </b>| 5th Floor、A2 Ecolife Building、58 To Huu St、Nam Tu
-              Liem、Hanoi、Vietnam
-            </span>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-address">
+              <img class="icon-adrress" src="assets/image/address.png" alt="" />
+              <span class="name-address">
+                <b>HA NOI 2 オフィス</b>| 7th Floor、8 Pham Hung St.、Cau Giay
+                Dist.、Hanoi
+              </span>
+            </div>
+            <div class="footer-address">
+              <img class="icon-adrress" src="assets/image/address.png" alt="" />
+              <span class="name-address">
+                <b>SAI GON 2 オフィス</b>| 1th Floor、Phong Phu Tower、93/10
+                Quang Trung、Kp1、Hiep Phu Ward、Thu Duc、HCMC、Vietnam
+              </span>
+            </div>
+            <div class="footer-address">
+              <img class="icon-adrress" src="assets/image/address.png" alt="" />
+              <span class="name-address">
+                <b>QUY NHON オフィス</b>| 3th Floor、307 Nguyen Thi Minh Khai
+                St.、Quy Nhon City、Binh Dinh Province、Vietnam
+              </span>
+            </div>
           </div>
-          <div class="footer-address">
-            <img class="icon-adrress" src="assets/image/address.png" alt="" />
-            <span class="name-address">
-              <b>SAI GON 1 オフィス</b>| 5th Floor、The Office、340/15A Ung Van Khiem St.、Binh Thanh
-              Dist.、HCMC、Vietnam
-            </span>
-          </div>
-          <div class="footer-address">
-            <img class="icon-adrress" src="assets/image/address.png" alt="" />
-            <span class="name-address">
-              <b>VINH オフィス </b>| 4th Floor、138 Ha Huy Tap St.、Vinh City、Nghe An Province、Vietnam
-            </span>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="footer-address">
-            <img class="icon-adrress" src="assets/image/address.png" alt="" />
-            <span class="name-address">
-              <b>HA NOI 2 オフィス</b>| 7th Floor、8 Pham Hung St.、Cau Giay Dist.、Hanoi
-            </span>
-          </div>
-          <div class="footer-address">
-            <img class="icon-adrress" src="assets/image/address.png" alt="" />
-            <span class="name-address">
-              <b>SAI GON 2 オフィス</b>| 1th Floor、Phong Phu Tower、93/10 Quang Trung、Kp1、Hiep Phu
-              Ward、Thu Duc、HCMC、Vietnam
-            </span>
-          </div>
-          <div class="footer-address">
-            <img class="icon-adrress" src="assets/image/address.png" alt="" />
-            <span class="name-address">
-              <b>QUY NHON オフィス</b>| 3th Floor、307 Nguyen Thi Minh Khai St.、Quy Nhon City、Binh Dinh
-              Province、Vietnam
-            </span>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="footer-address">
-            <img class="icon-adrress" src="assets/image/address.png" alt="" />
-            <span class="name-address">
-              <b>HA NOI 3 オフィス</b>| 5th Floor、Hong Ha Tower、89 Thinh Liet、Hoang Mai、Hanoi、Vietnam
-            </span>
-          </div>
-          <div class="footer-address">
-            <img class="icon-adrress" src="assets/image/address.png" alt="" />
-            <span class="name-address">
-              <b>DA NANG オフィス</b>| 4th Floor、Ricco Building、363 Nguyen Huu Tho St.、Cam Le Dist.、Da
-              Nang、Vietnam
-            </span>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-address">
+              <img class="icon-adrress" src="assets/image/address.png" alt="" />
+              <span class="name-address">
+                <b>HA NOI 3 オフィス</b>| 5th Floor、Hong Ha Tower、89 Thinh
+                Liet、Hoang Mai、Hanoi、Vietnam
+              </span>
+            </div>
+            <div class="footer-address">
+              <img class="icon-adrress" src="assets/image/address.png" alt="" />
+              <span class="name-address">
+                <b>DA NANG オフィス</b>| 4th Floor、Ricco Building、363 Nguyen
+                Huu Tho St.、Cam Le Dist.、Da Nang、Vietnam
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <div id="modal-our-team" class="modal fade custom-modal show" tabindex="-1" aria-hidden="true"
-    style="padding-right: 15px;">
-    <div class="modal-overlay"></div>
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="member-lightbox">
-        <div class="member-img-jp">
-          <img src="assets/image/img-team/blockchain-developers-dai.jpg" alt="img-member" class="img-member">
-        </div>
-        <div class="member-info">
-          <div class="member-name ">
-            <h4 class="member-name-child-jp"></h4>
+    <div
+      id="modal-our-team"
+      class="modal fade custom-modal show"
+      tabindex="-1"
+      aria-hidden="true"
+      style="padding-right: 15px"
+    >
+      <div class="modal-overlay"></div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="member-lightbox">
+          <div class="member-img-jp">
+            <img
+              src="assets/image/img-team/blockchain-developers-dai.jpg"
+              alt="img-member"
+              class="img-member"
+            />
           </div>
-          <div class="member-job">
-            <p class="des-memmber-info-jp"></p>
-          </div>
-          <div class="desc">
-            <p class="des"></p>
-          </div>
-        </div>
-      </div>
-      <div class="member-lightbox-mobile">
-        <div class="member-moblie">
-          <div class="member-img-mobile-jp">
-            <img src="assets/image/img-team/blockchain-developers-tu.jpg" alt="img-member" class="img-member">
-          </div>
-          <div class="member-name">
-            <h4 class="member-name-child-jp-mobile"></h4>
-            <span class="name-note"></span>
+          <div class="member-info">
+            <div class="member-name">
+              <h4 class="member-name-child-jp"></h4>
+            </div>
             <div class="member-job">
-              <p class="des-memmber-info-jp-mobile"></p>
+              <p class="des-memmber-info-jp"></p>
+            </div>
+            <div class="desc">
+              <p class="des"></p>
             </div>
           </div>
         </div>
-        <div class="member-info">
-          <div class="desc">
-            <p class="desJPMobile"></p>
+        <div class="member-lightbox-mobile">
+          <div class="member-moblie">
+            <div class="member-img-mobile-jp">
+              <img
+                src="assets/image/img-team/blockchain-developers-tu.jpg"
+                alt="img-member"
+                class="img-member"
+              />
+            </div>
+            <div class="member-name">
+              <h4 class="member-name-child-jp-mobile"></h4>
+              <span class="name-note"></span>
+              <div class="member-job">
+                <p class="des-memmber-info-jp-mobile"></p>
+              </div>
+            </div>
+          </div>
+          <div class="member-info">
+            <div class="desc">
+              <p class="desJPMobile"></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
-  <script src="./assets/js/app.js"></script>
-</body>
-
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
