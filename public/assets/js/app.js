@@ -2,6 +2,8 @@ function toggleNavbarMobile() {
   const btnToggle = document.querySelector(".menu-mobile");
   const btnIcon = btnToggle.querySelector("img");
   const navList = document.querySelector(".header .nav-bar .nav-list");
+  const navItems = navList.querySelectorAll(".nav-link");
+
   btnToggle.addEventListener("click", () => {
     navList.classList.toggle("mobile");
     if (!navList.classList.contains("mobile"))
@@ -9,14 +11,27 @@ function toggleNavbarMobile() {
     if (navList.classList.contains("mobile"))
       btnIcon.src = "./assets/image/close_logo.png";
   });
+
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      navList.classList.remove("mobile");
+      btnIcon.src = "./assets/image/menu_mobile.png";
+    });
+  });
 }
 
 function ourTeamSliderControl() {
   const MOBILE_WIDTH = 992;
   setUpSlider();
+
   window.addEventListener("resize", () => {
     setUpSlider();
   });
+
+  const query = matchMedia("screen and (orientation:portrait)");
+  query.onchange = (e) => {
+    setUpSlider();
+  };
 
   function setUpSlider() {
     if (window.innerWidth <= MOBILE_WIDTH) {
@@ -59,7 +74,7 @@ function ourTeamSliderControl() {
   function unSlick() {
     setTimeout(() => {
       $(".responsive.slick-initialized")?.slick("unslick");
-    }, 0);
+    }, 100);
   }
 }
 function ourTeamModalControl() {
