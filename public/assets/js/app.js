@@ -155,78 +155,77 @@ function ourTeamSliderControl() {
 //   });
 // }
 
-function ourTeamModalControlJP() {
-  const members = [
-    {
-      name: "Dai Trinh Duc",
-      nameNote: "(ダイ チン ドゥック)",
-      label: "創業者",
-      avatar: "assets/image/img-team/blockchain-developers-dai.jpg",
-      description: `ベトナム国家大学・ソフトウェア工学専攻の卒業生。キャリアパスの初期段階からブロックチェーン技術や暗号通貨に情熱を注ぐ。ソリディティ
-            とスマートコントラクトに豊富な経験を持つ。8年以上ソフトウェア開発、特に複数の技術にまたがる企業システムの開発に携わることで、従来のビジネスモデルとブロックチェーンの隠れた可能性を見出す。ブロックチェーン技術と暗号通貨で伝統的なモデルを変革するためDefisoftを設立。`,
-    },
-    {
-      name: "Thien Dang An",
-      nameNote: "(テイエン ダン アン)",
-      label: "共同創業者",
-      avatar: "assets/image/img-team/blockchain-developers-thien.jpg",
-      description:
-        "商科大学・経営情報システムエンジニア専攻の卒業生。テイエンは、ソフトウェアエンジニアとして急速に知識・技術を蓄えた。データ分析、データベース監視、システム管理・運用の深い知識と、洗練されたソフトウェア開発の経験により、ブランチマネージャーに抜擢。ブロックチェーン技術、特にDefiとDefi関連ビジネスの開発に情熱を注ぐ。",
-    },
-    {
-      name: "Minh Luc Van",
-      nameNote: "(ミン ルック ヴァン)",
-      label: "共同創業者",
-      avatar: "assets/image/img-team/blockchain-developers-minh.jpg",
-      description:
-        "ベトナム国家大学・ソフトウェア工学専攻の卒業生。ミンは、暗号通貨をメジャーな金融システムにするべく、Defisoftの共同設立者となった。ソフトウェア開発に10年近く従事。コンピュータネットワーク、暗号、アルゴリズムとデータ構造の分野で強力なスキルを兼ね備える。特に、DEX、DeFiスマートコントラクトのセキュリティ監査に専門的な知識を持つ。",
-    },
-    {
-      name: "Tu Ma Van",
-      nameNote: "(トゥ マ ヴァン)",
-      label: "共同創業者",
-      avatar: "assets/image/img-team/blockchain-developers-tu.jpg",
-      description: `ベトナム国家大学・ソフトウェア工学専攻・タレントプログラム(Talented- Programs)の卒業生。
-            .NET
-            開発者としてキャリアをスタート。クライアントの信頼を得ながら、圧倒的な努力によりスキルを向上させ続け、今ではフルスタックエンジニアだけでなく、自動化テストのプロフェッショナルとして活躍。ブロックチェーン技術と暗号通貨の分野での
-            7 年間のキャリアの中で、ERC20、Solidity言語、ネットワーク (BSC、AVALANCHE)
-            に関する広範な知識と経験により、さまざまなプロジェクトで目覚ましい結果を残す。`,
-    },
-  ];
+// function ourTeamModalControlJP() {
+//   const members = [
+//     {
+//       name: "Dai Trinh Duc",
+//       nameNote: "(ダイ チン ドゥック)",
+//       label: "創業者",
+//       avatar: "assets/image/img-team/blockchain-developers-dai.jpg",
+//       description: `ベトナム国家大学を卒業し、ソフトウェア工学を専攻。キャリアパスの初期段階からブロックチェーン技術や暗号通貨に情熱を注ぐ。Solidity とスマートコントラクトに豊富な経験を持つ。8年以上ソフトウェア開発、特に複数の技術にまたがる企業システムの開発に携わることで、従来のビジネスモデルとブロックチェーンの隠れた可能性を見出す。ブロックチェーン技術と暗号通貨で伝統的なモデルを変革するためKrybtohubを設立。`,
+//     },
+//     {
+//       name: "Thien Dang An",
+//       nameNote: "",
+//       label: "共同創業者",
+//       avatar: "assets/image/img-team/blockchain-developers-thien.jpg",
+//       description:
+//         "経営情報システムエンジニアとしてキャリアをスタートさせたThienは、ソフトウェアエンジニアとして急速に知識・技術を蓄える。データ分析、データベース監視、システム管理・運用の深い知識と、洗練されたソフトウェア開発の経験により、ブランチマネージャーに抜擢。ブロックチェーン技術、特にDefiとDefi関連ビジネスの開発に情熱を注ぐ。 ",
+//     },
+//     {
+//       name: "Minh Luc Van",
+//       nameNote: "(ミン ルック ヴァン)",
+//       label: "共同創業者",
+//       avatar: "assets/image/img-team/blockchain-developers-minh.jpg",
+//       description:
+//         `ミンは、暗号通貨をメジャーな金融システムにするべく、クリプトハブの共同設立者となった。ベトナム国家大学ソフトウェア技術学部の卒業生。ソフトウェア開発に10年近く従事。コンピュータネットワーク、暗号、アルゴリズムとデータ構造の分野で強力なスキルを兼ね備える。特に、DEX、DeFiスマートコントラクトのセキュリティ監査に専門的な知識を持つ。`
+//     },
+//     {
+//       name: "Tu Ma Van",
+//       nameNote: "(トゥ マ ヴァン)",
+//       label: "共同創業者",
+//       avatar: "assets/image/img-team/blockchain-developers-tu.jpg",
+//       description: `ベトナム国家大学・ソフトウェア工学専攻・タレントプログラム(Talented- Programs)の卒業生。
+//             .NET
+//             開発者としてキャリアをスタート。クライアントの信頼を得ながら、圧倒的な努力によりスキルを向上させ続け、今ではフルスタックエンジニアだけでなく、自動化テストのプロフェッショナルとして活躍。ブロックチェーン技術と暗号通貨の分野での
+//             7 年間のキャリアの中で、ERC20、Solidity言語、ネットワーク (BSC、AVALANCHE)
+//             に関する広範な知識と経験により、さまざまなプロジェクトで目覚ましい結果を残す。`,
+//     },
+//   ];
 
-  const modal = document.querySelector("#modal-our-team");
-  const modalNameJP = modal.querySelector(".member-name-child-jp");
-  const modalNameJPMobile = modal.querySelector(".member-name-child-jp-mobile");
-  const modalNameNoteJP = modal.querySelector(".name-note");
-  const modalLabelJP = modal.querySelector(".des-memmber-info-jp");
-  const modalLabelJPMobile = modal.querySelector(".des-memmber-info-jp-mobile");
-  const modalAvatar = modal.querySelector(".member-img-jp img");
-  const modalAvatarJPMobile = modal.querySelector(".member-img-mobile-jp img");
-  const modalDescription = modal.querySelector(".des");
-  const modalDescriptionMobile = modal.querySelector(".desJPMobile");
+//   const modal = document.querySelector("#modal-our-team");
+//   const modalNameJP = modal.querySelector(".member-name-child-jp");
+//   const modalNameJPMobile = modal.querySelector(".member-name-child-jp-mobile");
+//   const modalNameNoteJP = modal.querySelector(".name-note");
+//   const modalLabelJP = modal.querySelector(".des-memmber-info-jp");
+//   const modalLabelJPMobile = modal.querySelector(".des-memmber-info-jp-mobile");
+//   const modalAvatar = modal.querySelector(".member-img-jp img");
+//   const modalAvatarJPMobile = modal.querySelector(".member-img-mobile-jp img");
+//   const modalDescription = modal.querySelector(".des");
+//   const modalDescriptionMobile = modal.querySelector(".desJPMobile");
 
-  const listUser = document.querySelectorAll(".our-team .slider > div");
-  const modalOverlay = document.querySelector(".modal-overlay");
+//   const listUser = document.querySelectorAll(".our-team .slider > div");
+//   const modalOverlay = document.querySelector(".modal-overlay");
 
-  // JP
-  listUser.forEach((item, index) => {
-    item.addEventListener("click", () => {
-      modalNameJP.textContent = members[index].name;
-      modalNameJPMobile.textContent = members[index].name;
-      modalNameNoteJP.textContent = members[index].nameNote;
-      modalAvatar.src = members[index].avatar;
-      modalAvatarJPMobile.src = members[index].avatar;
-      modalLabelJP.textContent = members[index].label;
-      modalLabelJPMobile.textContent = members[index].label;
-      modalDescription.textContent = members[index].description;
-      modalDescriptionMobile.textContent = members[index].description;
-      modal.style.display = "block";
-    });
-  });
-  modalOverlay.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-}
+//   // JP
+//   listUser.forEach((item, index) => {
+//     item.addEventListener("click", () => {
+//       modalNameJP.textContent = members[index].name;
+//       modalNameJPMobile.textContent = members[index].name;
+//       modalNameNoteJP.textContent = members[index].nameNote;
+//       modalAvatar.src = members[index].avatar;
+//       modalAvatarJPMobile.src = members[index].avatar;
+//       modalLabelJP.textContent = members[index].label;
+//       modalLabelJPMobile.textContent = members[index].label;
+//       modalDescription.textContent = members[index].description;
+//       modalDescriptionMobile.textContent = members[index].description;
+//       modal.style.display = "block";
+//     });
+//   });
+//   modalOverlay.addEventListener("click", () => {
+//     modal.style.display = "none";
+//   });
+// }
 
 function ourProjectControl() {
   $(function () {
