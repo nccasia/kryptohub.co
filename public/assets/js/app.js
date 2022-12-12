@@ -77,136 +77,83 @@ function ourTeamSliderControl() {
     }, 100);
   }
 }
-function ourTeamModalControl() {
-  const members = [
-    {
-      name: "Trinh Duc Dai",
-      label: "Founder",
-      avatar: "assets/image/img-team/blockchain-developers-dai.jpg",
-      description: `Graduating from Vietnam National University, majoring in
-            Software
-            Engineering, Dai became
-            a dedicated developer. He is passionate about blockchain technology and
-            cryptocurrencies
-            right from the early steps of his career path. He has solid experience
-            in
-            Solidity and
-            Smart Contract. With more than 8 years working in software development,
-            especially
-            enterprise systems running across multiple technologies, Dai realizes
-            the
-            hidden potential
-            and the border of the traditional business model. It is the reason why
-            he
-            found Krybtohub
-            to modernize and power the traditional model with blockchain technology
-            and
-            cryptocurrencies.`,
-    },
-    {
-      name: "Dang An Thien",
-      label: "Co-Founder",
-      avatar: "assets/image/img-team/blockchain-developers-thien.jpg",
-      description: `Graduating from Vietnam National University, majoring in
-            Software
-            Engineering, Dai became
-            a dedicated developer. He is passionate about blockchain technology and
-            cryptocurrencies
-            right from the early steps of his career path. He has solid experience
-            in
-            Solidity and
-            Smart Contract. With more than 8 years working in software development,
-            especially
-            enterprise systems running across multiple technologies, Dai realizes
-            the
-            hidden potential
-            and the border of the traditional business model. It is the reason why
-            he
-            found Krybtohub
-            to modernize and power the traditional model with blockchain technology
-            and
-            cryptocurrencies.`,
-    },
-    {
-      name: "Luc Van Minh",
-      label: "Co-Founder",
-      avatar: "assets/image/img-team/blockchain-developers-minh.jpg",
-      description: `Graduating from Vietnam National University, majoring in
-            Software
-            Engineering, Dai became
-            a dedicated developer. He is passionate about blockchain technology and
-            cryptocurrencies
-            right from the early steps of his career path. He has solid experience
-            in
-            Solidity and
-            Smart Contract. With more than 8 years working in software development,
-            especially
-            enterprise systems running across multiple technologies, Dai realizes
-            the
-            hidden potential
-            and the border of the traditional business model. It is the reason why
-            he
-            found Krybtohub
-            to modernize and power the traditional model with blockchain technology
-            and
-            cryptocurrencies.`,
-    },
-    {
-      name: "Ma Van Tu",
-      label: "Co-Founder",
-      avatar: "assets/image/img-team/blockchain-developers-tu.jpg",
-      description: `Graduating from Vietnam National University, majoring in
-            Software
-            Engineering, Dai became
-            a dedicated developer. He is passionate about blockchain technology and
-            cryptocurrencies
-            right from the early steps of his career path. He has solid experience
-            in
-            Solidity and
-            Smart Contract. With more than 8 years working in software development,
-            especially
-            enterprise systems running across multiple technologies, Dai realizes
-            the
-            hidden potential
-            and the border of the traditional business model. It is the reason why
-            he
-            found Krybtohub
-            to modernize and power the traditional model with blockchain technology
-            and
-            cryptocurrencies.`,
-    },
-  ];
 
-  const modal = document.querySelector("#modal-our-team");
-  const modalName = modal.querySelector(".member-name-child");
-  const modalNameMobile = modal.querySelector(".member-name-child-mobile");
-  const modalLabel = modal.querySelector(".des-memmber-info");
-  const modalLabelMobile = modal.querySelector(".des-memmber-info-mobile");
-  const modalAvatar = modal.querySelector(".member-img img");
-  const modalAvatarMobile = modal.querySelector(".member-img-mobile img");
-  const modalDescription = modal.querySelector(".des");
-  const modalDescriptionMobile = modal.querySelector(".desMobile");
+// function ourTeamModalControl() {
+//   const members = [
+//     {
+//       name: "Trinh Duc Dai",
+//       label: "Founder",
+//       avatar: "assets/image/img-team/blockchain-developers-dai.jpg",
+//       description: `Graduating from Vietnam National University, majoring in
+//             Software
+//             Engineering, Dai became
+//             a dedicated developer. He is passionate about blockchain technology and
+//             cryptocurrencies
+//             right from the early steps of his career path. He has solid experience
+//             in
+//             Solidity and
+//             Smart Contract. With more than 8 years working in software development,
+//             especially
+//             enterprise systems running across multiple technologies, Dai realizes
+//             the
+//             hidden potential
+//             and the border of the traditional business model. It is the reason why
+//             he
+//             found Krybtohub
+//             to modernize and power the traditional model with blockchain technology
+//             and
+//             cryptocurrencies.`,
+//     },
+//     {
+//       name: "Dang An Thien",
+//       label: "Co-Founder",
+//       avatar: "assets/image/img-team/blockchain-developers-thien.jpg",
+//       description: `Starting the career path as a management information system engineer after graduating from Vietnam University of Commerce, Thien also improved his knowledge and skills to become a software engineer. With a combination of deep knowledge in data analyzing, database monitoring, system managing and operating, and polished software development experience, Thien rapidly became a branch director of a software firm and IT outsourcing service company in Vietnam. Catching the wave of technology, he also has passion with blockchain technology, especially Defi and Defi related business.`,
+//     },
+//     {
+//       name: "Luc Van Minh",
+//       label: "Co-Founder",
+//       avatar: "assets/image/img-team/blockchain-developers-minh.jpg",
+//       description: `Minh was inspired to be Co-founder of Kryptohub when he saw that the cryptocurrency space deals with struggles to officially become part of the financial system. Minh is also an alumni of the Software Technology Department, Vietnam National University. He has nearly 10 years working in software development and a strong mix of skills in the areas of computer networking, cryptography, and algorithms and data structures. Especially, he gets professionalism in DEX, and DeFi Smart Contract security audit.`,
+//     },
+//     {
+//       name: "Ma Van Tu",
+//       label: "Co-Founder",
+//       avatar: "assets/image/img-team/blockchain-developers-tu.jpg",
+//       description: `Tu is also a talent Information Technology Bachelor from Vietnam National University. Although starting the journey as a .NET developer, Tu quickly realized that the client and the market need more than that. With the unlimited effort on improving capabilities and skills, Tu not only became a fullstack developer but also an expert in automation testing. During his 7-year career working in the field of  blockchain technology and cryptocurrency, he has brought remarkable results to his clients product with his intensive and extensive knowledge and experience in  ERC20, solidity language, and network (BSC, AVALANCHE).`,
+//     },
+//   ];
 
-  const listUser = document.querySelectorAll(".our-team .slider > div");
-  const modalOverlay = document.querySelector(".modal-overlay");
+//   const modal = document.querySelector("#modal-our-team");
+//   const modalName = modal.querySelector(".member-name-child");
+//   const modalNameMobile = modal.querySelector(".member-name-child-mobile");
+//   const modalLabel = modal.querySelector(".des-memmber-info");
+//   const modalLabelMobile = modal.querySelector(".des-memmber-info-mobile");
+//   const modalAvatar = modal.querySelector(".member-img img");
+//   const modalAvatarMobile = modal.querySelector(".member-img-mobile img");
+//   const modalDescription = modal.querySelector(".des");
+//   const modalDescriptionMobile = modal.querySelector(".desMobile");
 
-  listUser.forEach((item, index) => {
-    item.addEventListener("click", () => {
-      modalName.textContent = members[index].name;
-      modalNameMobile.textContent = members[index].name;
-      modalAvatar.src = members[index].avatar;
-      modalAvatarMobile.src = members[index].avatar;
-      modalLabel.textContent = members[index].label;
-      modalLabelMobile.textContent = members[index].label;
-      modalDescription.textContent = members[index].description;
-      modalDescriptionMobile.textContent = members[index].description;
-      modal.style.display = "block";
-    });
-  });
-  modalOverlay.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-}
+//   const listUser = document.querySelectorAll(".our-team .slider > div");
+//   const modalOverlay = document.querySelector(".modal-overlay");
+
+//   listUser.forEach((item, index) => {
+//     item.addEventListener("click", () => {
+//       modalName.textContent = members[index].name;
+//       modalNameMobile.textContent = members[index].name;
+//       modalAvatar.src = members[index].avatar;
+//       modalAvatarMobile.src = members[index].avatar;
+//       modalLabel.textContent = members[index].label;
+//       modalLabelMobile.textContent = members[index].label;
+//       modalDescription.textContent = members[index].description;
+//       modalDescriptionMobile.textContent = members[index].description;
+//       modal.style.display = "block";
+//     });
+//   });
+//   modalOverlay.addEventListener("click", () => {
+//     modal.style.display = "none";
+//   });
+// }
 
 function ourTeamModalControlJP() {
   const members = [
