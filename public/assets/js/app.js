@@ -361,8 +361,8 @@ function sendMail() {
 function main() {
   toggleNavbarMobile();
   ourTeamSliderControl();
-  ourTeamModalControl();
-  ourTeamModalControlJP();
+  // ourTeamModalControl();
+  // ourTeamModalControlJP();
   ourProjectControl();
   sendMail();
 }
