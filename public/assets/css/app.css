@@ -81,6 +81,10 @@ a {
     cursor: pointer;
 }
 
+.logo-menu-mobile {
+    aspect-ratio: 18/12;
+}
+
 /* BASE CSS  */
 
 .btn-view-more {
