@@ -58,6 +58,7 @@
     };                                
   </script>
   <!--End of Tawk.to Script-->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -864,6 +865,9 @@
                 <label for="Message" class="form-label">お問い合わせ内容</label>
                 <textarea name="content" id="content" cols="50" rows="5" class="form-control message"></textarea>
               </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="g-recaptcha" data-sitekey="6Leh_HsjAAAAAAmUuryWrjb6CGFzcO1EI2phyjnx"></div>
             </div>
             <button type="submit" class="btn button-contact-us">送信</button>
             <button type="button" class="btn button-contact-us loading d-none"><i class="fa fa-spinner"
