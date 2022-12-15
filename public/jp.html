@@ -867,7 +867,8 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <div class="g-recaptcha" data-sitekey="6Leh_HsjAAAAAAmUuryWrjb6CGFzcO1EI2phyjnx"></div>
+              <div class="g-recaptcha" data-sitekey="6LcZhg8UAAAAAD0tWmrTzvVDZ-HLOLCdthN0dVLU">
+              </div>
             </div>
             <button type="submit" class="btn button-contact-us">送信</button>
             <button type="button" class="btn button-contact-us loading d-none"><i class="fa fa-spinner"
@@ -1180,47 +1181,51 @@
       const content = document.getElementById('content').value;
       const gresponse = grecaptcha.getResponse();
 
-      if (fullName === '' || email === '' || phone === '' || content === '' || gresponse === "") {
-        document.getElementById("nameMiss").innerHTML = "Please fill out all required fields.";
-        return;
-      }
+      grecaptcha.ready(function () {
 
-      Array.from(formEl.elements).forEach(formElement => formElement.disabled = true);
-      const data = {
-        email: document.getElementById('email').value,
-        content: document.getElementById('content').value,
-        gresponse: gresponse
-      }
-      const btnSubmit = formEl.querySelector('button[type="submit"]');
-      const btnLoading = formEl.querySelector('button[type="button"]');
-      btnSubmit.classList.add('d-none');
-      btnLoading.classList.remove('d-none');
-
-      fetch('https://email.ncc.asia/ncc-site-api-sendmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      }).then(res => {
-        if (!res.ok) {
-          return res.text().then(text => { throw new Error(text) })
+        if (fullName === '' || email === '' || phone === '' || content === '' || gresponse === "") {
+          document.getElementById("nameMiss").innerHTML = "Please fill out all required fields.";
+          return;
         }
-        else {
-          printMess('nameSuccess', 'Thank you, your submission has been received.')
-          document.getElementById("nameMiss").remove();
+
+        Array.from(formEl.elements).forEach(formElement => formElement.disabled = true);
+        const data = {
+          email: document.getElementById('email').value,
+          content: document.getElementById('content').value,
+          gresponse: gresponse
+        }
+        const btnSubmit = formEl.querySelector('button[type="submit"]');
+        const btnLoading = formEl.querySelector('button[type="button"]');
+        btnSubmit.classList.add('d-none');
+        btnLoading.classList.remove('d-none');
+
+        fetch('https://email.ncc.asia/ncc-site-api-sendmail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        }).then(res => {
+          if (!res.ok) {
+            return res.text().then(text => { throw new Error(text) })
+          }
+          else {
+            printMess('nameSuccess', 'Thank you, your submission has been received.')
+            document.getElementById("nameMiss").remove();
+            formEl.reset();
+          }
+        }).catch(err => {
+          printMess('nameError', 'Oops, something went wrong. Please try again later.')
+        }).finally(() => {
           formEl.reset();
-        }
-      }).catch(err => {
-        printMess('nameError', 'Oops, something went wrong. Please try again later.')
-      }).finally(() => {
-        formEl.reset();
-        Array.from(formEl.elements).forEach(formElement => formElement.disabled = false);
-        btnSubmit.classList.remove('d-none');
-        btnLoading.classList.add('d-none');
-      })
+          Array.from(formEl.elements).forEach(formElement => formElement.disabled = false);
+          btnSubmit.classList.remove('d-none');
+          btnLoading.classList.add('d-none');
+        })
+      });
+    });
 
-    })
+
 
   </script>
 

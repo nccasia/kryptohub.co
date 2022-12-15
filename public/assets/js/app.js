@@ -283,10 +283,19 @@ function ourProjectControl() {
   });
 }
 
-function sendMail() {
+function sendMail(token) {
+  console.log('token=' + token);
   function printMess(elemId, message) {
     document.getElementById(elemId).innerHTML = message;
   }
+
+  // grecaptcha.ready(function () {
+  //   var config = { action: 'submit' };
+  //   grecaptcha.execute('6LcZhg8UAAAAAD0tWmrTzvVDZ-HLOLCdthN0dVLU', config)
+  //     .then(function (token) {
+  //       sendMail(token);
+  //     });
+  // });
 
   const formEl = document.querySelector(".form");
   formEl.addEventListener("submit", (event) => {
@@ -337,12 +346,12 @@ function sendMail() {
             throw new Error(text);
           });
         } else {
+          formEl.reset();
           printMess(
             "nameSuccess",
             "Thank you, your submission has been received."
           );
           document.getElementById("nameMiss").remove();
-          formEl.reset();
         }
       })
       .catch((err) => {
@@ -362,11 +371,10 @@ function sendMail() {
   });
 }
 
+
 function main() {
   toggleNavbarMobile();
   ourTeamSliderControl();
-  // ourTeamModalControl();
-  // ourTeamModalControlJP();
   ourProjectControl();
   sendMail();
 }
