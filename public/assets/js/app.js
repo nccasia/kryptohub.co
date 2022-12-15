@@ -289,14 +289,6 @@ function sendMail(token) {
     document.getElementById(elemId).innerHTML = message;
   }
 
-  // grecaptcha.ready(function () {
-  //   var config = { action: 'submit' };
-  //   grecaptcha.execute('6LcZhg8UAAAAAD0tWmrTzvVDZ-HLOLCdthN0dVLU', config)
-  //     .then(function (token) {
-  //       sendMail(token);
-  //     });
-  // });
-
   const formEl = document.querySelector(".form");
   formEl.addEventListener("submit", (event) => {
     event.preventDefault();
