@@ -316,8 +316,8 @@ function sendMail(token) {
       (formElement) => (formElement.disabled = true)
     );
     const data = {
-      email: document.getElementById("email").value,
-      content: document.getElementById("content").value,
+      email: email,
+      content: `Firstname: ${firstName}\n Lastname: ${lastName}\n Phone: ${phone}\n Message: ${content}`,
       gresponse: gresponse
     };
     const btnSubmit = formEl.querySelector('button[type="submit"]');
