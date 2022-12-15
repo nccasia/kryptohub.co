@@ -296,13 +296,15 @@ function sendMail() {
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const content = document.getElementById("content").value;
+    const gresponse = grecaptcha.getResponse();
 
     if (
       firstName === "" ||
       lastName === "" ||
       email === "" ||
       phone === "" ||
-      content === ""
+      content === "" ||
+      gresponse === ""
     ) {
       document.getElementById("nameMiss").innerHTML =
         "Please fill out all required fields.";
@@ -315,6 +317,7 @@ function sendMail() {
     const data = {
       email: document.getElementById("email").value,
       content: document.getElementById("content").value,
+      gresponse: gresponse
     };
     const btnSubmit = formEl.querySelector('button[type="submit"]');
     const btnLoading = formEl.querySelector('button[type="button"]');
@@ -339,6 +342,7 @@ function sendMail() {
             "Thank you, your submission has been received."
           );
           document.getElementById("nameMiss").remove();
+          formEl.reset();
         }
       })
       .catch((err) => {

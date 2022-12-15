@@ -126,7 +126,7 @@
     <div class="container padding-16-cus">
       <div class="row align-items-center">
         <div class="col-md-6 col-sm-12">
-          <img class="w-100" src="./assets/image/about_us.AVIF" alt="" />
+          <img class="w-100" src="./assets/image/about_us.webp" alt="" />
         </div>
         <div class="col-md-6 col-sm-12">
           <h3 class="title">弊社について</h3>
@@ -1178,8 +1178,9 @@
       const email = document.getElementById('email').value;
       const phone = document.getElementById('phone').value;
       const content = document.getElementById('content').value;
+      const gresponse = grecaptcha.getResponse();
 
-      if (fullName === '' || email === '' || phone === '' || content === '') {
+      if (fullName === '' || email === '' || phone === '' || content === '' || gresponse === "") {
         document.getElementById("nameMiss").innerHTML = "Please fill out all required fields.";
         return;
       }
@@ -1188,6 +1189,7 @@
       const data = {
         email: document.getElementById('email').value,
         content: document.getElementById('content').value,
+        gresponse: gresponse
       }
       const btnSubmit = formEl.querySelector('button[type="submit"]');
       const btnLoading = formEl.querySelector('button[type="button"]');
@@ -1207,6 +1209,7 @@
         else {
           printMess('nameSuccess', 'Thank you, your submission has been received.')
           document.getElementById("nameMiss").remove();
+          formEl.reset();
         }
       }).catch(err => {
         printMess('nameError', 'Oops, something went wrong. Please try again later.')
