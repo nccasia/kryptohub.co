@@ -718,84 +718,84 @@ span.hr_member {
 
 
 .bg-Mavia {
-    background-image: url('../image/img-bg-popup/nft-game-Mavia.webp');
+    background-image: url('../image/img-bg-popup/nft-game-Mavia.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 
 }
 
 .bg-Undead_Block {
-    background-image: url('../image/img-bg-popup/nft-game-Undead_Block.webp');
+    background-image: url('../image/img-bg-popup/nft-game-Undead_Block.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-Fortia {
-    background-image: url('../image/img-bg-popup/nft-game-Fortia.webp');
+    background-image: url('../image/img-bg-popup/nft-game-Fortia.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-Warena {
-    background-image: url('../image/img-bg-popup/nft-game-Warena.webp');
+    background-image: url('../image/img-bg-popup/nft-game-Warena.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-EpicWar {
-    background-image: url('../image/img-bg-popup/nft-game-EpicWar.webp');
+    background-image: url('../image/img-bg-popup/nft-game-EpicWar.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-MemePad {
-    background-image: url('../image/img-bg-popup/cryptocurrency-MemePad.webp');
+    background-image: url('../image/img-bg-popup/cryptocurrency-MemePad.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-TX8 {
-    background-image: url('../image/img-bg-popup/cryptocurrency-TX8.webp');
+    background-image: url('../image/img-bg-popup/cryptocurrency-TX8.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-Treelion {
-    background-image: url('../image/img-bg-popup/cryptocurrency-Treelion.webp');
+    background-image: url('../image/img-bg-popup/cryptocurrency-Treelion.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-topaz {
-    background-image: url('../image/img-bg-popup/fintech-outsourcing-topaz.webp');
+    background-image: url('../image/img-bg-popup/fintech-outsourcing-topaz.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-atlas {
-    background-image: url('../image/img-bg-popup/fintech-outsourcing-atlas.webp');
+    background-image: url('../image/img-bg-popup/fintech-outsourcing-atlas.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-midas {
-    background-image: url('../image/img-bg-popup/blockchain-insurance-midas.webp');
+    background-image: url('../image/img-bg-popup/blockchain-insurance-midas.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-sto {
-    background-image: url('../image/img-bg-popup/blockchain-insurance-sto.webp');
+    background-image: url('../image/img-bg-popup/blockchain-insurance-sto.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-themis {
-    background-image: url('../image/img-bg-popup/blockchain-education-back-themis.webp');
+    background-image: url('../image/img-bg-popup/blockchain-education-back-themis.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 
 .bg-JUCC {
-    background-image: url('../image/img-bg-popup/blockchain-education-back-JUCC.webp');
+    background-image: url('../image/img-bg-popup/blockchain-education-back-JUCC.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-nafter {
-    background-image: url('../image/img-bg-popup/token-entertainment-back-nafter.webp');
+    background-image: url('../image/img-bg-popup/token-entertainment-back-nafter.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-EventX {
-    background-image: url('../image/img-bg-popup/token-entertainment-back-EventX.webp');
+    background-image: url('../image/img-bg-popup/token-entertainment-back-EventX.jpeg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1470,6 +1470,14 @@ label.form-label {
 @media (max-width: 465px) {
     .our-services .service-card .card-title-jp {
         font-size: 14px;
+    }
+
+    .img-home-page {
+        aspect-ratio: 343/337;
+    }
+
+    .img-project-child {
+        aspect-ratio: 92/92;
     }
 }
 
