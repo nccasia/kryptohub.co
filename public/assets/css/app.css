@@ -955,10 +955,9 @@ label.form-label {
 }
 
 .footer-logo-en {
-    max-width: 144px;
-    max-height: 33px;
+    max-width: 175px;
     margin-bottom: 12px;
-    aspect-ratio: 144/33;
+    aspect-ratio: 175/41;
 }
 
 .footer .footer-description {
