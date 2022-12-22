@@ -1,1 +1,1308 @@
-:root{--white-color:#FFF;--black-color:#333;--primary-bg:linear-gradient(89.76deg,rgba(236,184,255,.08) .21%,rgba(122,97,255,.08) 99.79%)}@font-face{font-family:'Clash Grotesk';font-style:normal;src:url(../fonts/Variable/ClashGrotesk-Variable.ttf);font-display:swap;font-weight:400}html{font-family:'Clash Grotesk';font-size:62.5%;font-style:normal;color:#282828}html,body{overflow-x:hidden}body,html{width:100%}img{height:100%;aspect-ratio:attr(width) / attr(height)}li{list-style:none}a{text-decoration:none}.project-item-game{display:none}.project-item-investment{display:none}.project-item-finance{display:none}.project-item-insurance{display:none}.project-item-education{display:none}.project-item-entertainment{display:none}.hide{display:none}.modal-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:.7;cursor:pointer}.logo-menu-mobile{aspect-ratio:18/12}.btn-view-more{background:linear-gradient(90deg,#A192F3 0%,#8877E1 100%);border-radius:8px;padding:12px 20px;border:none;outline:none;font-weight:500;font-size:18px;line-height:22px;letter-spacing:.4px;color:#FFF}.btn-view-more:hover{background:#A192F3}.btn-view-more:active{background:#6C5DB8}.heading{font-weight:600;font-size:5.2rem;line-height:64px}.hero-title{font-weight:600;font-size:6.8rem;line-height:110%;color:#A192F3}.hero-description{font-weight:400;font-size:6rem;line-height:110%;color:var(--black-color)}.btn-primary{text-align:center;background:#8877E1;border-radius:8px;border:none;padding:12px 20px;line-height:22px;font-weight:500;font-size:1.8rem;color:var(--white-color)}.title{font-weight:600;font-size:5.2rem;line-height:64px;color:var(--black-color);margin-bottom:24px}.description{font-weight:400;font-size:2rem;line-height:140%;color:var(--black-color)}.text-white{color:var(--white-color)}.header{position:fixed;z-index:99;top:0;height:7.2rem;width:100%;background:var(--white-color);box-shadow:0 4px 15px rgb(108 93 184 / 20%)}.name-bold{color:#A192F3;font-weight:600}.header .nav-bar .nav-list{display:flex;margin-bottom:0}.header .nav-bar{display:flex}.header .nav-bar .menu-mobile{display:none}.menu-mobile{max-width:18px;max-height:12px;cursor:pointer;display:block}.sidepanel{width:0;position:fixed;z-index:1;height:250px;top:0;left:0;background-color:#111;overflow-x:hidden;transition:0.5s;padding-top:60px}.sidepanel a{padding:8px 8px 8px 32px;text-decoration:none;font-size:25px;color:#818181;display:block;transition:0.3s}.sidepanel a:hover{color:#f1f1f1}.sidepanel .closebtn{position:absolute;top:0;right:25px;font-size:36px}.openbtn:active{box-shadow:0 4px 15px rgba(108,93,184,.2)}.header .nav-bar .nav-list .nav-item .nav-link{font-family:'Clash Grotesk';font-weight:600;font-size:1.6rem;line-height:20px;color:var(--black-color);text-transform:capitalize;padding:0 25px}.header .nav-bar .nav-list .nav-item .nav-link:hover{color:#A192F3}.header .nav-bar .nav-list .nav-item .nav-link:active{color:#6C5DB8}.home{margin-top:71px;min-height:76vh;background:var(--primary-bg)}.home-content{display:flex;flex-direction:column;align-items:flex-start;padding:0;gap:28px}.our-services{background:#1A1328;border-radius:40px}.our-services .heading{padding-top:96px;padding-bottom:40px}.our-services .service-card{text-align:center;padding:24px;margin-bottom:35px;min-height:465px;border-radius:16px;color:var(--white-color);background:linear-gradient(0deg,#181126 0%,#454C5C 100%);border:1px solid rgba(255,255,255,.2);cursor:pointer}.our-services .service-card-jp{height:525px}.our-services .service-card:hover{background:linear-gradient(0deg,#181126 0%,#625374 100%)}.our-services .service-card .service-img{width:68px;display:inline-block;margin-bottom:30px;background:radial-gradient(50% 50% at 50% 50%,rgba(236,184,255,.8) 0%,rgba(161,146,243,0) 100%);border-radius:111px}.our-services .service-card .card-title{font-weight:500;font-size:28px;line-height:34px;text-align:center;color:#FFF;padding-bottom:8px}.our-services .service-card .card-description{font-weight:400;font-size:16px;line-height:140%;text-align:center;color:#CCC}.our-team .heading{color:var(--black-color);padding-top:96px;padding-bottom:40px;text-align:start}.our-team .team-card{text-align:center;border:3px solid #8877E1;border-radius:20px;padding:10px}.our-team .team-card:hover{box-shadow:0 4px 21px rgba(161,146,243,.8);cursor:pointer}.our-team .team-card:active{background:#E2DCFF;box-shadow:0 4px 21px rgba(161,146,243,.8)}.our-team .team-card .team-card-title{font-weight:600;font-size:28px;line-height:34px;color:#6C5DB8;margin-top:16px}.our-team .team-card .team-card-label{font-weight:400;font-size:20px;line-height:140%;color:var(--black-color)}.img-member{border-radius:8px;aspect-ratio:289/315}.member-lightbox{display:flex;flex-direction:row;justify-content:center;align-items:flex-start;padding:80px;gap:32px;position:absolute;background:#FFF;border-radius:16px}.bg-dai{background-image:url(../image/img-bg-popup/nft-game-Mavia.webp)}.member-img{background-size:cover;background:no-repeat url(../image/img-team/blockchain-developers-minh.jpg);border-radius:16px;background:linear-gradient(180deg,#ECB8FF -4.19%,#A192F3 53.64%,#8877E1 100%);border-radius:24.5703px;padding:14.7422px;width:100%;height:100%}.member-img-jp{background-size:cover;background:no-repeat url(../image/img-team/blockchain-developers-minh.jpg);border-radius:16px;background:linear-gradient(180deg,#ECB8FF -4.19%,#A192F3 53.64%,#8877E1 100%);border-radius:24.5703px;padding:14.7422px;width:100%;height:100%}.member-info{display:flex;flex-direction:column;align-items:flex-start;padding:12px 0 0}.modal-dialog{max-width:1200px!important;margin:1.75rem auto}h4.member-name-child{font-weight:600;font-size:36px;line-height:44px;text-align:center;color:#6C5DB8}h4.member-name-child-mobile{font-weight:600;font-size:36px;line-height:44px;text-align:center;color:#6C5DB8}h4.member-name-child-jp{font-weight:600;font-size:36px;line-height:44px;text-align:center;color:#6C5DB8}h4.member-name-child-jp-mobile{font-weight:600;font-size:36px;line-height:44px;text-align:center;color:#6C5DB8}span.name-note{font-weight:500;font-size:16px;line-height:140%;color:#344054;display:inline-block;margin-bottom:5px}.member-job{font-weight:600;font-size:28px;line-height:34px;text-align:center;color:#333}span.hr_member{max-width:718.82px;max-height:2px;background:linear-gradient(90deg,#A192F3 0%,#8877E1 100%)}.member-lightbox-mobile{display:none}.desc>.des{font-weight:400;font-size:20px;line-height:140%;color:#333;text-align:start}.img-service{aspect-ratio:150/145}.our-project{color:var(--black-color);padding-top:96px;padding-bottom:40px}.our-project .heading{font-weight:600;font-size:52px;line-height:64px;color:#333;padding-top:96px;padding-bottom:40px;text-align:center}.block-project{display:flex;flex-direction:row;align-items:center;padding:32px 40px;background:#F5F2FF;border-radius:16px;margin-bottom:40px}.project-item{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:12px 0;margin:10px 0;gap:10px;background:#fff;border:2px solid #A192F3;border-radius:12px;cursor:pointer}.project-item:hover{background:#F5F2FF}.project-item-active{background:#E2DCFF}.project-item-investment-logo{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:12px 0;margin:10px 0;gap:10px;background:#fff;border:2px solid #A192F3;border-radius:12px;cursor:pointer}.project-item-investment-logo:hover{background:#F5F2FF}.project-item-investment-active{background:#E2DCFF}.project-item-finance-logo{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:12px 0;margin:10px 0;gap:10px;background:#fff;border:2px solid #A192F3;border-radius:12px;cursor:pointer}.project-item-finance-logo:hover{background:#F5F2FF}.project-item-finance-active{background:#E2DCFF}.project-item-insurance-logo{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:12px 0;margin:10px 0;gap:10px;background:#fff;border:2px solid #A192F3;border-radius:12px;cursor:pointer}.project-item-insurance-logo:hover{background:#F5F2FF}.project-item-insurance-active{background:#E2DCFF}.project-item-education-logo{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:12px 0;margin:10px 0;gap:10px;background:#fff;border:2px solid #A192F3;border-radius:12px;cursor:pointer}.project-item-education-logo:hover{background:#F5F2FF}.project-item-education-active{background:#E2DCFF}.project-item-entertaiment-logo{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:12px 0;margin:10px 0;gap:10px;background:#fff;border:2px solid #A192F3;border-radius:12px;cursor:pointer}.project-item-entertaiment-logo:hover{background:#F5F2FF}.project-item-entertainment-active{background:#E2DCFF}.right-content-project{background-size:cover;background-repeat:no-repeat;background-position:center;height:428px;border-radius:16px}.content-item-project{display:flex;flex-direction:column;align-items:flex-start;padding:26px}.title-project{font-weight:600;font-size:28px;line-height:34px;color:#FFF}.des-project{font-weight:400;font-size:16px;line-height:140%;color:#FFF}.tech-project{font-size:16px;line-height:140%;color:#FFF}.link-name{font-weight:600;font-size:16px;line-height:140%;text-decoration-line:underline;color:#ECB8FF;word-break:break-all}.bg-Mavia{background-image:url(../image/img-bg-popup/nft-game-Mavia.jpeg);background-color:rgba(0,0,0,.5)}.bg-Undead_Block{background-image:url(../image/img-bg-popup/nft-game-Undead_Block.jpeg);background-color:rgba(0,0,0,.5)}.bg-Fortia{background-image:url(../image/img-bg-popup/nft-game-Fortia.jpeg);background-color:rgba(0,0,0,.5)}.bg-Warena{background-image:url(../image/img-bg-popup/nft-game-Warena.jpeg);background-color:rgba(0,0,0,.5)}.bg-EpicWar{background-image:url(../image/img-bg-popup/nft-game-EpicWar.jpeg);background-color:rgba(0,0,0,.5)}.bg-MemePad{background-image:url(../image/img-bg-popup/cryptocurrency-MemePad.jpeg);background-color:rgba(0,0,0,.5)}.bg-TX8{background-image:url(../image/img-bg-popup/cryptocurrency-TX8.jpeg);background-color:rgba(0,0,0,.5)}.bg-Treelion{background-image:url(../image/img-bg-popup/cryptocurrency-Treelion.jpeg);background-color:rgba(0,0,0,.5)}.bg-topaz{background-image:url(../image/img-bg-popup/fintech-outsourcing-topaz.jpeg);background-color:rgba(0,0,0,.5)}.bg-atlas{background-image:url(../image/img-bg-popup/fintech-outsourcing-atlas.jpeg);background-color:rgba(0,0,0,.5)}.bg-midas{background-image:url(../image/img-bg-popup/blockchain-insurance-midas.jpeg);background-color:rgba(0,0,0,.5)}.bg-sto{background-image:url(../image/img-bg-popup/blockchain-insurance-sto.jpeg);background-color:rgba(0,0,0,.5)}.bg-themis{background-image:url(../image/img-bg-popup/blockchain-education-back-themis.jpeg);background-color:rgba(0,0,0,.5)}.bg-JUCC{background-image:url(../image/img-bg-popup/blockchain-education-back-JUCC.jpeg);background-color:rgba(0,0,0,.5)}.bg-nafter{background-image:url(../image/img-bg-popup/token-entertainment-back-nafter.jpeg);background-color:rgba(0,0,0,.5)}.bg-EventX{background-image:url(../image/img-bg-popup/token-entertainment-back-EventX.jpeg);background-color:rgba(0,0,0,.5)}.img-project{max-width:120px}.title-project-item{display:flex;flex-direction:row;align-items:center;padding:0;gap:12px}.project-icon{max-width:12%}.name-title-project{font-weight:600;font-size:52px;line-height:64px;text-align:center;color:#6C5DB8}.contact-us{color:var(--black-color);padding:80px 10px}.contact-us .heading{font-weight:600;font-size:52px;line-height:64px;text-align:center;color:#101828}.title-contact-us{display:flex;flex-direction:column;align-items:center;padding-bottom:40px;gap:12px}.support-text{font-weight:400;font-size:20px;line-height:140%;text-align:center;color:#667085}.image-contact-us{background-size:cover;background-repeat:no-repeat;background-position:center;background:linear-gradient(89.76deg,rgba(236,184,255,.2) .21%,rgba(122,97,255,.2) 99.79%);box-shadow:0 4px 26px rgba(0,0,0,.18);border-radius:32px;border:3px solid #6C5DB8}.head{display:flex;flex-direction:column;padding:0;gap:6px}.input-field{padding-bottom:20px}label.form-label{font-weight:600;font-size:16px;line-height:140%;color:#344054}.input-value{padding:12px 16px;gap:8px;min-height:48px;background:#FFF;border:1px solid #D0D5DD;box-shadow:0 1px 2px rgb(16 24 40 / 5%);border-radius:8px!important;font-size:16px!important;line-height:24px}.message{padding:10px 14px;gap:8px;min-height:126px;background:#FFF;border:1px solid #D0D5DD;box-shadow:0 1px 2px rgba(16,24,40,.05);border-radius:8px;font-weight:400;font-size:16px;line-height:24px;color:#667085}.button-contact-us{padding:13px 20px;display:flex;justify-content:center;background:#8877E1;border-radius:8px;font-weight:500;line-height:22px;letter-spacing:.4px;border:none;color:#fff;font-size:16px}.btn-contact{color:#FFFFFF!important;font-size:18px!important;border:none;background:none}.button-contact-us:hover{color:#FFF;background:#A192F3}.button-contact-us{margin-top:35px}.footer{background:#6C5DB8;padding:60px 84px;margin-top:60px}.footer-logo{max-width:144px;max-height:48px;margin-bottom:12px;aspect-ratio:144/48}.footer-logo-en{max-width:175px;margin-bottom:12px;aspect-ratio:175/41}.footer .footer-description{font-weight:400;font-size:1.6rem;line-height:140%;color:var(--white-color);margin-bottom:20px}.footer .footer-contact{font-weight:400;font-size:1.6rem;line-height:140%;color:var(--white-color);margin-bottom:16px;display:flex;flex-direction:row;align-items:center;padding:0;gap:8px}.footer .footer-address{font-size:1.4rem;color:var(--white-color);margin-bottom:24px;display:flex;flex-direction:row;align-items:flex-start;padding:0;gap:8px}.icon-phone{min-width:16px;height:16px;aspect-ratio:16/16}.icon-email{min-width:20px;height:13px;aspect-ratio:20/13}.icon-adrress{width:10.89px;height:14px;left:2px;top:2px}.name-phone{font-weight:400;font-size:16px;line-height:140%;color:#FFF}.name-address{font-size:16px;line-height:140%;color:#FFF}.member-moblie{display:flex}.member-img-mobile{padding:4px;background:linear-gradient(180deg,#ECB8FF -4.19%,#A192F3 53.64%,#8877E1 100%);border-radius:8px}.member-img-mobile-jp{padding:4px;background:linear-gradient(180deg,#ECB8FF -4.19%,#A192F3 53.64%,#8877E1 100%);border-radius:8px}.member-moblie{display:flex;flex-direction:row;justify-content:flex-start;gap:10px}.header .nav-bar .menu-mobile{display:none}.service-flex{display:flex;gap:10px}.block-project{display:flex}.project-logo{order:2}.project-image{order:1}.title-project-item-mobile{display:flex;flex-direction:row;align-items:center;padding:0;gap:12px}.title-project-item{display:none}.footer-flex{display:flex;justify-content:space-between}.project-image{padding-top:0}.our-vision{padding:40px 0}.form-about-us{padding-top:40px}.error{color:red;font-size:16px}.success{color:green;font-size:16px}.img-project-child{aspect-ratio:120/120}.img-home-page{aspect-ratio:645/634}.img-our-mission{aspect-ratio:645/645}.logo-kryptohub{aspect-ratio:139/40}@media (max-width:1200px){.des-project{font-size:15px}.tech-project{font-size:15px}.link-name{font-size:15px}}@media (max-width:992px){.header .nav-bar .menu-mobile{display:block}.header .nav-bar .nav-list{display:none}.header .nav-bar .mobile{display:flex;width:100%;height:355px;flex-direction:column;position:fixed;left:0;top:72px;background-color:var(--white-color);padding:0 16px;padding-top:32px;box-shadow:0 0 7px 0 rgb(108 93 184 / 20%);}.header .nav-bar .mobile1{display:none}.header .nav-bar .nav-list.mobile .nav-item .nav-link{font-weight:600;font-size:20px;line-height:25px;color:#333;padding:0;margin-bottom:24px}.header .nav-bar .nav-list.mobile .nav-item .nav-link:active{background:#F5F2FF;padding:12px 16px}.member-lightbox-mobile{display:flex;flex-direction:column;padding:16px 16px 24px;gap:12px;background:#FFF;border-radius:16px;width:100%;margin:0 10px}.member-lightbox{display:none}.modal-dialog{width:100%!important}.custom-modal{padding-right:0!important;overflow-y:clip}.modal-dialog-centered{width:100%}.member-img-mobile{max-width:100%;width:25%}.member-img-mobile-jp{max-width:100%;width:25%}.member-img-mobile-jp>img{width:100%;height:100%}.member-img-mobile>img{width:100%;height:100%}.member-job{text-align:start}.member-name>h3{font-size:20px}.member-job>p{font-size:16px}.member-info{width:100%}.member-info>.desc>.des{font-size:14px;margin-bottom:0}.member-info>.desc>.desMobile{font-size:14px;margin-bottom:0}.member-info>.desc>.desJPMobile{font-size:14px;margin-bottom:0}body{width:100%}.title-home{width:100%}.title-home>h2{font-size:52px}.title-home>p{font-size:32px}.home-content{gap:16px}.flex-reverse{flex-direction:column-reverse;padding-bottom:40px}.padding-16-cus{padding-left:16px!important;padding-right:16px!important}.about-us{padding-top:40px}.title{margin-top:24px;margin-bottom:12px;font-size:36px;line-height:44px;font-weight:600}.description{font-weight:500;font-size:16px;line-height:140%}.footer{padding:40px 16px}.block-project{padding:12px}.our-services .service-card{min-height:550px}.our-team .team-card{margin-right:16px}.content-item-project{padding:16px}.des-project{font-size:13px}.tech-project{font-size:14px}.link-name{font-size:14px}.name-title-project{font-size:28px}.contact-us{color:var(--black-color);padding:40px 16px}.home{min-height:0vh}.our-services .service-card .card-title{font-size:20px}.our-services .service-card .card-description{font-size:14px}.our-team .heading{padding:40px 0}.heading{font-size:3.6rem}.our-mission{padding:40px 0}.our-services .heading{padding-top:40px}.our-project{padding-top:40px;padding-bottom:0}.our-project .heading{font-size:36px;padding-top:0;padding-bottom:0}.contact-us .heading{text-align:start;font-size:36px}.support-text{font-size:16px;text-align:start;color:#333}.title-contact-us{align-items:start;gap:0}.head{padding-bottom:16px}.input-field{padding-bottom:2px}.footer{margin-top:10px}.our-project .heading{text-align:start}h4.member-name-child{font-weight:600;font-size:20px;line-height:25px;text-align:start}h4.member-name-child-mobile{font-weight:600;font-size:20px;line-height:25px;text-align:start}h4.member-name-child-jp-mobile{font-weight:600;font-size:20px;line-height:25px;text-align:start}}@media (max-width:767px){.our-services .service-card{min-height:auto}.our-services .service-card-jp{height:auto}}@media (max-width:1199.98px){.our-services .service-card .card-title{font-size:19px;line-height:65px}}@media (max-width:465px){.our-services .service-card .card-title-jp{font-size:14px}.img-home-page{aspect-ratio:343/337}.img-project-child{aspect-ratio:92/92}}@media (max-width:376px){.our-services .service-card .card-title-jp{font-size:12px;line-height:65px}}@media (max-width:350px){.our-services .service-card .card-title{font-size:16px}}.member-info{border-top:2px solid #A192F3}@media (min-width:768px){.img-member{border-radius:20px}.member-info{border-top:none}.desc{padding-top:19px;border-top:2px solid #A192F3}.service-flex{display:inline}.our-services .service-card .service-img{min-width:150px;margin:20px}.our-services .service-card{padding:24px}.project-icon{min-width:15%}.two-icon{padding-bottom:160px}.title-project-item{display:flex;flex-direction:row;align-items:center;padding:0;gap:12px}.title-project-item-mobile{display:none}.project-logo{order:1}.project-image{order:2}.form-about-us{padding-top:0;padding-left:48px}.footer-flex{display:block}.project-image{padding-top:40px}.our-team .heading{text-align:center}.button-contact-us{margin-top:45px}}@media (min-width:1200px){.content-item-project{display:flex;flex-direction:column;align-items:flex-start;padding:50px 30px}}
+:root {
+  --white-color: #fff;
+  --black-color: #333;
+  --primary-bg: linear-gradient(
+    89.76deg,
+    rgba(236, 184, 255, 0.08) 0.21%,
+    rgba(122, 97, 255, 0.08) 99.79%
+  );
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  src: url(../fonts/Variable/ClashGrotesk-Variable.ttf);
+  font-display: swap;
+  font-weight: 400;
+}
+html {
+  font-family: "Clash Grotesk";
+  font-size: 62.5%;
+  font-style: normal;
+  color: #282828;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body,
+html {
+  width: 100%;
+}
+img {
+  height: 100%;
+  aspect-ratio: attr(width) / attr(height);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.project-item-game {
+  display: none;
+}
+.project-item-investment {
+  display: none;
+}
+.project-item-finance {
+  display: none;
+}
+.project-item-insurance {
+  display: none;
+}
+.project-item-education {
+  display: none;
+}
+.project-item-entertainment {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.logo-menu-mobile {
+  aspect-ratio: 18/12;
+}
+.btn-view-more {
+  background: linear-gradient(90deg, #a192f3 0%, #8877e1 100%);
+  border-radius: 8px;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: #fff;
+}
+.btn-view-more:hover {
+  background: #a192f3;
+}
+.btn-view-more:active {
+  background: #6c5db8;
+}
+.heading {
+  font-weight: 600;
+  font-size: 5.2rem;
+  line-height: 64px;
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 6.8rem;
+  line-height: 110%;
+  color: #a192f3;
+}
+.hero-description {
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 110%;
+  color: var(--black-color);
+}
+.btn-primary {
+  text-align: center;
+  background: #8877e1;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 20px;
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--white-color);
+}
+.title {
+  font-weight: 600;
+  font-size: 5.2rem;
+  line-height: 64px;
+  color: var(--black-color);
+  margin-bottom: 24px;
+}
+.description {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 140%;
+  color: var(--black-color);
+}
+.text-white {
+  color: var(--white-color);
+}
+.header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  height: 7.2rem;
+  width: 100%;
+  background: var(--white-color);
+  box-shadow: 0 4px 15px rgb(108 93 184 / 20%);
+}
+.name-bold {
+  color: #a192f3;
+  font-weight: 600;
+}
+.header .nav-bar .nav-list {
+  display: flex;
+  margin-bottom: 0;
+}
+.header .nav-bar {
+  display: flex;
+}
+.header .nav-bar .menu-mobile {
+  display: none;
+}
+.menu-mobile {
+  max-width: 18px;
+  max-height: 12px;
+  cursor: pointer;
+  display: block;
+}
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+.openbtn:active {
+  box-shadow: 0 4px 15px rgba(108, 93, 184, 0.2);
+}
+.header .nav-bar .nav-list .nav-item .nav-link {
+  font-family: "Clash Grotesk";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: var(--black-color);
+  text-transform: capitalize;
+  padding: 0 25px;
+}
+.header .nav-bar .nav-list .nav-item .nav-link:hover {
+  color: #a192f3;
+}
+.header .nav-bar .nav-list .nav-item .nav-link:active {
+  color: #6c5db8;
+}
+.home {
+  margin-top: 71px;
+  min-height: 76vh;
+  background: var(--primary-bg);
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 28px;
+}
+.our-services {
+  background: #1a1328;
+  border-radius: 40px;
+}
+.our-services .heading {
+  padding-top: 96px;
+  padding-bottom: 40px;
+}
+.our-services .service-card {
+  text-align: center;
+  padding: 24px;
+  margin-bottom: 35px;
+  min-height: 465px;
+  border-radius: 16px;
+  color: var(--white-color);
+  background: linear-gradient(0deg, #181126 0%, #454c5c 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.our-services .service-card-jp {
+  height: 525px;
+}
+.our-services .service-card:hover {
+  background: linear-gradient(0deg, #181126 0%, #625374 100%);
+}
+.our-services .service-card .service-img {
+  width: 68px;
+  display: inline-block;
+  margin-bottom: 30px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(236, 184, 255, 0.8) 0%,
+    rgba(161, 146, 243, 0) 100%
+  );
+  border-radius: 111px;
+}
+.our-services .service-card .card-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 8px;
+}
+.our-services .service-card .card-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ccc;
+}
+.our-team .heading {
+  color: var(--black-color);
+  padding-top: 96px;
+  padding-bottom: 40px;
+  text-align: start;
+}
+.our-team .team-card {
+  text-align: center;
+  border: 3px solid #8877e1;
+  border-radius: 20px;
+  padding: 10px;
+}
+.our-team .team-card:hover {
+  box-shadow: 0 4px 21px rgba(161, 146, 243, 0.8);
+  cursor: pointer;
+}
+.our-team .team-card:active {
+  background: #e2dcff;
+  box-shadow: 0 4px 21px rgba(161, 146, 243, 0.8);
+}
+.our-team .team-card .team-card-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #6c5db8;
+  margin-top: 16px;
+}
+.our-team .team-card .team-card-label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black-color);
+}
+.img-member {
+  border-radius: 8px;
+  aspect-ratio: 289/315;
+}
+.member-lightbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px;
+  gap: 32px;
+  position: absolute;
+  background: #fff;
+  border-radius: 16px;
+}
+.bg-dai {
+  background-image: url(../image/img-bg-popup/nft-game-Mavia.webp);
+}
+.member-img {
+  background-size: cover;
+  background: no-repeat url(../image/img-team/blockchain-developers-minh.jpg);
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    #ecb8ff -4.19%,
+    #a192f3 53.64%,
+    #8877e1 100%
+  );
+  border-radius: 24.5703px;
+  padding: 14.7422px;
+  width: 100%;
+  height: 100%;
+}
+.member-img-jp {
+  background-size: cover;
+  background: no-repeat url(../image/img-team/blockchain-developers-minh.jpg);
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    #ecb8ff -4.19%,
+    #a192f3 53.64%,
+    #8877e1 100%
+  );
+  border-radius: 24.5703px;
+  padding: 14.7422px;
+  width: 100%;
+  height: 100%;
+}
+.member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 0 0;
+}
+.modal-dialog {
+  max-width: 1200px !important;
+  margin: 1.75rem auto;
+}
+h4.member-name-child {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #6c5db8;
+}
+h4.member-name-child-mobile {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #6c5db8;
+}
+h4.member-name-child-jp {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #6c5db8;
+}
+h4.member-name-child-jp-mobile {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #6c5db8;
+}
+span.name-note {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #344054;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.member-job {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #333;
+}
+span.hr_member {
+  max-width: 718.82px;
+  max-height: 2px;
+  background: linear-gradient(90deg, #a192f3 0%, #8877e1 100%);
+}
+.member-lightbox-mobile {
+  display: none;
+}
+.desc > .des {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #333;
+  text-align: start;
+}
+.img-service {
+  aspect-ratio: 150/145;
+}
+.our-project {
+  color: var(--black-color);
+  padding-top: 96px;
+  padding-bottom: 40px;
+}
+.our-project .heading {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  color: #333;
+  padding-top: 96px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.block-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32px 40px;
+  background: #f5f2ff;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+.project-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  margin: 10px 0;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #a192f3;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.project-item:hover {
+  background: #f5f2ff;
+}
+.project-item-active {
+  background: #e2dcff;
+}
+.project-item-investment-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  margin: 10px 0;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #a192f3;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.project-item-investment-logo:hover {
+  background: #f5f2ff;
+}
+.project-item-investment-active {
+  background: #e2dcff;
+}
+.project-item-finance-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  margin: 10px 0;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #a192f3;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.project-item-finance-logo:hover {
+  background: #f5f2ff;
+}
+.project-item-finance-active {
+  background: #e2dcff;
+}
+.project-item-insurance-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  margin: 10px 0;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #a192f3;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.project-item-insurance-logo:hover {
+  background: #f5f2ff;
+}
+.project-item-insurance-active {
+  background: #e2dcff;
+}
+.project-item-education-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  margin: 10px 0;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #a192f3;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.project-item-education-logo:hover {
+  background: #f5f2ff;
+}
+.project-item-education-active {
+  background: #e2dcff;
+}
+.project-item-entertaiment-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  margin: 10px 0;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #a192f3;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.project-item-entertaiment-logo:hover {
+  background: #f5f2ff;
+}
+.project-item-entertainment-active {
+  background: #e2dcff;
+}
+.right-content-project {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 428px;
+  border-radius: 16px;
+}
+.content-item-project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 26px;
+}
+.title-project {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #fff;
+}
+.des-project {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.tech-project {
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.link-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #ecb8ff;
+  word-break: break-all;
+}
+.bg-Mavia {
+  background-image: url(../image/img-bg-popup/nft-game-Mavia.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-Undead_Block {
+  background-image: url(../image/img-bg-popup/nft-game-Undead_Block.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-Fortia {
+  background-image: url(../image/img-bg-popup/nft-game-Fortia.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-Warena {
+  background-image: url(../image/img-bg-popup/nft-game-Warena.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-EpicWar {
+  background-image: url(../image/img-bg-popup/nft-game-EpicWar.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-MemePad {
+  background-image: url(../image/img-bg-popup/cryptocurrency-MemePad.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-TX8 {
+  background-image: url(../image/img-bg-popup/cryptocurrency-TX8.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-Treelion {
+  background-image: url(../image/img-bg-popup/cryptocurrency-Treelion.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-topaz {
+  background-image: url(../image/img-bg-popup/fintech-outsourcing-topaz.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-atlas {
+  background-image: url(../image/img-bg-popup/fintech-outsourcing-atlas.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-midas {
+  background-image: url(../image/img-bg-popup/blockchain-insurance-midas.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-sto {
+  background-image: url(../image/img-bg-popup/blockchain-insurance-sto.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-themis {
+  background-image: url(../image/img-bg-popup/blockchain-education-back-themis.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-JUCC {
+  background-image: url(../image/img-bg-popup/blockchain-education-back-JUCC.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-nafter {
+  background-image: url(../image/img-bg-popup/token-entertainment-back-nafter.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-EventX {
+  background-image: url(../image/img-bg-popup/token-entertainment-back-EventX.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.img-project {
+  max-width: 120px;
+}
+.title-project-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+}
+.project-icon {
+  max-width: 12%;
+}
+.name-title-project {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  text-align: center;
+  color: #6c5db8;
+}
+.contact-us {
+  color: var(--black-color);
+  padding: 80px 10px;
+}
+.contact-us .heading {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  text-align: center;
+  color: #101828;
+}
+.title-contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  gap: 12px;
+}
+.support-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #667085;
+}
+.image-contact-us {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(
+    89.76deg,
+    rgba(236, 184, 255, 0.2) 0.21%,
+    rgba(122, 97, 255, 0.2) 99.79%
+  );
+  box-shadow: 0 4px 26px rgba(0, 0, 0, 0.18);
+  border-radius: 32px;
+  border: 3px solid #6c5db8;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 6px;
+}
+.input-field {
+  padding-bottom: 20px;
+}
+label.form-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #344054;
+}
+.input-value {
+  padding: 12px 16px;
+  gap: 8px;
+  min-height: 48px;
+  background: #fff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0 1px 2px rgb(16 24 40 / 5%);
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  line-height: 24px;
+}
+.message {
+  padding: 10px 14px;
+  gap: 8px;
+  min-height: 126px;
+  background: #fff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+.button-contact-us {
+  padding: 13px 20px;
+  display: flex;
+  justify-content: center;
+  background: #8877e1;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+.btn-contact {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  border: none;
+  background: none;
+}
+.button-contact-us:hover {
+  color: #fff;
+  background: #a192f3;
+}
+.button-contact-us {
+  margin-top: 35px;
+}
+.footer {
+  background: #6c5db8;
+  padding: 60px 84px;
+  margin-top: 60px;
+}
+.footer-logo {
+  max-width: 144px;
+  max-height: 48px;
+  margin-bottom: 12px;
+  aspect-ratio: 144/48;
+}
+.footer-logo-en {
+  max-width: 175px;
+  margin-bottom: 12px;
+  aspect-ratio: 175/41;
+}
+.footer .footer-description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.footer .footer-contact {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: var(--white-color);
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+}
+.footer .footer-address {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 8px;
+}
+.icon-phone {
+  min-width: 16px;
+  height: 16px;
+  aspect-ratio: 16/16;
+}
+.icon-email {
+  max-width: 20px;
+  height: 13px;
+  aspect-ratio: 20/13;
+}
+.icon-adrress {
+  width: 10.89px;
+  height: 14px;
+  left: 2px;
+  top: 2px;
+}
+.name-phone {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.name-address {
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.member-moblie {
+  display: flex;
+}
+.member-img-mobile {
+  padding: 4px;
+  background: linear-gradient(
+    180deg,
+    #ecb8ff -4.19%,
+    #a192f3 53.64%,
+    #8877e1 100%
+  );
+  border-radius: 8px;
+}
+.member-img-mobile-jp {
+  padding: 4px;
+  background: linear-gradient(
+    180deg,
+    #ecb8ff -4.19%,
+    #a192f3 53.64%,
+    #8877e1 100%
+  );
+  border-radius: 8px;
+}
+.member-moblie {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.header .nav-bar .menu-mobile {
+  display: none;
+}
+.service-flex {
+  display: flex;
+  gap: 10px;
+}
+.block-project {
+  display: flex;
+}
+.project-logo {
+  order: 2;
+}
+.project-image {
+  order: 1;
+}
+.title-project-item-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+}
+.title-project-item {
+  display: none;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.project-image {
+  padding-top: 0;
+}
+.our-vision {
+  padding: 40px 0;
+}
+.form-about-us {
+  padding-top: 40px;
+}
+.error {
+  color: red;
+  font-size: 16px;
+}
+.success {
+  color: green;
+  font-size: 16px;
+}
+.img-project-child {
+  aspect-ratio: 120/120;
+}
+.img-home-page {
+  aspect-ratio: 645/634;
+}
+.img-our-mission {
+  aspect-ratio: 645/645;
+}
+.logo-kryptohub {
+  aspect-ratio: 139/40;
+}
+@media (max-width: 1200px) {
+  .des-project {
+    font-size: 15px;
+  }
+  .tech-project {
+    font-size: 15px;
+  }
+  .link-name {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .header .nav-bar .menu-mobile {
+    display: block;
+  }
+  .header .nav-bar .nav-list {
+    display: none;
+  }
+  .header .nav-bar .mobile {
+    display: flex;
+    width: 100%;
+    height: 355px;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 72px;
+    background-color: var(--white-color);
+    padding: 0 16px;
+    padding-top: 32px;
+    box-shadow: 0 0 7px 0 rgb(108 93 184 / 20%);
+  }
+  .header .nav-bar .mobile1 {
+    display: none;
+  }
+  .header .nav-bar .nav-list.mobile .nav-item .nav-link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  .header .nav-bar .nav-list.mobile .nav-item .nav-link:active {
+    background: #f5f2ff;
+    padding: 12px 16px;
+  }
+  .member-lightbox-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 24px;
+    gap: 12px;
+    background: #fff;
+    border-radius: 16px;
+    width: 100%;
+    margin: 0 10px;
+  }
+  .member-lightbox {
+    display: none;
+  }
+  .modal-dialog {
+    width: 100% !important;
+  }
+  .custom-modal {
+    padding-right: 0 !important;
+    overflow-y: clip;
+  }
+  .modal-dialog-centered {
+    width: 100%;
+  }
+  .member-img-mobile {
+    max-width: 100%;
+    width: 25%;
+  }
+  .member-img-mobile-jp {
+    max-width: 100%;
+    width: 25%;
+  }
+  .member-img-mobile-jp > img {
+    width: 100%;
+    height: 100%;
+  }
+  .member-img-mobile > img {
+    width: 100%;
+    height: 100%;
+  }
+  .member-job {
+    text-align: start;
+  }
+  .member-name > h3 {
+    font-size: 20px;
+  }
+  .member-job > p {
+    font-size: 16px;
+  }
+  .member-info {
+    width: 100%;
+  }
+  .member-info > .desc > .des {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .member-info > .desc > .desMobile {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .member-info > .desc > .desJPMobile {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  body {
+    width: 100%;
+  }
+  .title-home {
+    width: 100%;
+  }
+  .title-home > h2 {
+    font-size: 52px;
+  }
+  .title-home > p {
+    font-size: 32px;
+  }
+  .home-content {
+    gap: 16px;
+  }
+  .flex-reverse {
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
+  .padding-16-cus {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .about-us {
+    padding-top: 40px;
+  }
+  .title {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+  }
+  .description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .footer {
+    padding: 40px 16px;
+  }
+  .block-project {
+    padding: 12px;
+  }
+  .our-services .service-card {
+    min-height: 550px;
+  }
+  .our-team .team-card {
+    margin-right: 16px;
+  }
+  .content-item-project {
+    padding: 16px;
+  }
+  .des-project {
+    font-size: 13px;
+  }
+  .tech-project {
+    font-size: 14px;
+  }
+  .link-name {
+    font-size: 14px;
+  }
+  .name-title-project {
+    font-size: 28px;
+  }
+  .contact-us {
+    color: var(--black-color);
+    padding: 40px 16px;
+  }
+  .home {
+    min-height: 0vh;
+  }
+  .our-services .service-card .card-title {
+    font-size: 20px;
+  }
+  .our-services .service-card .card-description {
+    font-size: 14px;
+  }
+  .our-team .heading {
+    padding: 40px 0;
+  }
+  .heading {
+    font-size: 3.6rem;
+  }
+  .our-mission {
+    padding: 40px 0;
+  }
+  .our-services .heading {
+    padding-top: 40px;
+  }
+  .our-project {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .our-project .heading {
+    font-size: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .contact-us .heading {
+    text-align: start;
+    font-size: 36px;
+  }
+  .support-text {
+    font-size: 16px;
+    text-align: start;
+    color: #333;
+  }
+  .title-contact-us {
+    align-items: start;
+    gap: 0;
+  }
+  .head {
+    padding-bottom: 16px;
+  }
+  .input-field {
+    padding-bottom: 2px;
+  }
+  .footer {
+    margin-top: 10px;
+  }
+  .our-project .heading {
+    text-align: start;
+  }
+  h4.member-name-child {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: start;
+  }
+  h4.member-name-child-mobile {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: start;
+  }
+  h4.member-name-child-jp-mobile {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: start;
+  }
+}
+@media (max-width: 767px) {
+  .our-services .service-card {
+    min-height: auto;
+  }
+  .our-services .service-card-jp {
+    height: auto;
+  }
+}
+@media (max-width: 1199.98px) {
+  .our-services .service-card .card-title {
+    font-size: 19px;
+    line-height: 65px;
+  }
+}
+@media (max-width: 465px) {
+  .our-services .service-card .card-title-jp {
+    font-size: 14px;
+  }
+  .img-home-page {
+    aspect-ratio: 343/337;
+  }
+  .img-project-child {
+    aspect-ratio: 92/92;
+  }
+}
+@media (max-width: 376px) {
+  .our-services .service-card .card-title-jp {
+    font-size: 12px;
+    line-height: 65px;
+  }
+}
+@media (max-width: 350px) {
+  .our-services .service-card .card-title {
+    font-size: 16px;
+  }
+}
+.member-info {
+  border-top: 2px solid #a192f3;
+}
+@media (min-width: 768px) {
+  .img-member {
+    border-radius: 20px;
+  }
+  .member-info {
+    border-top: none;
+  }
+  .desc {
+    padding-top: 19px;
+    border-top: 2px solid #a192f3;
+  }
+  .service-flex {
+    display: inline;
+  }
+  .our-services .service-card .service-img {
+    min-width: 150px;
+    margin: 20px;
+  }
+  .our-services .service-card {
+    padding: 24px;
+  }
+  .project-icon {
+    min-width: 15%;
+  }
+  .two-icon {
+    padding-bottom: 160px;
+  }
+  .title-project-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+  }
+  .title-project-item-mobile {
+    display: none;
+  }
+  .project-logo {
+    order: 1;
+  }
+  .project-image {
+    order: 2;
+  }
+  .form-about-us {
+    padding-top: 0;
+    padding-left: 48px;
+  }
+  .footer-flex {
+    display: block;
+  }
+  .project-image {
+    padding-top: 40px;
+  }
+  .our-team .heading {
+    text-align: center;
+  }
+  .button-contact-us {
+    margin-top: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-item-project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 30px;
+  }
+}
