@@ -284,7 +284,6 @@ function ourProjectControl() {
 }
 
 function sendMail(token) {
-  console.log('token=' + token);
   function printMess(elemId, message) {
     document.getElementById(elemId).innerHTML = message;
   }
