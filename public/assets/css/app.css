@@ -839,8 +839,9 @@ label.form-label {
 }
 .icon-email {
   max-width: 20px;
-  height: 13px;
+  max-height: 13px;
   aspect-ratio: 20/13;
+  object-fit: contain;
 }
 .icon-adrress {
   width: 10.89px;
