@@ -722,6 +722,15 @@ span.hr_member {
   border-radius: 32px;
   border: 3px solid #6c5db8;
 }
+.g-recaptcha div {
+  width: 100% !important;
+}
+iframe {
+  width: 100% !important;
+}
+.rc-anchor-normal{
+  width: 100% !important;
+}
 .head {
   display: flex;
   flex-direction: column;
@@ -762,6 +771,7 @@ label.form-label {
   color: #667085;
 }
 .button-contact-us {
+  width: 100%;
   padding: 13px 20px;
   display: flex;
   justify-content: center;
@@ -785,7 +795,7 @@ label.form-label {
   background: #a192f3;
 }
 .button-contact-us {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 .footer {
   background: #6c5db8;
@@ -1296,7 +1306,7 @@ label.form-label {
     text-align: center;
   }
   .button-contact-us {
-    margin-top: 45px;
+    margin-top: 35px;
   }
 }
 @media (min-width: 1200px) {
