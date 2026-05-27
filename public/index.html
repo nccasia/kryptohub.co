@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
 
     <!--Start of Tawk.to Script-->
+    <!-- Chat widget disabled
     <script defer type="text/javascript">
       var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
@@ -81,11 +82,21 @@
         $.post("notify.php");
       };
     </script>
+    -->
     <!--End of Tawk.to Script-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://unpkg.com/mezon-chat-widget@1.1.5/dist/mezon-chat-widget.min.js"></script>
+    
   </head>
 
   <body>
+
+    <mezon-chat
+    api-base-url="https://chat-widget-api.mezon.vn"
+    peer-id="1779815181480628224"
+    save-session="true"
+    theme="#0e0e0e"
+></mezon-chat>
     <header class="header">
       <div
         class="container d-flex justify-content-between align-items-center h-100"
